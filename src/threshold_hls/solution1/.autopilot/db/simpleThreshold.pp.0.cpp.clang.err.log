@@ -1,0 +1,49 @@
+C:/Users/ruuud/spring2025/cse145/AAAAHHHH/ECE1373_2016_hft_on_fpga/src/build_threshold_core.tcl:23:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=simple_threshold_XLX_SEP_ PragmaOptions=name=simple_threshold_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=simple_threshold
+        ^
+threshold_src/simpleThreshold.cpp:13:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=simple_threshold_XLX_SEP_ PragmaOptions=ap_ctrl_none port=return_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE ap_ctrl_none port=return
+        ^
+threshold_src/simpleThreshold.cpp:16:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=simple_threshold_XLX_SEP_ PragmaOptions=axis register both port=top_bid_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis register both port=top_bid
+        ^
+threshold_src/simpleThreshold.cpp:17:52: warning: unexpected pragma argument ':', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS aggregate variable=top_bid compact=bit :contentReference[oaicite:0]{index=0}
+                                                   ^
+threshold_src/simpleThreshold.cpp:17:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=0_XLX_SEP_ PragmaType=aggregate_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=simple_threshold_XLX_SEP_ PragmaOptions=variable=top_bid compact=bit :_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS aggregate variable=top_bid compact=bit :contentReference[oaicite:0]{index=0}
+        ^
+threshold_src/simpleThreshold.cpp:19:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=simple_threshold_XLX_SEP_ PragmaOptions=axis register both port=top_ask_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis register both port=top_ask
+        ^
+threshold_src/simpleThreshold.cpp:20:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=aggregate_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=simple_threshold_XLX_SEP_ PragmaOptions=variable=top_ask compact=bit_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS aggregate variable=top_ask compact=bit
+        ^
+threshold_src/simpleThreshold.cpp:22:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=simple_threshold_XLX_SEP_ PragmaOptions=axis register both port=incoming_time_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis register both port=incoming_time
+        ^
+threshold_src/simpleThreshold.cpp:24:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=simple_threshold_XLX_SEP_ PragmaOptions=axis register both port=incoming_meta_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis register both port=incoming_meta
+        ^
+threshold_src/simpleThreshold.cpp:25:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=aggregate_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=simple_threshold_XLX_SEP_ PragmaOptions=variable=incoming_meta compact=bit_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS aggregate variable=incoming_meta compact=bit
+        ^
+threshold_src/simpleThreshold.cpp:27:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=simple_threshold_XLX_SEP_ PragmaOptions=axis register both port=outgoing_order_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis register both port=outgoing_order
+        ^
+threshold_src/simpleThreshold.cpp:28:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=aggregate_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=simple_threshold_XLX_SEP_ PragmaOptions=variable=outgoing_order compact=bit_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS aggregate variable=outgoing_order compact=bit
+        ^
+threshold_src/simpleThreshold.cpp:30:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=simple_threshold_XLX_SEP_ PragmaOptions=axis register both port=outgoing_time_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis register both port=outgoing_time
+        ^
+threshold_src/simpleThreshold.cpp:32:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=simple_threshold_XLX_SEP_ PragmaOptions=axis register both port=outgoing_meta_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis register both port=outgoing_meta
+        ^
+threshold_src/simpleThreshold.cpp:33:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=aggregate_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=simple_threshold_XLX_SEP_ PragmaOptions=variable=outgoing_meta compact=bit_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS aggregate variable=outgoing_meta compact=bit
+        ^
+threshold_src/simpleThreshold.cpp:36:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=simple_threshold_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+16 warnings generated.

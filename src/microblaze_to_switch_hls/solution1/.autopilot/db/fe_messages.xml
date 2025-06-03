@@ -1,0 +1,33 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/ruuud/spring2025/cse145/AAAAHHHH/ECE1373_2016_hft_on_fpga/src/build_microblaze_to_switch_core.tcl:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="MicroblazeToSwitch" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=MicroblazeToSwitch" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="microblaze_to_switch_src/MBtoSW.cpp:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MicroblazeToSwitch" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="microblaze_to_switch_src/MBtoSW.cpp:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MicroblazeToSwitch" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register both port=rxLengthMonitor" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="microblaze_to_switch_src/MBtoSW.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MicroblazeToSwitch" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register both port=rxDataMonitor" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="microblaze_to_switch_src/MBtoSW.cpp:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MicroblazeToSwitch" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=rxMetadataMonitor compact=bit" ARG_PragmaType="aggregate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="microblaze_to_switch_src/MBtoSW.cpp:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MicroblazeToSwitch" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register both port=rxMetadataMonitor" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="microblaze_to_switch_src/MBtoSW.cpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MicroblazeToSwitch" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=best_bid_sw" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="microblaze_to_switch_src/MBtoSW.cpp:22:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MicroblazeToSwitch" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=best_ask_sw" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="microblaze_to_switch_src/MBtoSW.cpp:27:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MicroblazeToSwitch" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="microblaze_to_switch_src/MBtoSW.cpp:12:0" msg_body="Aggregating axis (hls::stream) variable 'rxMetadataMonitor' with compact=bit mode in 96-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="96" HwTyName="axis (hls::stream)" Name="rxMetadataMonitor"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

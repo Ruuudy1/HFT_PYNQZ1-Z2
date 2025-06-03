@@ -1,0 +1,40 @@
+---
+MainSourceFile:  'C:/Users/ruuud/spring2025/cse145/AAAAHHHH/ECE1373_2016_hft_on_fpga/src/threshold_hls/solution1/.autopilot/db/simpleThreshold.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'C:\Xilinx\Vitis\2024.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\threshold_hls\solution1\.autopilot\db\simpleThreshold.pp.0.cpp'
+        Offset:          1057365
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'C:\Xilinx\Vitis\2024.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\threshold_hls\solution1\.autopilot\db\simpleThreshold.pp.0.cpp'
+        Offset:          1057831
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'C:\Xilinx\Vitis\2024.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\threshold_hls\solution1\.autopilot\db\simpleThreshold.pp.0.cpp'
+        Offset:          1058298
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1248_1:  '
+    FileOffset:      1248
+    FilePath:        'C:\Xilinx\Vitis\2024.2\common\technology\autopilot\etc\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\threshold_hls\solution1\.autopilot\db\simpleThreshold.pp.0.cpp'
+        Offset:          1341656
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1248_1: '
+...

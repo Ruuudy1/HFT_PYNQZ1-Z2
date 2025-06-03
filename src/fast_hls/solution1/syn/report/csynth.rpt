@@ -1,0 +1,336 @@
+
+
+================================================================
+== Synthesis Summary Report of 'fast_protocol'
+================================================================
++ General Information: 
+    * Date:           Thu May 29 06:17:20 2025
+    * Version:        2024.2 (Build 5238294 on Nov  8 2024)
+    * Project:        fast_hls
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg484-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------+------+------+---------+---------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |      Modules     | Issue|      | Latency | Latency | Iteration|         | Trip |          |      |         |           |           |     |
+    |      & Loops     | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP   |     FF    |    LUT    | URAM|
+    +------------------+------+------+---------+---------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |+ fast_protocol*  |     -|  0.75|        5|  125.000|         -|        4|     -|  dataflow|     -|  2 (~0%)|  596 (~0%)|  1995 (3%)|    -|
+    | + txPath         |    II|  0.75|        5|  125.000|         -|        4|     -|  yes(flp)|     -|        -|  228 (~0%)|   830 (1%)|    -|
+    | + rxPath         |    II|  3.15|        4|  100.000|         -|        3|     -|  yes(flp)|     -|  2 (~0%)|  368 (~0%)|  1165 (2%)|    -|
+    +------------------+------+------+---------+---------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AXIS
++----------------------+-----------+---------------+-------+--------+--------+
+| Interface            | Direction | Register Mode | TDATA | TREADY | TVALID |
++----------------------+-----------+---------------+-------+--------+--------+
+| lbPortOpenReplyIn    | in        | both          | 8     | 1      | 1      |
+| lbRequestPortOpenOut | out       | both          | 16    | 1      | 1      |
+| lbRxDataIn           | in        | both          | 128   | 1      | 1      |
+| lbRxMetadataIn       | in        | both          | 96    | 1      | 1      |
+| lbTxDataOut          | out       | both          | 128   | 1      | 1      |
+| lbTxLengthOut        | out       | both          | 16    | 1      | 1      |
+| lbTxMetadataOut      | out       | both          | 96    | 1      | 1      |
+| metadata_from_book   | in        | both          | 128   | 1      | 1      |
+| metadata_to_book     | out       | both          | 128   | 1      | 1      |
+| order_from_book      | in        | both          | 64    | 1      | 1      |
+| order_to_book        | out       | both          | 64    | 1      | 1      |
+| tagsIn               | in        | both          | 64    | 1      | 1      |
+| tagsOut              | out       | both          | 64    | 1      | 1      |
+| time_from_book       | in        | both          | 64    | 1      | 1      |
+| time_to_book         | out       | both          | 64    | 1      | 1      |
++----------------------+-----------+---------------+-------+--------+--------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+----------+
+| Interface | Type         | Ports    |
++-----------+--------------+----------+
+| ap_clk    | clock        | ap_clk   |
+| ap_rst_n  | reset        | ap_rst_n |
+| ap_ctrl   | ap_ctrl_none |          |
++-----------+--------------+----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------------------+-----------+-------------------------+
+| Argument             | Direction | Datatype                |
++----------------------+-----------+-------------------------+
+| lbRxDataIn           | in        | stream<axiWord, 0>&     |
+| lbRxMetadataIn       | in        | stream<metadata, 0>&    |
+| lbRequestPortOpenOut | out       | stream<ap_uint<16>, 0>& |
+| lbPortOpenReplyIn    | in        | stream<bool, 0>&        |
+| lbTxDataOut          | out       | stream<axiWord, 0>&     |
+| lbTxMetadataOut      | out       | stream<metadata, 0>&    |
+| lbTxLengthOut        | out       | stream<ap_uint<16>, 0>& |
+| tagsIn               | in        | stream<ap_uint<64>, 0>& |
+| tagsOut              | out       | stream<ap_uint<64>, 0>& |
+| metadata_to_book     | out       | stream<metadata, 0>&    |
+| metadata_from_book   | in        | stream<metadata, 0>&    |
+| time_to_book         | out       | stream<ap_uint<64>, 0>& |
+| time_from_book       | in        | stream<ap_uint<64>, 0>& |
+| order_to_book        | out       | stream<order, 0>&       |
+| order_from_book      | in        | stream<order, 0>&       |
++----------------------+-----------+-------------------------+
+
+* SW-to-HW Mapping
++----------------------+----------------------+-----------+
+| Argument             | HW Interface         | HW Type   |
++----------------------+----------------------+-----------+
+| lbRxDataIn           | lbRxDataIn           | interface |
+| lbRxMetadataIn       | lbRxMetadataIn       | interface |
+| lbRequestPortOpenOut | lbRequestPortOpenOut | interface |
+| lbPortOpenReplyIn    | lbPortOpenReplyIn    | interface |
+| lbTxDataOut          | lbTxDataOut          | interface |
+| lbTxMetadataOut      | lbTxMetadataOut      | interface |
+| lbTxLengthOut        | lbTxLengthOut        | interface |
+| tagsIn               | tagsIn               | interface |
+| tagsOut              | tagsOut              | interface |
+| metadata_to_book     | metadata_to_book     | interface |
+| metadata_from_book   | metadata_from_book   | interface |
+| time_to_book         | time_to_book         | interface |
+| time_from_book       | time_from_book       | interface |
+| order_to_book        | order_to_book        | interface |
+| order_from_book      | order_from_book      | interface |
++----------------------+----------------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------------+-----+--------+--------------------+-----------+--------------------------+---------+
+| Name                                | DSP | Pragma | Variable           | Op        | Impl                     | Latency |
++-------------------------------------+-----+--------+--------------------+-----------+--------------------------+---------+
+| + fast_protocol                     | 2   |        |                    |           |                          |         |
+|  + txPath                           | 0   |        |                    |           |                          |         |
+|    lbTxLengthOut_TDATA_int_regslice |     |        | add_ln490          | add       | fabric                   | 0       |
+|    select_ln400_fu_559_p3           |     |        | select_ln400       | select    | auto_sel                 | 0       |
+|    select_ln400_1_fu_566_p3         |     |        | select_ln400_1     | select    | auto_sel                 | 0       |
+|    message_offset_fu_387_p3         |     |        | message_offset     | select    | auto_sel                 | 0       |
+|    icmp_ln415_fu_405_p2             |     |        | icmp_ln415         | seteq     | auto                     | 0       |
+|    select_ln417_2_fu_411_p3         |     |        | select_ln417_2     | select    | auto_sel                 | 0       |
+|    select_ln417_fu_576_p3           |     |        | select_ln417       | select    | auto_sel                 | 0       |
+|    select_ln417_1_fu_583_p3         |     |        | select_ln417_1     | select    | auto_sel                 | 0       |
+|    empty_fu_589_p3                  |     |        | empty              | select    | auto_sel                 | 0       |
+|    empty_16_fu_596_p3               |     |        | empty_16           | select    | auto_sel                 | 0       |
+|    message_offset_1_fu_419_p3       |     |        | message_offset_1   | select    | auto_sel                 | 0       |
+|    triggered_fu_603_p2              |     |        | triggered          | xor       | auto                     | 0       |
+|    icmp_ln415_1_fu_437_p2           |     |        | icmp_ln415_1       | setne     | auto                     | 0       |
+|    triggered_1_fu_618_p2            |     |        | triggered_1        | or        | auto                     | 0       |
+|    icmp_ln417_fu_623_p2             |     |        | icmp_ln417         | seteq     | auto                     | 0       |
+|    icmp_ln417_1_fu_628_p2           |     |        | icmp_ln417_1       | seteq     | auto                     | 0       |
+|    xor_ln415_fu_633_p2              |     |        | xor_ln415          | xor       | auto                     | 0       |
+|    and_ln415_fu_638_p2              |     |        | and_ln415          | and       | auto                     | 0       |
+|    or_ln417_fu_643_p2               |     |        | or_ln417           | or        | auto                     | 0       |
+|    or_ln417_1_fu_649_p2             |     |        | or_ln417_1         | or        | auto                     | 0       |
+|    empty_17_fu_655_p3               |     |        | empty_17           | select    | auto_sel                 | 0       |
+|    and_ln417_fu_663_p2              |     |        | and_ln417          | and       | auto                     | 0       |
+|    empty_18_fu_669_p3               |     |        | empty_18           | select    | auto_sel                 | 0       |
+|    and_ln417_1_fu_676_p2            |     |        | and_ln417_1        | and       | auto                     | 0       |
+|    empty_19_fu_682_p3               |     |        | empty_19           | select    | auto_sel                 | 0       |
+|    sparsemux_9_3_4_1_1_U51          |     |        | message_offset_2   | sparsemux | onehotencoding_realdef   | 0       |
+|    icmp_ln415_2_fu_726_p2           |     |        | icmp_ln415_2       | setne     | auto                     | 0       |
+|    triggered_2_fu_731_p2            |     |        | triggered_2        | or        | auto                     | 0       |
+|    icmp_ln417_2_fu_737_p2           |     |        | icmp_ln417_2       | seteq     | auto                     | 0       |
+|    and_ln417_2_fu_743_p2            |     |        | and_ln417_2        | and       | auto                     | 0       |
+|    empty_20_fu_749_p3               |     |        | empty_20           | select    | auto_sel                 | 0       |
+|    icmp_ln417_3_fu_756_p2           |     |        | icmp_ln417_3       | seteq     | auto                     | 0       |
+|    icmp_ln417_4_fu_762_p2           |     |        | icmp_ln417_4       | seteq     | auto                     | 0       |
+|    xor_ln415_1_fu_768_p2            |     |        | xor_ln415_1        | xor       | auto                     | 0       |
+|    or_ln417_2_fu_774_p2             |     |        | or_ln417_2         | or        | auto                     | 0       |
+|    or_ln417_3_fu_780_p2             |     |        | or_ln417_3         | or        | auto                     | 0       |
+|    or_ln417_4_fu_786_p2             |     |        | or_ln417_4         | or        | auto                     | 0       |
+|    empty_21_fu_792_p3               |     |        | empty_21           | select    | auto_sel                 | 0       |
+|    and_ln417_3_fu_800_p2            |     |        | and_ln417_3        | and       | auto                     | 0       |
+|    empty_22_fu_806_p3               |     |        | empty_22           | select    | auto_sel                 | 0       |
+|    and_ln417_4_fu_813_p2            |     |        | and_ln417_4        | and       | auto                     | 0       |
+|    empty_23_fu_819_p3               |     |        | empty_23           | select    | auto_sel                 | 0       |
+|    sparsemux_11_4_4_1_1_x_U52       |     |        | message_offset_3   | sparsemux | onehotencoding_realdef   | 0       |
+|    icmp_ln415_3_fu_869_p2           |     |        | icmp_ln415_3       | setne     | auto                     | 0       |
+|    or_ln415_fu_874_p2               |     |        | or_ln415           | or        | auto                     | 0       |
+|    icmp_ln417_5_fu_880_p2           |     |        | icmp_ln417_5       | seteq     | auto                     | 0       |
+|    and_ln417_5_fu_886_p2            |     |        | and_ln417_5        | and       | auto                     | 0       |
+|    empty_24_fu_892_p3               |     |        | empty_24           | select    | auto_sel                 | 0       |
+|    icmp_ln417_6_fu_899_p2           |     |        | icmp_ln417_6       | seteq     | auto                     | 0       |
+|    and_ln417_6_fu_905_p2            |     |        | and_ln417_6        | and       | auto                     | 0       |
+|    empty_25_fu_911_p3               |     |        | empty_25           | select    | auto_sel                 | 0       |
+|    icmp_ln417_7_fu_918_p2           |     |        | icmp_ln417_7       | seteq     | auto                     | 0       |
+|    icmp_ln417_8_fu_924_p2           |     |        | icmp_ln417_8       | seteq     | auto                     | 0       |
+|    xor_ln415_2_fu_930_p2            |     |        | xor_ln415_2        | xor       | auto                     | 0       |
+|    or_ln417_5_fu_936_p2             |     |        | or_ln417_5         | or        | auto                     | 0       |
+|    or_ln417_6_fu_942_p2             |     |        | or_ln417_6         | or        | auto                     | 0       |
+|    or_ln417_7_fu_948_p2             |     |        | or_ln417_7         | or        | auto                     | 0       |
+|    or_ln417_8_fu_954_p2             |     |        | or_ln417_8         | or        | auto                     | 0       |
+|    empty_26_fu_960_p3               |     |        | empty_26           | select    | auto_sel                 | 0       |
+|    and_ln417_7_fu_968_p2            |     |        | and_ln417_7        | and       | auto                     | 0       |
+|    empty_27_fu_974_p3               |     |        | empty_27           | select    | auto_sel                 | 0       |
+|    and_ln417_8_fu_981_p2            |     |        | and_ln417_8        | and       | auto                     | 0       |
+|    empty_28_fu_987_p3               |     |        | empty_28           | select    | auto_sel                 | 0       |
+|    sparsemux_13_5_4_1_1_U53         |     |        | message_offset_4   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_11_32_8_1_1_U54        |     |        | tmp_11             | sparsemux | compactencoding_realdef  | 0       |
+|    sparsemux_11_32_8_1_1_U55        |     |        | tmp_12             | sparsemux | compactencoding_realdef  | 0       |
+|    sparsemux_11_32_8_1_1_U56        |     |        | tmp_13             | sparsemux | compactencoding_realdef  | 0       |
+|    sparsemux_11_32_8_1_1_U57        |     |        | tmp_14             | sparsemux | compactencoding_realdef  | 0       |
+|    sparsemux_11_32_8_1_1_U58        |     |        | tmp_15             | sparsemux | compactencoding_realdef  | 0       |
+|    icmp_ln425_fu_1218_p2            |     |        | icmp_ln425         | seteq     | auto                     | 0       |
+|    empty_29_fu_1224_p3              |     |        | empty_29           | select    | auto_sel                 | 0       |
+|    icmp_ln425_1_fu_1232_p2          |     |        | icmp_ln425_1       | seteq     | auto                     | 0       |
+|    icmp_ln425_2_fu_1238_p2          |     |        | icmp_ln425_2       | seteq     | auto                     | 0       |
+|    icmp_ln425_3_fu_1244_p2          |     |        | icmp_ln425_3       | seteq     | auto                     | 0       |
+|    icmp_ln425_4_fu_1250_p2          |     |        | icmp_ln425_4       | seteq     | auto                     | 0       |
+|    or_ln425_fu_1256_p2              |     |        | or_ln425           | or        | auto                     | 0       |
+|    or_ln425_1_fu_1262_p2            |     |        | or_ln425_1         | or        | auto                     | 0       |
+|    or_ln425_2_fu_1268_p2            |     |        | or_ln425_2         | or        | auto                     | 0       |
+|    or_ln425_3_fu_1274_p2            |     |        | or_ln425_3         | or        | auto                     | 0       |
+|    empty_30_fu_1280_p3              |     |        | empty_30           | select    | auto_sel                 | 0       |
+|  + rxPath                           | 2   |        |                    |           |                          |         |
+|    grp_fu_648_p3                    |     |        | decoded_mantissa_2 | select    | auto_sel                 | 0       |
+|    message_offset_14_fu_744_p3      |     |        | message_offset_14  | select    | auto_sel                 | 0       |
+|    grp_fu_656_p3                    |     |        | select_ln272       | select    | auto_sel                 | 0       |
+|    message_offset_15_fu_752_p3      |     |        | message_offset_15  | select    | auto_sel                 | 0       |
+|    or_ln275_fu_772_p2               |     |        | or_ln275           | or        | auto                     | 0       |
+|    message_offset_10_fu_794_p3      |     |        | message_offset_10  | select    | auto_sel                 | 0       |
+|    sparsemux_7_3_7_1_1_U1           |     |        | tmp_22             | sparsemux | compactencoding_dontcare | 0       |
+|    empty_31_fu_822_p3               |     |        | empty_31           | select    | auto_sel                 | 0       |
+|    grp_fu_684_p2                    |     |        | sub_ln285          | sub       | fabric                   | 0       |
+|    mul_16s_9ns_16_1_1_U23           | 1   |        | price_buff_1       | mul       | auto                     | 0       |
+|    sparsemux_7_3_8_1_1_U2           |     |        | tmp_24             | sparsemux | compactencoding_dontcare | 0       |
+|    xor_ln295_fu_862_p2              |     |        | xor_ln295          | xor       | auto                     | 0       |
+|    size_buff_2_fu_868_p2            |     |        | size_buff_2        | and       | auto                     | 0       |
+|    select_ln295_fu_874_p3           |     |        | select_ln295       | select    | auto_sel                 | 0       |
+|    message_offset_16_fu_882_p2      |     |        | message_offset_16  | add       | fabric                   | 0       |
+|    message_offset_22_fu_1296_p2     |     |        | message_offset_17  | add       | fabric                   | 0       |
+|    sparsemux_9_3_7_1_1_U3           |     |        | tmp_25             | sparsemux | compactencoding_dontcare | 0       |
+|    sparsemux_9_3_8_1_1_U4           |     |        | orderID_buff_1     | sparsemux | compactencoding_dontcare | 0       |
+|    message_offset_22_fu_1296_p4     |     |        | message_offset_18  | add       | fabric                   | 0       |
+|    sparsemux_9_3_8_1_1_U5           |     |        | tmp_29             | sparsemux | compactencoding_dontcare | 0       |
+|    message_offset_22_fu_1296_p6     |     |        | message_offset_19  | add       | fabric                   | 0       |
+|    or_ln317_fu_1016_p2              |     |        | or_ln317           | or        | auto                     | 0       |
+|    sparsemux_9_3_8_1_1_U6           |     |        | tmp_34             | sparsemux | compactencoding_dontcare | 0       |
+|    message_offset_22_fu_1296_p8     |     |        | message_offset_20  | add       | fabric                   | 0       |
+|    or_ln317_1_fu_1098_p2            |     |        | or_ln317_1         | or        | auto                     | 0       |
+|    sparsemux_9_3_8_1_1_U7           |     |        | tmp_36             | sparsemux | compactencoding_dontcare | 0       |
+|    message_offset_22_fu_1296_p10    |     |        | message_offset_21  | add       | fabric                   | 0       |
+|    or_ln317_2_fu_1172_p2            |     |        | or_ln317_2         | or        | auto                     | 0       |
+|    xor_ln312_fu_1200_p2             |     |        | xor_ln312          | xor       | auto                     | 0       |
+|    and_ln312_fu_1206_p2             |     |        | and_ln312          | and       | auto                     | 0       |
+|    or_ln312_fu_1212_p2              |     |        | or_ln312           | or        | auto                     | 0       |
+|    xor_ln312_2_fu_1226_p2           |     |        | xor_ln312_2        | xor       | auto                     | 0       |
+|    and_ln312_1_fu_1232_p2           |     |        | and_ln312_1        | and       | auto                     | 0       |
+|    xor_ln312_1_fu_1238_p2           |     |        | xor_ln312_1        | xor       | auto                     | 0       |
+|    and_ln312_2_fu_1244_p2           |     |        | and_ln312_2        | and       | auto                     | 0       |
+|    and_ln312_3_fu_1250_p2           |     |        | and_ln312_3        | and       | auto                     | 0       |
+|    sparsemux_11_4_25_1_1_U8         |     |        | orderID_buff179_s  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_11_4_4_1_1_U9          |     |        | message_offset_22  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_17_4_7_1_1_U10         |     |        | tmp_39             | sparsemux | compactencoding_dontcare | 0       |
+|    sparsemux_17_4_3_1_1_U11         |     |        | order_type_buff_1  | sparsemux | compactencoding_dontcare | 0       |
+|    grp_fu_648_p3                    |     |        | decoded_mantissa   | select    | auto_sel                 | 0       |
+|    message_offset_fu_1452_p3        |     |        | message_offset     | select    | auto_sel                 | 0       |
+|    grp_fu_656_p3                    |     |        | select_ln151       | select    | auto_sel                 | 0       |
+|    message_offset_5_fu_1460_p3      |     |        | message_offset_5   | select    | auto_sel                 | 0       |
+|    or_ln154_fu_1480_p2              |     |        | or_ln154           | or        | auto                     | 0       |
+|    message_offset_1_fu_1502_p3      |     |        | message_offset_1   | select    | auto_sel                 | 0       |
+|    sparsemux_7_3_7_1_1_U12          |     |        | tmp_15             | sparsemux | compactencoding_dontcare | 0       |
+|    empty_fu_1530_p3                 |     |        | empty              | select    | auto_sel                 | 0       |
+|    grp_fu_684_p2                    |     |        | sub_ln166          | sub       | fabric                   | 0       |
+|    mul_16s_9ns_16_1_1_U24           | 1   |        | price_buff         | mul       | auto                     | 0       |
+|    sparsemux_7_3_8_1_1_U13          |     |        | tmp_16             | sparsemux | compactencoding_dontcare | 0       |
+|    xor_ln177_fu_1570_p2             |     |        | xor_ln177          | xor       | auto                     | 0       |
+|    size_buff_fu_1576_p2             |     |        | size_buff          | and       | auto                     | 0       |
+|    select_ln177_fu_1582_p3          |     |        | select_ln177       | select    | auto_sel                 | 0       |
+|    message_offset_6_fu_1590_p2      |     |        | message_offset_6   | add       | fabric                   | 0       |
+|    message_offset_13_fu_2004_p2     |     |        | message_offset_7   | add       | fabric                   | 0       |
+|    sparsemux_9_3_7_1_1_U14          |     |        | tmp_17             | sparsemux | compactencoding_dontcare | 0       |
+|    sparsemux_9_3_8_1_1_U15          |     |        | orderID_buff       | sparsemux | compactencoding_dontcare | 0       |
+|    message_offset_13_fu_2004_p4     |     |        | message_offset_8   | add       | fabric                   | 0       |
+|    sparsemux_9_3_8_1_1_U16          |     |        | tmp_18             | sparsemux | compactencoding_dontcare | 0       |
+|    message_offset_13_fu_2004_p6     |     |        | message_offset_9   | add       | fabric                   | 0       |
+|    or_ln199_fu_1724_p2              |     |        | or_ln199           | or        | auto                     | 0       |
+|    sparsemux_9_3_8_1_1_U17          |     |        | tmp_20             | sparsemux | compactencoding_dontcare | 0       |
+|    message_offset_13_fu_2004_p8     |     |        | message_offset_11  | add       | fabric                   | 0       |
+|    or_ln199_1_fu_1806_p2            |     |        | or_ln199_1         | or        | auto                     | 0       |
+|    sparsemux_9_3_8_1_1_U18          |     |        | tmp_26             | sparsemux | compactencoding_dontcare | 0       |
+|    message_offset_13_fu_2004_p10    |     |        | message_offset_12  | add       | fabric                   | 0       |
+|    or_ln199_2_fu_1880_p2            |     |        | or_ln199_2         | or        | auto                     | 0       |
+|    xor_ln194_fu_1908_p2             |     |        | xor_ln194          | xor       | auto                     | 0       |
+|    and_ln194_fu_1914_p2             |     |        | and_ln194          | and       | auto                     | 0       |
+|    or_ln194_fu_1920_p2              |     |        | or_ln194           | or        | auto                     | 0       |
+|    xor_ln194_2_fu_1934_p2           |     |        | xor_ln194_2        | xor       | auto                     | 0       |
+|    and_ln194_1_fu_1940_p2           |     |        | and_ln194_1        | and       | auto                     | 0       |
+|    xor_ln194_1_fu_1946_p2           |     |        | xor_ln194_1        | xor       | auto                     | 0       |
+|    and_ln194_2_fu_1952_p2           |     |        | and_ln194_2        | and       | auto                     | 0       |
+|    and_ln194_3_fu_1958_p2           |     |        | and_ln194_3        | and       | auto                     | 0       |
+|    sparsemux_11_4_25_1_1_U19        |     |        | orderID_buff_s     | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_11_4_4_1_1_U20         |     |        | message_offset_13  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_17_4_7_1_1_U21         |     |        | tmp_31             | sparsemux | compactencoding_dontcare | 0       |
+|    sparsemux_17_4_3_1_1_U22         |     |        | order_type_buff    | sparsemux | compactencoding_dontcare | 0       |
+|    select_ln100_fu_2221_p3          |     |        | select_ln100       | select    | auto_sel                 | 0       |
+|    icmp_ln59_fu_2251_p2             |     |        | icmp_ln59          | seteq     | auto                     | 0       |
+|    and_ln59_fu_2257_p2              |     |        | and_ln59           | and       | auto                     | 0       |
+|    add_ln66_fu_2263_p2              |     |        | add_ln66           | add       | fabric                   | 0       |
++-------------------------------------+-----+--------+--------------------+-----------+--------------------------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-----------------+--------+------+------+------+--------+----------+------+---------+------------------+
+| Name            | Usage  | Type | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                 |        |      |      |      |        |          |      |         | Banks            |
++-----------------+--------+------+------+------+--------+----------+------+---------+------------------+
+| + fast_protocol |        |      | 0    | 0    |        |          |      |         |                  |
+|  + rxPath       |        |      | 0    | 0    |        |          |      |         |                  |
+|    POW10_U      | rom_1p |      |      |      |        | POW10    | auto | 1       | 9, 4, 1          |
++-----------------+--------+------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+-----------------------------------------+-----------------------------------------------------------------------+
+| Type            | Options                                 | Location                                                              |
++-----------------+-----------------------------------------+-----------------------------------------------------------------------+
+| array_partition | variable=encoded_message complete dim=1 | fast_src/fast_decoder.cpp:24 in decode_fast_message, encoded_message  |
+| array_partition | variable=encoded_message complete dim=1 | fast_src/fast_encoder.cpp:25 in encode_fast_message, encoded_message  |
+| pipeline        | II=1                                    | fast_src/fast_protocol.cpp:38 in rxpath                               |
+| array_partition | variable=encoded_message complete dim=1 | fast_src/fast_protocol.cpp:49 in rxpath, encoded_message              |
+| array_partition | variable=encoded_message complete dim=1 | fast_src/fast_protocol.cpp:51 in rxpath, encoded_message              |
+| array_partition | variable=encoded_message complete dim=1 | fast_src/fast_protocol.cpp:117 in rxpath, encoded_message             |
+| array_partition | variable=encoded_message complete dim=1 | fast_src/fast_protocol.cpp:240 in rxpath, encoded_message             |
+| pipeline        | II=1                                    | fast_src/fast_protocol.cpp:355 in txpath                              |
+| array_partition | variable=encoded_message complete dim=1 | fast_src/fast_protocol.cpp:392 in txpath, encoded_message             |
+| interface       | ap_ctrl_none port=return                | fast_src/fast_protocol.cpp:517 in fast_protocol, return               |
+| dataflow        |                                         | fast_src/fast_protocol.cpp:518 in fast_protocol                       |
+| interface       | axis port=lbRxDataIn                    | fast_src/fast_protocol.cpp:522 in fast_protocol, lbRxDataIn           |
+| aggregate       | variable=lbRxMetadataIn compact=bit     | fast_src/fast_protocol.cpp:525 in fast_protocol, lbRxMetadataIn       |
+| interface       | axis port=lbRxMetadataIn                | fast_src/fast_protocol.cpp:526 in fast_protocol, lbRxMetadataIn       |
+| interface       | axis port=lbRequestPortOpenOut          | fast_src/fast_protocol.cpp:528 in fast_protocol, lbRequestPortOpenOut |
+| interface       | axis port=lbPortOpenReplyIn             | fast_src/fast_protocol.cpp:529 in fast_protocol, lbPortOpenReplyIn    |
+| interface       | axis port=lbTxDataOut                   | fast_src/fast_protocol.cpp:530 in fast_protocol, lbTxDataOut          |
+| aggregate       | variable=lbTxMetadataOut compact=bit    | fast_src/fast_protocol.cpp:532 in fast_protocol, lbTxMetadataOut      |
+| interface       | axis port=lbTxMetadataOut               | fast_src/fast_protocol.cpp:533 in fast_protocol, lbTxMetadataOut      |
+| interface       | axis port=lbTxLengthOut                 | fast_src/fast_protocol.cpp:535 in fast_protocol, lbTxLengthOut        |
+| interface       | axis port=tagsIn                        | fast_src/fast_protocol.cpp:536 in fast_protocol, tagsIn               |
+| interface       | axis port=tagsOut                       | fast_src/fast_protocol.cpp:537 in fast_protocol, tagsOut              |
+| interface       | axis port=metadata_to_book              | fast_src/fast_protocol.cpp:541 in fast_protocol, metadata_to_book     |
+| interface       | axis port=metadata_from_book            | fast_src/fast_protocol.cpp:542 in fast_protocol, metadata_from_book   |
+| interface       | axis port=time_to_book                  | fast_src/fast_protocol.cpp:543 in fast_protocol, time_to_book         |
+| interface       | axis port=time_from_book                | fast_src/fast_protocol.cpp:544 in fast_protocol, time_from_book       |
+| aggregate       | variable=order_to_book compact=bit      | fast_src/fast_protocol.cpp:547 in fast_protocol, order_to_book        |
+| interface       | axis port=order_to_book                 | fast_src/fast_protocol.cpp:548 in fast_protocol, order_to_book        |
+| aggregate       | variable=order_from_book compact=bit    | fast_src/fast_protocol.cpp:550 in fast_protocol, order_from_book      |
+| interface       | axis port=order_from_book               | fast_src/fast_protocol.cpp:551 in fast_protocol, order_from_book      |
++-----------------+-----------------------------------------+-----------------------------------------------------------------------+
+
+

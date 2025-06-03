@@ -1,0 +1,234 @@
+
+
+================================================================
+== Vitis HLS Report for 'simple_threshold'
+================================================================
+* Date:           Thu May 29 09:33:36 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        threshold_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.256 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        7|        7|  70.000 ns|  70.000 ns|    5|    5|      yes|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 5, depth = 8
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 8
+* Pipeline : 1
+  Pipeline-0 : II = 5, D = 8, States = { 1 2 3 4 5 6 7 8 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.77>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specpipeline_ln36 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_1" [threshold_src/simpleThreshold.cpp:36]   --->   Operation 9 'specpipeline' 'specpipeline_ln36' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%spectopmodule_ln3 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_2" [threshold_src/simpleThreshold.cpp:3]   --->   Operation 10 'spectopmodule' 'spectopmodule_ln3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln3 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_3, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0" [threshold_src/simpleThreshold.cpp:3]   --->   Operation 11 'specinterface' 'specinterface_ln3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i96 %top_bid, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i96 %top_bid"   --->   Operation 13 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %top_ask, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %top_ask"   --->   Operation 15 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %incoming_time, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %incoming_time"   --->   Operation 17 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i96 %incoming_meta, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i96 %incoming_meta"   --->   Operation 19 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %outgoing_order, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %outgoing_order"   --->   Operation 21 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %outgoing_time, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 22 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %outgoing_time"   --->   Operation 23 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i96 %outgoing_meta, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i96 %outgoing_meta"   --->   Operation 25 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (1.77ns)   --->   "%tmp = nbreadreq i1 @_ssdm_op_NbReadReq.axis.i96P128A, i96 %top_bid, i32 1" [threshold_src/simpleThreshold.cpp:47]   --->   Operation 26 'nbreadreq' 'tmp' <Predicate = true> <Delay = 1.77> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 2.10> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%br_ln47 = br i1 %tmp, void %if.end28, void %land.lhs.true" [threshold_src/simpleThreshold.cpp:47]   --->   Operation 27 'br' 'br_ln47' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 7.25>
+ST_2 : Operation 28 [1/1] (1.82ns)   --->   "%tmp_1 = nbreadreq i1 @_ssdm_op_NbReadReq.axis.i64P128A, i64 %top_ask, i32 1" [threshold_src/simpleThreshold.cpp:48]   --->   Operation 28 'nbreadreq' 'tmp_1' <Predicate = (tmp)> <Delay = 1.82> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 2.48> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%br_ln48 = br i1 %tmp_1, void %if.end28, void %land.lhs.true12" [threshold_src/simpleThreshold.cpp:48]   --->   Operation 29 'br' 'br_ln48' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (1.82ns)   --->   "%tmp_2 = nbreadreq i1 @_ssdm_op_NbReadReq.axis.i64P128A, i64 %incoming_time, i32 1" [threshold_src/simpleThreshold.cpp:49]   --->   Operation 30 'nbreadreq' 'tmp_2' <Predicate = (tmp & tmp_1)> <Delay = 1.82> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 2.48> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%br_ln49 = br i1 %tmp_2, void %if.end28, void %land.lhs.true14" [threshold_src/simpleThreshold.cpp:49]   --->   Operation 31 'br' 'br_ln49' <Predicate = (tmp & tmp_1)> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (1.77ns)   --->   "%tmp_3 = nbreadreq i1 @_ssdm_op_NbReadReq.axis.i96P128A, i96 %incoming_meta, i32 1" [threshold_src/simpleThreshold.cpp:50]   --->   Operation 32 'nbreadreq' 'tmp_3' <Predicate = (tmp & tmp_1 & tmp_2)> <Delay = 1.77> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 2.10> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%br_ln50 = br i1 %tmp_3, void %if.end28, void %land.lhs.true16" [threshold_src/simpleThreshold.cpp:50]   --->   Operation 33 'br' 'br_ln50' <Predicate = (tmp & tmp_1 & tmp_2)> <Delay = 0.00>
+ST_2 : Operation 34 [2/2] (1.82ns)   --->   "%tmp_4 = nbwritereq i1 @_ssdm_op_NbWriteReq.axis.i64P128A, i64 %outgoing_order, i32 1" [threshold_src/simpleThreshold.cpp:51]   --->   Operation 34 'nbwritereq' 'tmp_4' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3)> <Delay = 1.82> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 2.48> <Adapter> <Opcode : 'read' 'write'>
+
+State 3 <SV = 2> <Delay = 3.65>
+ST_3 : Operation 35 [1/2] (1.82ns)   --->   "%tmp_4 = nbwritereq i1 @_ssdm_op_NbWriteReq.axis.i64P128A, i64 %outgoing_order, i32 1" [threshold_src/simpleThreshold.cpp:51]   --->   Operation 35 'nbwritereq' 'tmp_4' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3)> <Delay = 1.82> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 2.48> <Adapter> <Opcode : 'read' 'write'>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%br_ln51 = br i1 %tmp_4, void %if.end28, void %land.lhs.true18" [threshold_src/simpleThreshold.cpp:51]   --->   Operation 36 'br' 'br_ln51' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3)> <Delay = 0.00>
+ST_3 : Operation 37 [2/2] (1.82ns)   --->   "%tmp_5 = nbwritereq i1 @_ssdm_op_NbWriteReq.axis.i64P128A, i64 %outgoing_time, i32 1" [threshold_src/simpleThreshold.cpp:52]   --->   Operation 37 'nbwritereq' 'tmp_5' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4)> <Delay = 1.82> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 2.48> <Adapter> <Opcode : 'read' 'write'>
+
+State 4 <SV = 3> <Delay = 3.60>
+ST_4 : Operation 38 [1/2] (1.82ns)   --->   "%tmp_5 = nbwritereq i1 @_ssdm_op_NbWriteReq.axis.i64P128A, i64 %outgoing_time, i32 1" [threshold_src/simpleThreshold.cpp:52]   --->   Operation 38 'nbwritereq' 'tmp_5' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4)> <Delay = 1.82> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 2.48> <Adapter> <Opcode : 'read' 'write'>
+ST_4 : Operation 39 [1/1] (0.00ns)   --->   "%br_ln52 = br i1 %tmp_5, void %if.end28, void %land.lhs.true20" [threshold_src/simpleThreshold.cpp:52]   --->   Operation 39 'br' 'br_ln52' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4)> <Delay = 0.00>
+ST_4 : Operation 40 [2/2] (1.77ns)   --->   "%tmp_6 = nbwritereq i1 @_ssdm_op_NbWriteReq.axis.i96P128A, i96 %outgoing_meta, i32 1" [threshold_src/simpleThreshold.cpp:53]   --->   Operation 40 'nbwritereq' 'tmp_6' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4 & tmp_5)> <Delay = 1.77> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 2.10> <Adapter> <Opcode : 'read' 'write'>
+
+State 5 <SV = 4> <Delay = 6.16>
+ST_5 : Operation 41 [1/2] (1.77ns)   --->   "%tmp_6 = nbwritereq i1 @_ssdm_op_NbWriteReq.axis.i96P128A, i96 %outgoing_meta, i32 1" [threshold_src/simpleThreshold.cpp:53]   --->   Operation 41 'nbwritereq' 'tmp_6' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4 & tmp_5)> <Delay = 1.77> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 2.10> <Adapter> <Opcode : 'read' 'write'>
+ST_5 : Operation 42 [1/1] (0.00ns)   --->   "%br_ln47 = br i1 %tmp_6, void %if.end28, void %if.then" [threshold_src/simpleThreshold.cpp:47]   --->   Operation 42 'br' 'br_ln47' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4 & tmp_5)> <Delay = 0.00>
+ST_5 : Operation 43 [1/1] (0.48ns)   --->   "%top_bid_read = read i96 @_ssdm_op_Read.axis.volatile.i96P128A, i96 %top_bid" [threshold_src/simpleThreshold.cpp:55]   --->   Operation 43 'read' 'top_bid_read' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4 & tmp_5 & tmp_6)> <Delay = 0.48> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 2.10> <Adapter> <Opcode : 'read' 'write'>
+ST_5 : Operation 44 [1/1] (0.00ns)   --->   "%bid_price = trunc i96 %top_bid_read" [threshold_src/simpleThreshold.cpp:55]   --->   Operation 44 'trunc' 'bid_price' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4 & tmp_5 & tmp_6)> <Delay = 0.00>
+ST_5 : Operation 45 [1/1] (2.07ns)   --->   "%icmp_ln60 = icmp_ugt  i16 %bid_price, i16 7014" [threshold_src/simpleThreshold.cpp:60]   --->   Operation 45 'icmp' 'icmp_ln60' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4 & tmp_5 & tmp_6)> <Delay = 2.07> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 46 [1/1] (0.00ns)   --->   "%br_ln60 = br i1 %icmp_ln60, void %if.end, void %if.then23" [threshold_src/simpleThreshold.cpp:60]   --->   Operation 46 'br' 'br_ln60' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4 & tmp_5 & tmp_6)> <Delay = 0.00>
+ST_5 : Operation 47 [2/2] (1.82ns)   --->   "%write_ln61 = write void @_ssdm_op_Write.axis.volatile.i64P128A, i64 %outgoing_order, i64 2063728896" [threshold_src/simpleThreshold.cpp:61]   --->   Operation 47 'write' 'write_ln61' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4 & tmp_5 & tmp_6 & icmp_ln60)> <Delay = 1.82> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 2.48> <Adapter> <Opcode : 'read' 'write'>
+
+State 6 <SV = 5> <Delay = 4.42>
+ST_6 : Operation 48 [1/1] (0.51ns)   --->   "%top_ask_read = read i64 @_ssdm_op_Read.axis.volatile.i64P128A, i64 %top_ask" [threshold_src/simpleThreshold.cpp:56]   --->   Operation 48 'read' 'top_ask_read' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4 & tmp_5 & tmp_6)> <Delay = 0.51> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 2.48> <Adapter> <Opcode : 'read' 'write'>
+ST_6 : Operation 49 [1/1] (0.00ns)   --->   "%ask_price = trunc i64 %top_ask_read" [threshold_src/simpleThreshold.cpp:56]   --->   Operation 49 'trunc' 'ask_price' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4 & tmp_5 & tmp_6)> <Delay = 0.00>
+ST_6 : Operation 50 [1/1] (0.51ns)   --->   "%incoming_time_read = read i64 @_ssdm_op_Read.axis.volatile.i64P128A, i64 %incoming_time" [threshold_src/simpleThreshold.cpp:57]   --->   Operation 50 'read' 'incoming_time_read' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4 & tmp_5 & tmp_6)> <Delay = 0.51> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 2.48> <Adapter> <Opcode : 'read' 'write'>
+ST_6 : Operation 51 [1/1] (0.48ns)   --->   "%incoming_meta_read = read i96 @_ssdm_op_Read.axis.volatile.i96P128A, i96 %incoming_meta" [threshold_src/simpleThreshold.cpp:58]   --->   Operation 51 'read' 'incoming_meta_read' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4 & tmp_5 & tmp_6)> <Delay = 0.48> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 2.10> <Adapter> <Opcode : 'read' 'write'>
+ST_6 : Operation 52 [1/2] (1.82ns)   --->   "%write_ln61 = write void @_ssdm_op_Write.axis.volatile.i64P128A, i64 %outgoing_order, i64 2063728896" [threshold_src/simpleThreshold.cpp:61]   --->   Operation 52 'write' 'write_ln61' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4 & tmp_5 & tmp_6 & icmp_ln60)> <Delay = 1.82> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 2.48> <Adapter> <Opcode : 'read' 'write'>
+ST_6 : Operation 53 [2/2] (1.77ns)   --->   "%write_ln62 = write void @_ssdm_op_Write.axis.volatile.i96P128A, i96 %outgoing_meta, i96 %incoming_meta_read" [threshold_src/simpleThreshold.cpp:62]   --->   Operation 53 'write' 'write_ln62' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4 & tmp_5 & tmp_6 & icmp_ln60)> <Delay = 1.77> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 2.10> <Adapter> <Opcode : 'read' 'write'>
+ST_6 : Operation 54 [2/2] (1.82ns)   --->   "%write_ln63 = write void @_ssdm_op_Write.axis.volatile.i64P128A, i64 %outgoing_time, i64 %incoming_time_read" [threshold_src/simpleThreshold.cpp:63]   --->   Operation 54 'write' 'write_ln63' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4 & tmp_5 & tmp_6 & icmp_ln60)> <Delay = 1.82> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 2.48> <Adapter> <Opcode : 'read' 'write'>
+ST_6 : Operation 55 [1/1] (2.07ns)   --->   "%icmp_ln65 = icmp_ult  i16 %ask_price, i16 7014" [threshold_src/simpleThreshold.cpp:65]   --->   Operation 55 'icmp' 'icmp_ln65' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4 & tmp_5 & tmp_6)> <Delay = 2.07> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 56 [1/1] (0.00ns)   --->   "%br_ln65 = br i1 %icmp_ln65, void %if.end27, void %if.then26" [threshold_src/simpleThreshold.cpp:65]   --->   Operation 56 'br' 'br_ln65' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4 & tmp_5 & tmp_6)> <Delay = 0.00>
+ST_6 : Operation 57 [2/2] (1.82ns)   --->   "%write_ln66 = write void @_ssdm_op_Write.axis.volatile.i64P128A, i64 %outgoing_order, i64 72057596101656832" [threshold_src/simpleThreshold.cpp:66]   --->   Operation 57 'write' 'write_ln66' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4 & tmp_5 & tmp_6 & icmp_ln65)> <Delay = 1.82> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 2.48> <Adapter> <Opcode : 'read' 'write'>
+
+State 7 <SV = 6> <Delay = 1.82>
+ST_7 : Operation 58 [1/2] (1.77ns)   --->   "%write_ln62 = write void @_ssdm_op_Write.axis.volatile.i96P128A, i96 %outgoing_meta, i96 %incoming_meta_read" [threshold_src/simpleThreshold.cpp:62]   --->   Operation 58 'write' 'write_ln62' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4 & tmp_5 & tmp_6 & icmp_ln60)> <Delay = 1.77> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 2.10> <Adapter> <Opcode : 'read' 'write'>
+ST_7 : Operation 59 [1/2] (1.82ns)   --->   "%write_ln63 = write void @_ssdm_op_Write.axis.volatile.i64P128A, i64 %outgoing_time, i64 %incoming_time_read" [threshold_src/simpleThreshold.cpp:63]   --->   Operation 59 'write' 'write_ln63' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4 & tmp_5 & tmp_6 & icmp_ln60)> <Delay = 1.82> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 2.48> <Adapter> <Opcode : 'read' 'write'>
+ST_7 : Operation 60 [1/1] (0.00ns)   --->   "%br_ln64 = br void %if.end" [threshold_src/simpleThreshold.cpp:64]   --->   Operation 60 'br' 'br_ln64' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4 & tmp_5 & tmp_6 & icmp_ln60)> <Delay = 0.00>
+ST_7 : Operation 61 [1/2] (1.82ns)   --->   "%write_ln66 = write void @_ssdm_op_Write.axis.volatile.i64P128A, i64 %outgoing_order, i64 72057596101656832" [threshold_src/simpleThreshold.cpp:66]   --->   Operation 61 'write' 'write_ln66' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4 & tmp_5 & tmp_6 & icmp_ln65)> <Delay = 1.82> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 2.48> <Adapter> <Opcode : 'read' 'write'>
+ST_7 : Operation 62 [2/2] (1.77ns)   --->   "%write_ln67 = write void @_ssdm_op_Write.axis.volatile.i96P128A, i96 %outgoing_meta, i96 %incoming_meta_read" [threshold_src/simpleThreshold.cpp:67]   --->   Operation 62 'write' 'write_ln67' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4 & tmp_5 & tmp_6 & icmp_ln65)> <Delay = 1.77> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 2.10> <Adapter> <Opcode : 'read' 'write'>
+ST_7 : Operation 63 [2/2] (1.82ns)   --->   "%write_ln68 = write void @_ssdm_op_Write.axis.volatile.i64P128A, i64 %outgoing_time, i64 %incoming_time_read" [threshold_src/simpleThreshold.cpp:68]   --->   Operation 63 'write' 'write_ln68' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4 & tmp_5 & tmp_6 & icmp_ln65)> <Delay = 1.82> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 2.48> <Adapter> <Opcode : 'read' 'write'>
+ST_7 : Operation 64 [1/1] (0.00ns)   --->   "%br_ln70 = br void %if.end28" [threshold_src/simpleThreshold.cpp:70]   --->   Operation 64 'br' 'br_ln70' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4 & tmp_5 & tmp_6)> <Delay = 0.00>
+
+State 8 <SV = 7> <Delay = 1.82>
+ST_8 : Operation 65 [1/2] (1.77ns)   --->   "%write_ln67 = write void @_ssdm_op_Write.axis.volatile.i96P128A, i96 %outgoing_meta, i96 %incoming_meta_read" [threshold_src/simpleThreshold.cpp:67]   --->   Operation 65 'write' 'write_ln67' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4 & tmp_5 & tmp_6 & icmp_ln65)> <Delay = 1.77> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 2.10> <Adapter> <Opcode : 'read' 'write'>
+ST_8 : Operation 66 [1/2] (1.82ns)   --->   "%write_ln68 = write void @_ssdm_op_Write.axis.volatile.i64P128A, i64 %outgoing_time, i64 %incoming_time_read" [threshold_src/simpleThreshold.cpp:68]   --->   Operation 66 'write' 'write_ln68' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4 & tmp_5 & tmp_6 & icmp_ln65)> <Delay = 1.82> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 2.48> <Adapter> <Opcode : 'read' 'write'>
+ST_8 : Operation 67 [1/1] (0.00ns)   --->   "%br_ln69 = br void %if.end27" [threshold_src/simpleThreshold.cpp:69]   --->   Operation 67 'br' 'br_ln69' <Predicate = (tmp & tmp_1 & tmp_2 & tmp_3 & tmp_4 & tmp_5 & tmp_6 & icmp_ln65)> <Delay = 0.00>
+ST_8 : Operation 68 [1/1] (0.00ns)   --->   "%ret_ln71 = ret" [threshold_src/simpleThreshold.cpp:71]   --->   Operation 68 'ret' 'ret_ln71' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.776ns
+The critical path consists of the following:
+	axis request operation ('tmp', threshold_src/simpleThreshold.cpp:47) on port 'top_bid' (threshold_src/simpleThreshold.cpp:47) [25]  (1.776 ns)
+
+ <State 2>: 7.256ns
+The critical path consists of the following:
+	axis request operation ('tmp_1', threshold_src/simpleThreshold.cpp:48) on port 'top_ask' (threshold_src/simpleThreshold.cpp:48) [28]  (1.827 ns)
+	axis request operation ('tmp_2', threshold_src/simpleThreshold.cpp:49) on port 'incoming_time' (threshold_src/simpleThreshold.cpp:49) [31]  (1.827 ns)
+	axis request operation ('tmp_3', threshold_src/simpleThreshold.cpp:50) on port 'incoming_meta' (threshold_src/simpleThreshold.cpp:50) [34]  (1.776 ns)
+	axis request operation ('tmp_4', threshold_src/simpleThreshold.cpp:51) on port 'outgoing_order' (threshold_src/simpleThreshold.cpp:51) [37]  (1.827 ns)
+
+ <State 3>: 3.654ns
+The critical path consists of the following:
+	axis request operation ('tmp_4', threshold_src/simpleThreshold.cpp:51) on port 'outgoing_order' (threshold_src/simpleThreshold.cpp:51) [37]  (1.827 ns)
+	axis request operation ('tmp_5', threshold_src/simpleThreshold.cpp:52) on port 'outgoing_time' (threshold_src/simpleThreshold.cpp:52) [40]  (1.827 ns)
+
+ <State 4>: 3.603ns
+The critical path consists of the following:
+	axis request operation ('tmp_5', threshold_src/simpleThreshold.cpp:52) on port 'outgoing_time' (threshold_src/simpleThreshold.cpp:52) [40]  (1.827 ns)
+	axis request operation ('tmp_6', threshold_src/simpleThreshold.cpp:53) on port 'outgoing_meta' (threshold_src/simpleThreshold.cpp:53) [43]  (1.776 ns)
+
+ <State 5>: 6.167ns
+The critical path consists of the following:
+	axis request operation ('tmp_6', threshold_src/simpleThreshold.cpp:53) on port 'outgoing_meta' (threshold_src/simpleThreshold.cpp:53) [43]  (1.776 ns)
+	axis read operation ('top_bid_read', threshold_src/simpleThreshold.cpp:55) on port 'top_bid' (threshold_src/simpleThreshold.cpp:55) [46]  (0.487 ns)
+	'icmp' operation 1 bit ('icmp_ln60', threshold_src/simpleThreshold.cpp:60) [52]  (2.077 ns)
+	blocking operation 1.827 ns on control path)
+
+ <State 6>: 4.422ns
+The critical path consists of the following:
+	axis read operation ('top_ask_read', threshold_src/simpleThreshold.cpp:56) on port 'top_ask' (threshold_src/simpleThreshold.cpp:56) [48]  (0.518 ns)
+	'icmp' operation 1 bit ('icmp_ln65', threshold_src/simpleThreshold.cpp:65) [60]  (2.077 ns)
+	blocking operation 1.827 ns on control path)
+
+ <State 7>: 1.827ns
+The critical path consists of the following:
+	axis write operation ('write_ln66', threshold_src/simpleThreshold.cpp:66) on port 'outgoing_order' (threshold_src/simpleThreshold.cpp:66) [63]  (1.827 ns)
+
+ <State 8>: 1.827ns
+The critical path consists of the following:
+	axis write operation ('write_ln68', threshold_src/simpleThreshold.cpp:68) on port 'outgoing_time' (threshold_src/simpleThreshold.cpp:68) [65]  (1.827 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,88 @@
+fast_src/fast_protocol.cpp:38:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=rxPath_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+fast_src/fast_protocol.cpp:49:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=rxPath_XLX_SEP_ PragmaOptions=variable=encoded_message complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=encoded_message complete dim=1
+        ^
+fast_src/fast_protocol.cpp:51:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=rxPath_XLX_SEP_ PragmaOptions=variable=encoded_message complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=encoded_message complete dim=1
+        ^
+fast_src/fast_protocol.cpp:117:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=rxPath_XLX_SEP_ PragmaOptions=variable=encoded_message complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=encoded_message complete dim=1
+        ^
+fast_src/fast_protocol.cpp:240:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=rxPath_XLX_SEP_ PragmaOptions=variable=encoded_message complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=encoded_message complete dim=1
+        ^
+fast_src/fast_protocol.cpp:355:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=txPath_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+fast_src/fast_protocol.cpp:392:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=txPath_XLX_SEP_ PragmaOptions=variable=encoded_message complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=encoded_message complete dim=1
+        ^
+C:/Users/ruuud/spring2025/cse145/AAAAHHHH/ECE1373_2016_hft_on_fpga/src/build_fast_core.tcl:16:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=fast_protocol_XLX_SEP_ PragmaOptions=name=fast_protocol_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=fast_protocol
+        ^
+fast_src/fast_protocol.cpp:517:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fast_protocol_XLX_SEP_ PragmaOptions=ap_ctrl_none port=return_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE ap_ctrl_none port=return
+        ^
+fast_src/fast_protocol.cpp:518:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fast_protocol_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DATAFLOW
+        ^
+fast_src/fast_protocol.cpp:522:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fast_protocol_XLX_SEP_ PragmaOptions=axis port=lbRxDataIn_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=lbRxDataIn
+        ^
+fast_src/fast_protocol.cpp:525:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=aggregate_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fast_protocol_XLX_SEP_ PragmaOptions=variable=lbRxMetadataIn compact=bit_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS aggregate variable=lbRxMetadataIn compact=bit
+        ^
+fast_src/fast_protocol.cpp:526:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fast_protocol_XLX_SEP_ PragmaOptions=axis port=lbRxMetadataIn_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=lbRxMetadataIn
+        ^
+fast_src/fast_protocol.cpp:528:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fast_protocol_XLX_SEP_ PragmaOptions=axis port=lbRequestPortOpenOut_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=lbRequestPortOpenOut
+        ^
+fast_src/fast_protocol.cpp:529:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fast_protocol_XLX_SEP_ PragmaOptions=axis port=lbPortOpenReplyIn_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=lbPortOpenReplyIn
+        ^
+fast_src/fast_protocol.cpp:530:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fast_protocol_XLX_SEP_ PragmaOptions=axis port=lbTxDataOut_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=lbTxDataOut
+        ^
+fast_src/fast_protocol.cpp:532:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=aggregate_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fast_protocol_XLX_SEP_ PragmaOptions=variable=lbTxMetadataOut compact=bit_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS aggregate variable=lbTxMetadataOut compact=bit
+        ^
+fast_src/fast_protocol.cpp:533:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fast_protocol_XLX_SEP_ PragmaOptions=axis port=lbTxMetadataOut_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=lbTxMetadataOut
+        ^
+fast_src/fast_protocol.cpp:535:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fast_protocol_XLX_SEP_ PragmaOptions=axis port=lbTxLengthOut_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=lbTxLengthOut
+        ^
+fast_src/fast_protocol.cpp:536:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fast_protocol_XLX_SEP_ PragmaOptions=axis port=tagsIn_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=tagsIn
+        ^
+fast_src/fast_protocol.cpp:537:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fast_protocol_XLX_SEP_ PragmaOptions=axis port=tagsOut_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=tagsOut
+        ^
+fast_src/fast_protocol.cpp:541:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fast_protocol_XLX_SEP_ PragmaOptions=axis port=metadata_to_book_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=metadata_to_book
+        ^
+fast_src/fast_protocol.cpp:542:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fast_protocol_XLX_SEP_ PragmaOptions=axis port=metadata_from_book_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=metadata_from_book
+        ^
+fast_src/fast_protocol.cpp:543:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fast_protocol_XLX_SEP_ PragmaOptions=axis port=time_to_book_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=time_to_book
+        ^
+fast_src/fast_protocol.cpp:544:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fast_protocol_XLX_SEP_ PragmaOptions=axis port=time_from_book_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=time_from_book
+        ^
+fast_src/fast_protocol.cpp:547:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=aggregate_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fast_protocol_XLX_SEP_ PragmaOptions=variable=order_to_book compact=bit_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS aggregate variable=order_to_book compact=bit
+        ^
+fast_src/fast_protocol.cpp:548:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fast_protocol_XLX_SEP_ PragmaOptions=axis port=order_to_book_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=order_to_book
+        ^
+fast_src/fast_protocol.cpp:550:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=aggregate_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fast_protocol_XLX_SEP_ PragmaOptions=variable=order_from_book compact=bit_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS aggregate variable=order_from_book compact=bit
+        ^
+fast_src/fast_protocol.cpp:551:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fast_protocol_XLX_SEP_ PragmaOptions=axis port=order_from_book_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=order_from_book
+        ^
+29 warnings generated.

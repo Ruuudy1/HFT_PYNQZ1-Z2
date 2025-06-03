@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun Jun  1 15:34:59 2025
+# Process ID         : 20320
+# Current directory  : C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_time_converter_out_0_synth_1
+# Command line       : vivado.exe -log design_1_time_converter_out_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_time_converter_out_0.tcl
+# Log file           : C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_time_converter_out_0_synth_1/design_1_time_converter_out_0.vds
+# Journal file       : C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_time_converter_out_0_synth_1\vivado.jou
+# Running On         : RudyAsus
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 9 185H
+# CPU Frequency      : 3072 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 22
+# Host memory        : 33736 MB
+# Swap memory        : 18253 MB
+# Total Virtual      : 51989 MB
+# Available Virtual  : 9738 MB
+#-----------------------------------------------------------
+source design_1_time_converter_out_0.tcl -notrace

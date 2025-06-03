@@ -1,0 +1,183 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_protocol.cpp:38:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rxPath" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_protocol.cpp:49:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rxPath" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=encoded_message complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_protocol.cpp:51:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rxPath" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=encoded_message complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_protocol.cpp:117:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rxPath" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=encoded_message complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_protocol.cpp:240:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rxPath" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=encoded_message complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_protocol.cpp:355:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="txPath" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_protocol.cpp:392:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="txPath" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=encoded_message complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/ruuud/spring2025/cse145/AAAAHHHH/ECE1373_2016_hft_on_fpga/src/build_fast_core.tcl:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="fast_protocol" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=fast_protocol" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_protocol.cpp:517:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fast_protocol" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_protocol.cpp:518:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fast_protocol" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_protocol.cpp:522:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fast_protocol" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=lbRxDataIn" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_protocol.cpp:525:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fast_protocol" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=lbRxMetadataIn compact=bit" ARG_PragmaType="aggregate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_protocol.cpp:526:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fast_protocol" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=lbRxMetadataIn" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_protocol.cpp:528:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fast_protocol" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=lbRequestPortOpenOut" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_protocol.cpp:529:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fast_protocol" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=lbPortOpenReplyIn" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_protocol.cpp:530:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fast_protocol" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=lbTxDataOut" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_protocol.cpp:532:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fast_protocol" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=lbTxMetadataOut compact=bit" ARG_PragmaType="aggregate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_protocol.cpp:533:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fast_protocol" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=lbTxMetadataOut" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_protocol.cpp:535:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fast_protocol" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=lbTxLengthOut" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_protocol.cpp:536:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fast_protocol" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=tagsIn" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_protocol.cpp:537:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fast_protocol" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=tagsOut" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_protocol.cpp:541:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fast_protocol" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=metadata_to_book" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_protocol.cpp:542:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fast_protocol" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=metadata_from_book" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_protocol.cpp:543:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fast_protocol" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=time_to_book" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_protocol.cpp:544:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fast_protocol" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=time_from_book" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_protocol.cpp:547:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fast_protocol" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=order_to_book compact=bit" ARG_PragmaType="aggregate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_protocol.cpp:548:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fast_protocol" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=order_to_book" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_protocol.cpp:550:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fast_protocol" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=order_from_book compact=bit" ARG_PragmaType="aggregate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_protocol.cpp:551:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fast_protocol" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=order_from_book" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_encoder.cpp:25:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="encode_fast_message" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=encoded_message complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_decoder.cpp:24:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decode_fast_message" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=encoded_message complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="fast_src/fast_protocol.cpp:429:31" msg_body="Loop 'VITIS_LOOP_429_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_429_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="fast_src/fast_protocol.cpp:409:31" msg_body="Loop 'VITIS_LOOP_409_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_409_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="fast_src/fast_protocol.cpp:391:46" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="fast_src/fast_protocol.cpp:192:31" msg_body="Loop 'VITIS_LOOP_192_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_192_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="fast_src/fast_protocol.cpp:119:20" msg_body="Loop 'VITIS_LOOP_119_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_119_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="fast_src/fast_protocol.cpp:116:41" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="fast_src/fast_protocol.cpp:310:31" msg_body="Loop 'VITIS_LOOP_310_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_310_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="fast_src/fast_protocol.cpp:242:20" msg_body="Loop 'VITIS_LOOP_242_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_242_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="fast_src/fast_protocol.cpp:239:41" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="fast_src/fast_protocol.cpp:354:0" msg_body="Unrolling loop 'VITIS_LOOP_429_2' (fast_src/fast_protocol.cpp:429:31) in function 'txPath' completely with a factor of 8">
+        <args Factor="8" LoopLoc="fast_src/fast_protocol.cpp:429:31" LoopName="VITIS_LOOP_429_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="fast_src/fast_protocol.cpp:354:0" msg_body="Unrolling loop 'VITIS_LOOP_409_1' (fast_src/fast_protocol.cpp:409:31) in function 'txPath' completely with a factor of 4">
+        <args Factor="4" LoopLoc="fast_src/fast_protocol.cpp:409:31" LoopName="VITIS_LOOP_409_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="fast_src/fast_protocol.cpp:354:0" msg_body="Unrolling loop 'anonymous' (fast_src/fast_protocol.cpp:391:46) in function 'txPath' completely with a factor of 15">
+        <args Factor="15" LoopLoc="fast_src/fast_protocol.cpp:391:46" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="fast_src/fast_protocol.cpp:354:0" msg_body="Unrolling loop 'anonymous' () in function 'txPath' completely with a factor of 1">
+        <args Factor="1" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="fast_src/fast_protocol.cpp:37:0" msg_body="Unrolling loop 'VITIS_LOOP_192_2' (fast_src/fast_protocol.cpp:192:31) in function 'rxPath' completely with a factor of 4">
+        <args Factor="4" LoopLoc="fast_src/fast_protocol.cpp:192:31" LoopName="VITIS_LOOP_192_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="fast_src/fast_protocol.cpp:37:0" msg_body="Unrolling loop 'VITIS_LOOP_119_1' (fast_src/fast_protocol.cpp:119:20) in function 'rxPath' completely with a factor of 8">
+        <args Factor="8" LoopLoc="fast_src/fast_protocol.cpp:119:20" LoopName="VITIS_LOOP_119_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="fast_src/fast_protocol.cpp:37:0" msg_body="Unrolling loop 'anonymous' (fast_src/fast_protocol.cpp:116:41) in function 'rxPath' completely with a factor of 15">
+        <args Factor="15" LoopLoc="fast_src/fast_protocol.cpp:116:41" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="fast_src/fast_protocol.cpp:37:0" msg_body="Unrolling loop 'anonymous' () in function 'rxPath' completely with a factor of 1">
+        <args Factor="1" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="fast_src/fast_protocol.cpp:37:0" msg_body="Unrolling loop 'VITIS_LOOP_310_4' (fast_src/fast_protocol.cpp:310:31) in function 'rxPath' completely with a factor of 4">
+        <args Factor="4" LoopLoc="fast_src/fast_protocol.cpp:310:31" LoopName="VITIS_LOOP_310_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="fast_src/fast_protocol.cpp:37:0" msg_body="Unrolling loop 'VITIS_LOOP_242_3' (fast_src/fast_protocol.cpp:242:20) in function 'rxPath' completely with a factor of 8">
+        <args Factor="8" LoopLoc="fast_src/fast_protocol.cpp:242:20" LoopName="VITIS_LOOP_242_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="fast_src/fast_protocol.cpp:37:0" msg_body="Unrolling loop 'anonymous' (fast_src/fast_protocol.cpp:239:41) in function 'rxPath' completely with a factor of 15">
+        <args Factor="15" LoopLoc="fast_src/fast_protocol.cpp:239:41" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="fast_src/fast_protocol.cpp:37:0" msg_body="Inlining function 'ap_uint&lt;8&gt;::ap_uint(double)' into 'rxPath(hls::stream&lt;axiWord, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;16&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;64&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;64&gt;, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;)'">
+        <args Callee="ap_uint&lt;8&gt;::ap_uint(double)" Callee-DebugLoc="File {C:/Xilinx/Vitis/2024.2/common/technology/autopilot\ap_int.h} Line 298 Column 0" Caller="rxPath(hls::stream&lt;axiWord, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;16&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;64&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;64&gt;, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;)" Caller-DebugLoc="File fast_src/fast_protocol.cpp Line 37 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="fast_src/fast_protocol.cpp:354:0" msg_body="Inlining function 'ap_uint&lt;8&gt;::ap_uint(double)' into 'txPath(hls::stream&lt;metadata, 0&gt;&amp;, hls::stream&lt;axiWord, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;16&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;64&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;64&gt;, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;)'">
+        <args Callee="ap_uint&lt;8&gt;::ap_uint(double)" Callee-DebugLoc="File {C:/Xilinx/Vitis/2024.2/common/technology/autopilot\ap_int.h} Line 298 Column 0" Caller="txPath(hls::stream&lt;metadata, 0&gt;&amp;, hls::stream&lt;axiWord, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;16&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;64&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;64&gt;, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;)" Caller-DebugLoc="File fast_src/fast_protocol.cpp Line 354 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="fast_src/fast_protocol.cpp:116:19" msg_body="Applying array_partition to 'encoded_message': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="encoded_message"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="fast_src/fast_protocol.cpp:239:19" msg_body="Applying array_partition to 'encoded_message149': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="encoded_message149"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="fast_src/fast_protocol.cpp:391:24" msg_body="Applying array_partition to 'encoded_message': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="encoded_message"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="fast_src/fast_protocol.cpp:516:0" msg_body="Aggregating axis (hls::stream) variable 'lbRxMetadataIn' with compact=bit mode in 96-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="96" HwTyName="axis (hls::stream)" Name="lbRxMetadataIn"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="fast_src/fast_protocol.cpp:516:0" msg_body="Aggregating axis (hls::stream) variable 'lbTxMetadataOut' with compact=bit mode in 96-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="96" HwTyName="axis (hls::stream)" Name="lbTxMetadataOut"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="fast_src/fast_protocol.cpp:516:0" msg_body="Aggregating axis (hls::stream) variable 'order_to_book' with compact=bit mode in 64-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="64" HwTyName="axis (hls::stream)" Name="order_to_book"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="fast_src/fast_protocol.cpp:516:0" msg_body="Aggregating axis (hls::stream) variable 'order_from_book' with compact=bit mode in 64-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="64" HwTyName="axis (hls::stream)" Name="order_from_book"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

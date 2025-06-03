@@ -1,0 +1,158 @@
+
+
+================================================================
+== Vitis HLS Report for 'fast_protocol'
+================================================================
+* Date:           Thu May 29 06:17:20 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        fast_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+-----------+------------+
+    |  Clock |  Target  | Estimated | Uncertainty|
+    +--------+----------+-----------+------------+
+    |ap_clk  |  25.00 ns|  17.495 ns|     6.75 ns|
+    +--------+----------+-----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        5|        5|  0.125 us|  0.125 us|    4|    4|  dataflow|
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +-----------+--------+---------+---------+----------+----------+-----+-----+----------+
+        |           |        |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+        |  Instance | Module |   min   |   max   |    min   |    max   | min | max |   Type   |
+        +-----------+--------+---------+---------+----------+----------+-----+-----+----------+
+        |txPath_U0  |txPath  |        5|        5|  0.125 us|  0.125 us|    4|    4|  yes(flp)|
+        |rxPath_U0  |rxPath  |        4|        4|  0.100 us|  0.100 us|    3|    3|  yes(flp)|
+        +-----------+--------+---------+---------+----------+----------+-----+-----+----------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       -|      -|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        0|    2|     596|   1995|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|      -|    -|
+|Register         |        -|    -|       -|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    2|     596|   1995|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|   ~0|      ~0|      3|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-----------+--------+---------+----+-----+------+-----+
+    |  Instance | Module | BRAM_18K| DSP|  FF |  LUT | URAM|
+    +-----------+--------+---------+----+-----+------+-----+
+    |rxPath_U0  |rxPath  |        0|   2|  368|  1165|    0|
+    |txPath_U0  |txPath  |        0|   0|  228|   830|    0|
+    +-----------+--------+---------+----+-----+------+-----+
+    |Total      |        |        0|   2|  596|  1995|    0|
+    +-----------+--------+---------+----+-----+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------------+-----+-----+--------------+----------------------+--------------+
+|          RTL Ports          | Dir | Bits|   Protocol   |     Source Object    |    C Type    |
++-----------------------------+-----+-----+--------------+----------------------+--------------+
+|lbRxDataIn_TDATA             |   in|  128|          axis|            lbRxDataIn|       pointer|
+|lbRxDataIn_TVALID            |   in|    1|          axis|            lbRxDataIn|       pointer|
+|lbRxDataIn_TREADY            |  out|    1|          axis|            lbRxDataIn|       pointer|
+|lbRxMetadataIn_TDATA         |   in|   96|          axis|        lbRxMetadataIn|       pointer|
+|lbRxMetadataIn_TVALID        |   in|    1|          axis|        lbRxMetadataIn|       pointer|
+|lbRxMetadataIn_TREADY        |  out|    1|          axis|        lbRxMetadataIn|       pointer|
+|lbRequestPortOpenOut_TDATA   |  out|   16|          axis|  lbRequestPortOpenOut|       pointer|
+|lbRequestPortOpenOut_TVALID  |  out|    1|          axis|  lbRequestPortOpenOut|       pointer|
+|lbRequestPortOpenOut_TREADY  |   in|    1|          axis|  lbRequestPortOpenOut|       pointer|
+|lbPortOpenReplyIn_TDATA      |   in|    8|          axis|     lbPortOpenReplyIn|       pointer|
+|lbPortOpenReplyIn_TVALID     |   in|    1|          axis|     lbPortOpenReplyIn|       pointer|
+|lbPortOpenReplyIn_TREADY     |  out|    1|          axis|     lbPortOpenReplyIn|       pointer|
+|lbTxDataOut_TDATA            |  out|  128|          axis|           lbTxDataOut|       pointer|
+|lbTxDataOut_TVALID           |  out|    1|          axis|           lbTxDataOut|       pointer|
+|lbTxDataOut_TREADY           |   in|    1|          axis|           lbTxDataOut|       pointer|
+|lbTxMetadataOut_TDATA        |  out|   96|          axis|       lbTxMetadataOut|       pointer|
+|lbTxMetadataOut_TVALID       |  out|    1|          axis|       lbTxMetadataOut|       pointer|
+|lbTxMetadataOut_TREADY       |   in|    1|          axis|       lbTxMetadataOut|       pointer|
+|lbTxLengthOut_TDATA          |  out|   16|          axis|         lbTxLengthOut|       pointer|
+|lbTxLengthOut_TVALID         |  out|    1|          axis|         lbTxLengthOut|       pointer|
+|lbTxLengthOut_TREADY         |   in|    1|          axis|         lbTxLengthOut|       pointer|
+|tagsIn_TDATA                 |   in|   64|          axis|                tagsIn|       pointer|
+|tagsIn_TVALID                |   in|    1|          axis|                tagsIn|       pointer|
+|tagsIn_TREADY                |  out|    1|          axis|                tagsIn|       pointer|
+|tagsOut_TDATA                |  out|   64|          axis|               tagsOut|       pointer|
+|tagsOut_TVALID               |  out|    1|          axis|               tagsOut|       pointer|
+|tagsOut_TREADY               |   in|    1|          axis|               tagsOut|       pointer|
+|metadata_to_book_TDATA       |  out|  128|          axis|      metadata_to_book|       pointer|
+|metadata_to_book_TVALID      |  out|    1|          axis|      metadata_to_book|       pointer|
+|metadata_to_book_TREADY      |   in|    1|          axis|      metadata_to_book|       pointer|
+|metadata_from_book_TDATA     |   in|  128|          axis|    metadata_from_book|       pointer|
+|metadata_from_book_TVALID    |   in|    1|          axis|    metadata_from_book|       pointer|
+|metadata_from_book_TREADY    |  out|    1|          axis|    metadata_from_book|       pointer|
+|time_to_book_TDATA           |  out|   64|          axis|          time_to_book|       pointer|
+|time_to_book_TVALID          |  out|    1|          axis|          time_to_book|       pointer|
+|time_to_book_TREADY          |   in|    1|          axis|          time_to_book|       pointer|
+|time_from_book_TDATA         |   in|   64|          axis|        time_from_book|       pointer|
+|time_from_book_TVALID        |   in|    1|          axis|        time_from_book|       pointer|
+|time_from_book_TREADY        |  out|    1|          axis|        time_from_book|       pointer|
+|order_to_book_TDATA          |  out|   64|          axis|         order_to_book|       pointer|
+|order_to_book_TVALID         |  out|    1|          axis|         order_to_book|       pointer|
+|order_to_book_TREADY         |   in|    1|          axis|         order_to_book|       pointer|
+|order_from_book_TDATA        |   in|   64|          axis|       order_from_book|       pointer|
+|order_from_book_TVALID       |   in|    1|          axis|       order_from_book|       pointer|
+|order_from_book_TREADY       |  out|    1|          axis|       order_from_book|       pointer|
+|ap_clk                       |   in|    1|  ap_ctrl_none|         fast_protocol|  return value|
+|ap_rst_n                     |   in|    1|  ap_ctrl_none|         fast_protocol|  return value|
++-----------------------------+-----+-----+--------------+----------------------+--------------+
+

@@ -1,0 +1,1311 @@
+<profile>
+    <ReportVersion>
+        <Version>2024.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynq</ProductFamily>
+        <Part>xc7z020-clg484-1</Part>
+        <TopModelName>fast_protocol</TopModelName>
+        <TargetClockPeriod>25.00</TargetClockPeriod>
+        <ClockUncertainty>6.75</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>dataflow</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>17.495</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>5</Best-caseLatency>
+            <Average-caseLatency>5</Average-caseLatency>
+            <Worst-caseLatency>5</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0.125 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0.125 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>0.125 us</Worst-caseRealTimeLatency>
+            <DataflowPipelineThroughput>4</DataflowPipelineThroughput>
+            <Interval-min>4</Interval-min>
+            <Interval-max>4</Interval-max>
+        </SummaryOfOverallLatency>
+        <SummaryOfViolations>
+            <IssueType>-</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>fast_src/fast_protocol.cpp:518</SourceLocation>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>0</BRAM_18K>
+            <DSP>2</DSP>
+            <FF>596</FF>
+            <LUT>1995</LUT>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>280</BRAM_18K>
+            <DSP>220</DSP>
+            <FF>106400</FF>
+            <LUT>53200</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>lbRxDataIn_TDATA</name>
+            <Object>lbRxDataIn</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>128</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>lbRxDataIn_TVALID</name>
+            <Object>lbRxDataIn</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>lbRxDataIn_TREADY</name>
+            <Object>lbRxDataIn</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>lbRxMetadataIn_TDATA</name>
+            <Object>lbRxMetadataIn</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>96</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>lbRxMetadataIn_TVALID</name>
+            <Object>lbRxMetadataIn</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>lbRxMetadataIn_TREADY</name>
+            <Object>lbRxMetadataIn</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>lbRequestPortOpenOut_TDATA</name>
+            <Object>lbRequestPortOpenOut</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>lbRequestPortOpenOut_TVALID</name>
+            <Object>lbRequestPortOpenOut</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>lbRequestPortOpenOut_TREADY</name>
+            <Object>lbRequestPortOpenOut</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>lbPortOpenReplyIn_TDATA</name>
+            <Object>lbPortOpenReplyIn</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>lbPortOpenReplyIn_TVALID</name>
+            <Object>lbPortOpenReplyIn</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>lbPortOpenReplyIn_TREADY</name>
+            <Object>lbPortOpenReplyIn</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>lbTxDataOut_TDATA</name>
+            <Object>lbTxDataOut</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>128</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>lbTxDataOut_TVALID</name>
+            <Object>lbTxDataOut</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>lbTxDataOut_TREADY</name>
+            <Object>lbTxDataOut</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>lbTxMetadataOut_TDATA</name>
+            <Object>lbTxMetadataOut</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>96</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>lbTxMetadataOut_TVALID</name>
+            <Object>lbTxMetadataOut</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>lbTxMetadataOut_TREADY</name>
+            <Object>lbTxMetadataOut</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>lbTxLengthOut_TDATA</name>
+            <Object>lbTxLengthOut</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>lbTxLengthOut_TVALID</name>
+            <Object>lbTxLengthOut</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>lbTxLengthOut_TREADY</name>
+            <Object>lbTxLengthOut</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>tagsIn_TDATA</name>
+            <Object>tagsIn</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>tagsIn_TVALID</name>
+            <Object>tagsIn</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>tagsIn_TREADY</name>
+            <Object>tagsIn</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>tagsOut_TDATA</name>
+            <Object>tagsOut</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>tagsOut_TVALID</name>
+            <Object>tagsOut</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>tagsOut_TREADY</name>
+            <Object>tagsOut</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>metadata_to_book_TDATA</name>
+            <Object>metadata_to_book</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>128</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>metadata_to_book_TVALID</name>
+            <Object>metadata_to_book</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>metadata_to_book_TREADY</name>
+            <Object>metadata_to_book</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>metadata_from_book_TDATA</name>
+            <Object>metadata_from_book</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>128</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>metadata_from_book_TVALID</name>
+            <Object>metadata_from_book</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>metadata_from_book_TREADY</name>
+            <Object>metadata_from_book</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>time_to_book_TDATA</name>
+            <Object>time_to_book</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>time_to_book_TVALID</name>
+            <Object>time_to_book</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>time_to_book_TREADY</name>
+            <Object>time_to_book</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>time_from_book_TDATA</name>
+            <Object>time_from_book</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>time_from_book_TVALID</name>
+            <Object>time_from_book</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>time_from_book_TREADY</name>
+            <Object>time_from_book</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>order_to_book_TDATA</name>
+            <Object>order_to_book</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>order_to_book_TVALID</name>
+            <Object>order_to_book</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>order_to_book_TREADY</name>
+            <Object>order_to_book</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>order_from_book_TDATA</name>
+            <Object>order_from_book</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>order_from_book_TVALID</name>
+            <Object>order_from_book</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>order_from_book_TREADY</name>
+            <Object>order_from_book</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>fast_protocol</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst_n</name>
+            <Object>fast_protocol</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="3">
+            <ModuleName>fast_protocol</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>txPath_U0</InstName>
+                    <ModuleName>txPath</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>84</ID>
+                    <BindInstances>lbTxLengthOut_TDATA_int_regslice select_ln400_fu_559_p3 select_ln400_1_fu_566_p3 message_offset_fu_387_p3 icmp_ln415_fu_405_p2 select_ln417_2_fu_411_p3 select_ln417_fu_576_p3 select_ln417_1_fu_583_p3 empty_fu_589_p3 empty_16_fu_596_p3 message_offset_1_fu_419_p3 triggered_fu_603_p2 icmp_ln415_1_fu_437_p2 triggered_1_fu_618_p2 icmp_ln417_fu_623_p2 icmp_ln417_1_fu_628_p2 xor_ln415_fu_633_p2 and_ln415_fu_638_p2 or_ln417_fu_643_p2 or_ln417_1_fu_649_p2 empty_17_fu_655_p3 and_ln417_fu_663_p2 empty_18_fu_669_p3 and_ln417_1_fu_676_p2 empty_19_fu_682_p3 sparsemux_9_3_4_1_1_U51 icmp_ln415_2_fu_726_p2 triggered_2_fu_731_p2 icmp_ln417_2_fu_737_p2 and_ln417_2_fu_743_p2 empty_20_fu_749_p3 icmp_ln417_3_fu_756_p2 icmp_ln417_4_fu_762_p2 xor_ln415_1_fu_768_p2 or_ln417_2_fu_774_p2 or_ln417_3_fu_780_p2 or_ln417_4_fu_786_p2 empty_21_fu_792_p3 and_ln417_3_fu_800_p2 empty_22_fu_806_p3 and_ln417_4_fu_813_p2 empty_23_fu_819_p3 sparsemux_11_4_4_1_1_x_U52 icmp_ln415_3_fu_869_p2 or_ln415_fu_874_p2 icmp_ln417_5_fu_880_p2 and_ln417_5_fu_886_p2 empty_24_fu_892_p3 icmp_ln417_6_fu_899_p2 and_ln417_6_fu_905_p2 empty_25_fu_911_p3 icmp_ln417_7_fu_918_p2 icmp_ln417_8_fu_924_p2 xor_ln415_2_fu_930_p2 or_ln417_5_fu_936_p2 or_ln417_6_fu_942_p2 or_ln417_7_fu_948_p2 or_ln417_8_fu_954_p2 empty_26_fu_960_p3 and_ln417_7_fu_968_p2 empty_27_fu_974_p3 and_ln417_8_fu_981_p2 empty_28_fu_987_p3 sparsemux_13_5_4_1_1_U53 sparsemux_11_32_8_1_1_U54 sparsemux_11_32_8_1_1_U55 sparsemux_11_32_8_1_1_U56 sparsemux_11_32_8_1_1_U57 sparsemux_11_32_8_1_1_U58 icmp_ln425_fu_1218_p2 empty_29_fu_1224_p3 icmp_ln425_1_fu_1232_p2 icmp_ln425_2_fu_1238_p2 icmp_ln425_3_fu_1244_p2 icmp_ln425_4_fu_1250_p2 or_ln425_fu_1256_p2 or_ln425_1_fu_1262_p2 or_ln425_2_fu_1268_p2 or_ln425_3_fu_1274_p2 empty_30_fu_1280_p3</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>rxPath_U0</InstName>
+                    <ModuleName>rxPath</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>110</ID>
+                    <BindInstances>grp_fu_648_p3 message_offset_14_fu_744_p3 grp_fu_656_p3 message_offset_15_fu_752_p3 or_ln275_fu_772_p2 message_offset_10_fu_794_p3 sparsemux_7_3_7_1_1_U1 empty_31_fu_822_p3 grp_fu_684_p2 mul_16s_9ns_16_1_1_U23 sparsemux_7_3_8_1_1_U2 xor_ln295_fu_862_p2 size_buff_2_fu_868_p2 select_ln295_fu_874_p3 message_offset_16_fu_882_p2 message_offset_22_fu_1296_p2 sparsemux_9_3_7_1_1_U3 sparsemux_9_3_8_1_1_U4 message_offset_22_fu_1296_p4 sparsemux_9_3_8_1_1_U5 message_offset_22_fu_1296_p6 or_ln317_fu_1016_p2 sparsemux_9_3_8_1_1_U6 message_offset_22_fu_1296_p8 or_ln317_1_fu_1098_p2 sparsemux_9_3_8_1_1_U7 message_offset_22_fu_1296_p10 or_ln317_2_fu_1172_p2 xor_ln312_fu_1200_p2 and_ln312_fu_1206_p2 or_ln312_fu_1212_p2 xor_ln312_2_fu_1226_p2 and_ln312_1_fu_1232_p2 xor_ln312_1_fu_1238_p2 and_ln312_2_fu_1244_p2 and_ln312_3_fu_1250_p2 sparsemux_11_4_25_1_1_U8 sparsemux_11_4_4_1_1_U9 sparsemux_17_4_7_1_1_U10 sparsemux_17_4_3_1_1_U11 grp_fu_648_p3 message_offset_fu_1452_p3 grp_fu_656_p3 message_offset_5_fu_1460_p3 or_ln154_fu_1480_p2 message_offset_1_fu_1502_p3 sparsemux_7_3_7_1_1_U12 empty_fu_1530_p3 grp_fu_684_p2 mul_16s_9ns_16_1_1_U24 sparsemux_7_3_8_1_1_U13 xor_ln177_fu_1570_p2 size_buff_fu_1576_p2 select_ln177_fu_1582_p3 message_offset_6_fu_1590_p2 message_offset_13_fu_2004_p2 sparsemux_9_3_7_1_1_U14 sparsemux_9_3_8_1_1_U15 message_offset_13_fu_2004_p4 sparsemux_9_3_8_1_1_U16 message_offset_13_fu_2004_p6 or_ln199_fu_1724_p2 sparsemux_9_3_8_1_1_U17 message_offset_13_fu_2004_p8 or_ln199_1_fu_1806_p2 sparsemux_9_3_8_1_1_U18 message_offset_13_fu_2004_p10 or_ln199_2_fu_1880_p2 xor_ln194_fu_1908_p2 and_ln194_fu_1914_p2 or_ln194_fu_1920_p2 xor_ln194_2_fu_1934_p2 and_ln194_1_fu_1940_p2 xor_ln194_1_fu_1946_p2 and_ln194_2_fu_1952_p2 and_ln194_3_fu_1958_p2 sparsemux_11_4_25_1_1_U19 sparsemux_11_4_4_1_1_U20 sparsemux_17_4_7_1_1_U21 sparsemux_17_4_3_1_1_U22 select_ln100_fu_2221_p3 icmp_ln59_fu_2251_p2 and_ln59_fu_2257_p2 add_ln66_fu_2263_p2 POW10_U</BindInstances>
+                </Instance>
+            </InstancesList>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>rxPath</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>25.00</TargetClockPeriod>
+                    <ClockUncertainty>6.75</ClockUncertainty>
+                    <TargetInitiationInterval>1</TargetInitiationInterval>
+                    <EstimatedClockPeriod>15.098</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>4</Best-caseLatency>
+                    <Average-caseLatency>4</Average-caseLatency>
+                    <Worst-caseLatency>4</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.100 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.100 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.100 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>3</PipelineInitiationInterval>
+                    <PipelineDepth>5</PipelineDepth>
+                    <PipelineType>yes(flp)</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>fast_src/fast_protocol.cpp:38</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>2</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>368</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>1165</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>2</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="grp_fu_648_p3" SOURCE="fast_src/fast_protocol.cpp:266" STORAGESUBTYPE="" URAM="0" VARIABLE="decoded_mantissa_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="message_offset_14_fu_744_p3" SOURCE="fast_src/fast_protocol.cpp:266" STORAGESUBTYPE="" URAM="0" VARIABLE="message_offset_14" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="grp_fu_656_p3" SOURCE="fast_src/fast_protocol.cpp:272" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln272" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="message_offset_15_fu_752_p3" SOURCE="fast_src/fast_protocol.cpp:275" STORAGESUBTYPE="" URAM="0" VARIABLE="message_offset_15" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="or_ln275_fu_772_p2" SOURCE="fast_src/fast_protocol.cpp:275" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln275" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="message_offset_10_fu_794_p3" SOURCE="fast_src/fast_protocol.cpp:272" STORAGESUBTYPE="" URAM="0" VARIABLE="message_offset_10" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_dontcare" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_7_3_7_1_1_U1" SOURCE="fast_src/fast_protocol.cpp:280" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp_22" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="empty_31_fu_822_p3" SOURCE="fast_src/fast_protocol.cpp:272" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_31" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="grp_fu_684_p2" SOURCE="fast_src/fast_protocol.cpp:285" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln285" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_9ns_16_1_1_U23" SOURCE="fast_src/fast_protocol.cpp:285" STORAGESUBTYPE="" URAM="0" VARIABLE="price_buff_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_dontcare" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_7_3_8_1_1_U2" SOURCE="fast_src/fast_protocol.cpp:295" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp_24" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln295_fu_862_p2" SOURCE="fast_src/fast_protocol.cpp:295" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln295" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="size_buff_2_fu_868_p2" SOURCE="fast_src/fast_protocol.cpp:295" STORAGESUBTYPE="" URAM="0" VARIABLE="size_buff_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="select_ln295_fu_874_p3" SOURCE="fast_src/fast_protocol.cpp:295" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln295" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="message_offset_16_fu_882_p2" SOURCE="fast_src/fast_protocol.cpp:295" STORAGESUBTYPE="" URAM="0" VARIABLE="message_offset_16" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="message_offset_22_fu_1296_p2" SOURCE="fast_src/fast_protocol.cpp:303" STORAGESUBTYPE="" URAM="0" VARIABLE="message_offset_17" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_dontcare" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_9_3_7_1_1_U3" SOURCE="fast_src/fast_protocol.cpp:303" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp_25" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_dontcare" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_9_3_8_1_1_U4" SOURCE="fast_src/fast_protocol.cpp:312" STORAGESUBTYPE="" URAM="0" VARIABLE="orderID_buff_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="message_offset_22_fu_1296_p4" SOURCE="fast_src/fast_protocol.cpp:317" STORAGESUBTYPE="" URAM="0" VARIABLE="message_offset_18" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_dontcare" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_9_3_8_1_1_U5" SOURCE="fast_src/fast_protocol.cpp:312" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp_29" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="message_offset_22_fu_1296_p6" SOURCE="fast_src/fast_protocol.cpp:317" STORAGESUBTYPE="" URAM="0" VARIABLE="message_offset_19" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="or_ln317_fu_1016_p2" SOURCE="fast_src/fast_protocol.cpp:317" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln317" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_dontcare" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_9_3_8_1_1_U6" SOURCE="fast_src/fast_protocol.cpp:312" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp_34" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="message_offset_22_fu_1296_p8" SOURCE="fast_src/fast_protocol.cpp:317" STORAGESUBTYPE="" URAM="0" VARIABLE="message_offset_20" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="or_ln317_1_fu_1098_p2" SOURCE="fast_src/fast_protocol.cpp:317" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln317_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_dontcare" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_9_3_8_1_1_U7" SOURCE="fast_src/fast_protocol.cpp:312" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp_36" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="message_offset_22_fu_1296_p10" SOURCE="fast_src/fast_protocol.cpp:317" STORAGESUBTYPE="" URAM="0" VARIABLE="message_offset_21" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="or_ln317_2_fu_1172_p2" SOURCE="fast_src/fast_protocol.cpp:317" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln317_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln312_fu_1200_p2" SOURCE="fast_src/fast_protocol.cpp:312" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln312" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln312_fu_1206_p2" SOURCE="fast_src/fast_protocol.cpp:312" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln312" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="or_ln312_fu_1212_p2" SOURCE="fast_src/fast_protocol.cpp:312" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln312" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln312_2_fu_1226_p2" SOURCE="fast_src/fast_protocol.cpp:312" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln312_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln312_1_fu_1232_p2" SOURCE="fast_src/fast_protocol.cpp:312" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln312_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln312_1_fu_1238_p2" SOURCE="fast_src/fast_protocol.cpp:312" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln312_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln312_2_fu_1244_p2" SOURCE="fast_src/fast_protocol.cpp:312" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln312_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln312_3_fu_1250_p2" SOURCE="fast_src/fast_protocol.cpp:312" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln312_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="onehotencoding_realdef" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_11_4_25_1_1_U8" SOURCE="fast_src/fast_protocol.cpp:250" STORAGESUBTYPE="" URAM="0" VARIABLE="orderID_buff179_s" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="onehotencoding_realdef" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_11_4_4_1_1_U9" SOURCE="fast_src/fast_protocol.cpp:303" STORAGESUBTYPE="" URAM="0" VARIABLE="message_offset_22" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_dontcare" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_17_4_7_1_1_U10" SOURCE="fast_src/fast_protocol.cpp:322" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp_39" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_dontcare" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_17_4_3_1_1_U11" SOURCE="fast_src/fast_protocol.cpp:328" STORAGESUBTYPE="" URAM="0" VARIABLE="order_type_buff_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="grp_fu_648_p3" SOURCE="fast_src/fast_protocol.cpp:145" STORAGESUBTYPE="" URAM="0" VARIABLE="decoded_mantissa" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="message_offset_fu_1452_p3" SOURCE="fast_src/fast_protocol.cpp:145" STORAGESUBTYPE="" URAM="0" VARIABLE="message_offset" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="grp_fu_656_p3" SOURCE="fast_src/fast_protocol.cpp:151" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln151" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="message_offset_5_fu_1460_p3" SOURCE="fast_src/fast_protocol.cpp:154" STORAGESUBTYPE="" URAM="0" VARIABLE="message_offset_5" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="or_ln154_fu_1480_p2" SOURCE="fast_src/fast_protocol.cpp:154" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln154" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="message_offset_1_fu_1502_p3" SOURCE="fast_src/fast_protocol.cpp:151" STORAGESUBTYPE="" URAM="0" VARIABLE="message_offset_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_dontcare" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_7_3_7_1_1_U12" SOURCE="fast_src/fast_protocol.cpp:159" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp_15" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="empty_fu_1530_p3" SOURCE="fast_src/fast_protocol.cpp:151" STORAGESUBTYPE="" URAM="0" VARIABLE="empty" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="grp_fu_684_p2" SOURCE="fast_src/fast_protocol.cpp:166" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln166" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_9ns_16_1_1_U24" SOURCE="fast_src/fast_protocol.cpp:166" STORAGESUBTYPE="" URAM="0" VARIABLE="price_buff" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_dontcare" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_7_3_8_1_1_U13" SOURCE="fast_src/fast_protocol.cpp:177" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp_16" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln177_fu_1570_p2" SOURCE="fast_src/fast_protocol.cpp:177" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln177" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="size_buff_fu_1576_p2" SOURCE="fast_src/fast_protocol.cpp:177" STORAGESUBTYPE="" URAM="0" VARIABLE="size_buff" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="select_ln177_fu_1582_p3" SOURCE="fast_src/fast_protocol.cpp:177" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln177" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="message_offset_6_fu_1590_p2" SOURCE="fast_src/fast_protocol.cpp:177" STORAGESUBTYPE="" URAM="0" VARIABLE="message_offset_6" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="message_offset_13_fu_2004_p2" SOURCE="fast_src/fast_protocol.cpp:185" STORAGESUBTYPE="" URAM="0" VARIABLE="message_offset_7" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_dontcare" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_9_3_7_1_1_U14" SOURCE="fast_src/fast_protocol.cpp:185" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp_17" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_dontcare" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_9_3_8_1_1_U15" SOURCE="fast_src/fast_protocol.cpp:194" STORAGESUBTYPE="" URAM="0" VARIABLE="orderID_buff" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="message_offset_13_fu_2004_p4" SOURCE="fast_src/fast_protocol.cpp:199" STORAGESUBTYPE="" URAM="0" VARIABLE="message_offset_8" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_dontcare" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_9_3_8_1_1_U16" SOURCE="fast_src/fast_protocol.cpp:194" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp_18" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="message_offset_13_fu_2004_p6" SOURCE="fast_src/fast_protocol.cpp:199" STORAGESUBTYPE="" URAM="0" VARIABLE="message_offset_9" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="or_ln199_fu_1724_p2" SOURCE="fast_src/fast_protocol.cpp:199" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln199" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_dontcare" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_9_3_8_1_1_U17" SOURCE="fast_src/fast_protocol.cpp:194" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp_20" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="message_offset_13_fu_2004_p8" SOURCE="fast_src/fast_protocol.cpp:199" STORAGESUBTYPE="" URAM="0" VARIABLE="message_offset_11" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="or_ln199_1_fu_1806_p2" SOURCE="fast_src/fast_protocol.cpp:199" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln199_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_dontcare" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_9_3_8_1_1_U18" SOURCE="fast_src/fast_protocol.cpp:194" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp_26" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="message_offset_13_fu_2004_p10" SOURCE="fast_src/fast_protocol.cpp:199" STORAGESUBTYPE="" URAM="0" VARIABLE="message_offset_12" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="or_ln199_2_fu_1880_p2" SOURCE="fast_src/fast_protocol.cpp:199" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln199_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln194_fu_1908_p2" SOURCE="fast_src/fast_protocol.cpp:194" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln194" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln194_fu_1914_p2" SOURCE="fast_src/fast_protocol.cpp:194" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln194" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="or_ln194_fu_1920_p2" SOURCE="fast_src/fast_protocol.cpp:194" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln194" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln194_2_fu_1934_p2" SOURCE="fast_src/fast_protocol.cpp:194" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln194_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln194_1_fu_1940_p2" SOURCE="fast_src/fast_protocol.cpp:194" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln194_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln194_1_fu_1946_p2" SOURCE="fast_src/fast_protocol.cpp:194" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln194_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln194_2_fu_1952_p2" SOURCE="fast_src/fast_protocol.cpp:194" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln194_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln194_3_fu_1958_p2" SOURCE="fast_src/fast_protocol.cpp:194" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln194_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="onehotencoding_realdef" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_11_4_25_1_1_U19" SOURCE="fast_src/fast_protocol.cpp:127" STORAGESUBTYPE="" URAM="0" VARIABLE="orderID_buff_s" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="onehotencoding_realdef" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_11_4_4_1_1_U20" SOURCE="fast_src/fast_protocol.cpp:185" STORAGESUBTYPE="" URAM="0" VARIABLE="message_offset_13" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_dontcare" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_17_4_7_1_1_U21" SOURCE="fast_src/fast_protocol.cpp:204" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp_31" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_dontcare" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_17_4_3_1_1_U22" SOURCE="fast_src/fast_protocol.cpp:210" STORAGESUBTYPE="" URAM="0" VARIABLE="order_type_buff" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="select_ln100_fu_2221_p3" SOURCE="fast_src/fast_protocol.cpp:100" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln100" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln59_fu_2251_p2" SOURCE="fast_src/fast_protocol.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln59" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln59_fu_2257_p2" SOURCE="fast_src/fast_protocol.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln59" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln66_fu_2263_p2" SOURCE="fast_src/fast_protocol.cpp:66" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln66" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="POW10_U" SOURCE="" STORAGESIZE="9 4 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="POW10" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>txPath</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>25.00</TargetClockPeriod>
+                    <ClockUncertainty>6.75</ClockUncertainty>
+                    <TargetInitiationInterval>1</TargetInitiationInterval>
+                    <EstimatedClockPeriod>17.495</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>5</Best-caseLatency>
+                    <Average-caseLatency>5</Average-caseLatency>
+                    <Worst-caseLatency>5</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.125 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.125 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.125 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>4</PipelineInitiationInterval>
+                    <PipelineDepth>6</PipelineDepth>
+                    <PipelineType>yes(flp)</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>fast_src/fast_protocol.cpp:355</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>228</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>830</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="lbTxLengthOut_TDATA_int_regslice" SOURCE="fast_src/fast_protocol.cpp:490" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln490" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="select_ln400_fu_559_p3" SOURCE="fast_src/fast_protocol.cpp:400" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln400" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="select_ln400_1_fu_566_p3" SOURCE="fast_src/fast_protocol.cpp:400" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln400_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="message_offset_fu_387_p3" SOURCE="fast_src/fast_protocol.cpp:404" STORAGESUBTYPE="" URAM="0" VARIABLE="message_offset" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln415_fu_405_p2" SOURCE="fast_src/fast_protocol.cpp:415" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln415" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="select_ln417_2_fu_411_p3" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln417_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="select_ln417_fu_576_p3" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln417" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="select_ln417_1_fu_583_p3" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln417_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="empty_fu_589_p3" SOURCE="fast_src/fast_protocol.cpp:415" STORAGESUBTYPE="" URAM="0" VARIABLE="empty" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="empty_16_fu_596_p3" SOURCE="fast_src/fast_protocol.cpp:415" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_16" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="message_offset_1_fu_419_p3" SOURCE="fast_src/fast_protocol.cpp:415" STORAGESUBTYPE="" URAM="0" VARIABLE="message_offset_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="xor" PRAGMA="" RTLNAME="triggered_fu_603_p2" SOURCE="fast_src/fast_protocol.cpp:415" STORAGESUBTYPE="" URAM="0" VARIABLE="triggered" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setne" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setne" PRAGMA="" RTLNAME="icmp_ln415_1_fu_437_p2" SOURCE="fast_src/fast_protocol.cpp:415" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln415_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="triggered_1_fu_618_p2" SOURCE="fast_src/fast_protocol.cpp:415" STORAGESUBTYPE="" URAM="0" VARIABLE="triggered_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln417_fu_623_p2" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln417" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln417_1_fu_628_p2" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln417_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln415_fu_633_p2" SOURCE="fast_src/fast_protocol.cpp:415" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln415" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln415_fu_638_p2" SOURCE="fast_src/fast_protocol.cpp:415" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln415" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="or_ln417_fu_643_p2" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln417" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="or_ln417_1_fu_649_p2" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln417_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="empty_17_fu_655_p3" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_17" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln417_fu_663_p2" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln417" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="empty_18_fu_669_p3" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_18" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln417_1_fu_676_p2" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln417_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="empty_19_fu_682_p3" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_19" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="onehotencoding_realdef" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_9_3_4_1_1_U51" SOURCE="fast_src/fast_protocol.cpp:406" STORAGESUBTYPE="" URAM="0" VARIABLE="message_offset_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setne" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setne" PRAGMA="" RTLNAME="icmp_ln415_2_fu_726_p2" SOURCE="fast_src/fast_protocol.cpp:415" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln415_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="triggered_2_fu_731_p2" SOURCE="fast_src/fast_protocol.cpp:415" STORAGESUBTYPE="" URAM="0" VARIABLE="triggered_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln417_2_fu_737_p2" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln417_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln417_2_fu_743_p2" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln417_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="empty_20_fu_749_p3" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_20" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln417_3_fu_756_p2" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln417_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln417_4_fu_762_p2" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln417_4" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln415_1_fu_768_p2" SOURCE="fast_src/fast_protocol.cpp:415" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln415_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="or_ln417_2_fu_774_p2" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln417_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="or_ln417_3_fu_780_p2" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln417_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="or_ln417_4_fu_786_p2" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln417_4" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="empty_21_fu_792_p3" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_21" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln417_3_fu_800_p2" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln417_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="empty_22_fu_806_p3" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_22" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln417_4_fu_813_p2" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln417_4" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="empty_23_fu_819_p3" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_23" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="onehotencoding_realdef" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_11_4_4_1_1_x_U52" SOURCE="fast_src/fast_protocol.cpp:406" STORAGESUBTYPE="" URAM="0" VARIABLE="message_offset_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setne" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setne" PRAGMA="" RTLNAME="icmp_ln415_3_fu_869_p2" SOURCE="fast_src/fast_protocol.cpp:415" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln415_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="or_ln415_fu_874_p2" SOURCE="fast_src/fast_protocol.cpp:415" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln415" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln417_5_fu_880_p2" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln417_5" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln417_5_fu_886_p2" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln417_5" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="empty_24_fu_892_p3" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_24" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln417_6_fu_899_p2" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln417_6" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln417_6_fu_905_p2" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln417_6" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="empty_25_fu_911_p3" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_25" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln417_7_fu_918_p2" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln417_7" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln417_8_fu_924_p2" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln417_8" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln415_2_fu_930_p2" SOURCE="fast_src/fast_protocol.cpp:415" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln415_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="or_ln417_5_fu_936_p2" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln417_5" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="or_ln417_6_fu_942_p2" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln417_6" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="or_ln417_7_fu_948_p2" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln417_7" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="or_ln417_8_fu_954_p2" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln417_8" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="empty_26_fu_960_p3" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_26" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln417_7_fu_968_p2" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln417_7" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="empty_27_fu_974_p3" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_27" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln417_8_fu_981_p2" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln417_8" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="empty_28_fu_987_p3" SOURCE="fast_src/fast_protocol.cpp:417" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_28" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="onehotencoding_realdef" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_13_5_4_1_1_U53" SOURCE="fast_src/fast_protocol.cpp:399" STORAGESUBTYPE="" URAM="0" VARIABLE="message_offset_4" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_realdef" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_11_32_8_1_1_U54" SOURCE="fast_src/fast_protocol.cpp:425" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp_11" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_realdef" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_11_32_8_1_1_U55" SOURCE="fast_src/fast_protocol.cpp:399" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp_12" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_realdef" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_11_32_8_1_1_U56" SOURCE="fast_src/fast_protocol.cpp:427" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp_13" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_realdef" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_11_32_8_1_1_U57" SOURCE="fast_src/fast_protocol.cpp:399" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp_14" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_realdef" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_11_32_8_1_1_U58" SOURCE="fast_src/fast_protocol.cpp:427" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp_15" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln425_fu_1218_p2" SOURCE="fast_src/fast_protocol.cpp:425" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln425" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="empty_29_fu_1224_p3" SOURCE="fast_src/fast_protocol.cpp:425" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_29" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln425_1_fu_1232_p2" SOURCE="fast_src/fast_protocol.cpp:425" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln425_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln425_2_fu_1238_p2" SOURCE="fast_src/fast_protocol.cpp:425" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln425_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln425_3_fu_1244_p2" SOURCE="fast_src/fast_protocol.cpp:425" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln425_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln425_4_fu_1250_p2" SOURCE="fast_src/fast_protocol.cpp:425" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln425_4" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="or_ln425_fu_1256_p2" SOURCE="fast_src/fast_protocol.cpp:425" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln425" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="or_ln425_1_fu_1262_p2" SOURCE="fast_src/fast_protocol.cpp:425" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln425_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="or_ln425_2_fu_1268_p2" SOURCE="fast_src/fast_protocol.cpp:425" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln425_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="or_ln425_3_fu_1274_p2" SOURCE="fast_src/fast_protocol.cpp:425" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln425_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="empty_30_fu_1280_p3" SOURCE="fast_src/fast_protocol.cpp:425" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_30" VISIBLE="false"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>fast_protocol</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>25.00</TargetClockPeriod>
+                    <ClockUncertainty>6.75</ClockUncertainty>
+                    <EstimatedClockPeriod>17.495</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>5</Best-caseLatency>
+                    <Average-caseLatency>5</Average-caseLatency>
+                    <Worst-caseLatency>5</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.125 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.125 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.125 us</Worst-caseRealTimeLatency>
+                    <DataflowPipelineThroughput>4</DataflowPipelineThroughput>
+                    <PipelineInitiationInterval>4</PipelineInitiationInterval>
+                    <PipelineType>dataflow</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>fast_src/fast_protocol.cpp:518</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>2</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>596</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>1995</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>3</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands/>
+    <Args>
+        <Arg ArgName="lbRxDataIn" index="0" direction="in" srcType="stream&lt;axiWord, 0&gt;&amp;" srcSize="128">
+            <hwRefs>
+                <hwRef type="interface" interface="lbRxDataIn" name="" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="lbRxMetadataIn" index="1" direction="in" srcType="stream&lt;metadata, 0&gt;&amp;" srcSize="128">
+            <hwRefs>
+                <hwRef type="interface" interface="lbRxMetadataIn" name="" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="lbRequestPortOpenOut" index="2" direction="out" srcType="stream&lt;ap_uint&lt;16&gt;, 0&gt;&amp;" srcSize="16">
+            <hwRefs>
+                <hwRef type="interface" interface="lbRequestPortOpenOut" name="" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="lbPortOpenReplyIn" index="3" direction="in" srcType="stream&lt;bool, 0&gt;&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="interface" interface="lbPortOpenReplyIn" name="" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="lbTxDataOut" index="4" direction="out" srcType="stream&lt;axiWord, 0&gt;&amp;" srcSize="128">
+            <hwRefs>
+                <hwRef type="interface" interface="lbTxDataOut" name="" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="lbTxMetadataOut" index="5" direction="out" srcType="stream&lt;metadata, 0&gt;&amp;" srcSize="128">
+            <hwRefs>
+                <hwRef type="interface" interface="lbTxMetadataOut" name="" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="lbTxLengthOut" index="6" direction="out" srcType="stream&lt;ap_uint&lt;16&gt;, 0&gt;&amp;" srcSize="16">
+            <hwRefs>
+                <hwRef type="interface" interface="lbTxLengthOut" name="" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="tagsIn" index="7" direction="in" srcType="stream&lt;ap_uint&lt;64&gt;, 0&gt;&amp;" srcSize="64">
+            <hwRefs>
+                <hwRef type="interface" interface="tagsIn" name="" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="tagsOut" index="8" direction="out" srcType="stream&lt;ap_uint&lt;64&gt;, 0&gt;&amp;" srcSize="64">
+            <hwRefs>
+                <hwRef type="interface" interface="tagsOut" name="" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="metadata_to_book" index="9" direction="out" srcType="stream&lt;metadata, 0&gt;&amp;" srcSize="128">
+            <hwRefs>
+                <hwRef type="interface" interface="metadata_to_book" name="" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="metadata_from_book" index="10" direction="in" srcType="stream&lt;metadata, 0&gt;&amp;" srcSize="128">
+            <hwRefs>
+                <hwRef type="interface" interface="metadata_from_book" name="" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="time_to_book" index="11" direction="out" srcType="stream&lt;ap_uint&lt;64&gt;, 0&gt;&amp;" srcSize="64">
+            <hwRefs>
+                <hwRef type="interface" interface="time_to_book" name="" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="time_from_book" index="12" direction="in" srcType="stream&lt;ap_uint&lt;64&gt;, 0&gt;&amp;" srcSize="64">
+            <hwRefs>
+                <hwRef type="interface" interface="time_from_book" name="" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="order_to_book" index="13" direction="out" srcType="stream&lt;order, 0&gt;&amp;" srcSize="96">
+            <hwRefs>
+                <hwRef type="interface" interface="order_to_book" name="" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="order_from_book" index="14" direction="in" srcType="stream&lt;order, 0&gt;&amp;" srcSize="96">
+            <hwRefs>
+                <hwRef type="interface" interface="order_from_book" name="" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="lbRxDataIn" type="axi4stream" busTypeName="axis" mode="slave" direction="in" dataWidth="128" portPrefix="lbRxDataIn_">
+            <ports>
+                <port>lbRxDataIn_TDATA</port>
+                <port>lbRxDataIn_TREADY</port>
+                <port>lbRxDataIn_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="lbRxDataIn"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="lbRxMetadataIn" type="axi4stream" busTypeName="axis" mode="slave" direction="in" dataWidth="96" portPrefix="lbRxMetadataIn_">
+            <ports>
+                <port>lbRxMetadataIn_TDATA</port>
+                <port>lbRxMetadataIn_TREADY</port>
+                <port>lbRxMetadataIn_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="lbRxMetadataIn"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="lbRequestPortOpenOut" type="axi4stream" busTypeName="axis" mode="master" direction="out" dataWidth="16" portPrefix="lbRequestPortOpenOut_">
+            <ports>
+                <port>lbRequestPortOpenOut_TDATA</port>
+                <port>lbRequestPortOpenOut_TREADY</port>
+                <port>lbRequestPortOpenOut_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="lbRequestPortOpenOut"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="lbPortOpenReplyIn" type="axi4stream" busTypeName="axis" mode="slave" direction="in" dataWidth="8" portPrefix="lbPortOpenReplyIn_">
+            <ports>
+                <port>lbPortOpenReplyIn_TDATA</port>
+                <port>lbPortOpenReplyIn_TREADY</port>
+                <port>lbPortOpenReplyIn_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="lbPortOpenReplyIn"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="lbTxDataOut" type="axi4stream" busTypeName="axis" mode="master" direction="out" dataWidth="128" portPrefix="lbTxDataOut_">
+            <ports>
+                <port>lbTxDataOut_TDATA</port>
+                <port>lbTxDataOut_TREADY</port>
+                <port>lbTxDataOut_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="lbTxDataOut"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="lbTxMetadataOut" type="axi4stream" busTypeName="axis" mode="master" direction="out" dataWidth="96" portPrefix="lbTxMetadataOut_">
+            <ports>
+                <port>lbTxMetadataOut_TDATA</port>
+                <port>lbTxMetadataOut_TREADY</port>
+                <port>lbTxMetadataOut_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="lbTxMetadataOut"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="lbTxLengthOut" type="axi4stream" busTypeName="axis" mode="master" direction="out" dataWidth="16" portPrefix="lbTxLengthOut_">
+            <ports>
+                <port>lbTxLengthOut_TDATA</port>
+                <port>lbTxLengthOut_TREADY</port>
+                <port>lbTxLengthOut_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="lbTxLengthOut"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="tagsIn" type="axi4stream" busTypeName="axis" mode="slave" direction="in" dataWidth="64" portPrefix="tagsIn_">
+            <ports>
+                <port>tagsIn_TDATA</port>
+                <port>tagsIn_TREADY</port>
+                <port>tagsIn_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="tagsIn"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="tagsOut" type="axi4stream" busTypeName="axis" mode="master" direction="out" dataWidth="64" portPrefix="tagsOut_">
+            <ports>
+                <port>tagsOut_TDATA</port>
+                <port>tagsOut_TREADY</port>
+                <port>tagsOut_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="tagsOut"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="metadata_to_book" type="axi4stream" busTypeName="axis" mode="master" direction="out" dataWidth="128" portPrefix="metadata_to_book_">
+            <ports>
+                <port>metadata_to_book_TDATA</port>
+                <port>metadata_to_book_TREADY</port>
+                <port>metadata_to_book_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="metadata_to_book"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="metadata_from_book" type="axi4stream" busTypeName="axis" mode="slave" direction="in" dataWidth="128" portPrefix="metadata_from_book_">
+            <ports>
+                <port>metadata_from_book_TDATA</port>
+                <port>metadata_from_book_TREADY</port>
+                <port>metadata_from_book_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="metadata_from_book"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="time_to_book" type="axi4stream" busTypeName="axis" mode="master" direction="out" dataWidth="64" portPrefix="time_to_book_">
+            <ports>
+                <port>time_to_book_TDATA</port>
+                <port>time_to_book_TREADY</port>
+                <port>time_to_book_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="time_to_book"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="time_from_book" type="axi4stream" busTypeName="axis" mode="slave" direction="in" dataWidth="64" portPrefix="time_from_book_">
+            <ports>
+                <port>time_from_book_TDATA</port>
+                <port>time_from_book_TREADY</port>
+                <port>time_from_book_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="time_from_book"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="order_to_book" type="axi4stream" busTypeName="axis" mode="master" direction="out" dataWidth="64" portPrefix="order_to_book_">
+            <ports>
+                <port>order_to_book_TDATA</port>
+                <port>order_to_book_TREADY</port>
+                <port>order_to_book_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="order_to_book"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="order_from_book" type="axi4stream" busTypeName="axis" mode="slave" direction="in" dataWidth="64" portPrefix="order_from_book_">
+            <ports>
+                <port>order_from_book_TDATA</port>
+                <port>order_from_book_TREADY</port>
+                <port>order_from_book_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="order_from_book"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_BUSIF">lbRxDataIn:lbRxMetadataIn:lbRequestPortOpenOut:lbPortOpenReplyIn:lbTxDataOut:lbTxMetadataOut:lbTxLengthOut:tagsIn:tagsOut:metadata_to_book:metadata_from_book:time_to_book:time_from_book:order_to_book:order_from_book</busParam>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst_n" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_LOW</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst_n">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst_n</port>
+            </ports>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="AXIS">
+                <table>
+                    <keys size="6">Interface, Direction, Register Mode, TDATA, TREADY, TVALID</keys>
+                    <column name="lbPortOpenReplyIn">in, both, 8, 1, 1</column>
+                    <column name="lbRequestPortOpenOut">out, both, 16, 1, 1</column>
+                    <column name="lbRxDataIn">in, both, 128, 1, 1</column>
+                    <column name="lbRxMetadataIn">in, both, 96, 1, 1</column>
+                    <column name="lbTxDataOut">out, both, 128, 1, 1</column>
+                    <column name="lbTxLengthOut">out, both, 16, 1, 1</column>
+                    <column name="lbTxMetadataOut">out, both, 96, 1, 1</column>
+                    <column name="metadata_from_book">in, both, 128, 1, 1</column>
+                    <column name="metadata_to_book">out, both, 128, 1, 1</column>
+                    <column name="order_from_book">in, both, 64, 1, 1</column>
+                    <column name="order_to_book">out, both, 64, 1, 1</column>
+                    <column name="tagsIn">in, both, 64, 1, 1</column>
+                    <column name="tagsOut">out, both, 64, 1, 1</column>
+                    <column name="time_from_book">in, both, 64, 1, 1</column>
+                    <column name="time_to_book">out, both, 64, 1, 1</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst_n">reset, ap_rst_n</column>
+                    <column name="ap_ctrl">ap_ctrl_none, </column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="lbRxDataIn">in, stream&lt;axiWord 0&gt;&amp;</column>
+                    <column name="lbRxMetadataIn">in, stream&lt;metadata 0&gt;&amp;</column>
+                    <column name="lbRequestPortOpenOut">out, stream&lt;ap_uint&lt;16&gt; 0&gt;&amp;</column>
+                    <column name="lbPortOpenReplyIn">in, stream&lt;bool 0&gt;&amp;</column>
+                    <column name="lbTxDataOut">out, stream&lt;axiWord 0&gt;&amp;</column>
+                    <column name="lbTxMetadataOut">out, stream&lt;metadata 0&gt;&amp;</column>
+                    <column name="lbTxLengthOut">out, stream&lt;ap_uint&lt;16&gt; 0&gt;&amp;</column>
+                    <column name="tagsIn">in, stream&lt;ap_uint&lt;64&gt; 0&gt;&amp;</column>
+                    <column name="tagsOut">out, stream&lt;ap_uint&lt;64&gt; 0&gt;&amp;</column>
+                    <column name="metadata_to_book">out, stream&lt;metadata 0&gt;&amp;</column>
+                    <column name="metadata_from_book">in, stream&lt;metadata 0&gt;&amp;</column>
+                    <column name="time_to_book">out, stream&lt;ap_uint&lt;64&gt; 0&gt;&amp;</column>
+                    <column name="time_from_book">in, stream&lt;ap_uint&lt;64&gt; 0&gt;&amp;</column>
+                    <column name="order_to_book">out, stream&lt;order 0&gt;&amp;</column>
+                    <column name="order_from_book">in, stream&lt;order 0&gt;&amp;</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="3">Argument, HW Interface, HW Type</keys>
+                    <column name="lbRxDataIn">lbRxDataIn, interface</column>
+                    <column name="lbRxMetadataIn">lbRxMetadataIn, interface</column>
+                    <column name="lbRequestPortOpenOut">lbRequestPortOpenOut, interface</column>
+                    <column name="lbPortOpenReplyIn">lbPortOpenReplyIn, interface</column>
+                    <column name="lbTxDataOut">lbTxDataOut, interface</column>
+                    <column name="lbTxMetadataOut">lbTxMetadataOut, interface</column>
+                    <column name="lbTxLengthOut">lbTxLengthOut, interface</column>
+                    <column name="tagsIn">tagsIn, interface</column>
+                    <column name="tagsOut">tagsOut, interface</column>
+                    <column name="metadata_to_book">metadata_to_book, interface</column>
+                    <column name="metadata_from_book">metadata_from_book, interface</column>
+                    <column name="time_to_book">time_to_book, interface</column>
+                    <column name="time_from_book">time_from_book, interface</column>
+                    <column name="order_to_book">order_to_book, interface</column>
+                    <column name="order_from_book">order_from_book, interface</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport>
+        <Pragma type="array_partition" location="fast_src/fast_decoder.cpp:24" status="valid" parentFunction="decode_fast_message" variable="encoded_message" isDirective="0" options="variable=encoded_message complete dim=1"/>
+        <Pragma type="array_partition" location="fast_src/fast_encoder.cpp:25" status="valid" parentFunction="encode_fast_message" variable="encoded_message" isDirective="0" options="variable=encoded_message complete dim=1"/>
+        <Pragma type="pipeline" location="fast_src/fast_protocol.cpp:38" status="valid" parentFunction="rxpath" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="array_partition" location="fast_src/fast_protocol.cpp:49" status="valid" parentFunction="rxpath" variable="encoded_message" isDirective="0" options="variable=encoded_message complete dim=1"/>
+        <Pragma type="array_partition" location="fast_src/fast_protocol.cpp:51" status="valid" parentFunction="rxpath" variable="encoded_message" isDirective="0" options="variable=encoded_message complete dim=1"/>
+        <Pragma type="array_partition" location="fast_src/fast_protocol.cpp:117" status="valid" parentFunction="rxpath" variable="encoded_message" isDirective="0" options="variable=encoded_message complete dim=1"/>
+        <Pragma type="array_partition" location="fast_src/fast_protocol.cpp:240" status="valid" parentFunction="rxpath" variable="encoded_message" isDirective="0" options="variable=encoded_message complete dim=1"/>
+        <Pragma type="pipeline" location="fast_src/fast_protocol.cpp:355" status="valid" parentFunction="txpath" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="array_partition" location="fast_src/fast_protocol.cpp:392" status="valid" parentFunction="txpath" variable="encoded_message" isDirective="0" options="variable=encoded_message complete dim=1"/>
+        <Pragma type="interface" location="fast_src/fast_protocol.cpp:517" status="valid" parentFunction="fast_protocol" variable="return" isDirective="0" options="ap_ctrl_none port=return"/>
+        <Pragma type="dataflow" location="fast_src/fast_protocol.cpp:518" status="valid" parentFunction="fast_protocol" variable="" isDirective="0" options=""/>
+        <Pragma type="interface" location="fast_src/fast_protocol.cpp:522" status="valid" parentFunction="fast_protocol" variable="lbRxDataIn" isDirective="0" options="axis port=lbRxDataIn"/>
+        <Pragma type="aggregate" location="fast_src/fast_protocol.cpp:525" status="valid" parentFunction="fast_protocol" variable="lbRxMetadataIn" isDirective="0" options="variable=lbRxMetadataIn compact=bit"/>
+        <Pragma type="interface" location="fast_src/fast_protocol.cpp:526" status="valid" parentFunction="fast_protocol" variable="lbRxMetadataIn" isDirective="0" options="axis port=lbRxMetadataIn"/>
+        <Pragma type="interface" location="fast_src/fast_protocol.cpp:528" status="valid" parentFunction="fast_protocol" variable="lbRequestPortOpenOut" isDirective="0" options="axis port=lbRequestPortOpenOut"/>
+        <Pragma type="interface" location="fast_src/fast_protocol.cpp:529" status="valid" parentFunction="fast_protocol" variable="lbPortOpenReplyIn" isDirective="0" options="axis port=lbPortOpenReplyIn"/>
+        <Pragma type="interface" location="fast_src/fast_protocol.cpp:530" status="valid" parentFunction="fast_protocol" variable="lbTxDataOut" isDirective="0" options="axis port=lbTxDataOut"/>
+        <Pragma type="aggregate" location="fast_src/fast_protocol.cpp:532" status="valid" parentFunction="fast_protocol" variable="lbTxMetadataOut" isDirective="0" options="variable=lbTxMetadataOut compact=bit"/>
+        <Pragma type="interface" location="fast_src/fast_protocol.cpp:533" status="valid" parentFunction="fast_protocol" variable="lbTxMetadataOut" isDirective="0" options="axis port=lbTxMetadataOut"/>
+        <Pragma type="interface" location="fast_src/fast_protocol.cpp:535" status="valid" parentFunction="fast_protocol" variable="lbTxLengthOut" isDirective="0" options="axis port=lbTxLengthOut"/>
+        <Pragma type="interface" location="fast_src/fast_protocol.cpp:536" status="valid" parentFunction="fast_protocol" variable="tagsIn" isDirective="0" options="axis port=tagsIn"/>
+        <Pragma type="interface" location="fast_src/fast_protocol.cpp:537" status="valid" parentFunction="fast_protocol" variable="tagsOut" isDirective="0" options="axis port=tagsOut"/>
+        <Pragma type="interface" location="fast_src/fast_protocol.cpp:541" status="valid" parentFunction="fast_protocol" variable="metadata_to_book" isDirective="0" options="axis port=metadata_to_book"/>
+        <Pragma type="interface" location="fast_src/fast_protocol.cpp:542" status="valid" parentFunction="fast_protocol" variable="metadata_from_book" isDirective="0" options="axis port=metadata_from_book"/>
+        <Pragma type="interface" location="fast_src/fast_protocol.cpp:543" status="valid" parentFunction="fast_protocol" variable="time_to_book" isDirective="0" options="axis port=time_to_book"/>
+        <Pragma type="interface" location="fast_src/fast_protocol.cpp:544" status="valid" parentFunction="fast_protocol" variable="time_from_book" isDirective="0" options="axis port=time_from_book"/>
+        <Pragma type="aggregate" location="fast_src/fast_protocol.cpp:547" status="valid" parentFunction="fast_protocol" variable="order_to_book" isDirective="0" options="variable=order_to_book compact=bit"/>
+        <Pragma type="interface" location="fast_src/fast_protocol.cpp:548" status="valid" parentFunction="fast_protocol" variable="order_to_book" isDirective="0" options="axis port=order_to_book"/>
+        <Pragma type="aggregate" location="fast_src/fast_protocol.cpp:550" status="valid" parentFunction="fast_protocol" variable="order_from_book" isDirective="0" options="variable=order_from_book compact=bit"/>
+        <Pragma type="interface" location="fast_src/fast_protocol.cpp:551" status="valid" parentFunction="fast_protocol" variable="order_from_book" isDirective="0" options="axis port=order_from_book"/>
+    </PragmaReport>
+</profile>
+

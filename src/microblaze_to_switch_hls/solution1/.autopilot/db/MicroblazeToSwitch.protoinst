@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"MicroblazeToSwitch": {
+			"proto_instances": {
+			}
+		}
+	}
+}

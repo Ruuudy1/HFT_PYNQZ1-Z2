@@ -1,0 +1,23 @@
+<dict>
+  <key>main-file</key>
+  <string>C:/Users/ruuud/spring2025/cse145/AAAAHHHH/ECE1373_2016_hft_on_fpga/src/threshold_hls/solution1/.autopilot/db/simpleThreshold.pp.0.cpp</string>
+  <key>diagnostics</key>
+  <array>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>threshold_src/simpleThreshold.cpp</string>
+      <key>line</key>
+      <integer>17</integer>
+      <key>column</key>
+      <integer>52</integer>
+      <key>message</key>
+      <string>unexpected pragma argument &apos;:&apos;, expects identifier</string>
+      <key>ID</key>
+      <integer>5570</integer>
+      <key>WarningOption</key>
+      <string>invalid-hls-pragmas</string>
+    </dict>
+  </array>
+</dict>

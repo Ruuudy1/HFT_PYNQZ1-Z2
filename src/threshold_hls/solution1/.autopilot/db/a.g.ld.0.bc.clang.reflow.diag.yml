@@ -1,0 +1,76 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_simple_threshold_ir
+Args:            
+  - Callee:          'simple_threshold(hls::stream<order, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<metadata, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<metadata, 0>&)'
+    DebugLoc:        { File: threshold_src/simpleThreshold.cpp, Line: 11, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_simple_threshold_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: threshold_src/simpleThreshold.cpp, Line: 11, Column: 0 }
+Function:        _Z16simple_thresholdRN3hls6streamI5orderLi0EEES3_RNS0_I7ap_uintILi64EELi0EEERNS0_I8metadataLi0EEES3_S7_SA_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'axis (hls::stream)'
+  - String:          ' variable '''
+  - Name:            top_ask
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '64'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: threshold_src/simpleThreshold.cpp, Line: 11, Column: 0 }
+Function:        _Z16simple_thresholdRN3hls6streamI5orderLi0EEES3_RNS0_I7ap_uintILi64EELi0EEERNS0_I8metadataLi0EEES3_S7_SA_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'axis (hls::stream)'
+  - String:          ' variable '''
+  - Name:            incoming_meta
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '96'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: threshold_src/simpleThreshold.cpp, Line: 11, Column: 0 }
+Function:        _Z16simple_thresholdRN3hls6streamI5orderLi0EEES3_RNS0_I7ap_uintILi64EELi0EEERNS0_I8metadataLi0EEES3_S7_SA_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'axis (hls::stream)'
+  - String:          ' variable '''
+  - Name:            outgoing_order
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '64'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: threshold_src/simpleThreshold.cpp, Line: 11, Column: 0 }
+Function:        _Z16simple_thresholdRN3hls6streamI5orderLi0EEES3_RNS0_I7ap_uintILi64EELi0EEERNS0_I8metadataLi0EEES3_S7_SA_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'axis (hls::stream)'
+  - String:          ' variable '''
+  - Name:            outgoing_meta
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '96'
+  - String:          '-bits'
+...

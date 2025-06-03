@@ -1,0 +1,17 @@
+{
+    "0": {
+        "name": "MicroblazeToSwitch",
+        "file": "MBtoSW.cpp",
+        "fileloc": "3",
+        "instructions": "39",
+        "total_instructions": "39",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "G": "1"
+        },
+        "stores": {
+            "G": "1"
+        }
+    }
+}

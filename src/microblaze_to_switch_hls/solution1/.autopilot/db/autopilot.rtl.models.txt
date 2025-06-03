@@ -1,0 +1,5 @@
+MicroblazeToSwitch_control_s_axi
+MicroblazeToSwitch_regslice_both
+MicroblazeToSwitch_regslice_both
+MicroblazeToSwitch_regslice_both
+MicroblazeToSwitch

@@ -1,0 +1,42 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1 2",
+    "file": "fast_protocol.cpp",
+    "fileloc": 501,
+    "instructions": 19,
+    "name": "fast_protocol",
+    "total_instructions": 694
+  },
+  "1": {
+    "basicblocks": 40,
+    "calls": "",
+    "file": "fast_protocol.cpp",
+    "fileloc": 29,
+    "instructions": 332,
+    "loads": {
+      "G": 12
+    },
+    "name": "rxPath",
+    "stores": {
+      "G": 18
+    },
+    "total_instructions": 386
+  },
+  "2": {
+    "basicblocks": 56,
+    "calls": "",
+    "file": "fast_protocol.cpp",
+    "fileloc": 347,
+    "instructions": 233,
+    "loads": {
+      "G": 4
+    },
+    "name": "txPath",
+    "stores": {
+      "G": 7,
+      "L": 1
+    },
+    "total_instructions": 289
+  }
+}

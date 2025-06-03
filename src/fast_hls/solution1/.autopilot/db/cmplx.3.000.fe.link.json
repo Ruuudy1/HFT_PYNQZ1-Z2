@@ -1,0 +1,63 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1 2",
+    "file": "fast_protocol.cpp",
+    "fileloc": 501,
+    "instructions": 38,
+    "name": "fast_protocol",
+    "total_instructions": 12161
+  },
+  "1": {
+    "basicblocks": 88,
+    "calls": "",
+    "file": "fast_protocol.cpp",
+    "fileloc": 29,
+    "instructions": 952,
+    "loads": {
+      "G": 6,
+      "L": 34
+    },
+    "name": "rxPath",
+    "stores": {
+      "G": 23,
+      "L": 24
+    },
+    "total_instructions": 7092
+  },
+  "2": {
+    "basicblocks": 40,
+    "calls": "",
+    "file": "fast_protocol.cpp",
+    "fileloc": 347,
+    "instructions": 620,
+    "loads": {
+      "G": 5,
+      "L": 15
+    },
+    "name": "txPath",
+    "stores": {
+      "G": 9,
+      "L": 13
+    },
+    "total_instructions": 5031
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "4",
+    "file": "fast_protocol.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 2,
+    "name": "",
+    "total_instructions": 1551
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "fast_protocol.cpp",
+    "fileloc": 16,
+    "instructions": 5,
+    "name": "__cxx_global_var_init.3",
+    "total_instructions": 1549
+  }
+}

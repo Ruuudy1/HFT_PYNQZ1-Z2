@@ -1,0 +1,4 @@
+threshold_src/simpleThreshold.cpp:17:52: warning: unexpected pragma argument ':', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS aggregate variable=top_bid compact=bit :contentReference[oaicite:0]{index=0}
+                                                   ^
+1 warning generated.

@@ -1,0 +1,116 @@
+<pragmas>
+<pragma file="order_book_src/priority_queue.cpp" line="5" pragmaType="inline" parentfunction="log_base_2" off="0" region="0" recursive="0"/>
+<pragma file="order_book_src/priority_queue.cpp" line="10" pragmaType="inline" parentfunction="pow2" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<4, false>::operator unsigned long long() const" off="0" region="0" recursive="0"/>
+<pragma file="order_book_src/priority_queue.cpp" line="15" pragmaType="inline" parentfunction="find_path" off="0" region="0" recursive="0"/>
+<pragma file="order_book_src/priority_queue.cpp" line="61" pragmaType="inline" parentfunction="add_bid" off="0" region="0" recursive="0"/>
+<pragma file="order_book_src/priority_queue.cpp" line="91" pragmaType="pipeline" parentfunction="add_bid" off="0" ii="1" rewind="0" style=""/>
+<pragma file="order_book_src/priority_queue.cpp" line="90" pragmaType="loop_tripcount" parentfunction="add_bid" min="0" max="11" avg="5"/>
+<pragma file="order_book_src/priority_queue.cpp" line="89" pragmaType="dependence" parentfunction="add_bid" class="" direction="NODIR" type="inter" distance="0" variable="heap"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_fixed_base<16, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator<<16, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool operator==<16, false>(ap_int_base<16, false> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool operator!=<16, false>(ap_int_base<16, false> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="order_book_src/priority_queue.cpp" line="117" pragmaType="inline" parentfunction="remove_bid" off="0" region="0" recursive="0"/>
+<pragma file="order_book_src/priority_queue.cpp" line="137" pragmaType="pipeline" parentfunction="remove_bid" off="0" ii="1" rewind="0" style=""/>
+<pragma file="order_book_src/priority_queue.cpp" line="136" pragmaType="loop_tripcount" parentfunction="remove_bid" min="0" max="11" avg="5"/>
+<pragma file="order_book_src/priority_queue.cpp" line="135" pragmaType="dependence" parentfunction="remove_bid" class="" direction="NODIR" type="inter" distance="0" variable="heap"/>
+<pragma file="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<8, false>::ssdm_int(unsigned char)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<3>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="empty" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<8, false>::operator<<8, false>(ap_int_base<8, false> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="order_book_src/priority_queue.cpp" line="231" pragmaType="inline" parentfunction="remove_ask" off="0" region="0" recursive="0"/>
+<pragma file="order_book_src/priority_queue.cpp" line="251" pragmaType="pipeline" parentfunction="remove_ask" off="0" ii="1" rewind="0" style=""/>
+<pragma file="order_book_src/priority_queue.cpp" line="250" pragmaType="loop_tripcount" parentfunction="remove_ask" min="0" max="11" avg="5"/>
+<pragma file="order_book_src/priority_queue.cpp" line="249" pragmaType="dependence" parentfunction="remove_ask" class="" direction="NODIR" type="inter" distance="0" variable="heap"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_fixed_base<16, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator==<16, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<16, false>::operator<<16, false>(ap_int_base<16, false> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="order_book_src/priority_queue.cpp" line="38" pragmaType="inline" parentfunction="right_child" off="0" region="0" recursive="0"/>
+<pragma file="order_book_src/priority_queue.cpp" line="27" pragmaType="inline" parentfunction="calculate_index" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="order_book_src/priority_queue.cpp" line="33" pragmaType="inline" parentfunction="left_child" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<16, false>::operator==<32, true>(ap_int_base<32, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="order_book_src/priority_queue.cpp" line="301" pragmaType="pipeline" parentfunction="order_book" off="0" ii="1" style=""/>
+<pragma file="order_book_src/priority_queue.cpp" line="384" pragmaType="loop_tripcount" parentfunction="order_book" min="1" max="1" avg="1"/>
+<pragma file="order_book_src/priority_queue.cpp" line="388" pragmaType="loop_tripcount" parentfunction="order_book" min="0" max="1" avg="0"/>
+<pragma file="order_book_src/priority_queue.cpp" line="400" pragmaType="loop_tripcount" parentfunction="order_book" min="0" max="1" avg="0"/>
+<pragma file="order_book_src/priority_queue.cpp" line="431" pragmaType="loop_tripcount" parentfunction="order_book" min="1" max="1" avg="1"/>
+<pragma file="order_book_src/priority_queue.cpp" line="435" pragmaType="loop_tripcount" parentfunction="order_book" min="0" max="1" avg="0"/>
+<pragma file="order_book_src/priority_queue.cpp" line="447" pragmaType="loop_tripcount" parentfunction="order_book" min="0" max="1" avg="0"/>
+<pragma file="order_book_src/priority_queue.cpp" line="287" pragmaType="interface" parentfunction="order_book" mode="s_axilite" port="top_ask_id" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="order_book_src/priority_queue.cpp" line="288" pragmaType="interface" parentfunction="order_book" mode="s_axilite" port="top_bid_id" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="order_book_src/priority_queue.cpp" line="289" pragmaType="interface" parentfunction="order_book" mode="ap_ctrl_none" port="return" name=""/>
+<pragma file="order_book_src/priority_queue.cpp" line="292" pragmaType="interface" parentfunction="order_book" mode="axis" port="order_stream" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="order_book_src/priority_queue.cpp" line="293" pragmaType="interface" parentfunction="order_book" mode="axis" port="incoming_time" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="order_book_src/priority_queue.cpp" line="294" pragmaType="interface" parentfunction="order_book" mode="axis" port="incoming_meta" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="order_book_src/priority_queue.cpp" line="295" pragmaType="interface" parentfunction="order_book" mode="axis" port="top_bid" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="order_book_src/priority_queue.cpp" line="296" pragmaType="interface" parentfunction="order_book" mode="axis" port="top_ask" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="order_book_src/priority_queue.cpp" line="297" pragmaType="interface" parentfunction="order_book" mode="axis" port="outgoing_time" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="order_book_src/priority_queue.cpp" line="298" pragmaType="interface" parentfunction="order_book" mode="axis" port="outgoing_meta" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="order_book_src/priority_queue.cpp" line="309" pragmaType="array_partition" parentfunction="order_book" dim="1" factor="0" mode="complete" dynamic="0" variable="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3bid"/>
+<pragma file="order_book_src/priority_queue.cpp" line="310" pragmaType="array_partition" parentfunction="order_book" dim="2" factor="4" mode="cyclic" dynamic="0" variable="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3bid"/>
+<pragma file="order_book_src/priority_queue.cpp" line="311" pragmaType="dependence" parentfunction="order_book" class="" direction="NODIR" type="inter" distance="0" variable="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3bid"/>
+<pragma file="order_book_src/priority_queue.cpp" line="312" pragmaType="bind_storage" parentfunction="order_book" op="666" impl="18" latency="-1" variable="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3bid"/>
+<pragma file="order_book_src/priority_queue.cpp" line="315" pragmaType="array_partition" parentfunction="order_book" dim="1" factor="0" mode="complete" dynamic="0" variable="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3ask"/>
+<pragma file="order_book_src/priority_queue.cpp" line="316" pragmaType="array_partition" parentfunction="order_book" dim="2" factor="4" mode="cyclic" dynamic="0" variable="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3ask"/>
+<pragma file="order_book_src/priority_queue.cpp" line="317" pragmaType="dependence" parentfunction="order_book" class="" direction="NODIR" type="inter" distance="0" variable="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3ask"/>
+<pragma file="order_book_src/priority_queue.cpp" line="318" pragmaType="bind_storage" parentfunction="order_book" op="666" impl="18" latency="-1" variable="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3ask"/>
+<pragma file="order_book_src/priority_queue.cpp" line="321" pragmaType="array_partition" parentfunction="order_book" dim="1" factor="0" mode="complete" dynamic="0" variable="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10bid_remove"/>
+<pragma file="order_book_src/priority_queue.cpp" line="322" pragmaType="array_partition" parentfunction="order_book" dim="2" factor="4" mode="cyclic" dynamic="0" variable="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10bid_remove"/>
+<pragma file="order_book_src/priority_queue.cpp" line="323" pragmaType="dependence" parentfunction="order_book" class="" direction="NODIR" type="inter" distance="0" variable="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10bid_remove"/>
+<pragma file="order_book_src/priority_queue.cpp" line="324" pragmaType="bind_storage" parentfunction="order_book" op="666" impl="18" latency="-1" variable="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10bid_remove"/>
+<pragma file="order_book_src/priority_queue.cpp" line="327" pragmaType="array_partition" parentfunction="order_book" dim="1" factor="0" mode="complete" dynamic="0" variable="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10ask_remove"/>
+<pragma file="order_book_src/priority_queue.cpp" line="328" pragmaType="array_partition" parentfunction="order_book" dim="2" factor="4" mode="cyclic" dynamic="0" variable="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10ask_remove"/>
+<pragma file="order_book_src/priority_queue.cpp" line="329" pragmaType="dependence" parentfunction="order_book" class="" direction="NODIR" type="inter" distance="0" variable="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10ask_remove"/>
+<pragma file="order_book_src/priority_queue.cpp" line="330" pragmaType="bind_storage" parentfunction="order_book" op="666" impl="18" latency="-1" variable="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10ask_remove"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="empty" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="empty" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="full" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="full" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\etc/ap_common.h" line="515" pragmaType="inline" parentfunction="ssdm_int<32, true>::ssdm_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<8>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<16>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="full" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="order_book_src/priority_queue.cpp" line="175" pragmaType="inline" parentfunction="add_ask" off="0" region="0" recursive="0"/>
+<pragma file="order_book_src/priority_queue.cpp" line="205" pragmaType="pipeline" parentfunction="add_ask" off="0" ii="1" rewind="0" style=""/>
+<pragma file="order_book_src/priority_queue.cpp" line="204" pragmaType="loop_tripcount" parentfunction="add_ask" min="0" max="11" avg="5"/>
+<pragma file="order_book_src/priority_queue.cpp" line="203" pragmaType="dependence" parentfunction="add_ask" class="" direction="NODIR" type="inter" distance="0" variable="heap"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_fixed_base<16, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator><16, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<16, false>::operator!=<32, true>(ap_int_base<32, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<32>::ap_uint<16>(ap_uint<16> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<32, false>::ssdm_int(unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<16, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<3, false>::operator!=<32, true>(ap_int_base<32, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<3, false>::operator==<32, true>(ap_int_base<32, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<16, false>::operator==<16, false>(ap_int_base<16, false> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool operator!=<3, false>(ap_int_base<3, false> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool operator><8, false>(ap_int_base<8, false> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi3ELb0EEC2EDq3_j" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<16, false>::ssdm_int(unsigned short)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<8, false>::operator><32, true>(ap_int_base<32, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<16, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool operator==<3, false>(ap_int_base<3, false> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<3, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<4>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<4, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi4ELb0EEC2EDq4_j" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<16, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>& ap_int_base<8, false>::operator-=<8, false>(ap_int_base<8, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+</pragmas>

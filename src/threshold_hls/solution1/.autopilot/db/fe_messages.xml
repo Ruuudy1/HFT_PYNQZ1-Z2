@@ -1,0 +1,63 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5570" msg_severity="WARNING" msg_loc="threshold_src/simpleThreshold.cpp:17:52" msg_body="unexpected pragma argument ':', expects identifier">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/ruuud/spring2025/cse145/AAAAHHHH/ECE1373_2016_hft_on_fpga/src/build_threshold_core.tcl:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="simple_threshold" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=simple_threshold" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="threshold_src/simpleThreshold.cpp:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="simple_threshold" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="threshold_src/simpleThreshold.cpp:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="simple_threshold" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register both port=top_bid" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="threshold_src/simpleThreshold.cpp:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="simple_threshold" ARG_PragmaIsValid="0" ARG_PragmaOptions="variable=top_bid compact=bit :" ARG_PragmaType="aggregate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="threshold_src/simpleThreshold.cpp:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="simple_threshold" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register both port=top_ask" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="threshold_src/simpleThreshold.cpp:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="simple_threshold" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=top_ask compact=bit" ARG_PragmaType="aggregate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="threshold_src/simpleThreshold.cpp:22:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="simple_threshold" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register both port=incoming_time" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="threshold_src/simpleThreshold.cpp:24:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="simple_threshold" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register both port=incoming_meta" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="threshold_src/simpleThreshold.cpp:25:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="simple_threshold" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=incoming_meta compact=bit" ARG_PragmaType="aggregate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="threshold_src/simpleThreshold.cpp:27:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="simple_threshold" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register both port=outgoing_order" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="threshold_src/simpleThreshold.cpp:28:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="simple_threshold" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=outgoing_order compact=bit" ARG_PragmaType="aggregate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="threshold_src/simpleThreshold.cpp:30:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="simple_threshold" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register both port=outgoing_time" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="threshold_src/simpleThreshold.cpp:32:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="simple_threshold" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register both port=outgoing_meta" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="threshold_src/simpleThreshold.cpp:33:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="simple_threshold" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=outgoing_meta compact=bit" ARG_PragmaType="aggregate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="threshold_src/simpleThreshold.cpp:36:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="simple_threshold" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="threshold_src/simpleThreshold.cpp:11:0" msg_body="Aggregating axis (hls::stream) variable 'top_ask' with compact=bit mode in 64-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="64" HwTyName="axis (hls::stream)" Name="top_ask"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="threshold_src/simpleThreshold.cpp:11:0" msg_body="Aggregating axis (hls::stream) variable 'incoming_meta' with compact=bit mode in 96-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="96" HwTyName="axis (hls::stream)" Name="incoming_meta"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="threshold_src/simpleThreshold.cpp:11:0" msg_body="Aggregating axis (hls::stream) variable 'outgoing_order' with compact=bit mode in 64-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="64" HwTyName="axis (hls::stream)" Name="outgoing_order"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="threshold_src/simpleThreshold.cpp:11:0" msg_body="Aggregating axis (hls::stream) variable 'outgoing_meta' with compact=bit mode in 96-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="96" HwTyName="axis (hls::stream)" Name="outgoing_meta"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

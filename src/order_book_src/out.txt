@@ -1,0 +1,625 @@
+d\spring2025\cse145\WORKINGPROJECTIDEA\ECE1373_2016_hft_on_fpga\src> vitis_hls -f build_order_book_core.tcl
+
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.2 (64-bit)
+ **** SW Build 5238294 on Nov  8 2024
+ **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+ **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+ **** Start of session at: Sun Jun  1 14:48:29 2025
+   ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+   ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+source C:/Xilinx/Vitis/2024.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'ruuud' on host 'rudyasus' (Windows NT_amd64 version 10.0) on Sun Jun 01 14:48:30 -0700 2025
+INFO: [HLS 200-10] In directory 'C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src'
+WARNING: [HLS 200-40] Environment variable 'C_INCLUDE_PATH' is set to C:\Users\ruuud\scoop\apps\gcc\current\include.
+WARNING: [HLS 200-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to C:\Users\ruuud\scoop\apps\gcc\current\include.
+WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl
+Sourcing Tcl script 'build_order_book_core.tcl'
+INFO: [HLS 200-1510] Running: open_project order_book_hls -reset
+INFO: [HLS 200-10] Opening and resetting project 'C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_o
+n_fpga/src/order_book_hls'.
+INFO: [HLS 200-1510] Running: set_top order_book
+INFO: [HLS 200-1510] Running: add_files order_book_src/priority_queue.cpp
+INFO: [HLS 200-10] Adding design file 'order_book_src/priority_queue.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files order_book_src/priority_queue.hpp
+INFO: [HLS 200-10] Adding design file 'order_book_src/priority_queue.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb order_book_src/tb.cpp
+INFO: [HLS 200-10] Adding test bench file 'order_book_src/tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado
+INFO: [HLS 200-10] Creating and opening solution 'C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_o
+n_fpga/src/order_book_hls/solution1'.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug14
+48-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1510] Running: create_clock -name default -period 10.0
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csynth_design
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds
+. Elapsed time: 0.081 seconds; current allocated memory: 255.566 MB.
+INFO: [HLS 200-10] Analyzing design file 'order_book_src/priority_queue.cpp' ...
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (order_book_src/prior
+ity_queue.cpp:312:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (order_book_src/prior
+ity_queue.cpp:318:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (order_book_src/prior
+ity_queue.cpp:324:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (order_book_src/prior
+ity_queue.cpp:330:9)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 second
+s. Elapsed time: 4.24 seconds; current allocated memory: 259.148 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 6,143 instructions in the design after the 'Compile/Link' phase of compilation. See the
+Design Size Report for more details: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/or
+der_book_hls/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 5,259 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation
+. See the Design Size Report for more details: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_f
+pga/src/order_book_hls/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 4,307 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation
+. See the Design Size Report for more details: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_f
+pga/src/order_book_hls/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 4,315 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation
+. See the Design Size Report for more details: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_f
+pga/src/order_book_hls/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 4,295 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation
+. See the Design Size Report for more details: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_f
+pga/src/order_book_hls/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 50,633 instructions in the design after the 'Array/Struct (step 1)' phase of compilation
+. See the Design Size Report for more details: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_f
+pga/src/order_book_hls/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 14,913 instructions in the design after the 'Array/Struct (step 2)' phase of compilation
+. See the Design Size Report for more details: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_f
+pga/src/order_book_hls/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 14,913 instructions in the design after the 'Array/Struct (step 3)' phase of compilation
+. See the Design Size Report for more details: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_f
+pga/src/order_book_hls/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 14,889 instructions in the design after the 'Array/Struct (step 4)' phase of compilation
+. See the Design Size Report for more details: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_f
+pga/src/order_book_hls/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 14,963 instructions in the design after the 'Array/Struct (step 5)' phase of compilation
+. See the Design Size Report for more details: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_f
+pga/src/order_book_hls/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 14,963 instructions in the design after the 'Performance (step 1)' phase of compilation.
+See the Design Size Report for more details: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fp
+ga/src/order_book_hls/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 14,895 instructions in the design after the 'Performance (step 2)' phase of compilation.
+See the Design Size Report for more details: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fp
+ga/src/order_book_hls/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 14,889 instructions in the design after the 'Performance (step 3)' phase of compilation.
+See the Design Size Report for more details: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fp
+ga/src/order_book_hls/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 14,889 instructions in the design after the 'Performance (step 4)' phase of compilation.
+See the Design Size Report for more details: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fp
+ga/src/order_book_hls/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 14,901 instructions in the design after the 'HW Transforms (step 1)' phase of compilatio
+n. See the Design Size Report for more details: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_
+fpga/src/order_book_hls/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 14,981 instructions in the design after the 'HW Transforms (step 2)' phase of compilatio
+n. See the Design Size Report for more details: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_
+fpga/src/order_book_hls/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-131] Inlining function 'pow2(int)' into 'find_path(unsigned int&, int&, int*, int)' (order_book_src/prior
+ity_queue.cpp:20:25)
+INFO: [HLS 214-131] Inlining function 'log_base_2(unsigned int)' into 'add_bid(order (*) [64], order&, unsigned int&, in
+t&, int*, int*, hls::stream<order, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&,
+ap_uint<32>&, ap_uint<32>&, ap_uint<32>, metadata, order, bool)' (order_book_src/priority_queue.cpp:67:24)
+INFO: [HLS 214-131] Inlining function 'calculate_index(int, int, int)' into 'add_bid(order (*) [64], order&, unsigned in
+t&, int&, int*, int*, hls::stream<order, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata
+, 0>&, ap_uint<32>&, ap_uint<32>&, ap_uint<32>, metadata, order, bool)' (order_book_src/priority_queue.cpp:102:19)
+INFO: [HLS 214-131] Inlining function 'find_path(unsigned int&, int&, int*, int)' into 'add_bid(order (*) [64], order&,
+unsigned int&, int&, int*, int*, hls::stream<order, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stre
+am<metadata, 0>&, ap_uint<32>&, ap_uint<32>&, ap_uint<32>, metadata, order, bool)' (order_book_src/priority_queue.cpp:68
+:23)
+INFO: [HLS 214-131] Inlining function 'right_child(unsigned int, unsigned int, order (*) [64])' into 'remove_bid(order (
+*) [64], ap_uint<8>&, unsigned int&, int&, int*, int*, order)' (order_book_src/priority_queue.cpp:147:21)
+INFO: [HLS 214-131] Inlining function 'left_child(unsigned int, unsigned int, order (*) [64])' into 'remove_bid(order (*
+) [64], ap_uint<8>&, unsigned int&, int&, int*, int*, order)' (order_book_src/priority_queue.cpp:146:20)
+INFO: [HLS 214-131] Inlining function 'log_base_2(unsigned int)' into 'add_ask(order (*) [64], order&, unsigned int&, in
+t&, int*, int*, hls::stream<order, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&,
+ap_uint<32>&, ap_uint<32>&, ap_uint<32>, metadata, order, bool)' (order_book_src/priority_queue.cpp:181:24)
+INFO: [HLS 214-131] Inlining function 'calculate_index(int, int, int)' into 'add_ask(order (*) [64], order&, unsigned in
+t&, int&, int*, int*, hls::stream<order, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata
+, 0>&, ap_uint<32>&, ap_uint<32>&, ap_uint<32>, metadata, order, bool)' (order_book_src/priority_queue.cpp:216:19)
+INFO: [HLS 214-131] Inlining function 'find_path(unsigned int&, int&, int*, int)' into 'add_ask(order (*) [64], order&,
+unsigned int&, int&, int*, int*, hls::stream<order, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stre
+am<metadata, 0>&, ap_uint<32>&, ap_uint<32>&, ap_uint<32>, metadata, order, bool)' (order_book_src/priority_queue.cpp:18
+2:23)
+INFO: [HLS 214-131] Inlining function 'right_child(unsigned int, unsigned int, order (*) [64])' into 'remove_ask(order (
+*) [64], ap_uint<8>&, unsigned int&, int&, int*, int*, order)' (order_book_src/priority_queue.cpp:263:21)
+INFO: [HLS 214-131] Inlining function 'left_child(unsigned int, unsigned int, order (*) [64])' into 'remove_ask(order (*
+) [64], ap_uint<8>&, unsigned int&, int&, int*, int*, order)' (order_book_src/priority_queue.cpp:262:20)
+INFO: [HLS 214-131] Inlining function 'add_ask(order (*) [64], order&, unsigned int&, int&, int*, int*, hls::stream<orde
+r, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, ap_uint<32>&, ap_uint<32>&, ap_
+uint<32>, metadata, order, bool)' into 'order_book(hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<met
+adata, 0>&, hls::stream<order, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, ap_
+uint<32>&, ap_uint<32>&)' (order_book_src/priority_queue.cpp:455:17)
+INFO: [HLS 214-131] Inlining function 'remove_ask(order (*) [64], ap_uint<8>&, unsigned int&, int&, int*, int*, order)'
+into 'order_book(hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, hls::stream<order, 0>&
+, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, ap_uint<32>&, ap_uint<32>&)' (order_b
+ook_src/priority_queue.cpp:451:21)
+INFO: [HLS 214-131] Inlining function 'add_bid(order (*) [64], order&, unsigned int&, int&, int*, int*, hls::stream<orde
+r, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, ap_uint<32>&, ap_uint<32>&, ap_
+uint<32>, metadata, order, bool)' into 'order_book(hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<met
+adata, 0>&, hls::stream<order, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, ap_
+uint<32>&, ap_uint<32>&)' (order_book_src/priority_queue.cpp:408:17)
+INFO: [HLS 214-131] Inlining function 'remove_bid(order (*) [64], ap_uint<8>&, unsigned int&, int&, int*, int*, order)'
+into 'order_book(hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, hls::stream<order, 0>&
+, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, ap_uint<32>&, ap_uint<32>&)' (order_b
+ook_src/priority_queue.cpp:404:21)
+INFO: [HLS 214-291] Loop 'BID_PUSH_LOOP' is marked as complete unroll implied by the pipeline pragma (order_book_src/pri
+ority_queue.cpp:88:5)
+INFO: [HLS 214-291] Loop 'OPEN_BID_REMOVE' is marked as complete unroll implied by the pipeline pragma (order_book_src/p
+riority_queue.cpp:383:17)
+INFO: [HLS 214-291] Loop 'BID_POP_LOOP' is marked as complete unroll implied by the pipeline pragma (order_book_src/prio
+rity_queue.cpp:134:9)
+INFO: [HLS 214-291] Loop 'ARBITRARY_BID_REMOVE' is marked as complete unroll implied by the pipeline pragma (order_book_
+src/priority_queue.cpp:387:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_399_1' is marked as complete unroll implied by the pipeline pragma (order_book_src/
+priority_queue.cpp:399:35)
+INFO: [HLS 214-291] Loop 'ASK_PUSH_LOOP' is marked as complete unroll implied by the pipeline pragma (order_book_src/pri
+ority_queue.cpp:202:5)
+INFO: [HLS 214-291] Loop 'OPEN_ASK_REMOVE' is marked as complete unroll implied by the pipeline pragma (order_book_src/p
+riority_queue.cpp:430:17)
+INFO: [HLS 214-291] Loop 'ASK_POP_LOOP' is marked as complete unroll implied by the pipeline pragma (order_book_src/prio
+rity_queue.cpp:248:9)
+INFO: [HLS 214-291] Loop 'ARBITRARY_ASK_REMOVE' is marked as complete unroll implied by the pipeline pragma (order_book_
+src/priority_queue.cpp:434:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_446_2' is marked as complete unroll implied by the pipeline pragma (order_book_src/
+priority_queue.cpp:446:35)
+WARNING: [HLS 214-398] Updating loop lower bound from 0 to 6 for loop 'BID_POP_LOOP' (order_book_src/priority_queue.cpp:
+134:9) in function 'order_book'. (order_book_src/priority_queue.cpp:283:0)
+WARNING: [HLS 214-398] Updating loop upper bound from 11 to 6 for loop 'BID_POP_LOOP' (order_book_src/priority_queue.cpp
+:134:9) in function 'order_book'. (order_book_src/priority_queue.cpp:283:0)
+WARNING: [HLS 214-398] Updating loop lower bound from 0 to 6 for loop 'ASK_POP_LOOP' (order_book_src/priority_queue.cpp:
+248:9) in function 'order_book'. (order_book_src/priority_queue.cpp:283:0)
+WARNING: [HLS 214-398] Updating loop upper bound from 11 to 6 for loop 'ASK_POP_LOOP' (order_book_src/priority_queue.cpp
+:248:9) in function 'order_book'. (order_book_src/priority_queue.cpp:283:0)
+WARNING: [HLS 214-327] Dependence pragma in loop 'BID_POP_LOOP' (order_book_src/priority_queue.cpp:134:9) is removed bec
+ause the loop is unrolled completely (order_book_src/priority_queue.cpp:135:9)
+INFO: [HLS 214-186] Unrolling loop 'BID_POP_LOOP' (order_book_src/priority_queue.cpp:134:9) in function 'order_book' com
+pletely with a factor of 6 (order_book_src/priority_queue.cpp:283:0)
+WARNING: [HLS 214-189] Pipeline directive for loop 'BID_POP_LOOP' (order_book_src/priority_queue.cpp:134:9) in function
+'order_book' has been removed because the loop is unrolled completely (order_book_src/priority_queue.cpp:283:0)
+WARNING: [HLS 214-327] Dependence pragma in loop 'ASK_POP_LOOP' (order_book_src/priority_queue.cpp:248:9) is removed bec
+ause the loop is unrolled completely (order_book_src/priority_queue.cpp:249:9)
+INFO: [HLS 214-186] Unrolling loop 'ASK_POP_LOOP' (order_book_src/priority_queue.cpp:248:9) in function 'order_book' com
+pletely with a factor of 6 (order_book_src/priority_queue.cpp:283:0)
+WARNING: [HLS 214-189] Pipeline directive for loop 'ASK_POP_LOOP' (order_book_src/priority_queue.cpp:248:9) in function
+'order_book' has been removed because the loop is unrolled completely (order_book_src/priority_queue.cpp:283:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS
+0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3bid.price': Complete partitioning on dimension 1. Cyclic partitioning with factor
+4 on dimension 2. (order_book_src/priority_queue.cpp:308:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS
+0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3bid.size': Complete partitioning on dimension 1. Cyclic partitioning with factor
+4 on dimension 2. (order_book_src/priority_queue.cpp:308:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS
+0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3bid.orderID': Complete partitioning on dimension 1. Cyclic partitioning with fact
+or 4 on dimension 2. (order_book_src/priority_queue.cpp:308:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS
+0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3bid.direction': Complete partitioning on dimension 1. Cyclic partitioning with fa
+ctor 4 on dimension 2. (order_book_src/priority_queue.cpp:308:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS
+0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3ask.price': Complete partitioning on dimension 1. Cyclic partitioning with factor
+4 on dimension 2. (order_book_src/priority_queue.cpp:314:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS
+0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3ask.size': Complete partitioning on dimension 1. Cyclic partitioning with factor
+4 on dimension 2. (order_book_src/priority_queue.cpp:314:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS
+0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3ask.orderID': Complete partitioning on dimension 1. Cyclic partitioning with fact
+or 4 on dimension 2. (order_book_src/priority_queue.cpp:314:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS
+0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3ask.direction': Complete partitioning on dimension 1. Cyclic partitioning with fa
+ctor 4 on dimension 2. (order_book_src/priority_queue.cpp:314:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS
+0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10bid_remove.price': Complete partitioning on dimension 1. Cyclic partitioning wit
+h factor 4 on dimension 2. (order_book_src/priority_queue.cpp:320:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS
+0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10bid_remove.size': Complete partitioning on dimension 1. Cyclic partitioning with
+factor 4 on dimension 2. (order_book_src/priority_queue.cpp:320:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS
+0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10bid_remove.orderID': Complete partitioning on dimension 1. Cyclic partitioning w
+ith factor 4 on dimension 2. (order_book_src/priority_queue.cpp:320:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS
+0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10bid_remove.direction': Complete partitioning on dimension 1. Cyclic partitioning
+with factor 4 on dimension 2. (order_book_src/priority_queue.cpp:320:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS
+0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10ask_remove.price': Complete partitioning on dimension 1. Cyclic partitioning wit
+h factor 4 on dimension 2. (order_book_src/priority_queue.cpp:326:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS
+0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10ask_remove.size': Complete partitioning on dimension 1. Cyclic partitioning with
+factor 4 on dimension 2. (order_book_src/priority_queue.cpp:326:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS
+0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10ask_remove.orderID': Complete partitioning on dimension 1. Cyclic partitioning w
+ith factor 4 on dimension 2. (order_book_src/priority_queue.cpp:326:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS
+0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10ask_remove.direction': Complete partitioning on dimension 1. Cyclic partitioning
+with factor 4 on dimension 2. (order_book_src/priority_queue.cpp:326:0)
+INFO: [HLS 214-437] Automatically disabling loop flattening for loop 'OPEN_BID_REMOVE'. (order_book_src/priority_queue.c
+pp:383:17)
+INFO: [HLS 214-437] Automatically disabling loop flattening for loop 'OPEN_ASK_REMOVE'. (order_book_src/priority_queue.c
+pp:430:17)
+WARNING: [HLS 214-187] Cannot unroll loop 'BID_PUSH_LOOP' (order_book_src/priority_queue.cpp:88:5) in function 'order_bo
+ok' as it has a variable trip count (order_book_src/priority_queue.cpp:88:5)
+WARNING: [HLS 214-187] Cannot unroll loop 'OPEN_BID_REMOVE' (order_book_src/priority_queue.cpp:383:17) in function 'orde
+r_book' as it has a variable trip count (order_book_src/priority_queue.cpp:383:17)
+WARNING: [HLS 214-187] Cannot unroll loop 'ARBITRARY_BID_REMOVE' (order_book_src/priority_queue.cpp:387:21) in function
+'order_book' as it has a variable trip count (order_book_src/priority_queue.cpp:387:21)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_399_1' (order_book_src/priority_queue.cpp:399:35) in function 'ord
+er_book' as it has a variable trip count (order_book_src/priority_queue.cpp:399:35)
+WARNING: [HLS 214-187] Cannot unroll loop 'ASK_PUSH_LOOP' (order_book_src/priority_queue.cpp:202:5) in function 'order_b
+ook' as it has a variable trip count (order_book_src/priority_queue.cpp:202:5)
+WARNING: [HLS 214-187] Cannot unroll loop 'OPEN_ASK_REMOVE' (order_book_src/priority_queue.cpp:430:17) in function 'orde
+r_book' as it has a variable trip count (order_book_src/priority_queue.cpp:430:17)
+WARNING: [HLS 214-187] Cannot unroll loop 'ARBITRARY_ASK_REMOVE' (order_book_src/priority_queue.cpp:434:21) in function
+'order_book' as it has a variable trip count (order_book_src/priority_queue.cpp:434:21)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_446_2' (order_book_src/priority_queue.cpp:446:35) in function 'ord
+er_book' as it has a variable trip count (order_book_src/priority_queue.cpp:446:35)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds.
+Elapsed time: 18.518 seconds; current allocated memory: 263.434 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002
+seconds; current allocated memory: 263.434 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.
+134 seconds; current allocated memory: 298.035 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] order_book_src/priority_queue.cpp:28: variable-indexed range selection may cause suboptimal QoR
+.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed ti
+me: 1.116 seconds; current allocated memory: 308.867 MB.
+WARNING: [XFORM 203-561] Updating loop upper bound from 11 to 6 for loop 'BID_PUSH_LOOP' (order_book_src/priority_queue.
+cpp:90:9) in function 'order_book'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 11 to 6 for loop 'BID_PUSH_LOOP' (order_book_src/priority_queue.
+cpp:90:9) in function 'order_book'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 11 to 6 for loop 'ASK_PUSH_LOOP' (order_book_src/priority_queue.
+cpp:204:9) in function 'order_book'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 11 to 6 for loop 'ASK_PUSH_LOOP' (order_book_src/priority_queue.
+cpp:204:9) in function 'order_book'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (order_book_src/priority_queue.cpp:388:9) to (order_bo
+ok_src/priority_queue.cpp:138:32) in function 'order_book'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (order_book_src/priority_queue.cpp:125:21) to (order_b
+ook_src/priority_queue.cpp:138:32) in function 'order_book'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (order_book_src/priority_queue.cpp:124:18) to (order_b
+ook_src/priority_queue.cpp:138:32) in function 'order_book'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (order_book_src/priority_queue.cpp:400:9) to (order_bo
+ok_src/priority_queue.cpp:138:32) in function 'order_book'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (order_book_src/priority_queue.cpp:125:21) to (order_b
+ook_src/priority_queue.cpp:138:32) in function 'order_book'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (order_book_src/priority_queue.cpp:435:9) to (order_bo
+ok_src/priority_queue.cpp:252:31) in function 'order_book'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (order_book_src/priority_queue.cpp:239:21) to (order_b
+ook_src/priority_queue.cpp:252:31) in function 'order_book'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (order_book_src/priority_queue.cpp:238:18) to (order_b
+ook_src/priority_queue.cpp:252:31) in function 'order_book'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (order_book_src/priority_queue.cpp:447:9) to (order_bo
+ok_src/priority_queue.cpp:252:31) in function 'order_book'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (order_book_src/priority_queue.cpp:239:21) to (order_b
+ook_src/priority_queue.cpp:252:31) in function 'order_book'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (order_book_src/priority_queue.cpp:78:12) in function 'o
+rder_book'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (order_book_src/priority_queue.cpp:192:47) in function '
+order_book'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (order_book_src/priority_queue.cpp:125:21) to (order_b
+ook_src/priority_queue.cpp:138:32) in function 'order_book'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (order_book_src/priority_queue.cpp:239:21) to (order_b
+ook_src/priority_queue.cpp:252:31) in function 'order_book'... converting 4 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 4 seconds. CPU system time: 0 second
+s. Elapsed time: 4.007 seconds; current allocated memory: 361.254 MB.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'order_book(stream&,stream&,stream&,stream&,stream&
+,stream&,stream&,ap_uint&,ap_u.140'.
+WARNING: [ANALYSIS 214-52] Found fa
+
+
+,stream&,stream&,ap_uint&,ap_u.440'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'order_book(stream&,stream&,stream&,stream&,stream&
+,stream&,stream&,ap_uint&,ap_u.441'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'order_book(stream&,stream&,stream&,stream&,stream&
+,stream&,stream&,ap_uint&,ap_u.442'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'order_book(stream&,stream&,stream&,stream&,stream&
+,stream&,stream&,ap_uint&,ap_u.443'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'order_book(stream&,stream&,stream&,stream&,stream&
+,stream&,stream&,ap_uint&,ap_u.444'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'order_book(stream&,stream&,stream&,stream&,stream&
+,stream&,stream&,ap_uint&,ap_u.445'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'order_book(stream&,stream&,stream&,stream&,stream&
+,stream&,stream&,ap_uint&,ap_u.446'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'order_book(stream&,stream&,stream&,stream&,stream&
+,stream&,stream&,ap_uint&,ap_u.447'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 20 seconds. CPU system time: 2 seconds. Elapsed time
+: 46.542 seconds; current allocated memory: 453.512 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'order_book' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'order_book_Pipeline_ASK_PUSH_LOOP2'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'order_book_Pipeline_ASK_PUSH_LOOP2': contains
+subloop(s) that are not unrolled.
+INFO: [SCHED 204-61] Pipelining loop 'ASK_PUSH_LOOP'.
+WARNING: [HLS 200-885] The II Violation in module 'order_book_Pipeline_ASK_PUSH_LOOP2' (loop 'ASK_PUSH_LOOP'): Unable to
+schedule 'load' operation 16 bit ('order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_1605', orde
+r_book_src/priority_queue.cpp:206->order_book_src/priority_queue.cpp:455) on array 'order_book_stream_stream_stream_stre
+am_stream_stream_stream_ap_uint_ap_u_633' due to limited memory ports (II = 1). Please consider using a memory core with
+more ports or partitioning the array 'order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_633'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug144
+8-hls-guidance&resourceid=200-885.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 5, loop 'ASK_PUSH_LOOP'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.688 secon
+ds; current allocated memory: 492.242 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.431 seconds;
+current allocated memory: 493.316 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'order_book_Pipeline_ASK_PUSH_LOOP'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'order_book_Pipeline_ASK_PUSH_LOOP': contains
+subloop(s) that are not unrolled.
+INFO: [SCHED 204-61] Pipelining loop 'ASK_PUSH_LOOP'.
+WARNING: [HLS 200-885] The II Violation in module 'order_book_Pipeline_ASK_PUSH_LOOP' (loop 'ASK_PUSH_LOOP'): Unable to
+schedule 'load' operation 16 bit ('order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_1893', order
+_book_src/priority_queue.cpp:206->order_book_src/priority_queue.cpp:417) on array 'order_book_stream_stream_stream_strea
+m_stream_stream_stream_ap_uint_ap_u_521' due to limited memory ports (II = 1). Please consider using a memory core with
+more ports or partitioning the array 'order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_521'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug144
+8-hls-guidance&resourceid=200-885.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 5, loop 'ASK_PUSH_LOOP'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.334 secon
+ds; current allocated memory: 499.156 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.451 seconds;
+current allocated memory: 499.160 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'order_book_Pipeline_BID_PUSH_LOOP1'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'order_book_Pipeline_BID_PUSH_LOOP1': contains
+subloop(s) that are not unrolled.
+INFO: [SCHED 204-61] Pipelining loop 'BID_PUSH_LOOP'.
+WARNING: [HLS 200-885] The II Violation in module 'order_book_Pipeline_BID_PUSH_LOOP1' (loop 'BID_PUSH_LOOP'): Unable to
+schedule 'load' operation 16 bit ('order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_981', order
+_book_src/priority_queue.cpp:92->order_book_src/priority_queue.cpp:408) on array 'order_book_stream_stream_stream_stream
+_stream_stream_stream_ap_uint_ap_u_37' due to limited memory ports (II = 1). Please consider using a memory core with mo
+re ports or partitioning the array 'order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_37'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug144
+8-hls-guidance&resourceid=200-885.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 8, loop 'BID_PUSH_LOOP'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 17 seconds. CPU system time: 0 seconds. Elapsed time: 17.827 sec
+onds; current allocated memory: 504.309 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.434 seconds;
+current allocated memory: 504.309 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'order_book_Pipeline_BID_PUSH_LOOP'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'order_book_Pipeline_BID_PUSH_LOOP': contains
+subloop(s) that are not unrolled.
+INFO: [SCHED 204-61] Pipelining loop 'BID_PUSH_LOOP'.
+WARNING: [HLS 200-885] The II Violation in module 'order_book_Pipeline_BID_PUSH_LOOP' (loop 'BID_PUSH_LOOP'): Unable to
+schedule 'load' operation 16 bit ('order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_1317', order
+_book_src/priority_queue.cpp:92->order_book_src/priority_queue.cpp:369) on array 'order_book_stream_stream_stream_stream
+_stream_stream_stream_ap_uint_ap_u_745' due to limited memory ports (II = 1). Please consider using a memory core with m
+ore ports or partitioning the array 'order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_745'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug144
+8-hls-guidance&resourceid=200-885.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 8, loop 'BID_PUSH_LOOP'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 19 seconds. CPU system time: 0 seconds. Elapsed time: 19.186 sec
+onds; current allocated memory: 511.695 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.378 seconds;
+current allocated memory: 511.695 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'order_book'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'order_book': contains subloop(s) that are not
+unrolled.
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'order_book': contains subloop(s) that are not
+unrolled.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 13 seconds. CPU system time: 0 seconds. Elapsed time: 13.179 sec
+onds; current allocated memory: 791.316 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 3.309 seconds;
+current allocated memory: 791.316 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'order_book_Pipeline_ASK_PUSH_LOOP2'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'order_book_Pipeline_ASK_PUSH_LOOP2' pipeline 'ASK_PUSH_LO
+OP' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'bitselect_1ns_32ns_32s_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_13_3_16_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_13_3_3_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_13_3_8_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_16_1_1': 12 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_3_1_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_8_1_1': 6 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'order_book_Pipeline_ASK_PUSH_LOOP2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 3.4
+51 seconds; current allocated memory: 791.316 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'order_book_Pipeline_ASK_PUSH_LOOP'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'order_book_Pipeline_ASK_PUSH_LOOP' pipeline 'ASK_PUSH_LOO
+P' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'bitselect_1ns_32ns_32s_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_13_3_16_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_13_3_3_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_13_3_8_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_16_1_1': 12 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_3_1_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_8_1_1': 6 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'order_book_Pipeline_ASK_PUSH_LOOP'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 2.7
+01 seconds; current allocated memory: 791.316 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'order_book_Pipeline_BID_PUSH_LOOP1'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'order_book_Pipeline_BID_PUSH_LOOP1' pipeline 'BID_PUSH_LO
+OP' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'bitselect_1ns_32ns_32s_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_13_3_16_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_13_3_3_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_13_3_8_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_16_1_1': 12 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_3_1_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_8_1_1': 6 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'order_book_Pipeline_BID_PUSH_LOOP1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 2.7
+68 seconds; current allocated memory: 791.316 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'order_book_Pipeline_BID_PUSH_LOOP'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'order_book_Pipeline_BID_PUSH_LOOP' pipeline 'BID_PUSH_LOO
+P' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'bitselect_1ns_32ns_32s_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_13_3_16_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_13_3_3_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_13_3_8_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_16_1_1': 12 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_3_1_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_8_1_1': 6 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'order_book_Pipeline_BID_PUSH_LOOP'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 2.9
+8 seconds; current allocated memory: 791.316 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'order_book'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'order_book/order_stream' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'order_book/incoming_time' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'order_book/incoming_meta' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'order_book/top_bid' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'order_book/top_ask' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'order_book/outgoing_time' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'order_book/outgoing_meta' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'order_book/top_bid_id' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'order_book/top_ask_id' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'order_book' to 'ap_ctrl_none'.
+WARNING: [RTGEN 206-101] Register 'counter_bid' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hole_counter_bid' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'counter_ask' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hole_counter_ask' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_727_RA
+M_1P_BRAM_1R1W' to 'order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_727_bkb' due to the length
+limit 80
+INFO: [SYN 201-210] Renamed object name 'order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_755_RA
+M_1P_BRAM_1R1W' to 'order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_755_cud' due to the length
+limit 80
+INFO: [SYN 201-210] Renamed object name 'order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_699_RA
+M_1P_BRAM_1R1W' to 'order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_699_dEe' due to the length
+limit 80
+INFO: [SYN 201-210] Renamed object name 'order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_671_RA
+M_1P_BRAM_1R1W' to 'order_book_stream_stre
+
+
+
+
+INFO: [SYN 201-210] Renamed object name 'order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_586_RA
+M_1P_BRAM_1R1W' to 'order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_586_hob' due to the length
+limit 80
+INFO: [RTGEN 206-100] Bundling port 'top_bid_id' and 'top_ask_id' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'order_book'.
+INFO: [RTMG 210-278] Implementing memory 'order_book_hole_lvl_bid_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'order_book_hole_idx_bid_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-279] Implementing memory 'order_book_log_rom_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint
+_ap_u_727_bkb' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint
+_ap_u_755_cud' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint
+_ap_u_671_eOg' using block RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 14 seconds. CPU system time: 2 seconds. Elapsed time: 22
+.812 seconds; current allocated memory: 791.316 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 6 seconds. CPU system time: 7 seconds. Elapsed ti
+me: 13.986 seconds; current allocated memory: 891.840 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time:
+1.591 seconds; current allocated memory: 901.340 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for order_book.
+INFO: [VLOG 209-307] Generating Verilog RTL for order_book.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 137.19 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:03:05; Allocated memory: 652.148 MB.
+INFO: [HLS 200-1510] Running: export_design -format ip_catalog
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+WARNING: C:/Xilinx/Vivado/2024.2/tps/win64/jre11.0.16_1 does not exist.
+
+
+****** Vivado v2024.2 (64-bit)
+ **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+ **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+ **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+ **** Start of session at: Sun Jun  1 14:51:49 2025
+   ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+   ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373
+_2016_hft_on_fpga/src/order_book_hls/solution1/solution1_data.json outdir=C:/Users/ruuud/spring2025/cse145/WORKINGPROJEC
+TIDEA/ECE1373_2016_hft_on_fpga/src/order_book_hls/solution1/impl/ip srcdir=C:/Users/ruuud/spring2025/cse145/WORKINGPROJE
+CTIDEA/ECE1373_2016_hft_on_fpga/src/order_book_hls/solution1 sort_interfaces_ports=false
+INFO: Copied 1 ipmisc file(s) to C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/order_
+book_hls/solution1/impl/ip/misc
+INFO: Copied 29 verilog file(s) to C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/orde
+r_book_hls/solution1/impl/ip/hdl/verilog
+INFO: Copied 21 vhdl file(s) to C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/order_b
+ook_hls/solution1/impl/ip/hdl/vhdl
+INFO: Copied 10 swdriver file(s) to C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/ord
+er_book_hls/solution1/impl/ip/drivers
+ipx::create_core: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 625.305 ; gain = 185.109
+INFO: Import ports from HDL: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/order_book
+_hls/solution1/impl/ip/hdl/vhdl/order_book.vhd (order_book)
+INFO: Add axi4lite interface s_axi_control
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add axi4stream interface order_stream
+INFO: Add axi4stream interface incoming_time
+INFO: Add axi4stream interface incoming_meta
+INFO: Add axi4stream interface top_bid
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+INFO: Add axi4stream interface top_ask
+INFO: Add axi4stream interface outgoing_time
+INFO: Add axi4stream interface outgoing_meta
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/order_book_hls/solutio
+n1/impl/ip/component.xml
+INFO: Created IP archive C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/order_book_hls
+/solution1/impl/ip/xilinx_com_hls_order_book_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Sun Jun  1 14:53:00 2025...
+INFO: [HLS 200-802] Generated output file order_book_hls/solution1/impl/export.zip
+INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:01:23; Allocated memory: 20.535 MB.
+INFO: [HLS 200-112] Total CPU user time: 123 seconds. Total CPU system time: 17 seconds. Total elapsed time: 271.571 sec
+onds; peak allocated memory: 928.059 MB.
+PS C:\Users\ruuud\spring2025\cse145\WORKINGPROJECTIDEA\ECE1373_2016_hft_on_fpga\src>

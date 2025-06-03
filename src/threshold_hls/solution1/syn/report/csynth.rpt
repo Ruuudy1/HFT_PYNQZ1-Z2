@@ -1,0 +1,128 @@
+
+
+================================================================
+== Synthesis Summary Report of 'simple_threshold'
+================================================================
++ General Information: 
+    * Date:           Thu May 29 09:33:36 2025
+    * Version:        2024.2 (Build 5238294 on Nov  8 2024)
+    * Project:        threshold_hls
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg484-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |       Modules      | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |           |           |     |
+    |       & Loops      | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |    LUT    | URAM|
+    +--------------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |+ simple_threshold  |    II|  0.04|        7|  70.000|         -|        5|     -|       yes|     -|   -|  182 (~0%)|  234 (~0%)|    -|
+    +--------------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AXIS
++----------------+-----------+---------------+-------+--------+--------+
+| Interface      | Direction | Register Mode | TDATA | TREADY | TVALID |
++----------------+-----------+---------------+-------+--------+--------+
+| incoming_meta  | in        | both          | 96    | 1      | 1      |
+| incoming_time  | in        | both          | 64    | 1      | 1      |
+| outgoing_meta  | out       | both          | 96    | 1      | 1      |
+| outgoing_order | out       | both          | 64    | 1      | 1      |
+| outgoing_time  | out       | both          | 64    | 1      | 1      |
+| top_ask        | in        | both          | 64    | 1      | 1      |
+| top_bid        | in        | both          | 96    | 1      | 1      |
++----------------+-----------+---------------+-------+--------+--------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+----------+
+| Interface | Type         | Ports    |
++-----------+--------------+----------+
+| ap_clk    | clock        | ap_clk   |
+| ap_rst_n  | reset        | ap_rst_n |
+| ap_ctrl   | ap_ctrl_none |          |
++-----------+--------------+----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------------+-----------+-------------------------+
+| Argument       | Direction | Datatype                |
++----------------+-----------+-------------------------+
+| top_bid        | in        | stream<order, 0>&       |
+| top_ask        | in        | stream<order, 0>&       |
+| incoming_time  | in        | stream<ap_uint<64>, 0>& |
+| incoming_meta  | in        | stream<metadata, 0>&    |
+| outgoing_order | out       | stream<order, 0>&       |
+| outgoing_time  | out       | stream<ap_uint<64>, 0>& |
+| outgoing_meta  | out       | stream<metadata, 0>&    |
++----------------+-----------+-------------------------+
+
+* SW-to-HW Mapping
++----------------+----------------+-----------+
+| Argument       | HW Interface   | HW Type   |
++----------------+----------------+-----------+
+| top_bid        | top_bid        | interface |
+| top_ask        | top_ask        | interface |
+| incoming_time  | incoming_time  | interface |
+| incoming_meta  | incoming_meta  | interface |
+| outgoing_order | outgoing_order | interface |
+| outgoing_time  | outgoing_time  | interface |
+| outgoing_meta  | outgoing_meta  | interface |
++----------------+----------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-----------------------+-----+--------+-----------+-------+------+---------+
+| Name                  | DSP | Pragma | Variable  | Op    | Impl | Latency |
++-----------------------+-----+--------+-----------+-------+------+---------+
+| + simple_threshold    | 0   |        |           |       |      |         |
+|   icmp_ln60_fu_169_p2 |     |        | icmp_ln60 | setgt | auto | 0       |
+|   icmp_ln65_fu_179_p2 |     |        | icmp_ln65 | setlt | auto | 0       |
++-----------------------+-----+--------+-----------+-------+------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Ignored Pragmas
++-----------+--------------------------------+-------------------------------------------------------------------+----------------------------------------------------+
+| Type      | Options                        | Location                                                          | Messages                                           |
++-----------+--------------------------------+-------------------------------------------------------------------+----------------------------------------------------+
+| aggregate | variable=top_bid compact=bit : | threshold_src/simpleThreshold.cpp:17 in simple_threshold, top_bid | unexpected pragma argument ':', expects identifier |
++-----------+--------------------------------+-------------------------------------------------------------------+----------------------------------------------------+
+
+* Valid Pragma Syntax
++-----------+----------------------------------------+--------------------------------------------------------------------------+
+| Type      | Options                                | Location                                                                 |
++-----------+----------------------------------------+--------------------------------------------------------------------------+
+| interface | ap_ctrl_none port=return               | threshold_src/simpleThreshold.cpp:13 in simple_threshold, return         |
+| interface | axis register both port=top_bid        | threshold_src/simpleThreshold.cpp:16 in simple_threshold, top_bid        |
+| interface | axis register both port=top_ask        | threshold_src/simpleThreshold.cpp:19 in simple_threshold, top_ask        |
+| aggregate | variable=top_ask compact=bit           | threshold_src/simpleThreshold.cpp:20 in simple_threshold, top_ask        |
+| interface | axis register both port=incoming_time  | threshold_src/simpleThreshold.cpp:22 in simple_threshold, incoming_time  |
+| interface | axis register both port=incoming_meta  | threshold_src/simpleThreshold.cpp:24 in simple_threshold, incoming_meta  |
+| aggregate | variable=incoming_meta compact=bit     | threshold_src/simpleThreshold.cpp:25 in simple_threshold, incoming_meta  |
+| interface | axis register both port=outgoing_order | threshold_src/simpleThreshold.cpp:27 in simple_threshold, outgoing_order |
+| aggregate | variable=outgoing_order compact=bit    | threshold_src/simpleThreshold.cpp:28 in simple_threshold, outgoing_order |
+| interface | axis register both port=outgoing_time  | threshold_src/simpleThreshold.cpp:30 in simple_threshold, outgoing_time  |
+| interface | axis register both port=outgoing_meta  | threshold_src/simpleThreshold.cpp:32 in simple_threshold, outgoing_meta  |
+| aggregate | variable=outgoing_meta compact=bit     | threshold_src/simpleThreshold.cpp:33 in simple_threshold, outgoing_meta  |
+| pipeline  | II=1                                   | threshold_src/simpleThreshold.cpp:36 in simple_threshold                 |
++-----------+----------------------------------------+--------------------------------------------------------------------------+
+
+

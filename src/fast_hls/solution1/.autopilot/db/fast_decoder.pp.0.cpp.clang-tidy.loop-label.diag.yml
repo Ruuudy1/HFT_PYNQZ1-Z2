@@ -1,0 +1,94 @@
+---
+MainSourceFile:  'C:/Users/ruuud/spring2025/cse145/AAAAHHHH/ECE1373_2016_hft_on_fpga/src/fast_hls/solution1/.autopilot/db/fast_decoder.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'C:\Xilinx\Vitis\2024.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_hls\solution1\.autopilot\db\fast_decoder.pp.0.cpp'
+        Offset:          323017
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'C:\Xilinx\Vitis\2024.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_hls\solution1\.autopilot\db\fast_decoder.pp.0.cpp'
+        Offset:          323483
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'C:\Xilinx\Vitis\2024.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_hls\solution1\.autopilot\db\fast_decoder.pp.0.cpp'
+        Offset:          323950
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1248_1:  '
+    FileOffset:      1248
+    FilePath:        'C:\Xilinx\Vitis\2024.2\common\technology\autopilot\etc\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_hls\solution1\.autopilot\db\fast_decoder.pp.0.cpp'
+        Offset:          607308
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1248_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_26_1:  '
+    FileOffset:      26
+    FilePath:        'C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_src\fast_decoder.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_hls\solution1\.autopilot\db\fast_decoder.pp.0.cpp'
+        Offset:          979843
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_26_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_95_2:  '
+    FileOffset:      95
+    FilePath:        'C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_src\fast_decoder.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_hls\solution1\.autopilot\db\fast_decoder.pp.0.cpp'
+        Offset:          981108
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_95_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_166_1:  '
+    FileOffset:      166
+    FilePath:        'C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_src\fast_decoder.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_hls\solution1\.autopilot\db\fast_decoder.pp.0.cpp'
+        Offset:          982304
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_166_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_192_2:  '
+    FileOffset:      192
+    FilePath:        'C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_src\fast_decoder.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_hls\solution1\.autopilot\db\fast_decoder.pp.0.cpp'
+        Offset:          982811
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_192_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_238_1:  '
+    FileOffset:      238
+    FilePath:        'C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_src\fast_decoder.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_hls\solution1\.autopilot\db\fast_decoder.pp.0.cpp'
+        Offset:          983606
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_238_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_259_1:  '
+    FileOffset:      259
+    FilePath:        'C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_src\fast_decoder.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_hls\solution1\.autopilot\db\fast_decoder.pp.0.cpp'
+        Offset:          984166
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_259_1: '
+...

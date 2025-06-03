@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "order_book",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "order_book"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/build_order_book_core.tcl",
+    "sourceLine": 9,
+    "success": true
+  }
+]

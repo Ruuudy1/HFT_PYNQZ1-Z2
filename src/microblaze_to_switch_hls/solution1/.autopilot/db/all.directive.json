@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "MicroblazeToSwitch",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "MicroblazeToSwitch"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Users/ruuud/spring2025/cse145/AAAAHHHH/ECE1373_2016_hft_on_fpga/src/build_microblaze_to_switch_core.tcl",
+    "sourceLine": 14,
+    "success": true
+  }
+]

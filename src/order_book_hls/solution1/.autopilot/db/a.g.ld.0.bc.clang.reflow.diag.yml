@@ -1,0 +1,3288 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/order_book_hls/solution1/.autopilot/db\priority_queue.pp.0.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_priority_queue.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.1
+    DebugLoc:        { File: order_book_src/priority_queue.hpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_priority_queue.pp.0.cpp
+    DebugLoc:        { File: 'C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/order_book_hls/solution1/.autopilot/db\priority_queue.pp.0.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 20, Column: 25 }
+Function:        _Z9find_pathRjRiPii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'pow2(int)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 9, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'find_path(unsigned int&, int&, int*, int)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 14, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 67, Column: 24 }
+Function:        _Z7add_bidPA64_5orderRS_RjRiPiS5_RN3hls6streamIS_Li0EEES9_RNS7_I7ap_uintILi32EELi0EEERNS7_I8metadataLi0EEERSB_SH_SB_SE_S_b
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'log_base_2(unsigned int)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 4, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'add_bid(order (*) [64], order&, unsigned int&, int&, int*, int*, hls::stream<order, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, ap_uint<32>&, ap_uint<32>&, ap_uint<32>, metadata, order, bool)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 60, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 102, 
+                   Column: 19 }
+Function:        _Z7add_bidPA64_5orderRS_RjRiPiS5_RN3hls6streamIS_Li0EEES9_RNS7_I7ap_uintILi32EELi0EEERNS7_I8metadataLi0EEERSB_SH_SB_SE_S_b
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'calculate_index(int, int, int)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 26, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'add_bid(order (*) [64], order&, unsigned int&, int&, int*, int*, hls::stream<order, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, ap_uint<32>&, ap_uint<32>&, ap_uint<32>, metadata, order, bool)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 60, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 68, Column: 23 }
+Function:        _Z7add_bidPA64_5orderRS_RjRiPiS5_RN3hls6streamIS_Li0EEES9_RNS7_I7ap_uintILi32EELi0EEERNS7_I8metadataLi0EEERSB_SH_SB_SE_S_b
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'find_path(unsigned int&, int&, int*, int)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 14, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'add_bid(order (*) [64], order&, unsigned int&, int&, int*, int*, hls::stream<order, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, ap_uint<32>&, ap_uint<32>&, ap_uint<32>, metadata, order, bool)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 60, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 147, 
+                   Column: 21 }
+Function:        _Z10remove_bidPA64_5orderR7ap_uintILi8EERjRiPiS7_S_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'right_child(unsigned int, unsigned int, order (*) [64])'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 37, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'remove_bid(order (*) [64], ap_uint<8>&, unsigned int&, int&, int*, int*, order)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 116, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 146, 
+                   Column: 20 }
+Function:        _Z10remove_bidPA64_5orderR7ap_uintILi8EERjRiPiS7_S_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'left_child(unsigned int, unsigned int, order (*) [64])'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 32, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'remove_bid(order (*) [64], ap_uint<8>&, unsigned int&, int&, int*, int*, order)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 116, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 181, 
+                   Column: 24 }
+Function:        _Z7add_askPA64_5orderRS_RjRiPiS5_RN3hls6streamIS_Li0EEES9_RNS7_I7ap_uintILi32EELi0EEERNS7_I8metadataLi0EEERSB_SH_SB_SE_S_b
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'log_base_2(unsigned int)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 4, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'add_ask(order (*) [64], order&, unsigned int&, int&, int*, int*, hls::stream<order, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, ap_uint<32>&, ap_uint<32>&, ap_uint<32>, metadata, order, bool)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 174, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 216, 
+                   Column: 19 }
+Function:        _Z7add_askPA64_5orderRS_RjRiPiS5_RN3hls6streamIS_Li0EEES9_RNS7_I7ap_uintILi32EELi0EEERNS7_I8metadataLi0EEERSB_SH_SB_SE_S_b
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'calculate_index(int, int, int)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 26, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'add_ask(order (*) [64], order&, unsigned int&, int&, int*, int*, hls::stream<order, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, ap_uint<32>&, ap_uint<32>&, ap_uint<32>, metadata, order, bool)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 174, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 182, 
+                   Column: 23 }
+Function:        _Z7add_askPA64_5orderRS_RjRiPiS5_RN3hls6streamIS_Li0EEES9_RNS7_I7ap_uintILi32EELi0EEERNS7_I8metadataLi0EEERSB_SH_SB_SE_S_b
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'find_path(unsigned int&, int&, int*, int)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 14, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'add_ask(order (*) [64], order&, unsigned int&, int&, int*, int*, hls::stream<order, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, ap_uint<32>&, ap_uint<32>&, ap_uint<32>, metadata, order, bool)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 174, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 263, 
+                   Column: 21 }
+Function:        _Z10remove_askPA64_5orderR7ap_uintILi8EERjRiPiS7_S_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'right_child(unsigned int, unsigned int, order (*) [64])'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 37, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'remove_ask(order (*) [64], ap_uint<8>&, unsigned int&, int&, int*, int*, order)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 230, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 262, 
+                   Column: 20 }
+Function:        _Z10remove_askPA64_5orderR7ap_uintILi8EERjRiPiS7_S_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'left_child(unsigned int, unsigned int, order (*) [64])'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 32, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'remove_ask(order (*) [64], ap_uint<8>&, unsigned int&, int&, int*, int*, order)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 230, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 455, 
+                   Column: 17 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'add_ask(order (*) [64], order&, unsigned int&, int&, int*, int*, hls::stream<order, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, ap_uint<32>&, ap_uint<32>&, ap_uint<32>, metadata, order, bool)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 174, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'order_book(hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, hls::stream<order, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, ap_uint<32>&, ap_uint<32>&)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 451, 
+                   Column: 21 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'remove_ask(order (*) [64], ap_uint<8>&, unsigned int&, int&, int*, int*, order)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 230, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'order_book(hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, hls::stream<order, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, ap_uint<32>&, ap_uint<32>&)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 408, 
+                   Column: 17 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'add_bid(order (*) [64], order&, unsigned int&, int&, int*, int*, hls::stream<order, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, ap_uint<32>&, ap_uint<32>&, ap_uint<32>, metadata, order, bool)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 60, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'order_book(hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, hls::stream<order, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, ap_uint<32>&, ap_uint<32>&)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 404, 
+                   Column: 21 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'remove_bid(order (*) [64], ap_uint<8>&, unsigned int&, int&, int*, int*, order)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 116, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'order_book(hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, hls::stream<order, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, ap_uint<32>&, ap_uint<32>&)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 88, Column: 5 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        BID_PUSH_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 383, 
+                   Column: 17 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        OPEN_BID_REMOVE
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 134, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 387, 
+                   Column: 21 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        ARBITRARY_BID_REMOVE
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 134, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 134, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 399, 
+                   Column: 35 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_399_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 134, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 134, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 134, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 88, Column: 5 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        BID_PUSH_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 202, 
+                   Column: 5 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        ASK_PUSH_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 430, 
+                   Column: 17 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        OPEN_ASK_REMOVE
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 248, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 434, 
+                   Column: 21 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        ARBITRARY_ASK_REMOVE
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 248, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 248, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 446, 
+                   Column: 35 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_446_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 248, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 248, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 248, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 202, 
+                   Column: 5 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        ASK_PUSH_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Updating loop '
+  - String:          lower
+  - String:          ' bound from '
+  - OldBound:        '0'
+  - String:          ' to '
+  - NewBound:        '6'
+  - String:          ' for loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          order_book
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Updating loop '
+  - String:          upper
+  - String:          ' bound from '
+  - OldBound:        '11'
+  - String:          ' to '
+  - NewBound:        '6'
+  - String:          ' for loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          order_book
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Updating loop '
+  - String:          lower
+  - String:          ' bound from '
+  - OldBound:        '0'
+  - String:          ' to '
+  - NewBound:        '6'
+  - String:          ' for loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          order_book
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Updating loop '
+  - String:          upper
+  - String:          ' bound from '
+  - OldBound:        '11'
+  - String:          ' to '
+  - NewBound:        '6'
+  - String:          ' for loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          order_book
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Updating loop '
+  - String:          lower
+  - String:          ' bound from '
+  - OldBound:        '0'
+  - String:          ' to '
+  - NewBound:        '6'
+  - String:          ' for loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          order_book
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Updating loop '
+  - String:          upper
+  - String:          ' bound from '
+  - OldBound:        '11'
+  - String:          ' to '
+  - NewBound:        '6'
+  - String:          ' for loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          order_book
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Updating loop '
+  - String:          lower
+  - String:          ' bound from '
+  - OldBound:        '0'
+  - String:          ' to '
+  - NewBound:        '6'
+  - String:          ' for loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          order_book
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Updating loop '
+  - String:          upper
+  - String:          ' bound from '
+  - OldBound:        '11'
+  - String:          ' to '
+  - NewBound:        '6'
+  - String:          ' for loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          order_book
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Updating loop '
+  - String:          lower
+  - String:          ' bound from '
+  - OldBound:        '0'
+  - String:          ' to '
+  - NewBound:        '6'
+  - String:          ' for loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          order_book
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Updating loop '
+  - String:          upper
+  - String:          ' bound from '
+  - OldBound:        '11'
+  - String:          ' to '
+  - NewBound:        '6'
+  - String:          ' for loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          order_book
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Updating loop '
+  - String:          lower
+  - String:          ' bound from '
+  - OldBound:        '0'
+  - String:          ' to '
+  - NewBound:        '6'
+  - String:          ' for loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          order_book
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Updating loop '
+  - String:          upper
+  - String:          ' bound from '
+  - OldBound:        '11'
+  - String:          ' to '
+  - NewBound:        '6'
+  - String:          ' for loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          order_book
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Updating loop '
+  - String:          lower
+  - String:          ' bound from '
+  - OldBound:        '0'
+  - String:          ' to '
+  - NewBound:        '6'
+  - String:          ' for loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          order_book
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Updating loop '
+  - String:          upper
+  - String:          ' bound from '
+  - OldBound:        '11'
+  - String:          ' to '
+  - NewBound:        '6'
+  - String:          ' for loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          order_book
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Updating loop '
+  - String:          lower
+  - String:          ' bound from '
+  - OldBound:        '0'
+  - String:          ' to '
+  - NewBound:        '6'
+  - String:          ' for loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          order_book
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Updating loop '
+  - String:          upper
+  - String:          ' bound from '
+  - OldBound:        '11'
+  - String:          ' to '
+  - NewBound:        '6'
+  - String:          ' for loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          order_book
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Updating loop '
+  - String:          lower
+  - String:          ' bound from '
+  - OldBound:        '0'
+  - String:          ' to '
+  - NewBound:        '6'
+  - String:          ' for loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          order_book
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Updating loop '
+  - String:          upper
+  - String:          ' bound from '
+  - OldBound:        '11'
+  - String:          ' to '
+  - NewBound:        '6'
+  - String:          ' for loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          order_book
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Updating loop '
+  - String:          lower
+  - String:          ' bound from '
+  - OldBound:        '0'
+  - String:          ' to '
+  - NewBound:        '6'
+  - String:          ' for loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          order_book
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Updating loop '
+  - String:          upper
+  - String:          ' bound from '
+  - OldBound:        '11'
+  - String:          ' to '
+  - NewBound:        '6'
+  - String:          ' for loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          order_book
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Updating loop '
+  - String:          lower
+  - String:          ' bound from '
+  - OldBound:        '0'
+  - String:          ' to '
+  - NewBound:        '6'
+  - String:          ' for loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          order_book
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Updating loop '
+  - String:          upper
+  - String:          ' bound from '
+  - OldBound:        '11'
+  - String:          ' to '
+  - NewBound:        '6'
+  - String:          ' for loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          order_book
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Updating loop '
+  - String:          lower
+  - String:          ' bound from '
+  - OldBound:        '0'
+  - String:          ' to '
+  - NewBound:        '6'
+  - String:          ' for loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          order_book
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Updating loop '
+  - String:          upper
+  - String:          ' bound from '
+  - OldBound:        '11'
+  - String:          ' to '
+  - NewBound:        '6'
+  - String:          ' for loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          order_book
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 135, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 135, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 135, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 135, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 135, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 135, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 135, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 135, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 135, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 135, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 135, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 135, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 135, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 135, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 135, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 135, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 135, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 135, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 135, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 135, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 135, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 135, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 135, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 135, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        BID_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:134:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 249, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 249, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 249, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 249, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 249, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 249, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 249, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 249, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 249, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 249, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 249, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 249, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 249, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 249, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 249, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 249, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 249, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 249, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 249, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 249, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 249, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 249, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 249, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            DepRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 249, 
+                   Column: 9 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Dependence pragma in loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          is removed because the loop is unrolled completely
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        ASK_POP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:248:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_order_book_ir
+Args:            
+  - Callee:          'order_book(hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, hls::stream<order, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, ap_uint<32>&, ap_uint<32>&)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_order_book_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 308, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3bid.price
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 308, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3bid.size
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 308, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3bid.orderID
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 308, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3bid.direction
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 314, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3ask.price
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 314, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3ask.size
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 314, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3ask.orderID
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 314, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3ask.direction
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 320, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10bid_remove.price
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 320, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10bid_remove.size
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 320, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10bid_remove.orderID
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 320, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10bid_remove.direction
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 326, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10ask_remove.price
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 326, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10ask_remove.size
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 326, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10ask_remove.orderID
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 326, 
+                   Column: 0 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10ask_remove.direction
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 387, 
+                   Column: 21 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        ARBITRARY_BID_REMOVE
+  - String:          ' '
+  - LoopLoc:         'order_book_src/priority_queue.cpp:387:21'
+  - String:          ' '
+  - Function:        'order_book(hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, hls::stream<order, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, ap_uint<32>&, ap_uint<32>&)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 383, 
+                   Column: 17 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        OPEN_BID_REMOVE
+  - String:          ' '
+  - LoopLoc:         'order_book_src/priority_queue.cpp:383:17'
+  - String:          ' '
+  - Function:        'order_book(hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, hls::stream<order, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, ap_uint<32>&, ap_uint<32>&)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 399, 
+                   Column: 35 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_399_1
+  - String:          ' '
+  - LoopLoc:         'order_book_src/priority_queue.cpp:399:35'
+  - String:          ' '
+  - Function:        'order_book(hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, hls::stream<order, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, ap_uint<32>&, ap_uint<32>&)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 434, 
+                   Column: 21 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        ARBITRARY_ASK_REMOVE
+  - String:          ' '
+  - LoopLoc:         'order_book_src/priority_queue.cpp:434:21'
+  - String:          ' '
+  - Function:        'order_book(hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, hls::stream<order, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, ap_uint<32>&, ap_uint<32>&)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 430, 
+                   Column: 17 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        OPEN_ASK_REMOVE
+  - String:          ' '
+  - LoopLoc:         'order_book_src/priority_queue.cpp:430:17'
+  - String:          ' '
+  - Function:        'order_book(hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, hls::stream<order, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, ap_uint<32>&, ap_uint<32>&)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 446, 
+                   Column: 35 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_446_2
+  - String:          ' '
+  - LoopLoc:         'order_book_src/priority_queue.cpp:446:35'
+  - String:          ' '
+  - Function:        'order_book(hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, hls::stream<order, 0>&, hls::stream<order, 0>&, hls::stream<ap_uint<32>, 0>&, hls::stream<metadata, 0>&, ap_uint<32>&, ap_uint<32>&)'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 283, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 387, 
+                   Column: 21 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        ARBITRARY_BID_REMOVE
+  - String:          '''('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:387:21'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 383, 
+                   Column: 17 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        OPEN_BID_REMOVE
+  - String:          '''('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:383:17'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 399, 
+                   Column: 35 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_399_1
+  - String:          '''('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:399:35'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 434, 
+                   Column: 21 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        ARBITRARY_ASK_REMOVE
+  - String:          '''('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:434:21'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 430, 
+                   Column: 17 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        OPEN_ASK_REMOVE
+  - String:          '''('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:430:17'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 446, 
+                   Column: 35 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_446_2
+  - String:          '''('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:446:35'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 88, Column: 5 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        BID_PUSH_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 383, 
+                   Column: 17 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        OPEN_BID_REMOVE
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 387, 
+                   Column: 21 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        ARBITRARY_BID_REMOVE
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 399, 
+                   Column: 35 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_399_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 88, Column: 5 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        BID_PUSH_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 202, 
+                   Column: 5 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        ASK_PUSH_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 430, 
+                   Column: 17 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        OPEN_ASK_REMOVE
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 434, 
+                   Column: 21 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        ARBITRARY_ASK_REMOVE
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 446, 
+                   Column: 35 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_446_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 202, 
+                   Column: 5 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        ASK_PUSH_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 88, Column: 5 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        BID_PUSH_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 383, 
+                   Column: 17 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        OPEN_BID_REMOVE
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 387, 
+                   Column: 21 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        ARBITRARY_BID_REMOVE
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 399, 
+                   Column: 35 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_399_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 88, Column: 5 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        BID_PUSH_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 202, 
+                   Column: 5 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        ASK_PUSH_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 430, 
+                   Column: 17 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        OPEN_ASK_REMOVE
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 434, 
+                   Column: 21 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        ARBITRARY_ASK_REMOVE
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 446, 
+                   Column: 35 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_446_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 202, 
+                   Column: 5 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        ASK_PUSH_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-loop-flatten-cost-model
+Name:            FlattenOffInference
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 383, 
+                   Column: 17 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Automatically disabling loop flattening for loop '''
+  - LoopName:        OPEN_BID_REMOVE
+  - String:          '''.'
+...
+--- !Passed
+Pass:            reflow-loop-flatten-cost-model
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 383, 
+                   Column: 17 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - PragmaType:      loop_flatten
+  - String:          ' '
+  - PragmaOptions:   off
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  order_book
+  - String:          ' '
+  - PragmaSrcLoc:    'order_book_src/priority_queue.cpp:383:17'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 383, 
+                       Column: 17 }
+  - LoopName:        OPEN_BID_REMOVE
+  - String:          ' '
+  - LoopLoc:         'order_book_src/priority_queue.cpp:383:17'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 383, 
+                       Column: 17 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-loop-flatten-cost-model
+Name:            FlattenOffInference
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 430, 
+                   Column: 17 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Automatically disabling loop flattening for loop '''
+  - LoopName:        OPEN_ASK_REMOVE
+  - String:          '''.'
+...
+--- !Passed
+Pass:            reflow-loop-flatten-cost-model
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 430, 
+                   Column: 17 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - PragmaType:      loop_flatten
+  - String:          ' '
+  - PragmaOptions:   off
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  order_book
+  - String:          ' '
+  - PragmaSrcLoc:    'order_book_src/priority_queue.cpp:430:17'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 430, 
+                       Column: 17 }
+  - LoopName:        OPEN_ASK_REMOVE
+  - String:          ' '
+  - LoopLoc:         'order_book_src/priority_queue.cpp:430:17'
+    DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 430, 
+                       Column: 17 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 88, Column: 5 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        BID_PUSH_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 383, 
+                   Column: 17 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        OPEN_BID_REMOVE
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 387, 
+                   Column: 21 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        ARBITRARY_BID_REMOVE
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 399, 
+                   Column: 35 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_399_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 88, Column: 5 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        BID_PUSH_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 202, 
+                   Column: 5 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        ASK_PUSH_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 430, 
+                   Column: 17 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        OPEN_ASK_REMOVE
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 434, 
+                   Column: 21 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        ARBITRARY_ASK_REMOVE
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 446, 
+                   Column: 35 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_446_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 202, 
+                   Column: 5 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        ASK_PUSH_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 88, Column: 5 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        BID_PUSH_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:88:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 383, 
+                   Column: 17 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        OPEN_BID_REMOVE
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:383:17'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 387, 
+                   Column: 21 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        ARBITRARY_BID_REMOVE
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:387:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 399, 
+                   Column: 35 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_399_1
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:399:35'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 88, Column: 5 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        BID_PUSH_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:88:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 202, 
+                   Column: 5 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        ASK_PUSH_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:202:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 430, 
+                   Column: 17 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        OPEN_ASK_REMOVE
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:430:17'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 434, 
+                   Column: 21 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        ARBITRARY_ASK_REMOVE
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:434:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 446, 
+                   Column: 35 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_446_2
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:446:35'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: order_book_src/priority_queue.cpp, Line: 202, 
+                   Column: 5 }
+Function:        _Z10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        ASK_PUSH_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'order_book_src/priority_queue.cpp:202:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          order_book
+  - String:          ''' as it has a variable trip count'
+...

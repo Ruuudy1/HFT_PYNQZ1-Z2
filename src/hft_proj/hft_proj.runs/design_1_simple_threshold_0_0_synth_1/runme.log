@@ -1,0 +1,380 @@
+
+*** Running vivado
+    with args -log design_1_simple_threshold_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_simple_threshold_0_0.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Sun Jun  1 15:35:42 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_simple_threshold_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 620.117 ; gain = 191.566
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/fast_hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/order_book_hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/threshold_hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/microblaze_to_switch_hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/udp_hls'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_simple_threshold_0_0
+Command: synth_design -top design_1_simple_threshold_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6420
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1331.086 ; gain = 468.191
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_simple_threshold_0_0' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ip/design_1_simple_threshold_0_0/synth/design_1_simple_threshold_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'simple_threshold' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/3ef4/hdl/verilog/simple_threshold.v:9]
+INFO: [Synth 8-6157] synthesizing module 'simple_threshold_regslice_both' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/3ef4/hdl/verilog/simple_threshold_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'simple_threshold_regslice_both' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/3ef4/hdl/verilog/simple_threshold_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'simple_threshold_regslice_both__parameterized0' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/3ef4/hdl/verilog/simple_threshold_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'simple_threshold_regslice_both__parameterized0' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/3ef4/hdl/verilog/simple_threshold_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'simple_threshold' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/3ef4/hdl/verilog/simple_threshold.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_simple_threshold_0_0' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ip/design_1_simple_threshold_0_0/synth/design_1_simple_threshold_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element ap_predicate_pred100_state7_reg was removed.  [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/3ef4/hdl/verilog/simple_threshold.v:337]
+WARNING: [Synth 8-6014] Unused sequential element ap_predicate_pred128_state8_reg was removed.  [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/3ef4/hdl/verilog/simple_threshold.v:348]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1445.645 ; gain = 582.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1445.645 ; gain = 582.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1445.645 ; gain = 582.750
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1445.645 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ip/design_1_simple_threshold_0_0/constraints/simple_threshold_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ip/design_1_simple_threshold_0_0/constraints/simple_threshold_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_simple_threshold_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_simple_threshold_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1540.293 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1540.680 ; gain = 0.387
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1540.680 ; gain = 677.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1540.680 ; gain = 677.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_simple_threshold_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1540.680 ; gain = 677.785
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'simple_threshold_regslice_both'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'simple_threshold_regslice_both__parameterized0'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'simple_threshold_regslice_both'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'simple_threshold_regslice_both__parameterized0'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1540.680 ; gain = 677.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               96 Bit    Registers := 7     
+	               64 Bit    Registers := 9     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 22    
++---Muxes : 
+	   2 Input   96 Bit        Muxes := 4     
+	   2 Input   64 Bit        Muxes := 5     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 71    
+	   4 Input    2 Bit        Muxes := 28    
+	   2 Input    1 Bit        Muxes := 23    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'regslice_both_top_bid_U/data_p1_reg' and it is trimmed from '96' to '16' bits. [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/3ef4/hdl/verilog/simple_threshold_regslice_both.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'regslice_both_top_bid_U/data_p2_reg' and it is trimmed from '96' to '16' bits. [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/3ef4/hdl/verilog/simple_threshold_regslice_both.v:63]
+WARNING: [Synth 8-3936] Found unconnected internal register 'regslice_both_top_ask_U/data_p1_reg' and it is trimmed from '64' to '16' bits. [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/3ef4/hdl/verilog/simple_threshold_regslice_both.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'regslice_both_top_ask_U/data_p2_reg' and it is trimmed from '64' to '16' bits. [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/3ef4/hdl/verilog/simple_threshold_regslice_both.v:63]
+WARNING: [Synth 8-7129] Port top_bid_TDATA[95] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[94] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[93] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[92] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[91] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[90] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[89] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[88] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[87] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[86] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[85] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[84] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[83] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[82] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[81] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[80] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[79] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[78] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[77] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[76] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[75] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[74] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[73] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[72] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[71] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[70] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[69] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[68] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[67] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[66] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[65] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[64] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[63] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[62] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[61] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[60] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[59] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[58] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[57] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[56] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[55] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[54] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[53] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[52] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[51] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[50] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[49] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[48] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[47] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[46] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[45] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[44] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[43] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[42] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[41] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[40] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[39] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[38] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[37] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[36] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[35] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[34] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[33] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[32] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[31] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[30] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[29] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[28] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[27] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[26] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[25] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[24] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[23] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[22] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[21] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[20] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[19] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[18] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[17] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_bid_TDATA[16] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_ask_TDATA[63] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_ask_TDATA[62] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_ask_TDATA[61] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_ask_TDATA[60] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_ask_TDATA[59] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_ask_TDATA[58] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_ask_TDATA[57] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_ask_TDATA[56] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_ask_TDATA[55] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_ask_TDATA[54] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_ask_TDATA[53] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_ask_TDATA[52] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_ask_TDATA[51] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_ask_TDATA[50] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_ask_TDATA[49] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_ask_TDATA[48] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_ask_TDATA[47] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_ask_TDATA[46] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_ask_TDATA[45] in module simple_threshold is either unconnected or has no load
+WARNING: [Synth 8-7129] Port top_ask_TDATA[44] in module simple_threshold is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1540.680 ; gain = 677.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1646.086 ; gain = 783.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1715.297 ; gain = 852.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1723.180 ; gain = 860.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1893.203 ; gain = 1030.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1893.203 ; gain = 1030.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1893.203 ; gain = 1030.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1893.203 ; gain = 1030.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1893.203 ; gain = 1030.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1893.203 ; gain = 1030.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |    12|
+|3     |LUT3 |   170|
+|4     |LUT4 |   217|
+|5     |LUT5 |    28|
+|6     |LUT6 |   185|
+|7     |FDRE |   906|
+|8     |FDSE |    15|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1893.203 ; gain = 1030.309
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 133 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1893.203 ; gain = 935.273
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1893.203 ; gain = 1030.309
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1893.203 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1893.203 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: df477258
+INFO: [Common 17-83] Releasing license: Synthesis
+37 Infos, 108 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1893.203 ; gain = 1251.309
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1893.203 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_simple_threshold_0_0_synth_1/design_1_simple_threshold_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_simple_threshold_0_0, cache-ID = fb9bedee160fa579
+INFO: [Coretcl 2-1174] Renamed 8 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1893.203 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_simple_threshold_0_0_synth_1/design_1_simple_threshold_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_simple_threshold_0_0_utilization_synth.rpt -pb design_1_simple_threshold_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jun  1 15:36:21 2025...

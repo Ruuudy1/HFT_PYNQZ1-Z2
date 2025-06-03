@@ -1,0 +1,1289 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/ruuud/spring2025/cse145/AAAAHHHH/ECE1373_2016_hft_on_fpga/src/fast_hls/solution1/.autopilot/db\fast_protocol.pp.0.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_fast_protocol.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.3
+    DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 16, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_fast_protocol.pp.0.cpp
+    DebugLoc:        { File: 'C:/Users/ruuud/spring2025/cse145/AAAAHHHH/ECE1373_2016_hft_on_fpga/src/fast_hls/solution1/.autopilot/db\fast_protocol.pp.0.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 239, Column: 43 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - Callee:          'ap_uint<8>::ap_uint(double)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis/2024.2/common/technology/autopilot\ap_int.h', 
+                       Line: 298, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'rxPath(hls::stream<axiWord, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<16>, 0>&, hls::stream<bool, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<order, 0>&)'
+    DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 391, Column: 48 }
+Function:        _Z6txPathRN3hls6streamI8metadataLi0EEERNS0_I7axiWordLi0EEES3_RNS0_I7ap_uintILi16EELi0EEERNS0_IS7_ILi64EELi0EEESD_RNS0_I5orderLi0EEE
+Args:            
+  - Callee:          'ap_uint<8>::ap_uint(double)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis/2024.2/common/technology/autopilot\ap_int.h', 
+                       Line: 298, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'txPath(hls::stream<metadata, 0>&, hls::stream<axiWord, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<order, 0>&)'
+    DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 354, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 554, Column: 2 }
+Function:        _Z13fast_protocolRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES3_S6_SA_RNS0_IS7_ILi64EELi0EEESF_S6_S6_SF_SF_RNS0_I5orderLi0EEESI_
+Args:            
+  - Callee:          'rxPath(hls::stream<axiWord, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<16>, 0>&, hls::stream<bool, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<order, 0>&)'
+    DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fast_protocol(hls::stream<axiWord, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<16>, 0>&, hls::stream<bool, 0>&, hls::stream<axiWord, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<metadata, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<order, 0>&, hls::stream<order, 0>&)'
+    DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 516, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 563, Column: 5 }
+Function:        _Z13fast_protocolRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES3_S6_SA_RNS0_IS7_ILi64EELi0EEESF_S6_S6_SF_SF_RNS0_I5orderLi0EEESI_
+Args:            
+  - Callee:          'txPath(hls::stream<metadata, 0>&, hls::stream<axiWord, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<order, 0>&)'
+    DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 354, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fast_protocol(hls::stream<axiWord, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<16>, 0>&, hls::stream<bool, 0>&, hls::stream<axiWord, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<metadata, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<order, 0>&, hls::stream<order, 0>&)'
+    DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 516, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 429, Column: 31 }
+Function:        _Z6txPathRN3hls6streamI8metadataLi0EEERNS0_I7axiWordLi0EEES3_RNS0_I7ap_uintILi16EELi0EEERNS0_IS7_ILi64EELi0EEESD_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_429_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 409, Column: 31 }
+Function:        _Z6txPathRN3hls6streamI8metadataLi0EEERNS0_I7axiWordLi0EEES3_RNS0_I7ap_uintILi16EELi0EEERNS0_IS7_ILi64EELi0EEESD_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_409_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 391, Column: 46 }
+Function:        _Z6txPathRN3hls6streamI8metadataLi0EEERNS0_I7axiWordLi0EEES3_RNS0_I7ap_uintILi16EELi0EEERNS0_IS7_ILi64EELi0EEESD_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        anonymous
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+Function:        _Z6txPathRN3hls6streamI8metadataLi0EEERNS0_I7axiWordLi0EEES3_RNS0_I7ap_uintILi16EELi0EEERNS0_IS7_ILi64EELi0EEESD_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        anonymous
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 192, Column: 31 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_192_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 119, Column: 20 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_119_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 116, Column: 41 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        anonymous
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        anonymous
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 310, Column: 31 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_310_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 242, Column: 20 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_242_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 239, Column: 41 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        anonymous
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        anonymous
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 354, Column: 0 }
+Function:        _Z6txPathRN3hls6streamI8metadataLi0EEERNS0_I7axiWordLi0EEES3_RNS0_I7ap_uintILi16EELi0EEERNS0_IS7_ILi64EELi0EEESD_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_429_2
+  - String:          ''' ('
+  - LoopLoc:         'fast_src/fast_protocol.cpp:429:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          txPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 354, Column: 0 }
+Function:        _Z6txPathRN3hls6streamI8metadataLi0EEERNS0_I7axiWordLi0EEES3_RNS0_I7ap_uintILi16EELi0EEERNS0_IS7_ILi64EELi0EEESD_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_409_1
+  - String:          ''' ('
+  - LoopLoc:         'fast_src/fast_protocol.cpp:409:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          txPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 354, Column: 0 }
+Function:        _Z6txPathRN3hls6streamI8metadataLi0EEERNS0_I7axiWordLi0EEES3_RNS0_I7ap_uintILi16EELi0EEERNS0_IS7_ILi64EELi0EEESD_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         'fast_src/fast_protocol.cpp:391:46'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          txPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 354, Column: 0 }
+Function:        _Z6txPathRN3hls6streamI8metadataLi0EEERNS0_I7axiWordLi0EEES3_RNS0_I7ap_uintILi16EELi0EEERNS0_IS7_ILi64EELi0EEESD_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          txPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 354, Column: 0 }
+Function:        _Z6txPathRN3hls6streamI8metadataLi0EEERNS0_I7axiWordLi0EEES3_RNS0_I7ap_uintILi16EELi0EEERNS0_IS7_ILi64EELi0EEESD_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          txPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 354, Column: 0 }
+Function:        _Z6txPathRN3hls6streamI8metadataLi0EEERNS0_I7axiWordLi0EEES3_RNS0_I7ap_uintILi16EELi0EEERNS0_IS7_ILi64EELi0EEESD_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          txPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 354, Column: 0 }
+Function:        _Z6txPathRN3hls6streamI8metadataLi0EEERNS0_I7axiWordLi0EEES3_RNS0_I7ap_uintILi16EELi0EEERNS0_IS7_ILi64EELi0EEESD_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          txPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 354, Column: 0 }
+Function:        _Z6txPathRN3hls6streamI8metadataLi0EEERNS0_I7axiWordLi0EEES3_RNS0_I7ap_uintILi16EELi0EEERNS0_IS7_ILi64EELi0EEESD_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          txPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 354, Column: 0 }
+Function:        _Z6txPathRN3hls6streamI8metadataLi0EEERNS0_I7axiWordLi0EEES3_RNS0_I7ap_uintILi16EELi0EEERNS0_IS7_ILi64EELi0EEESD_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          txPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 354, Column: 0 }
+Function:        _Z6txPathRN3hls6streamI8metadataLi0EEERNS0_I7axiWordLi0EEES3_RNS0_I7ap_uintILi16EELi0EEERNS0_IS7_ILi64EELi0EEESD_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          txPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 354, Column: 0 }
+Function:        _Z6txPathRN3hls6streamI8metadataLi0EEERNS0_I7axiWordLi0EEES3_RNS0_I7ap_uintILi16EELi0EEERNS0_IS7_ILi64EELi0EEESD_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          txPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 354, Column: 0 }
+Function:        _Z6txPathRN3hls6streamI8metadataLi0EEERNS0_I7axiWordLi0EEES3_RNS0_I7ap_uintILi16EELi0EEERNS0_IS7_ILi64EELi0EEESD_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          txPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 354, Column: 0 }
+Function:        _Z6txPathRN3hls6streamI8metadataLi0EEERNS0_I7axiWordLi0EEES3_RNS0_I7ap_uintILi16EELi0EEERNS0_IS7_ILi64EELi0EEESD_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          txPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 354, Column: 0 }
+Function:        _Z6txPathRN3hls6streamI8metadataLi0EEERNS0_I7axiWordLi0EEES3_RNS0_I7ap_uintILi16EELi0EEERNS0_IS7_ILi64EELi0EEESD_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          txPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 354, Column: 0 }
+Function:        _Z6txPathRN3hls6streamI8metadataLi0EEERNS0_I7axiWordLi0EEES3_RNS0_I7ap_uintILi16EELi0EEERNS0_IS7_ILi64EELi0EEESD_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          txPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 354, Column: 0 }
+Function:        _Z6txPathRN3hls6streamI8metadataLi0EEERNS0_I7axiWordLi0EEES3_RNS0_I7ap_uintILi16EELi0EEERNS0_IS7_ILi64EELi0EEESD_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          txPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 354, Column: 0 }
+Function:        _Z6txPathRN3hls6streamI8metadataLi0EEERNS0_I7axiWordLi0EEES3_RNS0_I7ap_uintILi16EELi0EEERNS0_IS7_ILi64EELi0EEESD_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          txPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 354, Column: 0 }
+Function:        _Z6txPathRN3hls6streamI8metadataLi0EEERNS0_I7axiWordLi0EEES3_RNS0_I7ap_uintILi16EELi0EEERNS0_IS7_ILi64EELi0EEESD_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          txPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_192_2
+  - String:          ''' ('
+  - LoopLoc:         'fast_src/fast_protocol.cpp:192:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_119_1
+  - String:          ''' ('
+  - LoopLoc:         'fast_src/fast_protocol.cpp:119:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         'fast_src/fast_protocol.cpp:116:41'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_310_4
+  - String:          ''' ('
+  - LoopLoc:         'fast_src/fast_protocol.cpp:310:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_242_3
+  - String:          ''' ('
+  - LoopLoc:         'fast_src/fast_protocol.cpp:242:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         'fast_src/fast_protocol.cpp:239:41'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rxPath
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 116, Column: 43 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - Callee:          'ap_uint<8>::ap_uint(double)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis/2024.2/common/technology/autopilot\ap_int.h', 
+                       Line: 298, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'rxPath(hls::stream<axiWord, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<16>, 0>&, hls::stream<bool, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<order, 0>&)'
+    DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 391, Column: 48 }
+Function:        _Z6txPathRN3hls6streamI8metadataLi0EEERNS0_I7axiWordLi0EEES3_RNS0_I7ap_uintILi16EELi0EEERNS0_IS7_ILi64EELi0EEESD_RNS0_I5orderLi0EEE
+Args:            
+  - Callee:          'ap_uint<8>::ap_uint(double)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis/2024.2/common/technology/autopilot\ap_int.h', 
+                       Line: 298, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'txPath(hls::stream<metadata, 0>&, hls::stream<axiWord, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<order, 0>&)'
+    DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 354, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 554, Column: 2 }
+Function:        _Z13fast_protocolRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES3_S6_SA_RNS0_IS7_ILi64EELi0EEESF_S6_S6_SF_SF_RNS0_I5orderLi0EEESI_
+Args:            
+  - Callee:          'rxPath(hls::stream<axiWord, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<16>, 0>&, hls::stream<bool, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<order, 0>&)'
+    DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fast_protocol(hls::stream<axiWord, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<16>, 0>&, hls::stream<bool, 0>&, hls::stream<axiWord, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<metadata, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<order, 0>&, hls::stream<order, 0>&)'
+    DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 516, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 563, Column: 5 }
+Function:        _Z13fast_protocolRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES3_S6_SA_RNS0_IS7_ILi64EELi0EEESF_S6_S6_SF_SF_RNS0_I5orderLi0EEESI_
+Args:            
+  - Callee:          'txPath(hls::stream<metadata, 0>&, hls::stream<axiWord, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<order, 0>&)'
+    DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 354, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fast_protocol(hls::stream<axiWord, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<16>, 0>&, hls::stream<bool, 0>&, hls::stream<axiWord, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<metadata, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<order, 0>&, hls::stream<order, 0>&)'
+    DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 516, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_fast_protocol_ir
+Args:            
+  - Callee:          'fast_protocol(hls::stream<axiWord, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<16>, 0>&, hls::stream<bool, 0>&, hls::stream<axiWord, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<metadata, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<order, 0>&, hls::stream<order, 0>&)'
+    DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 516, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_fast_protocol_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_uint<8>::ap_uint(double)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis/2024.2/common/technology/autopilot\ap_int.h', 
+                       Line: 298, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'rxPath(hls::stream<axiWord, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<16>, 0>&, hls::stream<bool, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<order, 0>&)'
+    DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 354, Column: 0 }
+Function:        _Z6txPathRN3hls6streamI8metadataLi0EEERNS0_I7axiWordLi0EEES3_RNS0_I7ap_uintILi16EELi0EEERNS0_IS7_ILi64EELi0EEESD_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_uint<8>::ap_uint(double)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis/2024.2/common/technology/autopilot\ap_int.h', 
+                       Line: 298, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'txPath(hls::stream<metadata, 0>&, hls::stream<axiWord, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<order, 0>&)'
+    DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 354, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 116, Column: 19 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          encoded_message
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 239, Column: 19 }
+Function:        _Z6rxPathRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES6_RNS0_IS7_ILi64EELi0EEESF_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          encoded_message149
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 391, Column: 24 }
+Function:        _Z6txPathRN3hls6streamI8metadataLi0EEERNS0_I7axiWordLi0EEES3_RNS0_I7ap_uintILi16EELi0EEERNS0_IS7_ILi64EELi0EEESD_RNS0_I5orderLi0EEE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          encoded_message
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 516, Column: 0 }
+Function:        _Z13fast_protocolRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES3_S6_SA_RNS0_IS7_ILi64EELi0EEESF_S6_S6_SF_SF_RNS0_I5orderLi0EEESI_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'axis (hls::stream)'
+  - String:          ' variable '''
+  - Name:            lbRxMetadataIn
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '96'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 516, Column: 0 }
+Function:        _Z13fast_protocolRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES3_S6_SA_RNS0_IS7_ILi64EELi0EEESF_S6_S6_SF_SF_RNS0_I5orderLi0EEESI_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'axis (hls::stream)'
+  - String:          ' variable '''
+  - Name:            lbTxMetadataOut
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '96'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 516, Column: 0 }
+Function:        _Z13fast_protocolRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES3_S6_SA_RNS0_IS7_ILi64EELi0EEESF_S6_S6_SF_SF_RNS0_I5orderLi0EEESI_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'axis (hls::stream)'
+  - String:          ' variable '''
+  - Name:            order_to_book
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '64'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 516, Column: 0 }
+Function:        _Z13fast_protocolRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES3_S6_SA_RNS0_IS7_ILi64EELi0EEESF_S6_S6_SF_SF_RNS0_I5orderLi0EEESI_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'axis (hls::stream)'
+  - String:          ' variable '''
+  - Name:            order_from_book
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '64'
+  - String:          '-bits'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 554, Column: 2 }
+Function:        _Z13fast_protocolRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES3_S6_SA_RNS0_IS7_ILi64EELi0EEESF_S6_S6_SF_SF_RNS0_I5orderLi0EEESI_
+Args:            
+  - Callee:          'rxPath(hls::stream<axiWord, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<16>, 0>&, hls::stream<bool, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<order, 0>&) (.1)'
+    DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fast_protocol(hls::stream<axiWord, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<16>, 0>&, hls::stream<bool, 0>&, hls::stream<axiWord, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<metadata, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<order, 0>&, hls::stream<order, 0>&)'
+    DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 516, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 563, Column: 5 }
+Function:        _Z13fast_protocolRN3hls6streamI7axiWordLi0EEERNS0_I8metadataLi0EEERNS0_I7ap_uintILi16EELi0EEERNS0_IbLi0EEES3_S6_SA_RNS0_IS7_ILi64EELi0EEESF_S6_S6_SF_SF_RNS0_I5orderLi0EEESI_
+Args:            
+  - Callee:          'txPath(hls::stream<metadata, 0>&, hls::stream<axiWord, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<order, 0>&) (.1)'
+    DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 354, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fast_protocol(hls::stream<axiWord, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<16>, 0>&, hls::stream<bool, 0>&, hls::stream<axiWord, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<metadata, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<order, 0>&, hls::stream<order, 0>&)'
+    DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 516, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

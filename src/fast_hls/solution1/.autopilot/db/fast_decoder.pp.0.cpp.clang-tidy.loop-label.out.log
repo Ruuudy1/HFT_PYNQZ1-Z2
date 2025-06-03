@@ -1,0 +1,50 @@
+C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_hls\solution1\.autopilot\db\fast_decoder.pp.0.cpp:3170:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_hls\solution1\.autopilot\db\fast_decoder.pp.0.cpp:3170:5: note: FIX-IT applied suggested code changes
+C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_hls\solution1\.autopilot\db\fast_decoder.pp.0.cpp:3184:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_hls\solution1\.autopilot\db\fast_decoder.pp.0.cpp:3184:5: note: FIX-IT applied suggested code changes
+C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_hls\solution1\.autopilot\db\fast_decoder.pp.0.cpp:3198:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_hls\solution1\.autopilot\db\fast_decoder.pp.0.cpp:3198:5: note: FIX-IT applied suggested code changes
+C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_hls\solution1\.autopilot\db\fast_decoder.pp.0.cpp:4832:7: warning: Added loop label VITIS_LOOP_1248_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1248_1: 
+C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_hls\solution1\.autopilot\db\fast_decoder.pp.0.cpp:4832:7: note: FIX-IT applied suggested code changes
+C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_hls\solution1\.autopilot\db\fast_decoder.pp.0.cpp:6782:2: warning: Added loop label VITIS_LOOP_26_1:   [xilinx-label-all-loops]
+ for (unsigned i = 0; i < 64/8; i++)
+ ^~~
+ VITIS_LOOP_26_1: 
+C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_hls\solution1\.autopilot\db\fast_decoder.pp.0.cpp:6782:2: note: FIX-IT applied suggested code changes
+C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_hls\solution1\.autopilot\db\fast_decoder.pp.0.cpp:6843:5: warning: Added loop label VITIS_LOOP_95_2:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < 4; i++)
+    ^~~
+    VITIS_LOOP_95_2: 
+C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_hls\solution1\.autopilot\db\fast_decoder.pp.0.cpp:6843:5: note: FIX-IT applied suggested code changes
+C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_hls\solution1\.autopilot\db\fast_decoder.pp.0.cpp:6898:5: warning: Added loop label VITIS_LOOP_166_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < 2; i++)
+    ^~~
+    VITIS_LOOP_166_1: 
+C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_hls\solution1\.autopilot\db\fast_decoder.pp.0.cpp:6898:5: note: FIX-IT applied suggested code changes
+C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_hls\solution1\.autopilot\db\fast_decoder.pp.0.cpp:6924:5: warning: Added loop label VITIS_LOOP_192_2:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < 6; i++)
+    ^~~
+    VITIS_LOOP_192_2: 
+C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_hls\solution1\.autopilot\db\fast_decoder.pp.0.cpp:6924:5: note: FIX-IT applied suggested code changes
+C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_hls\solution1\.autopilot\db\fast_decoder.pp.0.cpp:6950:5: warning: Added loop label VITIS_LOOP_238_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < 2; i++)
+    ^~~
+    VITIS_LOOP_238_1: 
+C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_hls\solution1\.autopilot\db\fast_decoder.pp.0.cpp:6950:5: note: FIX-IT applied suggested code changes
+C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_hls\solution1\.autopilot\db\fast_decoder.pp.0.cpp:6971:5: warning: Added loop label VITIS_LOOP_259_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < 5; i++)
+    ^~~
+    VITIS_LOOP_259_1: 
+C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src\fast_hls\solution1\.autopilot\db\fast_decoder.pp.0.cpp:6971:5: note: FIX-IT applied suggested code changes

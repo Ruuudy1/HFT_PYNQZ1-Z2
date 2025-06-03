@@ -1,0 +1,13 @@
+order_book_src/priority_queue.cpp:312:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=bid core=RAM_1P_BRAM
+        ^
+order_book_src/priority_queue.cpp:318:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=ask core=RAM_1P_BRAM
+        ^
+order_book_src/priority_queue.cpp:324:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=bid_remove core=RAM_1P_BRAM
+        ^
+order_book_src/priority_queue.cpp:330:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=ask_remove core=RAM_1P_BRAM
+        ^
+4 warnings generated.

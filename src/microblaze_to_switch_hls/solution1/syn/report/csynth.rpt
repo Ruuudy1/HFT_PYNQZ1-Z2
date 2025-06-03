@@ -1,0 +1,130 @@
+
+
+================================================================
+== Synthesis Summary Report of 'MicroblazeToSwitch'
+================================================================
++ General Information: 
+    * Date:           Thu May 29 07:31:07 2025
+    * Version:        2024.2 (Build 5238294 on Nov  8 2024)
+    * Project:        microblaze_to_switch_hls
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg484-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |        Modules       | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |           |           |     |
+    |        & Loops       | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |    LUT    | URAM|
+    +----------------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |+ MicroblazeToSwitch  |    II|  3.80|        5|  50.000|         -|        4|     -|       yes|     -|   -|  119 (~0%)|  255 (~0%)|    -|
+    +----------------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 5             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+-------------+--------+-------+--------+----------------------------+
+| Interface     | Register    | Offset | Width | Access | Description                |
++---------------+-------------+--------+-------+--------+----------------------------+
+| s_axi_control | best_bid_sw | 0x10   | 32    | W      | Data signal of best_bid_sw |
+| s_axi_control | best_ask_sw | 0x18   | 32    | W      | Data signal of best_ask_sw |
++---------------+-------------+--------+-------+--------+----------------------------+
+
+* AXIS
++-------------------+-----------+---------------+-------+--------+--------+
+| Interface         | Direction | Register Mode | TDATA | TREADY | TVALID |
++-------------------+-----------+---------------+-------+--------+--------+
+| rxDataMonitor     | out       | both          | 128   | 1      | 1      |
+| rxLengthMonitor   | out       | both          | 16    | 1      | 1      |
+| rxMetadataMonitor | out       | both          | 96    | 1      | 1      |
++-------------------+-----------+---------------+-------+--------+--------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+----------+
+| Interface | Type         | Ports    |
++-----------+--------------+----------+
+| ap_clk    | clock        | ap_clk   |
+| ap_rst_n  | reset        | ap_rst_n |
+| ap_ctrl   | ap_ctrl_none |          |
++-----------+--------------+----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-------------------+-----------+-------------------------+
+| Argument          | Direction | Datatype                |
++-------------------+-----------+-------------------------+
+| best_bid_sw       | in        | ap_uint<32>             |
+| best_ask_sw       | in        | ap_uint<32>             |
+| rxDataMonitor     | out       | stream<axiWord, 0>&     |
+| rxMetadataMonitor | out       | stream<metadata, 0>&    |
+| rxLengthMonitor   | out       | stream<ap_uint<16>, 0>& |
++-------------------+-----------+-------------------------+
+
+* SW-to-HW Mapping
++-------------------+-------------------+-----------+---------------------------------------+
+| Argument          | HW Interface      | HW Type   | HW Info                               |
++-------------------+-------------------+-----------+---------------------------------------+
+| best_bid_sw       | s_axi_control     | register  | name=best_bid_sw offset=0x10 range=32 |
+| best_ask_sw       | s_axi_control     | register  | name=best_ask_sw offset=0x18 range=32 |
+| rxDataMonitor     | rxDataMonitor     | interface |                                       |
+| rxMetadataMonitor | rxMetadataMonitor | interface |                                       |
+| rxLengthMonitor   | rxLengthMonitor   | interface |                                       |
++-------------------+-------------------+-----------+---------------------------------------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------+-----+--------+-------------+--------+----------+---------+
+| Name                    | DSP | Pragma | Variable    | Op     | Impl     | Latency |
++-------------------------+-----+--------+-------------+--------+----------+---------+
+| + MicroblazeToSwitch    | 0   |        |             |        |          |         |
+|   add_ln51_fu_143_p2    |     |        | add_ln51    | add    | fabric   | 0       |
+|   select_ln51_fu_161_p3 |     |        | select_ln51 | select | auto_sel | 0       |
++-------------------------+-----+--------+-------------+--------+----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++----------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| Name                 | Usage     | Type      | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                      |           |           |      |      |        |          |      |         | Banks            |
++----------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| + MicroblazeToSwitch |           |           | 0    | 0    |        |          |      |         |                  |
+|   control_s_axi_U    | interface | s_axilite |      |      |        |          |      |         |                  |
++----------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+-------------------------------------------+---------------------------------------------------------------------------------+
+| Type      | Options                                   | Location                                                                        |
++-----------+-------------------------------------------+---------------------------------------------------------------------------------+
+| interface | ap_ctrl_none port=return                  | microblaze_to_switch_src/MBtoSW.cpp:16 in microblazetoswitch, return            |
+| interface | axis register both port=rxLengthMonitor   | microblaze_to_switch_src/MBtoSW.cpp:17 in microblazetoswitch, rxLengthMonitor   |
+| interface | axis register both port=rxDataMonitor     | microblaze_to_switch_src/MBtoSW.cpp:18 in microblazetoswitch, rxDataMonitor     |
+| aggregate | variable=rxMetadataMonitor compact=bit    | microblaze_to_switch_src/MBtoSW.cpp:19 in microblazetoswitch, rxMetadataMonitor |
+| interface | axis register both port=rxMetadataMonitor | microblaze_to_switch_src/MBtoSW.cpp:20 in microblazetoswitch, rxMetadataMonitor |
+| interface | s_axilite port=best_bid_sw                | microblaze_to_switch_src/MBtoSW.cpp:21 in microblazetoswitch, best_bid_sw       |
+| interface | s_axilite port=best_ask_sw                | microblaze_to_switch_src/MBtoSW.cpp:22 in microblazetoswitch, best_ask_sw       |
+| pipeline  | II=1                                      | microblaze_to_switch_src/MBtoSW.cpp:27 in microblazetoswitch                    |
++-----------+-------------------------------------------+---------------------------------------------------------------------------------+
+
+

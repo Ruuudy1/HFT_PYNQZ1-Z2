@@ -1,0 +1,321 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun Jun  1 15:07:18 2025
+# Process ID         : 24744
+# Current directory  : C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src
+# Command line       : vivado.exe -mode tcl -source build_project.tcl
+# Log file           : C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/vivado.log
+# Journal file       : C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src\vivado.jou
+# Running On         : RudyAsus
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 9 185H
+# CPU Frequency      : 3072 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 22
+# Host memory        : 33736 MB
+# Swap memory        : 18253 MB
+# Total Virtual      : 51989 MB
+# Available Virtual  : 24306 MB
+#-----------------------------------------------------------
+source build_project.tcl
+# create_project hft_proj hft_proj -part xc7z020-clg400-1 -force
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj'
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 619.879 ; gain = 191.930
+# set_property ip_repo_paths [list \
+#     [file normalize ./fast_hls] \
+#     [file normalize ./order_book_hls] \
+#     [file normalize ./threshold_hls] \
+#     [file normalize ./microblaze_to_switch_hls] \
+#     [file normalize ./udp_hls] \
+# ] [current_project]
+# update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/fast_hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/order_book_hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/threshold_hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/microblaze_to_switch_hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/udp_hls'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+# source [file normalize ../pynq_block_design.tcl]
+## create_bd_design design_1
+Wrote  : <C:\Users\ruuud\spring2025\cse145\WORKINGPROJECTIDEA\ECE1373_2016_hft_on_fpga\src\hft_proj\hft_proj.srcs\sources_1\bd\design_1\design_1.bd> 
+## create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+## apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+WARNING: [Boardtcl 53-1] No current board_part set.
+## set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {100} CONFIG.PCW_USE_S_AXI_HP0 {1} CONFIG.PCW_ENET0_PERIPHERAL_ENABLE {1} CONFIG.PCW_ENET0_ENET0_IO {MIO 16 .. 27} CONFIG.PCW_ENET0_GRP_MDIO_ENABLE {1} CONFIG.PCW_ENET0_GRP_MDIO_IO {MIO 52 .. 53}] [get_bd_cells processing_system7_0]
+CRITICAL WARNING: [PS7-6]  LVCMOS33 (3.3V) is not supported for RGMII interface in Ethernet0. Recommendation is to use 1.8/2.5V IO.
+## create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+create_bd_cell: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 973.125 ; gain = 254.289
+## set_property -dict [list CONFIG.PRIM_IN_FREQ {100.000} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {100.000} CONFIG.USE_LOCKED {true} CONFIG.USE_RESET {false}] [get_bd_cells clk_wiz_0]
+## connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins clk_wiz_0/clk_in1]
+## create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_interconnect_0
+## set_property -dict [list CONFIG.NUM_SI {1} CONFIG.NUM_MI {2}] [get_bd_cells axi_interconnect_0]
+## connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins axi_interconnect_0/ACLK]
+## connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins axi_interconnect_0/S00_ACLK]
+## connect_bd_net [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins clk_wiz_0/clk_out1]
+## create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_0
+## connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins proc_sys_reset_0/slowest_sync_clk]
+## connect_bd_net [get_bd_pins clk_wiz_0/locked] [get_bd_pins proc_sys_reset_0/dcm_locked]
+## connect_bd_net [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins proc_sys_reset_0/ext_reset_in]
+## create_bd_cell -type ip -vlnv xilinx.com:hls:fast_protocol:1.0 fast_protocol_0
+## connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins fast_protocol_0/ap_clk]
+## connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins fast_protocol_0/ap_rst_n]
+## create_bd_cell -type ip -vlnv xilinx.com:hls:order_book:1.0 order_book_0
+## connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins order_book_0/ap_clk]
+## connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins order_book_0/ap_rst_n]
+## create_bd_cell -type ip -vlnv xilinx.com:hls:simple_threshold:1.0 simple_threshold_0
+## connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins simple_threshold_0/ap_clk]
+## connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins simple_threshold_0/ap_rst_n]
+## create_bd_cell -type ip -vlnv xilinx.com:hls:MicroblazeToSwitch:1.0 MicroblazeToSwitch_0
+## connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins MicroblazeToSwitch_0/ap_clk]
+## connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins MicroblazeToSwitch_0/ap_rst_n]
+## create_bd_cell -type ip -vlnv xilinx.com:ip:axis_dwidth_converter:1.1 order_data_converter
+## set_property -dict [list CONFIG.S_TDATA_NUM_BYTES {8} CONFIG.M_TDATA_NUM_BYTES {12}] [get_bd_cells order_data_converter]
+## create_bd_cell -type ip -vlnv xilinx.com:ip:axis_dwidth_converter:1.1 top_ask_converter
+## set_property -dict [list CONFIG.S_TDATA_NUM_BYTES {12} CONFIG.M_TDATA_NUM_BYTES {8}] [get_bd_cells top_ask_converter]
+## create_bd_cell -type ip -vlnv xilinx.com:ip:axis_dwidth_converter:1.1 top_bid_converter
+## set_property -dict [list CONFIG.S_TDATA_NUM_BYTES {12} CONFIG.M_TDATA_NUM_BYTES {8}] [get_bd_cells top_bid_converter]
+## create_bd_cell -type ip -vlnv xilinx.com:ip:axis_dwidth_converter:1.1 meta_converter
+## set_property -dict [list CONFIG.S_TDATA_NUM_BYTES {16} CONFIG.M_TDATA_NUM_BYTES {12}] [get_bd_cells meta_converter]
+## connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins order_data_converter/aclk]
+## connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins order_data_converter/aresetn]
+## connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins top_ask_converter/aclk]
+## connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins top_ask_converter/aresetn]
+## connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins top_bid_converter/aclk]
+## connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins top_bid_converter/aresetn]
+## connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins meta_converter/aclk]
+## connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins meta_converter/aresetn]
+## connect_bd_intf_net [get_bd_intf_pins processing_system7_0/M_AXI_GP0] [get_bd_intf_pins axi_interconnect_0/S00_AXI]
+## connect_bd_intf_net [get_bd_intf_pins axi_interconnect_0/M00_AXI] [get_bd_intf_pins order_book_0/s_axi_control]
+## connect_bd_intf_net [get_bd_intf_pins axi_interconnect_0/M01_AXI] [get_bd_intf_pins MicroblazeToSwitch_0/s_axi_control]
+## connect_bd_intf_net [get_bd_intf_pins fast_protocol_0/order_to_book] [get_bd_intf_pins order_data_converter/S_AXIS]
+## connect_bd_intf_net [get_bd_intf_pins order_data_converter/M_AXIS] [get_bd_intf_pins order_book_0/order_stream]
+## connect_bd_intf_net [get_bd_intf_pins fast_protocol_0/metadata_to_book] [get_bd_intf_pins order_book_0/incoming_meta]
+## connect_bd_intf_net [get_bd_intf_pins fast_protocol_0/time_to_book] [get_bd_intf_pins order_book_0/incoming_time]
+## connect_bd_intf_net [get_bd_intf_pins order_book_0/outgoing_meta] [get_bd_intf_pins meta_converter/S_AXIS]
+## connect_bd_intf_net [get_bd_intf_pins meta_converter/M_AXIS] [get_bd_intf_pins simple_threshold_0/incoming_meta]
+## connect_bd_intf_net [get_bd_intf_pins order_book_0/top_bid] [get_bd_intf_pins top_bid_converter/S_AXIS]
+## connect_bd_intf_net [get_bd_intf_pins top_bid_converter/M_AXIS] [get_bd_intf_pins simple_threshold_0/top_bid]
+## connect_bd_intf_net [get_bd_intf_pins order_book_0/top_ask] [get_bd_intf_pins top_ask_converter/S_AXIS]
+## connect_bd_intf_net [get_bd_intf_pins top_ask_converter/M_AXIS] [get_bd_intf_pins simple_threshold_0/top_ask]
+## connect_bd_intf_net [get_bd_intf_pins order_book_0/outgoing_time] [get_bd_intf_pins simple_threshold_0/incoming_time]
+## create_bd_cell -type ip -vlnv xilinx.com:ip:axis_data_fifo:2.0 order_fifo
+## create_bd_cell -type ip -vlnv xilinx.com:ip:axis_data_fifo:2.0 meta_fifo
+## create_bd_cell -type ip -vlnv xilinx.com:ip:axis_data_fifo:2.0 time_fifo
+## connect_bd_intf_net [get_bd_intf_pins simple_threshold_0/outgoing_order] [get_bd_intf_pins order_fifo/S_AXIS]
+## connect_bd_intf_net [get_bd_intf_pins simple_threshold_0/outgoing_meta] [get_bd_intf_pins meta_fifo/S_AXIS]
+## connect_bd_intf_net [get_bd_intf_pins simple_threshold_0/outgoing_time] [get_bd_intf_pins time_fifo/S_AXIS]
+## connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins order_fifo/s_axis_aclk]
+## connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins meta_fifo/s_axis_aclk]
+## connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins time_fifo/s_axis_aclk]
+## connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins order_fifo/s_axis_aresetn]
+## connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins meta_fifo/s_axis_aresetn]
+## connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins time_fifo/s_axis_aresetn]
+## connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins axi_interconnect_0/M00_ACLK]
+## connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins axi_interconnect_0/M01_ACLK]
+## connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins axi_interconnect_0/M00_ARESETN]
+## connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins axi_interconnect_0/M01_ARESETN]
+## connect_bd_net [get_bd_pins proc_sys_reset_0/interconnect_aresetn] [get_bd_pins axi_interconnect_0/ARESETN]
+## connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins axi_interconnect_0/S00_ARESETN]
+## create_bd_port -dir O -from 3 -to 0 led_l
+## create_bd_port -dir I user_sw_l
+## create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0
+INFO: [BD 5-1043] It is recommended to use inline hdl version xilinx.com:inline_hdl:ilconcat:1.0 for the IP type xilinx.com:ip:xlconcat:2.1 for improved performance and reduced disk space. IPs with VLNV xilinx.com:ip:xlconcat:2.1 may be deprecated in future releases. More information on inline hdl IP is available in UG994 
+## set_property -dict [list CONFIG.NUM_PORTS {4}] [get_bd_cells xlconcat_0]
+## connect_bd_net [get_bd_pins xlconcat_0/dout] [get_bd_ports led_l]
+## connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins xlconcat_0/In0]
+## connect_bd_net [get_bd_pins clk_wiz_0/locked] [get_bd_pins xlconcat_0/In1]
+## assign_bd_address
+INFO: [BD 41-3093] Triggering Legacy Auto Assign Algorithm
+Slave segment '/MicroblazeToSwitch_0/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4000_0000 [ 64K ]>.
+Slave segment '/order_book_0/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4001_0000 [ 64K ]>.
+## connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins processing_system7_0/S_AXI_HP0_ACLK]
+## save_bd_design
+Wrote  : <C:\Users\ruuud\spring2025\cse145\WORKINGPROJECTIDEA\ECE1373_2016_hft_on_fpga\src\hft_proj\hft_proj.srcs\sources_1\bd\design_1\design_1.bd> 
+# generate_target all [get_files hft_proj/hft_proj.srcs/sources_1/bd/design_1/design_1.bd]
+CRITICAL WARNING: [PS7-6]  LVCMOS33 (3.3V) is not supported for RGMII interface in Ethernet0. Recommendation is to use 1.8/2.5V IO.
+CRITICAL WARNING: [PS7-6]  LVCMOS33 (3.3V) is not supported for RGMII interface in Ethernet0. Recommendation is to use 1.8/2.5V IO.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /order_book_0/incoming_time(4) and /fast_protocol_0/time_to_book(8)
+CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /top_bid_converter/S_AXIS(12) and /order_book_0/top_bid(8)
+CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /top_ask_converter/S_AXIS(12) and /order_book_0/top_ask(8)
+CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /simple_threshold_0/incoming_time(8) and /order_book_0/outgoing_time(4)
+CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /order_book_0/order_stream(8) and /order_data_converter/M_AXIS(12)
+CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /simple_threshold_0/top_bid(12) and /top_bid_converter/M_AXIS(8)
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/fast_protocol_0/lbRxDataIn_TVALID
+/fast_protocol_0/lbRxMetadataIn_TVALID
+/fast_protocol_0/lbPortOpenReplyIn_TVALID
+/fast_protocol_0/tagsIn_TVALID
+/fast_protocol_0/metadata_from_book_TVALID
+/fast_protocol_0/time_from_book_TVALID
+/fast_protocol_0/order_from_book_TVALID
+
+Wrote  : <C:\Users\ruuud\spring2025\cse145\WORKINGPROJECTIDEA\ECE1373_2016_hft_on_fpga\src\hft_proj\hft_proj.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/order_book_0/order_stream_TDATA'(64) to pin: '/order_data_converter/m_axis_tdata'(96) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/order_book_0/incoming_time_TDATA'(32) to pin: '/fast_protocol_0/time_to_book_TDATA'(64) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/top_bid_converter/s_axis_tdata'(96) to pin: '/order_book_0/top_bid_TDATA'(64) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/simple_threshold_0/top_bid_TDATA'(96) to pin: '/top_bid_converter/m_axis_tdata'(64) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/top_ask_converter/s_axis_tdata'(96) to pin: '/order_book_0/top_ask_TDATA'(64) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/simple_threshold_0/incoming_time_TDATA'(64) to pin: '/order_book_0/outgoing_time_TDATA'(32) - Only lower order bits will be connected.
+Verilog Output written to : C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/order_book_0/order_stream_TDATA'(64) to pin: '/order_data_converter/m_axis_tdata'(96) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/order_book_0/incoming_time_TDATA'(32) to pin: '/fast_protocol_0/time_to_book_TDATA'(64) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/top_bid_converter/s_axis_tdata'(96) to pin: '/order_book_0/top_bid_TDATA'(64) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/simple_threshold_0/top_bid_TDATA'(96) to pin: '/top_bid_converter/m_axis_tdata'(64) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/top_ask_converter/s_axis_tdata'(96) to pin: '/order_book_0/top_ask_TDATA'(64) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/simple_threshold_0/incoming_time_TDATA'(64) to pin: '/order_book_0/outgoing_time_TDATA'(32) - Only lower order bits will be connected.
+Verilog Output written to : C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+CRITICAL WARNING: [xilinx.com:ip:processing_system7:5.5-1] design_1_processing_system7_0_0: Critical Warning:- LVCMOS33 (3.3V) is not supported for RGMII interface in Ethernet0. Recommendation is to use 1.8/2.5V IO.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fast_protocol_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block order_book_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block simple_threshold_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block MicroblazeToSwitch_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block order_data_converter .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block top_ask_converter .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block top_bid_converter .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block meta_converter .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block order_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block meta_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block time_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ip/design_1_axi_interconnect_0_imp_auto_pc_0/design_1_axi_interconnect_0_imp_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1091.375 ; gain = 64.906
+# validate_bd_design
+INFO: [BD 5-320] Validate design is not run, since the design is already validated.
+# make_wrapper -files [get_files hft_proj/hft_proj.srcs/sources_1/bd/design_1/design_1.bd] -top
+# add_files -norecurse ./hft_proj/hft_proj.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [Project 1-1716] Could not find the wrapper file ./hft_proj/hft_proj.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v, checking in project .gen location instead.
+INFO: [Vivado 12-12390] Found file ./hft_proj/hft_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v, adding it to Project
+# add_files -norecurse [file normalize ../pynq_z1.xdc]
+# update_compile_order -fileset sources_1
+# update_compile_order -fileset sim_1
+# generate_target all [get_files hft_proj/hft_proj.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'design_1' - hence not re-generating.
+# validate_bd_design
+INFO: [BD 5-320] Validate design is not run, since the design is already validated.
+# make_wrapper -files [get_files hft_proj/hft_proj.srcs/sources_1/bd/design_1/design_1.bd] -top
+# add_files -norecurse ./hft_proj/hft_proj.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [Project 1-1716] Could not find the wrapper file ./hft_proj/hft_proj.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v, checking in project .gen location instead.
+INFO: [Vivado 12-12390] Found file ./hft_proj/hft_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v, adding it to Project
+WARNING: [filemgmt 56-12] File 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v' cannot be added to the project because it already exists in the project, skipping this file
+# add_files -norecurse [file normalize ../pynq_z1.xdc]
+WARNING: [filemgmt 56-12] File 'C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/pynq_z1.xdc' cannot be added to the project because it already exists in the project, skipping this file
+# update_compile_order -fileset sources_1
+# update_compile_order -fileset sim_1
+# launch_runs synth_1 -jobs 4
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_MicroblazeToSwitch_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_interconnect_0_imp_auto_pc_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_interconnect_0_imp_xbar_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_clk_wiz_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_fast_protocol_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_meta_converter_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_meta_fifo_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_order_book_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_order_data_converter_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_order_fifo_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_proc_sys_reset_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_simple_threshold_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_time_fifo_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_top_ask_converter_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_top_bid_converter_0
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_MicroblazeToSwitch_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_interconnect_0_imp_auto_pc_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_interconnect_0_imp_xbar_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_clk_wiz_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_fast_protocol_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_meta_converter_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_meta_fifo_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_order_book_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_order_data_converter_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_order_fifo_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_proc_sys_reset_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_simple_threshold_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_time_fifo_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_top_ask_converter_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_top_bid_converter_0
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Sun Jun  1 15:08:06 2025] Launched design_1_order_data_converter_0_synth_1, design_1_processing_system7_0_0_synth_1, design_1_clk_wiz_0_0_synth_1, design_1_axi_interconnect_0_imp_xbar_0_synth_1, design_1_proc_sys_reset_0_0_synth_1, design_1_fast_protocol_0_0_synth_1, design_1_order_book_0_0_synth_1, design_1_simple_threshold_0_0_synth_1, design_1_MicroblazeToSwitch_0_0_synth_1, design_1_top_ask_converter_0_synth_1, design_1_top_bid_converter_0_synth_1, design_1_meta_converter_0_synth_1, design_1_order_fifo_0_synth_1, design_1_meta_fifo_0_synth_1, design_1_time_fifo_0_synth_1, design_1_axi_interconnect_0_imp_auto_pc_0_synth_1...
+Run output will be captured here:
+design_1_order_data_converter_0_synth_1: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_order_data_converter_0_synth_1/runme.log
+design_1_processing_system7_0_0_synth_1: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_processing_system7_0_0_synth_1/runme.log
+design_1_clk_wiz_0_0_synth_1: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_clk_wiz_0_0_synth_1/runme.log
+design_1_axi_interconnect_0_imp_xbar_0_synth_1: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_axi_interconnect_0_imp_xbar_0_synth_1/runme.log
+design_1_proc_sys_reset_0_0_synth_1: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_proc_sys_reset_0_0_synth_1/runme.log
+design_1_fast_protocol_0_0_synth_1: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_fast_protocol_0_0_synth_1/runme.log
+design_1_order_book_0_0_synth_1: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_order_book_0_0_synth_1/runme.log
+design_1_simple_threshold_0_0_synth_1: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_simple_threshold_0_0_synth_1/runme.log
+design_1_MicroblazeToSwitch_0_0_synth_1: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_MicroblazeToSwitch_0_0_synth_1/runme.log
+design_1_top_ask_converter_0_synth_1: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_top_ask_converter_0_synth_1/runme.log
+design_1_top_bid_converter_0_synth_1: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_top_bid_converter_0_synth_1/runme.log
+design_1_meta_converter_0_synth_1: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_meta_converter_0_synth_1/runme.log
+design_1_order_fifo_0_synth_1: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_order_fifo_0_synth_1/runme.log
+design_1_meta_fifo_0_synth_1: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_meta_fifo_0_synth_1/runme.log
+design_1_time_fifo_0_synth_1: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_time_fifo_0_synth_1/runme.log
+design_1_axi_interconnect_0_imp_auto_pc_0_synth_1: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_axi_interconnect_0_imp_auto_pc_0_synth_1/runme.log
+[Sun Jun  1 15:08:06 2025] Launched synth_1...
+Run output will be captured here: C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/synth_1/runme.log
+# wait_on_run synth_1
+[Sun Jun  1 15:08:06 2025] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Sun Jun  1 15:13:31 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 621.742 ; gain = 192.723
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/fast_hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/order_book_hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/threshold_hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/microblaze_to_switch_hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/udp_hls'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.cache/ip 
+INFO: [Project 1-5578] Found utility IPs instantiated in block design C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.srcs/sources_1/bd/design_1/design_1.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994. 
+WARNING: [Vivado 12-818] No files matched 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/design_1_ooc.xdc'
+ERROR: [Common 17-55] 'set_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Common 17-206] Exiting Vivado at Sun Jun  1 15:13:43 2025...
+[Sun Jun  1 15:13:46 2025] synth_1 finished
+ERROR: [Vivado 12-13638] Failed runs(s) : 'synth_1'
+wait_on_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:05:40 . Memory (MB): peak = 1091.414 ; gain = 0.000
+ERROR: [Common 17-39] 'wait_on_runs' failed due to earlier errors.
+
+    while executing
+"wait_on_run synth_1"
+    (file "build_project.tcl" line 47)
+Vivado% clear
+invalid command name "clear"
+Vivado% 

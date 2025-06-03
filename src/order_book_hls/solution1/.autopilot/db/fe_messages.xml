@@ -1,0 +1,372 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:312:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:318:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:324:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:330:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:5:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="log_base_2" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pow2" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="find_path" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:27:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="calculate_index" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:33:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="left_child" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:38:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="right_child" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:61:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="add_bid" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:89:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="add_bid" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=heap inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:90:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="add_bid" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=11" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:91:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="add_bid" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:117:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="remove_bid" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:135:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="remove_bid" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=heap inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:136:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="remove_bid" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=11" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:137:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="remove_bid" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:175:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="add_ask" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:203:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="add_ask" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=heap inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:204:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="add_ask" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=11" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:205:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="add_ask" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:231:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="remove_ask" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:249:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="remove_ask" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=heap inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:250:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="remove_ask" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=11" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:251:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="remove_ask" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/build_order_book_core.tcl:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=order_book" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:287:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=top_ask_id" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:288:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=top_bid_id" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:289:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:292:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register both port=order_stream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:293:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register both port=incoming_time" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:294:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register both port=incoming_meta" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:295:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register both port=top_bid" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:296:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register both port=top_ask" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:297:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register both port=outgoing_time" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:298:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register both port=outgoing_meta" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:301:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:309:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=bid complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:310:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=bid cyclic factor=4 dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:311:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=bid inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:312:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=bid core=RAM_1P_BRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:315:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=ask complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:316:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=ask cyclic factor=4 dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:317:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=ask inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:318:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=ask core=RAM_1P_BRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:321:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=bid_remove complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:322:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=bid_remove cyclic factor=4 dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:323:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=bid_remove inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:324:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=bid_remove core=RAM_1P_BRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:327:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=ask_remove complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:328:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=ask_remove cyclic factor=4 dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:329:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=ask_remove inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:330:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=ask_remove core=RAM_1P_BRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:384:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=1" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:388:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=0 max=1" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:400:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=0 max=1" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:431:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=1" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:435:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=0 max=1" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:447:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="order_book" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=0 max=1" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:20:25" msg_body="Inlining function 'pow2(int)' into 'find_path(unsigned int&amp;, int&amp;, int*, int)'">
+        <args Callee="pow2(int)" Callee-DebugLoc="File order_book_src/priority_queue.cpp Line 9 Column 0" Caller="find_path(unsigned int&amp;, int&amp;, int*, int)" Caller-DebugLoc="File order_book_src/priority_queue.cpp Line 14 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:67:24" msg_body="Inlining function 'log_base_2(unsigned int)' into 'add_bid(order (*) [64], order&amp;, unsigned int&amp;, int&amp;, int*, int*, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;, metadata, order, bool)'">
+        <args Callee="log_base_2(unsigned int)" Callee-DebugLoc="File order_book_src/priority_queue.cpp Line 4 Column 0" Caller="add_bid(order (*) [64], order&amp;, unsigned int&amp;, int&amp;, int*, int*, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;, metadata, order, bool)" Caller-DebugLoc="File order_book_src/priority_queue.cpp Line 60 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:102:19" msg_body="Inlining function 'calculate_index(int, int, int)' into 'add_bid(order (*) [64], order&amp;, unsigned int&amp;, int&amp;, int*, int*, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;, metadata, order, bool)'">
+        <args Callee="calculate_index(int, int, int)" Callee-DebugLoc="File order_book_src/priority_queue.cpp Line 26 Column 0" Caller="add_bid(order (*) [64], order&amp;, unsigned int&amp;, int&amp;, int*, int*, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;, metadata, order, bool)" Caller-DebugLoc="File order_book_src/priority_queue.cpp Line 60 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:68:23" msg_body="Inlining function 'find_path(unsigned int&amp;, int&amp;, int*, int)' into 'add_bid(order (*) [64], order&amp;, unsigned int&amp;, int&amp;, int*, int*, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;, metadata, order, bool)'">
+        <args Callee="find_path(unsigned int&amp;, int&amp;, int*, int)" Callee-DebugLoc="File order_book_src/priority_queue.cpp Line 14 Column 0" Caller="add_bid(order (*) [64], order&amp;, unsigned int&amp;, int&amp;, int*, int*, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;, metadata, order, bool)" Caller-DebugLoc="File order_book_src/priority_queue.cpp Line 60 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:147:21" msg_body="Inlining function 'right_child(unsigned int, unsigned int, order (*) [64])' into 'remove_bid(order (*) [64], ap_uint&lt;8&gt;&amp;, unsigned int&amp;, int&amp;, int*, int*, order)'">
+        <args Callee="right_child(unsigned int, unsigned int, order (*) [64])" Callee-DebugLoc="File order_book_src/priority_queue.cpp Line 37 Column 0" Caller="remove_bid(order (*) [64], ap_uint&lt;8&gt;&amp;, unsigned int&amp;, int&amp;, int*, int*, order)" Caller-DebugLoc="File order_book_src/priority_queue.cpp Line 116 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:146:20" msg_body="Inlining function 'left_child(unsigned int, unsigned int, order (*) [64])' into 'remove_bid(order (*) [64], ap_uint&lt;8&gt;&amp;, unsigned int&amp;, int&amp;, int*, int*, order)'">
+        <args Callee="left_child(unsigned int, unsigned int, order (*) [64])" Callee-DebugLoc="File order_book_src/priority_queue.cpp Line 32 Column 0" Caller="remove_bid(order (*) [64], ap_uint&lt;8&gt;&amp;, unsigned int&amp;, int&amp;, int*, int*, order)" Caller-DebugLoc="File order_book_src/priority_queue.cpp Line 116 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:181:24" msg_body="Inlining function 'log_base_2(unsigned int)' into 'add_ask(order (*) [64], order&amp;, unsigned int&amp;, int&amp;, int*, int*, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;, metadata, order, bool)'">
+        <args Callee="log_base_2(unsigned int)" Callee-DebugLoc="File order_book_src/priority_queue.cpp Line 4 Column 0" Caller="add_ask(order (*) [64], order&amp;, unsigned int&amp;, int&amp;, int*, int*, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;, metadata, order, bool)" Caller-DebugLoc="File order_book_src/priority_queue.cpp Line 174 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:216:19" msg_body="Inlining function 'calculate_index(int, int, int)' into 'add_ask(order (*) [64], order&amp;, unsigned int&amp;, int&amp;, int*, int*, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;, metadata, order, bool)'">
+        <args Callee="calculate_index(int, int, int)" Callee-DebugLoc="File order_book_src/priority_queue.cpp Line 26 Column 0" Caller="add_ask(order (*) [64], order&amp;, unsigned int&amp;, int&amp;, int*, int*, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;, metadata, order, bool)" Caller-DebugLoc="File order_book_src/priority_queue.cpp Line 174 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:182:23" msg_body="Inlining function 'find_path(unsigned int&amp;, int&amp;, int*, int)' into 'add_ask(order (*) [64], order&amp;, unsigned int&amp;, int&amp;, int*, int*, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;, metadata, order, bool)'">
+        <args Callee="find_path(unsigned int&amp;, int&amp;, int*, int)" Callee-DebugLoc="File order_book_src/priority_queue.cpp Line 14 Column 0" Caller="add_ask(order (*) [64], order&amp;, unsigned int&amp;, int&amp;, int*, int*, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;, metadata, order, bool)" Caller-DebugLoc="File order_book_src/priority_queue.cpp Line 174 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:263:21" msg_body="Inlining function 'right_child(unsigned int, unsigned int, order (*) [64])' into 'remove_ask(order (*) [64], ap_uint&lt;8&gt;&amp;, unsigned int&amp;, int&amp;, int*, int*, order)'">
+        <args Callee="right_child(unsigned int, unsigned int, order (*) [64])" Callee-DebugLoc="File order_book_src/priority_queue.cpp Line 37 Column 0" Caller="remove_ask(order (*) [64], ap_uint&lt;8&gt;&amp;, unsigned int&amp;, int&amp;, int*, int*, order)" Caller-DebugLoc="File order_book_src/priority_queue.cpp Line 230 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:262:20" msg_body="Inlining function 'left_child(unsigned int, unsigned int, order (*) [64])' into 'remove_ask(order (*) [64], ap_uint&lt;8&gt;&amp;, unsigned int&amp;, int&amp;, int*, int*, order)'">
+        <args Callee="left_child(unsigned int, unsigned int, order (*) [64])" Callee-DebugLoc="File order_book_src/priority_queue.cpp Line 32 Column 0" Caller="remove_ask(order (*) [64], ap_uint&lt;8&gt;&amp;, unsigned int&amp;, int&amp;, int*, int*, order)" Caller-DebugLoc="File order_book_src/priority_queue.cpp Line 230 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:455:17" msg_body="Inlining function 'add_ask(order (*) [64], order&amp;, unsigned int&amp;, int&amp;, int*, int*, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;, metadata, order, bool)' into 'order_book(hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;&amp;)'">
+        <args Callee="add_ask(order (*) [64], order&amp;, unsigned int&amp;, int&amp;, int*, int*, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;, metadata, order, bool)" Callee-DebugLoc="File order_book_src/priority_queue.cpp Line 174 Column 0" Caller="order_book(hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;&amp;)" Caller-DebugLoc="File order_book_src/priority_queue.cpp Line 283 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:451:21" msg_body="Inlining function 'remove_ask(order (*) [64], ap_uint&lt;8&gt;&amp;, unsigned int&amp;, int&amp;, int*, int*, order)' into 'order_book(hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;&amp;)'">
+        <args Callee="remove_ask(order (*) [64], ap_uint&lt;8&gt;&amp;, unsigned int&amp;, int&amp;, int*, int*, order)" Callee-DebugLoc="File order_book_src/priority_queue.cpp Line 230 Column 0" Caller="order_book(hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;&amp;)" Caller-DebugLoc="File order_book_src/priority_queue.cpp Line 283 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:408:17" msg_body="Inlining function 'add_bid(order (*) [64], order&amp;, unsigned int&amp;, int&amp;, int*, int*, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;, metadata, order, bool)' into 'order_book(hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;&amp;)'">
+        <args Callee="add_bid(order (*) [64], order&amp;, unsigned int&amp;, int&amp;, int*, int*, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;, metadata, order, bool)" Callee-DebugLoc="File order_book_src/priority_queue.cpp Line 60 Column 0" Caller="order_book(hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;&amp;)" Caller-DebugLoc="File order_book_src/priority_queue.cpp Line 283 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:404:21" msg_body="Inlining function 'remove_bid(order (*) [64], ap_uint&lt;8&gt;&amp;, unsigned int&amp;, int&amp;, int*, int*, order)' into 'order_book(hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;&amp;)'">
+        <args Callee="remove_bid(order (*) [64], ap_uint&lt;8&gt;&amp;, unsigned int&amp;, int&amp;, int*, int*, order)" Callee-DebugLoc="File order_book_src/priority_queue.cpp Line 116 Column 0" Caller="order_book(hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;order, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;metadata, 0&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;&amp;)" Caller-DebugLoc="File order_book_src/priority_queue.cpp Line 283 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:88:5" msg_body="Loop 'BID_PUSH_LOOP' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="BID_PUSH_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:383:17" msg_body="Loop 'OPEN_BID_REMOVE' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="OPEN_BID_REMOVE"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:134:9" msg_body="Loop 'BID_POP_LOOP' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="BID_POP_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:387:21" msg_body="Loop 'ARBITRARY_BID_REMOVE' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="ARBITRARY_BID_REMOVE"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:399:35" msg_body="Loop 'VITIS_LOOP_399_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_399_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:202:5" msg_body="Loop 'ASK_PUSH_LOOP' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="ASK_PUSH_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:430:17" msg_body="Loop 'OPEN_ASK_REMOVE' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="OPEN_ASK_REMOVE"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:248:9" msg_body="Loop 'ASK_POP_LOOP' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="ASK_POP_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:434:21" msg_body="Loop 'ARBITRARY_ASK_REMOVE' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="ARBITRARY_ASK_REMOVE"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:446:35" msg_body="Loop 'VITIS_LOOP_446_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_446_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:283:0" msg_body="Updating loop lower bound from 0 to 6 for loop 'BID_POP_LOOP' (order_book_src/priority_queue.cpp:134:9) in function 'order_book'.">
+        <args LoopLoc="order_book_src/priority_queue.cpp:134:9" LoopName="BID_POP_LOOP" NewBound="6" OldBound="0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:283:0" msg_body="Updating loop upper bound from 11 to 6 for loop 'BID_POP_LOOP' (order_book_src/priority_queue.cpp:134:9) in function 'order_book'.">
+        <args LoopLoc="order_book_src/priority_queue.cpp:134:9" LoopName="BID_POP_LOOP" NewBound="6" OldBound="11"/>
+    </msg>
+    <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:283:0" msg_body="Updating loop lower bound from 0 to 6 for loop 'ASK_POP_LOOP' (order_book_src/priority_queue.cpp:248:9) in function 'order_book'.">
+        <args LoopLoc="order_book_src/priority_queue.cpp:248:9" LoopName="ASK_POP_LOOP" NewBound="6" OldBound="0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:283:0" msg_body="Updating loop upper bound from 11 to 6 for loop 'ASK_POP_LOOP' (order_book_src/priority_queue.cpp:248:9) in function 'order_book'.">
+        <args LoopLoc="order_book_src/priority_queue.cpp:248:9" LoopName="ASK_POP_LOOP" NewBound="6" OldBound="11"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DEPENDENCE" msg_id="214-327" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:135:9" msg_body="Dependence pragma in loop 'BID_POP_LOOP' (order_book_src/priority_queue.cpp:134:9) is removed because the loop is unrolled completely">
+        <args LoopLoc="order_book_src/priority_queue.cpp:134:9" LoopName="BID_POP_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:283:0" msg_body="Unrolling loop 'BID_POP_LOOP' (order_book_src/priority_queue.cpp:134:9) in function 'order_book' completely with a factor of 6">
+        <args Factor="6" LoopLoc="order_book_src/priority_queue.cpp:134:9" LoopName="BID_POP_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_PIPELINE" msg_id="214-189" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:283:0" msg_body="Pipeline directive for loop 'BID_POP_LOOP' (order_book_src/priority_queue.cpp:134:9) in function 'order_book' has been removed because the loop is unrolled completely">
+        <args LoopLoc="order_book_src/priority_queue.cpp:134:9" LoopName="BID_POP_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DEPENDENCE" msg_id="214-327" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:249:9" msg_body="Dependence pragma in loop 'ASK_POP_LOOP' (order_book_src/priority_queue.cpp:248:9) is removed because the loop is unrolled completely">
+        <args LoopLoc="order_book_src/priority_queue.cpp:248:9" LoopName="ASK_POP_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:283:0" msg_body="Unrolling loop 'ASK_POP_LOOP' (order_book_src/priority_queue.cpp:248:9) in function 'order_book' completely with a factor of 6">
+        <args Factor="6" LoopLoc="order_book_src/priority_queue.cpp:248:9" LoopName="ASK_POP_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_PIPELINE" msg_id="214-189" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:283:0" msg_body="Pipeline directive for loop 'ASK_POP_LOOP' (order_book_src/priority_queue.cpp:248:9) in function 'order_book' has been removed because the loop is unrolled completely">
+        <args LoopLoc="order_book_src/priority_queue.cpp:248:9" LoopName="ASK_POP_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:308:0" msg_body="Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3bid.price': Complete partitioning on dimension 1. Cyclic partitioning with factor 4 on dimension 2.">
+        <args Dim="islist 1 2" Factor="4" Mode="islist Complete Cyclic" UOName="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3bid.price"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:308:0" msg_body="Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3bid.size': Complete partitioning on dimension 1. Cyclic partitioning with factor 4 on dimension 2.">
+        <args Dim="islist 1 2" Factor="4" Mode="islist Complete Cyclic" UOName="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3bid.size"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:308:0" msg_body="Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3bid.orderID': Complete partitioning on dimension 1. Cyclic partitioning with factor 4 on dimension 2.">
+        <args Dim="islist 1 2" Factor="4" Mode="islist Complete Cyclic" UOName="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3bid.orderID"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:308:0" msg_body="Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3bid.direction': Complete partitioning on dimension 1. Cyclic partitioning with factor 4 on dimension 2.">
+        <args Dim="islist 1 2" Factor="4" Mode="islist Complete Cyclic" UOName="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3bid.direction"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:314:0" msg_body="Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3ask.price': Complete partitioning on dimension 1. Cyclic partitioning with factor 4 on dimension 2.">
+        <args Dim="islist 1 2" Factor="4" Mode="islist Complete Cyclic" UOName="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3ask.price"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:314:0" msg_body="Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3ask.size': Complete partitioning on dimension 1. Cyclic partitioning with factor 4 on dimension 2.">
+        <args Dim="islist 1 2" Factor="4" Mode="islist Complete Cyclic" UOName="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3ask.size"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:314:0" msg_body="Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3ask.orderID': Complete partitioning on dimension 1. Cyclic partitioning with factor 4 on dimension 2.">
+        <args Dim="islist 1 2" Factor="4" Mode="islist Complete Cyclic" UOName="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3ask.orderID"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:314:0" msg_body="Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3ask.direction': Complete partitioning on dimension 1. Cyclic partitioning with factor 4 on dimension 2.">
+        <args Dim="islist 1 2" Factor="4" Mode="islist Complete Cyclic" UOName="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E3ask.direction"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:320:0" msg_body="Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10bid_remove.price': Complete partitioning on dimension 1. Cyclic partitioning with factor 4 on dimension 2.">
+        <args Dim="islist 1 2" Factor="4" Mode="islist Complete Cyclic" UOName="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10bid_remove.price"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:320:0" msg_body="Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10bid_remove.size': Complete partitioning on dimension 1. Cyclic partitioning with factor 4 on dimension 2.">
+        <args Dim="islist 1 2" Factor="4" Mode="islist Complete Cyclic" UOName="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10bid_remove.size"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:320:0" msg_body="Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10bid_remove.orderID': Complete partitioning on dimension 1. Cyclic partitioning with factor 4 on dimension 2.">
+        <args Dim="islist 1 2" Factor="4" Mode="islist Complete Cyclic" UOName="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10bid_remove.orderID"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:320:0" msg_body="Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10bid_remove.direction': Complete partitioning on dimension 1. Cyclic partitioning with factor 4 on dimension 2.">
+        <args Dim="islist 1 2" Factor="4" Mode="islist Complete Cyclic" UOName="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10bid_remove.direction"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:326:0" msg_body="Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10ask_remove.price': Complete partitioning on dimension 1. Cyclic partitioning with factor 4 on dimension 2.">
+        <args Dim="islist 1 2" Factor="4" Mode="islist Complete Cyclic" UOName="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10ask_remove.price"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:326:0" msg_body="Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10ask_remove.size': Complete partitioning on dimension 1. Cyclic partitioning with factor 4 on dimension 2.">
+        <args Dim="islist 1 2" Factor="4" Mode="islist Complete Cyclic" UOName="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10ask_remove.size"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:326:0" msg_body="Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10ask_remove.orderID': Complete partitioning on dimension 1. Cyclic partitioning with factor 4 on dimension 2.">
+        <args Dim="islist 1 2" Factor="4" Mode="islist Complete Cyclic" UOName="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10ask_remove.orderID"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:326:0" msg_body="Applying array_partition to '_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10ask_remove.direction': Complete partitioning on dimension 1. Cyclic partitioning with factor 4 on dimension 2.">
+        <args Dim="islist 1 2" Factor="4" Mode="islist Complete Cyclic" UOName="_ZZ10order_bookRN3hls6streamI5orderLi0EEERNS0_I7ap_uintILi32EELi0EEERNS0_I8metadataLi0EEES3_S3_S7_SA_RS5_SB_E10ask_remove.direction"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:383:17" msg_body="Automatically disabling loop flattening for loop 'OPEN_BID_REMOVE'.">
+        <args LoopName="OPEN_BID_REMOVE"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:383:17" msg_body="loop_flatten 0 1 order_book order_book_src/priority_queue.cpp:383:17OPEN_BID_REMOVE order_book_src/priority_queue.cpp:383:17">
+        <args LoopLoc="order_book_src/priority_queue.cpp:383:17" LoopLoc-DebugLoc="File order_book_src/priority_queue.cpp Line 383 Column 17" LoopName="OPEN_BID_REMOVE" PragmaFunction="order_book" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="order_book_src/priority_queue.cpp:383:17" PragmaSrcLoc-DebugLoc="File order_book_src/priority_queue.cpp Line 383 Column 17" PragmaType="loop_flatten"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:430:17" msg_body="Automatically disabling loop flattening for loop 'OPEN_ASK_REMOVE'.">
+        <args LoopName="OPEN_ASK_REMOVE"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="order_book_src/priority_queue.cpp:430:17" msg_body="loop_flatten 0 1 order_book order_book_src/priority_queue.cpp:430:17OPEN_ASK_REMOVE order_book_src/priority_queue.cpp:430:17">
+        <args LoopLoc="order_book_src/priority_queue.cpp:430:17" LoopLoc-DebugLoc="File order_book_src/priority_queue.cpp Line 430 Column 17" LoopName="OPEN_ASK_REMOVE" PragmaFunction="order_book" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="order_book_src/priority_queue.cpp:430:17" PragmaSrcLoc-DebugLoc="File order_book_src/priority_queue.cpp Line 430 Column 17" PragmaType="loop_flatten"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:88:5" msg_body="Cannot unroll loop 'BID_PUSH_LOOP' (order_book_src/priority_queue.cpp:88:5) in function 'order_book' as it has a variable trip count">
+        <args LoopLoc="order_book_src/priority_queue.cpp:88:5" LoopName="BID_PUSH_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:383:17" msg_body="Cannot unroll loop 'OPEN_BID_REMOVE' (order_book_src/priority_queue.cpp:383:17) in function 'order_book' as it has a variable trip count">
+        <args LoopLoc="order_book_src/priority_queue.cpp:383:17" LoopName="OPEN_BID_REMOVE"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:387:21" msg_body="Cannot unroll loop 'ARBITRARY_BID_REMOVE' (order_book_src/priority_queue.cpp:387:21) in function 'order_book' as it has a variable trip count">
+        <args LoopLoc="order_book_src/priority_queue.cpp:387:21" LoopName="ARBITRARY_BID_REMOVE"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:399:35" msg_body="Cannot unroll loop 'VITIS_LOOP_399_1' (order_book_src/priority_queue.cpp:399:35) in function 'order_book' as it has a variable trip count">
+        <args LoopLoc="order_book_src/priority_queue.cpp:399:35" LoopName="VITIS_LOOP_399_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:202:5" msg_body="Cannot unroll loop 'ASK_PUSH_LOOP' (order_book_src/priority_queue.cpp:202:5) in function 'order_book' as it has a variable trip count">
+        <args LoopLoc="order_book_src/priority_queue.cpp:202:5" LoopName="ASK_PUSH_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:430:17" msg_body="Cannot unroll loop 'OPEN_ASK_REMOVE' (order_book_src/priority_queue.cpp:430:17) in function 'order_book' as it has a variable trip count">
+        <args LoopLoc="order_book_src/priority_queue.cpp:430:17" LoopName="OPEN_ASK_REMOVE"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:434:21" msg_body="Cannot unroll loop 'ARBITRARY_ASK_REMOVE' (order_book_src/priority_queue.cpp:434:21) in function 'order_book' as it has a variable trip count">
+        <args LoopLoc="order_book_src/priority_queue.cpp:434:21" LoopName="ARBITRARY_ASK_REMOVE"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="order_book_src/priority_queue.cpp:446:35" msg_body="Cannot unroll loop 'VITIS_LOOP_446_2' (order_book_src/priority_queue.cpp:446:35) in function 'order_book' as it has a variable trip count">
+        <args LoopLoc="order_book_src/priority_queue.cpp:446:35" LoopName="VITIS_LOOP_446_2"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

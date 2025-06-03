@@ -1,0 +1,43 @@
+<pragmas>
+<pragma file="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<16, false>::ssdm_int(unsigned short)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<64>::ap_uint<32, ap_int_base<32, false>, 32, ap_int_base<32, false> >(ap_concat_ref<32, ap_int_base<32, false>, 32, ap_int_base<32, false> > const&)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi1ELb0EEC2EDq1_j" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, false>::ap_int_base<32, ap_int_base<32, false>, 32, ap_int_base<32, false> >(ap_concat_ref<32, ap_int_base<32, false>, 32, ap_int_base<32, false> > const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<16, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<8>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<16>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<32, false>::operator>=<32, false>(ap_int_base<32, false> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="full" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<8, false>::ssdm_int(unsigned char)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="concat" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<64, false>::ssdm_int(unsigned long)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="full" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_concat_ref<32, ap_int_base<32, false>, 32, ap_int_base<32, false> >::ap_concat_ref(ap_int_base<32, false>&, ap_int_base<32, false>&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<32, false>::ssdm_int(unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::operator++()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<1>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="full" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<32>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="length" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>& ap_int_base<32, false>::operator+=<1, false>(ap_int_base<1, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="microblaze_to_switch_src/MBtoSW.cpp" line="27" pragmaType="pipeline" parentfunction="MicroblazeToSwitch" off="0" ii="1" style=""/>
+<pragma file="microblaze_to_switch_src/MBtoSW.cpp" line="16" pragmaType="interface" parentfunction="MicroblazeToSwitch" mode="ap_ctrl_none" port="return" name=""/>
+<pragma file="microblaze_to_switch_src/MBtoSW.cpp" line="17" pragmaType="interface" parentfunction="MicroblazeToSwitch" mode="axis" port="rxLengthMonitor" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="microblaze_to_switch_src/MBtoSW.cpp" line="18" pragmaType="interface" parentfunction="MicroblazeToSwitch" mode="axis" port="rxDataMonitor" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="microblaze_to_switch_src/MBtoSW.cpp" line="19" pragmaType="aggregate" parentfunction="MicroblazeToSwitch" compact="1" variable="rxMetadataMonitor"/>
+<pragma file="microblaze_to_switch_src/MBtoSW.cpp" line="20" pragmaType="interface" parentfunction="MicroblazeToSwitch" mode="axis" port="rxMetadataMonitor" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="microblaze_to_switch_src/MBtoSW.cpp" line="21" pragmaType="interface" parentfunction="MicroblazeToSwitch" mode="s_axilite" port="best_bid_sw" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="microblaze_to_switch_src/MBtoSW.cpp" line="22" pragmaType="interface" parentfunction="MicroblazeToSwitch" mode="s_axilite" port="best_ask_sw" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+</pragmas>

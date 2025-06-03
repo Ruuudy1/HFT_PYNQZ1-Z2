@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op setgt" ID="" IMPL="auto" LATENCY="0" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln60_fu_169_p2" SOURCE="threshold_src/simpleThreshold.cpp:60" VARIABLE="icmp_ln60" MODULE="simple_threshold" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op setlt" ID="" IMPL="auto" LATENCY="0" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln65_fu_179_p2" SOURCE="threshold_src/simpleThreshold.cpp:65" VARIABLE="icmp_ln65" MODULE="simple_threshold" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+</BindInfo>

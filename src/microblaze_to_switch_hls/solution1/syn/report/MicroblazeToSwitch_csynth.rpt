@@ -1,0 +1,173 @@
+
+
+================================================================
+== Vitis HLS Report for 'MicroblazeToSwitch'
+================================================================
+* Date:           Thu May 29 07:31:07 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        microblaze_to_switch_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.500 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        5|        5|  50.000 ns|  50.000 ns|    4|    4|      yes|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     35|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        0|    -|     106|    168|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     52|    -|
+|Register         |        -|    -|      13|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     119|    255|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-----------------+---------------+---------+----+-----+-----+-----+
+    |     Instance    |     Module    | BRAM_18K| DSP|  FF | LUT | URAM|
+    +-----------------+---------------+---------+----+-----+-----+-----+
+    |control_s_axi_U  |control_s_axi  |        0|   0|  106|  168|    0|
+    +-----------------+---------------+---------+----+-----+-----+-----+
+    |Total            |               |        0|   0|  106|  168|    0|
+    +-----------------+---------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------------------+----------+----+---+----+------------+------------+
+    |             Variable Name             | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------------------+----------+----+---+----+------------+------------+
+    |add_ln51_fu_143_p2                     |         +|   0|  0|  11|           3|           1|
+    |ap_block_pp0_stage0_01001_grp2         |       and|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage1_11001              |       and|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage1_11001_grp5         |       and|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage3_01001_grp1         |       and|   0|  0|   2|           1|           1|
+    |ap_block_state4_pp0_stage3_iter0_grp1  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_op44_write_state4         |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_op45_write_state5         |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_op48_write_state6         |       and|   0|  0|   2|           1|           1|
+    |ap_block_state5_pp0_stage0_iter1_grp2  |        or|   0|  0|   2|           1|           1|
+    |ap_block_state6_pp0_stage1_iter1_grp5  |        or|   0|  0|   2|           1|           1|
+    |select_ln51_fu_161_p3                  |    select|   0|  0|   2|           1|           1|
+    |ap_enable_pp0                          |       xor|   0|  0|   2|           1|           2|
+    +---------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                  |          |   0|  0|  35|          15|          14|
+    +---------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------------+----+-----------+-----+-----------+
+    |              Name             | LUT| Input Size| Bits| Total Bits|
+    +-------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                      |  25|          5|    1|          5|
+    |rxDataMonitor_TDATA_blk_n      |   9|          2|    1|          2|
+    |rxLengthMonitor_TDATA_blk_n    |   9|          2|    1|          2|
+    |rxMetadataMonitor_TDATA_blk_n  |   9|          2|    1|          2|
+    +-------------------------------+----+-----------+-----+-----------+
+    |Total                          |  52|         11|    4|         11|
+    +-------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------+---+----+-----+-----------+
+    |                    Name                   | FF| LUT| Bits| Const Bits|
+    +-------------------------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                                  |  4|   0|    4|          0|
+    |ap_block_pp0_stage1_subdone_grp5_done_reg  |  1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1                    |  1|   0|    1|          0|
+    |rate_cnt                                   |  2|   0|    2|          0|
+    |ready_to_send_reg_194                      |  1|   0|    1|          0|
+    |ready_to_send_reg_194_pp0_iter1_reg        |  1|   0|    1|          0|
+    |tmp_1_reg_202                              |  1|   0|    1|          0|
+    |tmp_2_reg_206                              |  1|   0|    1|          0|
+    |tmp_reg_198                                |  1|   0|    1|          0|
+    +-------------------------------------------+---+----+-----+-----------+
+    |Total                                      | 13|   0|   13|          0|
+    +-------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------+-----+-----+--------------+--------------------+--------------+
+|         RTL Ports        | Dir | Bits|   Protocol   |    Source Object   |    C Type    |
++--------------------------+-----+-----+--------------+--------------------+--------------+
+|s_axi_control_AWVALID     |   in|    1|         s_axi|             control|        scalar|
+|s_axi_control_AWREADY     |  out|    1|         s_axi|             control|        scalar|
+|s_axi_control_AWADDR      |   in|    5|         s_axi|             control|        scalar|
+|s_axi_control_WVALID      |   in|    1|         s_axi|             control|        scalar|
+|s_axi_control_WREADY      |  out|    1|         s_axi|             control|        scalar|
+|s_axi_control_WDATA       |   in|   32|         s_axi|             control|        scalar|
+|s_axi_control_WSTRB       |   in|    4|         s_axi|             control|        scalar|
+|s_axi_control_ARVALID     |   in|    1|         s_axi|             control|        scalar|
+|s_axi_control_ARREADY     |  out|    1|         s_axi|             control|        scalar|
+|s_axi_control_ARADDR      |   in|    5|         s_axi|             control|        scalar|
+|s_axi_control_RVALID      |  out|    1|         s_axi|             control|        scalar|
+|s_axi_control_RREADY      |   in|    1|         s_axi|             control|        scalar|
+|s_axi_control_RDATA       |  out|   32|         s_axi|             control|        scalar|
+|s_axi_control_RRESP       |  out|    2|         s_axi|             control|        scalar|
+|s_axi_control_BVALID      |  out|    1|         s_axi|             control|        scalar|
+|s_axi_control_BREADY      |   in|    1|         s_axi|             control|        scalar|
+|s_axi_control_BRESP       |  out|    2|         s_axi|             control|        scalar|
+|ap_clk                    |   in|    1|  ap_ctrl_none|  MicroblazeToSwitch|  return value|
+|ap_rst_n                  |   in|    1|  ap_ctrl_none|  MicroblazeToSwitch|  return value|
+|rxDataMonitor_TDATA       |  out|  128|          axis|       rxDataMonitor|       pointer|
+|rxDataMonitor_TVALID      |  out|    1|          axis|       rxDataMonitor|       pointer|
+|rxDataMonitor_TREADY      |   in|    1|          axis|       rxDataMonitor|       pointer|
+|rxMetadataMonitor_TDATA   |  out|   96|          axis|   rxMetadataMonitor|       pointer|
+|rxMetadataMonitor_TVALID  |  out|    1|          axis|   rxMetadataMonitor|       pointer|
+|rxMetadataMonitor_TREADY  |   in|    1|          axis|   rxMetadataMonitor|       pointer|
+|rxLengthMonitor_TDATA     |  out|   16|          axis|     rxLengthMonitor|       pointer|
+|rxLengthMonitor_TVALID    |  out|    1|          axis|     rxLengthMonitor|       pointer|
+|rxLengthMonitor_TREADY    |   in|    1|          axis|     rxLengthMonitor|       pointer|
++--------------------------+-----+-----+--------------+--------------------+--------------+
+

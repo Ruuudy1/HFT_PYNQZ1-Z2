@@ -1,0 +1,29 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_MicroblazeToSwitch_ir
+Args:            
+  - Callee:          'MicroblazeToSwitch(ap_uint<32>, ap_uint<32>, hls::stream<axiWord, 0>&, hls::stream<metadata, 0>&, hls::stream<ap_uint<16>, 0>&)'
+    DebugLoc:        { File: microblaze_to_switch_src/MBtoSW.cpp, Line: 12, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_MicroblazeToSwitch_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: microblaze_to_switch_src/MBtoSW.cpp, Line: 12, 
+                   Column: 0 }
+Function:        _Z18MicroblazeToSwitch7ap_uintILi32EES0_RN3hls6streamI7axiWordLi0EEERNS2_I8metadataLi0EEERNS2_IS_ILi16EELi0EEE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'axis (hls::stream)'
+  - String:          ' variable '''
+  - Name:            rxMetadataMonitor
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '96'
+  - String:          '-bits'
+...
