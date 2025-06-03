@@ -8,13 +8,11 @@ High frequency trading is the method of buying and selling stocks/assets at a ra
 
 In our project, we use the PYNQ-Z1/Z2 development board to implement a high frequency trading pipeline in order to achieve low latency. We connect the board via Ethernet to a PC, and use the PYNQ-Z2's Jupyter Notebook feature to set up a server on the board. We use a Python script to set up a client on our PC and send/receive data via Python socket between the PC and the board. The board will receive the data and use a DMA module to move the packet data from the PS to the PL, process the data through the pipeline, and move the data from the PL back to the PS in order to send it back to the PC.
 
-TODO make any edits to fit current repository
-
 ## Team
 
 Brandon Reponte is a 4th year at UCSD studying computer science. He has a background in systems programming and computer architecture, as well as higher level skills in machine learning and AI.
 
-Leeze Gutierrez-Ramirez... TODO
+Leeze Gutierrez-Ramirez is a senior Computer Engineering major. She is interested in embedded systems and OS programming.
 
 Rudy Osuna is a 3rd year UCSD Computer Science major, Minor in Business Analytics. Background: Involved in Quantitative Finance
 
@@ -32,7 +30,9 @@ We then realized that interfacing with the Ethernet PHY was *not possible* when 
 
 ### UDP Parser
 
-TODO Leeza
+Unlike the FAST decoder (which used QuickFAST and came with documentation and examples), the UDP parser had to be built from scratch with no prior codebase.
+There was no clear guide or interface explaining how to connect incoming UDP packets to the FAST decoding pipeline, so the entire bridge logic had to be designed independently.
+In order to integrate the UDP parser to the FAST encoder we had to get familiar with the quickfast codebase.
 
 ## Starter Repository
 
@@ -97,10 +97,6 @@ The XSA file is primarily used when developing software applications in Vitis/SD
 - **For software development**: Use `.xsa` file in Vitis/SDK to create applications that run on the ARM processors and communicate with your HFT design
 
 Flexibility to use either approach depending on your testing and deployment needs.
-
-## Replication
-
-TODO
 
 ## Original Repository's Summary
 
