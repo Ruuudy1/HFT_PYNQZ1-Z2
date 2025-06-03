@@ -14,8 +14,7 @@ Brandon Reponte is a 4th year at UCSD studying computer science. He has a backgr
 
 Leeze Gutierrez-Ramirez is a senior Computer Engineering major. She is interested in embedded systems and OS programming.
 
-Rudy Osuna is a 3rd year UCSD Computer Science major, Minor in Business Analytics. Background: Involved in Quantitative Finance
-
+Rudy Osuna is a 3rd year UCSD Computer Science major, Minor in Business Analytics. Background: President of Triton Quantitative Trading @UC San Diego  
 ## Challenges
 
 ### Ethernet
