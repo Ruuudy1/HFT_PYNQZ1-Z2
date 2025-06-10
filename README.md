@@ -41,7 +41,19 @@ Credits to original repo, we are simply maintaining it and descaling it down to 
 
 We maintained the repository, optimized it, removed huge #define <math.h> import overhead, built custom "glue" to merge the IP's together, and rewrote likely 10 year old syntax.
 
- ### General Changes
+Additionally, we created an isolated Ethernet module that works with a loopback test.
+
+### Ethernet Module
+Under the /ethernet folder, there is a .bit, .hwh. jupyter notebook, and python script to test the Ethernet connection. In order to run the Ethernet module, follow the steps below:
+1. [HOST] Open the board's Jupyter Notebook by opening the http://192.168.2.99/ on your browser.
+2. [HOST] Within the same directory, upload the ```ethernet.bit```, ```ethernet.hwh```, and the ```ethernet_loopback.ipynb``` files.
+3. [HOST] Open up the ```ethernet_loopback.ipynb``` file and run the notebook.
+4. [CLIENT] On your PC, run the ```client_test.py``` file to send packets to the ```ethernet_loopback.ipynb``` host code.
+
+Given these steps, you should be able to send packets from the client to the board and receive them back. The implementation of the hardware module is given in /ethernet/vivado_srcs. If you want to edit the Ethernet module, you can open up the Vivado project, load the source files in a new Vivado project, and make your changes. Currently, the architecture of the Ethernet module uses a DMA to move data from the PS to the PL. The PL then moves the data back to the PS using the same DMA. The DMA moves the data to the PL through a FIFO, which would then connect to the HFT pipeline. Afterwards, the HFT pipeline would output to another FIFO which connects back to the DMA and then lastly to the PS to be transmitted to the client.
+
+
+### General Changes
 - Working bitstream implementations on the PYNQ-Z1/Z2 boards
 - Fixed resource over-utilization; order book 4096 BID + 4096 ASK -> 128 BID + 128 ASK (still ideal for popular HFT strats: *Market Making*, *Momentum Trading*, etc)    
 - Rewrote original repository that was built on Python2 which uses Tkinter package that PYNQ’s Debian image no longer provides
@@ -155,7 +167,9 @@ Contains the Vivado project used to build the project
 
 /src/*_src/
 Contains the src code of HLS projects for the various parts of our project. All project cores
- were developed using Vivado HLS. 
+ were developed using Vivado HLS.
+
+Additionally, there is an /ethernet folder in which there is a Jupyter Notebook and Python script to test the Ethernet connection between the PYNQ-Z2 board and a PC. It is an isolated module and is not integrated with any other components.
 
 ## Acknowledgements
 
