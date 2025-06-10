@@ -15,29 +15,15 @@ set_property ip_repo_paths [list \
 ] [current_project]
 update_ip_catalog
 
-# 1) Now source the PYNQ-specific block design
+# 1) Now source the fixed PYNQ-specific block design
+# Change this line to use your fixed block design
 source [file normalize ../pynq_block_design.tcl]
 
-# REMOVE THIS LINE - project is already open:
-# open_project hft_proj/hft_proj.xpr
-
 # Now we can work with the block design
 generate_target all [get_files hft_proj/hft_proj.srcs/sources_1/bd/design_1/design_1.bd]
 validate_bd_design
 make_wrapper -files [get_files hft_proj/hft_proj.srcs/sources_1/bd/design_1/design_1.bd] -top
 add_files -norecurse ./hft_proj/hft_proj.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
-add_files -norecurse [file normalize ../pynq_z1.xdc]
-update_compile_order -fileset sources_1
-update_compile_order -fileset sim_1
-
-
-# Now we can work with the block design
-generate_target all [get_files hft_proj/hft_proj.srcs/sources_1/bd/design_1/design_1.bd]
-validate_bd_design
-make_wrapper -files [get_files hft_proj/hft_proj.srcs/sources_1/bd/design_1/design_1.bd] -top
-add_files -norecurse ./hft_proj/hft_proj.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
-# Use the PYNQ-Z1 constraints instead
-# add_files -norecurse pynq_z1.xdc
 add_files -norecurse [file normalize ../pynq_z1.xdc]
 update_compile_order -fileset sources_1
 update_compile_order -fileset sim_1
