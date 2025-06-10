@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'txPath'" level="0">
-<item name = "Date">Thu May 29 06:17:18 2025
+<item name = "Date">Sun Jun  8 10:11:30 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">fast_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">25.00 ns, 17.495 ns, 6.75 ns</column>
+<column name="ap_clk">10.00 ns, 8.718 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">5, 5, 0.125 us, 0.125 us, 4, 4, yes(flp)</column>
+<column name="">5, 5, 50.000 ns, 50.000 ns, 4, 4, yes(flp)</column>
 </table>
 </item>
 <item name = "Detail">

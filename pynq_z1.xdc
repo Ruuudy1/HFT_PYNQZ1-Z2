@@ -18,3 +18,9 @@ set_property -dict {PACKAGE_PIN D19 IOSTANDARD LVCMOS33} [get_ports {user_sw_l}]
 set_false_path -to [get_ports "led_l[*]"]
 set_false_path -from [get_ports "user_sw_l"]
 # set_false_path -from [get_ports "reset"]
+
+# PYNQ-Z1 PS7 RGMII requires 1.8 V on MIO16-27:
+set_property IOSTANDARD LVCMOS18 [get_ports {MIO16 MIO17 … MIO27}]
+# MDIO can remain at 3.3 V:
+set_property IOSTANDARD LVCMOS33 [get_ports {MIO52 MIO53}]
+

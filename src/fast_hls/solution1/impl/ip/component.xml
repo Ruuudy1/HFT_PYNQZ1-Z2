@@ -698,7 +698,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>d8d487a1</spirit:value>
+            <spirit:value>0b6301ad</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -714,7 +714,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>2ec6d90d</spirit:value>
+            <spirit:value>190bdd5c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -730,7 +730,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>d4eeea90</spirit:value>
+            <spirit:value>141c02ad</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -746,7 +746,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>d4219b02</spirit:value>
+            <spirit:value>f8b3b292</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1735,7 +1735,7 @@
       <spirit:file>
         <spirit:name>hdl/vhdl/fast_protocol.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_5275ea67</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_0a69922e</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1871,7 +1871,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>clk_period</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.clk_period" spirit:order="1">25</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.clk_period" spirit:order="1">10</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>machine</spirit:name>
@@ -1900,8 +1900,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Fast_protocol</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114104037</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2025-05-29T13:17:35Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2114118671</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2025-06-08T17:11:43Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -1910,9 +1910,9 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2024.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="6d93c190"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="2e1a5e6d"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="a7298f20"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="462f3563"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="622b9c42"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="832f8386"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

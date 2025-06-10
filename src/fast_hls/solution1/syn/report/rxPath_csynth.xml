@@ -9,8 +9,8 @@
 <ProductFamily>zynq</ProductFamily>
 <Part>xc7z020-clg484-1</Part>
 <TopModelName>rxPath</TopModelName>
-<TargetClockPeriod>25.00</TargetClockPeriod>
-<ClockUncertainty>6.75</ClockUncertainty>
+<TargetClockPeriod>10.00</TargetClockPeriod>
+<ClockUncertainty>2.70</ClockUncertainty>
 <TargetInitiationInterval>1</TargetInitiationInterval>
 <FlowTarget>vivado</FlowTarget>
 </UserAssignments>
@@ -19,18 +19,18 @@
 <PipelineType>yes(flp)</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>15.098</EstimatedClockPeriod>
+<EstimatedClockPeriod>7.271</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>4</Best-caseLatency>
-<Average-caseLatency>4</Average-caseLatency>
-<Worst-caseLatency>4</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.100 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.100 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.100 us</Worst-caseRealTimeLatency>
+<Best-caseLatency>5</Best-caseLatency>
+<Average-caseLatency>5</Average-caseLatency>
+<Worst-caseLatency>5</Worst-caseLatency>
+<Best-caseRealTimeLatency>50.000 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>50.000 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>50.000 ns</Worst-caseRealTimeLatency>
 <PipelineInitiationInterval>3</PipelineInitiationInterval>
-<PipelineDepth>5</PipelineDepth>
+<PipelineDepth>6</PipelineDepth>
 <Interval-min>3</Interval-min>
 <Interval-max>3</Interval-max>
 </SummaryOfOverallLatency>
@@ -45,8 +45,8 @@
 <Resources>
 <BRAM_18K>0</BRAM_18K>
 <DSP>2</DSP>
-<FF>368</FF>
-<LUT>1165</LUT>
+<FF>608</FF>
+<LUT>1181</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

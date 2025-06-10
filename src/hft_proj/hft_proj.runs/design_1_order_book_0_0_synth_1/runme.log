@@ -8,21 +8,21 @@
   **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Sun Jun  1 15:33:28 2025
+  **** Start of session at: Sun Jun  8 13:37:16 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source design_1_order_book_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 620.344 ; gain = 191.238
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 619.016 ; gain = 190.270
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/fast_hls'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/order_book_hls'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/threshold_hls'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/microblaze_to_switch_hls'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/udp_hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/fast_hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/order_book_hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/threshold_hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/microblaze_to_switch_hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/udp_hls'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
-Current IP cache path is c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.cache/ip 
+Current IP cache path is c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.cache/ip 
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_order_book_0_0
 Command: synth_design -top design_1_order_book_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
 Starting synth_design
@@ -31,73 +31,73 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 572
+INFO: [Synth 8-7075] Helper process launched with PID 18540
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1332.344 ; gain = 468.754
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1333.031 ; gain = 468.875
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'design_1_order_book_0_0' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ip/design_1_order_book_0_0/synth/design_1_order_book_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'order_book' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book.v:9]
-INFO: [Synth 8-6157] synthesizing module 'order_book_hole_lvl_bid_RAM_AUTO_1R1W' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_hole_lvl_bid_RAM_AUTO_1R1W.v:7]
-INFO: [Synth 8-3876] $readmem data file './order_book_hole_lvl_bid_RAM_AUTO_1R1W.dat' is read successfully [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_hole_lvl_bid_RAM_AUTO_1R1W.v:31]
-INFO: [Synth 8-6155] done synthesizing module 'order_book_hole_lvl_bid_RAM_AUTO_1R1W' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_hole_lvl_bid_RAM_AUTO_1R1W.v:7]
-INFO: [Synth 8-6157] synthesizing module 'order_book_hole_idx_bid_RAM_AUTO_1R1W' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_hole_idx_bid_RAM_AUTO_1R1W.v:7]
-INFO: [Synth 8-3876] $readmem data file './order_book_hole_idx_bid_RAM_AUTO_1R1W.dat' is read successfully [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_hole_idx_bid_RAM_AUTO_1R1W.v:31]
-INFO: [Synth 8-6155] done synthesizing module 'order_book_hole_idx_bid_RAM_AUTO_1R1W' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_hole_idx_bid_RAM_AUTO_1R1W.v:7]
-INFO: [Synth 8-6157] synthesizing module 'order_book_log_rom_ROM_AUTO_1R' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_log_rom_ROM_AUTO_1R.v:7]
-INFO: [Synth 8-3876] $readmem data file './order_book_log_rom_ROM_AUTO_1R.dat' is read successfully [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_log_rom_ROM_AUTO_1R.v:28]
-INFO: [Synth 8-6155] done synthesizing module 'order_book_log_rom_ROM_AUTO_1R' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_log_rom_ROM_AUTO_1R.v:7]
-INFO: [Synth 8-6157] synthesizing module 'order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_727_bkb' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_727_bkb.v:7]
-INFO: [Synth 8-3876] $readmem data file './order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_727_bkb.dat' is read successfully [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_727_bkb.v:31]
-INFO: [Synth 8-6155] done synthesizing module 'order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_727_bkb' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_727_bkb.v:7]
-INFO: [Synth 8-6157] synthesizing module 'order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_755_cud' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_755_cud.v:7]
-INFO: [Synth 8-3876] $readmem data file './order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_755_cud.dat' is read successfully [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_755_cud.v:31]
-INFO: [Synth 8-6155] done synthesizing module 'order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_755_cud' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_755_cud.v:7]
-INFO: [Synth 8-6157] synthesizing module 'order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_671_eOg' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_671_eOg.v:7]
-INFO: [Synth 8-3876] $readmem data file './order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_671_eOg.dat' is read successfully [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_671_eOg.v:31]
-INFO: [Synth 8-6155] done synthesizing module 'order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_671_eOg' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_671_eOg.v:7]
-INFO: [Synth 8-6157] synthesizing module 'order_book_order_book_Pipeline_ASK_PUSH_LOOP2' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_Pipeline_ASK_PUSH_LOOP2.v:9]
-INFO: [Synth 8-6157] synthesizing module 'order_book_sparsemux_9_2_8_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_sparsemux_9_2_8_1_1.v:9]
-INFO: [Synth 8-226] default block is never used [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_sparsemux_9_2_8_1_1.v:55]
-INFO: [Synth 8-6155] done synthesizing module 'order_book_sparsemux_9_2_8_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_sparsemux_9_2_8_1_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'order_book_sparsemux_13_3_8_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_sparsemux_13_3_8_1_1.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'order_book_sparsemux_13_3_8_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_sparsemux_13_3_8_1_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'order_book_sparsemux_9_2_3_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_sparsemux_9_2_3_1_1.v:9]
-INFO: [Synth 8-226] default block is never used [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_sparsemux_9_2_3_1_1.v:55]
-INFO: [Synth 8-6155] done synthesizing module 'order_book_sparsemux_9_2_3_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_sparsemux_9_2_3_1_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'order_book_sparsemux_13_3_3_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_sparsemux_13_3_3_1_1.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'order_book_sparsemux_13_3_3_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_sparsemux_13_3_3_1_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'order_book_bitselect_1ns_32ns_32s_1_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_bitselect_1ns_32ns_32s_1_1_1.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'order_book_bitselect_1ns_32ns_32s_1_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_bitselect_1ns_32ns_32s_1_1_1.v:8]
-INFO: [Synth 8-6157] synthesizing module 'order_book_sparsemux_9_2_16_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_sparsemux_9_2_16_1_1.v:9]
-INFO: [Synth 8-226] default block is never used [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_sparsemux_9_2_16_1_1.v:55]
-INFO: [Synth 8-6155] done synthesizing module 'order_book_sparsemux_9_2_16_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_sparsemux_9_2_16_1_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'order_book_sparsemux_13_3_16_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_sparsemux_13_3_16_1_1.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'order_book_sparsemux_13_3_16_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_sparsemux_13_3_16_1_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'order_book_flow_control_loop_pipe_sequential_init' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_flow_control_loop_pipe_sequential_init.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'order_book_flow_control_loop_pipe_sequential_init' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_flow_control_loop_pipe_sequential_init.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'order_book_order_book_Pipeline_ASK_PUSH_LOOP2' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_Pipeline_ASK_PUSH_LOOP2.v:9]
-INFO: [Synth 8-6157] synthesizing module 'order_book_order_book_Pipeline_ASK_PUSH_LOOP' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_Pipeline_ASK_PUSH_LOOP.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'order_book_order_book_Pipeline_ASK_PUSH_LOOP' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_Pipeline_ASK_PUSH_LOOP.v:9]
-INFO: [Synth 8-6157] synthesizing module 'order_book_order_book_Pipeline_BID_PUSH_LOOP1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_Pipeline_BID_PUSH_LOOP1.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'order_book_order_book_Pipeline_BID_PUSH_LOOP1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_Pipeline_BID_PUSH_LOOP1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'order_book_order_book_Pipeline_BID_PUSH_LOOP' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_Pipeline_BID_PUSH_LOOP.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'order_book_order_book_Pipeline_BID_PUSH_LOOP' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_Pipeline_BID_PUSH_LOOP.v:9]
-INFO: [Synth 8-6157] synthesizing module 'order_book_control_s_axi' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_control_s_axi.v:9]
-INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_control_s_axi.v:181]
-INFO: [Synth 8-6155] done synthesizing module 'order_book_control_s_axi' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_control_s_axi.v:9]
-INFO: [Synth 8-6157] synthesizing module 'order_book_regslice_both' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_regslice_both.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'order_book_regslice_both' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_regslice_both.v:8]
-INFO: [Synth 8-6157] synthesizing module 'order_book_regslice_both__parameterized0' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_regslice_both.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'order_book_regslice_both__parameterized0' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_regslice_both.v:8]
-INFO: [Synth 8-6157] synthesizing module 'order_book_regslice_both__parameterized1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_regslice_both.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'order_book_regslice_both__parameterized1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_regslice_both.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'order_book' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_order_book_0_0' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ip/design_1_order_book_0_0/synth/design_1_order_book_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'design_1_order_book_0_0' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ip/design_1_order_book_0_0/synth/design_1_order_book_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'order_book' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book.v:9]
+INFO: [Synth 8-6157] synthesizing module 'order_book_hole_lvl_bid_RAM_AUTO_1R1W' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_hole_lvl_bid_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-3876] $readmem data file './order_book_hole_lvl_bid_RAM_AUTO_1R1W.dat' is read successfully [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_hole_lvl_bid_RAM_AUTO_1R1W.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'order_book_hole_lvl_bid_RAM_AUTO_1R1W' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_hole_lvl_bid_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'order_book_hole_idx_bid_RAM_AUTO_1R1W' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_hole_idx_bid_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-3876] $readmem data file './order_book_hole_idx_bid_RAM_AUTO_1R1W.dat' is read successfully [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_hole_idx_bid_RAM_AUTO_1R1W.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'order_book_hole_idx_bid_RAM_AUTO_1R1W' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_hole_idx_bid_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'order_book_log_rom_ROM_AUTO_1R' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_log_rom_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './order_book_log_rom_ROM_AUTO_1R.dat' is read successfully [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_log_rom_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'order_book_log_rom_ROM_AUTO_1R' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_log_rom_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_727_bkb' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_727_bkb.v:7]
+INFO: [Synth 8-3876] $readmem data file './order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_727_bkb.dat' is read successfully [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_727_bkb.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_727_bkb' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_727_bkb.v:7]
+INFO: [Synth 8-6157] synthesizing module 'order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_755_cud' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_755_cud.v:7]
+INFO: [Synth 8-3876] $readmem data file './order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_755_cud.dat' is read successfully [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_755_cud.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_755_cud' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_755_cud.v:7]
+INFO: [Synth 8-6157] synthesizing module 'order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_671_eOg' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_671_eOg.v:7]
+INFO: [Synth 8-3876] $readmem data file './order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_671_eOg.dat' is read successfully [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_671_eOg.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_671_eOg' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_671_eOg.v:7]
+INFO: [Synth 8-6157] synthesizing module 'order_book_order_book_Pipeline_ASK_PUSH_LOOP2' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_Pipeline_ASK_PUSH_LOOP2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'order_book_sparsemux_9_2_8_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_sparsemux_9_2_8_1_1.v:9]
+INFO: [Synth 8-226] default block is never used [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_sparsemux_9_2_8_1_1.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'order_book_sparsemux_9_2_8_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_sparsemux_9_2_8_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'order_book_sparsemux_13_3_8_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_sparsemux_13_3_8_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'order_book_sparsemux_13_3_8_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_sparsemux_13_3_8_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'order_book_sparsemux_9_2_3_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_sparsemux_9_2_3_1_1.v:9]
+INFO: [Synth 8-226] default block is never used [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_sparsemux_9_2_3_1_1.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'order_book_sparsemux_9_2_3_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_sparsemux_9_2_3_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'order_book_sparsemux_13_3_3_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_sparsemux_13_3_3_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'order_book_sparsemux_13_3_3_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_sparsemux_13_3_3_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'order_book_bitselect_1ns_32ns_32s_1_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_bitselect_1ns_32ns_32s_1_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'order_book_bitselect_1ns_32ns_32s_1_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_bitselect_1ns_32ns_32s_1_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'order_book_sparsemux_9_2_16_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_sparsemux_9_2_16_1_1.v:9]
+INFO: [Synth 8-226] default block is never used [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_sparsemux_9_2_16_1_1.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'order_book_sparsemux_9_2_16_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_sparsemux_9_2_16_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'order_book_sparsemux_13_3_16_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_sparsemux_13_3_16_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'order_book_sparsemux_13_3_16_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_sparsemux_13_3_16_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'order_book_flow_control_loop_pipe_sequential_init' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'order_book_flow_control_loop_pipe_sequential_init' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'order_book_order_book_Pipeline_ASK_PUSH_LOOP2' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_Pipeline_ASK_PUSH_LOOP2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'order_book_order_book_Pipeline_ASK_PUSH_LOOP' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_Pipeline_ASK_PUSH_LOOP.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'order_book_order_book_Pipeline_ASK_PUSH_LOOP' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_Pipeline_ASK_PUSH_LOOP.v:9]
+INFO: [Synth 8-6157] synthesizing module 'order_book_order_book_Pipeline_BID_PUSH_LOOP1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_Pipeline_BID_PUSH_LOOP1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'order_book_order_book_Pipeline_BID_PUSH_LOOP1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_Pipeline_BID_PUSH_LOOP1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'order_book_order_book_Pipeline_BID_PUSH_LOOP' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_Pipeline_BID_PUSH_LOOP.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'order_book_order_book_Pipeline_BID_PUSH_LOOP' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_order_book_Pipeline_BID_PUSH_LOOP.v:9]
+INFO: [Synth 8-6157] synthesizing module 'order_book_control_s_axi' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_control_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_control_s_axi.v:181]
+INFO: [Synth 8-6155] done synthesizing module 'order_book_control_s_axi' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'order_book_regslice_both' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'order_book_regslice_both' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'order_book_regslice_both__parameterized0' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'order_book_regslice_both__parameterized0' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'order_book_regslice_both__parameterized1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'order_book_regslice_both__parameterized1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'order_book' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_order_book_0_0' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ip/design_1_order_book_0_0/synth/design_1_order_book_0_0.v:53]
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
-WARNING: [Synth 8-6014] Unused sequential element waddr_reg was removed.  [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_control_s_axi.v:138]
+WARNING: [Synth 8-6014] Unused sequential element waddr_reg was removed.  [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book_control_s_axi.v:138]
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 WARNING: [Synth 8-7129] Port AWADDR[5] in module order_book_control_s_axi is either unconnected or has no load
 WARNING: [Synth 8-7129] Port AWADDR[4] in module order_book_control_s_axi is either unconnected or has no load
@@ -148,48 +148,48 @@ WARNING: [Synth 8-7129] Port reset in module order_book_hole_idx_bid_RAM_AUTO_1R
 WARNING: [Synth 8-7129] Port reset in module order_book_hole_lvl_bid_RAM_AUTO_1R1W is either unconnected or has no load
 WARNING: [Synth 8-7129] Port reset in module order_book_log_rom_ROM_AUTO_1R is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1911.211 ; gain = 1047.621
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1911.227 ; gain = 1047.070
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1911.211 ; gain = 1047.621
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1911.227 ; gain = 1047.070
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1911.211 ; gain = 1047.621
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1911.227 ; gain = 1047.070
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.691 . Memory (MB): peak = 1911.211 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.682 . Memory (MB): peak = 1911.227 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ip/design_1_order_book_0_0/constraints/order_book_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ip/design_1_order_book_0_0/constraints/order_book_ooc.xdc] for cell 'inst'
-Parsing XDC File [C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_order_book_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_order_book_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ip/design_1_order_book_0_0/constraints/order_book_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ip/design_1_order_book_0_0/constraints/order_book_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_order_book_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_order_book_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1970.551 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1963.320 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1974.430 ; gain = 1110.840
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1969.457 ; gain = 1105.301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1974.430 ; gain = 1110.840
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1969.457 ; gain = 1105.301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_order_book_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_order_book_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1974.430 ; gain = 1110.840
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1969.457 ; gain = 1105.301
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
@@ -204,12 +204,12 @@ INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'orde
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'order_book_regslice_both'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'order_book_regslice_both__parameterized0'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'order_book_regslice_both__parameterized1'
-WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln34_50_reg_35542_reg' and it is trimmed from '32' to '7' bits. [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book.v:19054]
-WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln244_1_reg_31679_reg' and it is trimmed from '32' to '7' bits. [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book.v:19301]
-WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln244_reg_29417_reg' and it is trimmed from '31' to '7' bits. [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book.v:19276]
-WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln34_51_reg_30934_reg' and it is trimmed from '32' to '7' bits. [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book.v:19251]
-WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln130_1_reg_36279_reg' and it is trimmed from '32' to '7' bits. [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book.v:19104]
-WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln130_reg_34041_reg' and it is trimmed from '31' to '7' bits. [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book.v:19079]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln34_50_reg_35542_reg' and it is trimmed from '32' to '7' bits. [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book.v:19054]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln244_1_reg_31679_reg' and it is trimmed from '32' to '7' bits. [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book.v:19301]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln244_reg_29417_reg' and it is trimmed from '31' to '7' bits. [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book.v:19276]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln34_51_reg_30934_reg' and it is trimmed from '32' to '7' bits. [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book.v:19251]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln130_1_reg_36279_reg' and it is trimmed from '32' to '7' bits. [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book.v:19104]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln130_reg_34041_reg' and it is trimmed from '31' to '7' bits. [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/c960/hdl/verilog/order_book.v:19079]
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 INFO: [Synth 8-7082] The signal ram_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
@@ -265,7 +265,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'order_book_regslice_both__parameterized1'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1974.430 ; gain = 1110.840
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1969.457 ; gain = 1105.301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -642,7 +642,7 @@ WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused 
 WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module order_book_control_s_axi.
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_order_book_Pipeline_BID_PUSH_LOOP1_fu_16137/ap_done_reg_reg)
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:28 . Memory (MB): peak = 1974.430 ; gain = 1110.840
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:15 . Memory (MB): peak = 1969.457 ; gain = 1105.301
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-5835] Resources of type BRAM have been overutilized. Used = 392, Available = 280. Will try to implement using LUT-RAM. 
 ---------------------------------------------------------------------------------
@@ -1071,13 +1071,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:16 ; elapsed = 00:01:35 . Memory (MB): peak = 1974.430 ; gain = 1110.840
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:07 ; elapsed = 00:01:20 . Memory (MB): peak = 1969.457 ; gain = 1105.301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:03:04 ; elapsed = 00:03:26 . Memory (MB): peak = 2410.457 ; gain = 1546.867
+Finished Timing Optimization : Time (s): cpu = 00:02:39 ; elapsed = 00:02:54 . Memory (MB): peak = 2409.609 ; gain = 1545.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1604,7 +1604,7 @@ INFO: [Synth 8-7052] The timing for the instance inst/i_7_6/order_book_stream_st
 INFO: [Synth 8-7052] The timing for the instance inst/i_7_6/order_book_stream_stream_stream_stream_stream_stream_stream_ap_uint_ap_u_41_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Common 17-14] Message 'Synth 8-7052' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:03:13 ; elapsed = 00:03:41 . Memory (MB): peak = 2410.457 ; gain = 1546.867
+Finished Technology Mapping : Time (s): cpu = 00:02:47 ; elapsed = 00:03:08 . Memory (MB): peak = 2409.609 ; gain = 1545.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1622,37 +1622,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:03:19 ; elapsed = 00:03:48 . Memory (MB): peak = 2410.457 ; gain = 1546.867
+Finished IO Insertion : Time (s): cpu = 00:02:52 ; elapsed = 00:03:14 . Memory (MB): peak = 2409.609 ; gain = 1545.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:03:19 ; elapsed = 00:03:48 . Memory (MB): peak = 2410.457 ; gain = 1546.867
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:52 ; elapsed = 00:03:14 . Memory (MB): peak = 2409.609 ; gain = 1545.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:23 ; elapsed = 00:03:52 . Memory (MB): peak = 2410.457 ; gain = 1546.867
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:56 ; elapsed = 00:03:17 . Memory (MB): peak = 2409.609 ; gain = 1545.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:03:24 ; elapsed = 00:03:53 . Memory (MB): peak = 2410.457 ; gain = 1546.867
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:56 ; elapsed = 00:03:18 . Memory (MB): peak = 2409.609 ; gain = 1545.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:03:24 ; elapsed = 00:03:53 . Memory (MB): peak = 2410.457 ; gain = 1546.867
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:57 ; elapsed = 00:03:18 . Memory (MB): peak = 2409.609 ; gain = 1545.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:03:24 ; elapsed = 00:03:54 . Memory (MB): peak = 2410.457 ; gain = 1546.867
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:57 ; elapsed = 00:03:19 . Memory (MB): peak = 2409.609 ; gain = 1545.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1683,18 +1683,18 @@ Report Cell Usage:
 |13    |FDSE      |    19|
 +------+----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:03:25 ; elapsed = 00:03:54 . Memory (MB): peak = 2410.457 ; gain = 1546.867
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:57 ; elapsed = 00:03:19 . Memory (MB): peak = 2409.609 ; gain = 1545.453
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 159 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:59 ; elapsed = 00:03:48 . Memory (MB): peak = 2410.457 ; gain = 1483.648
-Synthesis Optimization Complete : Time (s): cpu = 00:03:25 ; elapsed = 00:03:54 . Memory (MB): peak = 2410.457 ; gain = 1546.867
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:32 ; elapsed = 00:03:13 . Memory (MB): peak = 2409.609 ; gain = 1487.223
+Synthesis Optimization Complete : Time (s): cpu = 00:02:57 ; elapsed = 00:03:19 . Memory (MB): peak = 2409.609 ; gain = 1545.453
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.455 . Memory (MB): peak = 2410.457 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.414 . Memory (MB): peak = 2409.609 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 2084 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2410.457 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2409.609 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 981 instances were transformed.
   RAM128X1S => RAM128X1S (MUXF7, RAMS64E(x2)): 28 instances
@@ -1704,12 +1704,12 @@ Synth Design complete | Checksum: 9a0c8556
 INFO: [Common 17-83] Releasing license: Synthesis
 431 Infos, 111 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:03:33 ; elapsed = 00:04:04 . Memory (MB): peak = 2410.457 ; gain = 1770.668
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 2410.457 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_order_book_0_0_synth_1/design_1_order_book_0_0.dcp' has been generated.
+synth_design: Time (s): cpu = 00:03:05 ; elapsed = 00:03:28 . Memory (MB): peak = 2409.609 ; gain = 1769.363
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 2409.609 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_order_book_0_0_synth_1/design_1_order_book_0_0.dcp' has been generated.
 INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_order_book_0_0, cache-ID = 8f7dfe1f09e49f9c
 INFO: [Coretcl 2-1174] Renamed 418 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.033 . Memory (MB): peak = 2410.457 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_order_book_0_0_synth_1/design_1_order_book_0_0.dcp' has been generated.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 2409.609 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_order_book_0_0_synth_1/design_1_order_book_0_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_order_book_0_0_utilization_synth.rpt -pb design_1_order_book_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Jun  1 15:37:54 2025...
+INFO: [Common 17-206] Exiting Vivado at Sun Jun  8 13:41:05 2025...

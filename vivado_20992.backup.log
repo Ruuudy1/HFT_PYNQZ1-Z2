@@ -1,0 +1,101 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun Jun  8 12:11:10 2025
+# Process ID         : 20992
+# Current directory  : C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2
+# Command line       : vivado.exe -mode batch -source TEMPORARY_converters.tcl
+# Log file           : C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/vivado.log
+# Journal file       : C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2\vivado.jou
+# Running On         : RudyAsus
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 9 185H
+# CPU Frequency      : 3072 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 22
+# Host memory        : 33736 MB
+# Swap memory        : 18253 MB
+# Total Virtual      : 51989 MB
+# Available Virtual  : 21991 MB
+#-----------------------------------------------------------
+source TEMPORARY_converters.tcl
+# create_project hft_proj ./src/hft_proj -part xc7z020-clg400-1 -force
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 622.305 ; gain = 192.578
+# set_property ip_repo_paths [list \
+#     [file normalize ./src/fast_hls] \
+#     [file normalize ./src/order_book_hls] \
+#     [file normalize ./src/threshold_hls] \
+#     [file normalize ./src/microblaze_to_switch_hls] \
+#     [file normalize ./src/udp_hls] \
+# ] [current_project]
+# update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/fast_hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/order_book_hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/threshold_hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/microblaze_to_switch_hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/udp_hls'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+# source [file normalize ./pynq_block_design.tcl]   
+## create_bd_design design_1
+Wrote  : <C:\Users\ruuud\spring2025\cse145\WORKINGPROJECTIDEA\HFT_PYNQZ1-Z2\src\hft_proj\hft_proj.srcs\sources_1\bd\design_1\design_1.bd> 
+## set_property board_part "www.digilentinc.com:pynq-z1:part0:1.0" [current_project]
+## create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+## apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 \
+##   -config {\
+##     make_external "FIXED_IO DDR" \
+##     apply_board_preset "1" \
+##     Master "Disable" \
+##     Slave  "Disable"\
+##   } [get_bd_cells processing_system7_0]
+## set ps7 [get_bd_cells processing_system7_0]
+## set_property -dict [list \
+##   CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ   {100}    \
+##   CONFIG.PCW_USE_S_AXI_HP0               {1}      \
+##   CONFIG.PCW_ENET0_PERIPHERAL_ENABLE     {1}      \
+##   CONFIG.PCW_ENET0_ENET0_IO              {MIO 16 .. 27} \
+##   CONFIG.PCW_ENET0_GRP_MDIO_ENABLE       {1}      \
+##   CONFIG.PCW_ENET0_GRP_MDIO_IO           {MIO 52 .. 53} \
+##   CONFIG.PCW_ENET0_RESET_ENABLE          {0} \
+##   CONFIG.PCW_ENET_RESET_ENABLE           {0} \
+##   CONFIG.PCW_USE_S_AXI_GP0               {0} \
+## ] $ps7
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+## foreach pin {16 17 18 19 20 21 22 23 24 25 26 27 52 53} {
+##   set_property CONFIG.PCW_MIO_${pin}_IOTYPE LVCMOS33 $ps7
+##   set_property CONFIG.PCW_MIO_${pin}_SLEW     fast      $ps7
+## }
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+ERROR: [IP_Flow 19-3478] Validation failed for parameter 'PCW MIO 16 IOTYPE(PCW_MIO_16_IOTYPE)' with current value 'LVCMOS33' for BD Cell 'processing_system7_0'. PARAM PCW_MIO_16_IOTYPE :: LVCMOS33 is out of range { LVCMOS 1.8V,HSTL 1.8V }
+INFO: [IP_Flow 19-3438] Customization errors found on 'processing_system7_0'. Restoring to previous valid configuration.
+ERROR: [BD 41-245] set_property error - Validation failed for parameter 'PCW MIO 16 IOTYPE(PCW_MIO_16_IOTYPE)' with current value 'LVCMOS33' for BD Cell 'processing_system7_0'. PARAM PCW_MIO_16_IOTYPE :: LVCMOS33 is out of range { LVCMOS 1.8V,HSTL 1.8V }
+Customization errors found on 'processing_system7_0'. Restoring to previous valid configuration.
+
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+
+    while executing
+"rdi::set_property CONFIG.PCW_MIO_16_IOTYPE LVCMOS33 /processing_system7_0"
+    invoked from within
+"set_property CONFIG.PCW_MIO_${pin}_IOTYPE LVCMOS33 $ps7"
+    ("foreach" body line 2)
+    invoked from within
+"foreach pin {16 17 18 19 20 21 22 23 24 25 26 27 52 53} {
+  set_property CONFIG.PCW_MIO_${pin}_IOTYPE LVCMOS33 $ps7
+  set_property CONFIG.PCW_MIO_${pi..."
+    (file "C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/pynq_block_design.tcl" line 38)
+
+    while executing
+"source [file normalize ./pynq_block_design.tcl]   "
+    (file "TEMPORARY_converters.tcl" line 15)
+INFO: [Common 17-206] Exiting Vivado at Sun Jun  8 12:11:25 2025...

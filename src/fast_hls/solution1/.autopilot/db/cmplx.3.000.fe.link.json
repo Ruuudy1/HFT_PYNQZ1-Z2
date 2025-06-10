@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "1 2",
+    "calls": "1 3",
     "file": "fast_protocol.cpp",
     "fileloc": 501,
     "instructions": 38,
@@ -26,6 +26,15 @@
     "total_instructions": 7092
   },
   "2": {
+    "basicblocks": 1,
+    "calls": "4",
+    "file": "fast_protocol.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 2,
+    "name": "",
+    "total_instructions": 1551
+  },
+  "3": {
     "basicblocks": 40,
     "calls": "",
     "file": "fast_protocol.cpp",
@@ -41,15 +50,6 @@
       "L": 13
     },
     "total_instructions": 5031
-  },
-  "3": {
-    "basicblocks": 1,
-    "calls": "4",
-    "file": "fast_protocol.pp.0.cpp",
-    "fileloc": 0,
-    "instructions": 2,
-    "name": "",
-    "total_instructions": 1551
   },
   "4": {
     "basicblocks": 1,

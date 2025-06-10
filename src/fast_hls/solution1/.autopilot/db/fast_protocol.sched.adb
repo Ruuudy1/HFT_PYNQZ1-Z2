@@ -562,7 +562,7 @@
 						<id>62</id>
 						<name>_ln554</name>
 						<fileName>fast_src/fast_protocol.cpp</fileName>
-						<fileDirectory>C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src</fileDirectory>
+						<fileDirectory>C:\Users\ruuud\spring2025\cse145\WORKINGPROJECTIDEA\HFT_PYNQZ1-Z2\src</fileDirectory>
 						<lineNumber>554</lineNumber>
 						<contextFuncName>fast_protocol</contextFuncName>
 						<contextNormFuncName>fast_protocol</contextNormFuncName>
@@ -570,7 +570,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src</first>
+								<first>C:\Users\ruuud\spring2025\cse145\WORKINGPROJECTIDEA\HFT_PYNQZ1-Z2\src</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -625,7 +625,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>2</m_topoIndex>
+				<m_topoIndex>1</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_17">
@@ -635,7 +635,7 @@
 						<id>63</id>
 						<name>_ln563</name>
 						<fileName>fast_src/fast_protocol.cpp</fileName>
-						<fileDirectory>C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src</fileDirectory>
+						<fileDirectory>C:\Users\ruuud\spring2025\cse145\WORKINGPROJECTIDEA\HFT_PYNQZ1-Z2\src</fileDirectory>
 						<lineNumber>563</lineNumber>
 						<contextFuncName>fast_protocol</contextFuncName>
 						<contextNormFuncName>fast_protocol</contextNormFuncName>
@@ -643,7 +643,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src</first>
+								<first>C:\Users\ruuud\spring2025\cse145\WORKINGPROJECTIDEA\HFT_PYNQZ1-Z2\src</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -688,11 +688,11 @@
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isOnCriticalPath>1</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_isStartOfPath>1</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>1</m_topoIndex>
+				<m_topoIndex>2</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_18">
@@ -702,7 +702,7 @@
 						<id>64</id>
 						<name>_ln570</name>
 						<fileName>fast_src/fast_protocol.cpp</fileName>
-						<fileDirectory>C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src</fileDirectory>
+						<fileDirectory>C:\Users\ruuud\spring2025\cse145\WORKINGPROJECTIDEA\HFT_PYNQZ1-Z2\src</fileDirectory>
 						<lineNumber>570</lineNumber>
 						<contextFuncName>fast_protocol</contextFuncName>
 						<contextNormFuncName>fast_protocol</contextNormFuncName>
@@ -710,7 +710,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\ruuud\spring2025\cse145\AAAAHHHH\ECE1373_2016_hft_on_fpga\src</first>
+								<first>C:\Users\ruuud\spring2025\cse145\WORKINGPROJECTIDEA\HFT_PYNQZ1-Z2\src</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1438,8 +1438,8 @@
 		<item class_id="37" tracking_level="0" version="0">
 			<first>62</first>
 			<second class_id="38" tracking_level="0" version="0">
-				<first>2</first>
-				<second>4</second>
+				<first>1</first>
+				<second>5</second>
 			</second>
 		</item>
 		<item>

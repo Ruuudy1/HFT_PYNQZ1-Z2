@@ -1,7 +1,7 @@
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: 'C:/Users/ruuud/spring2025/cse145/AAAAHHHH/ECE1373_2016_hft_on_fpga/src/fast_hls/solution1/.autopilot/db\fast_protocol.pp.0.cpp', 
+DebugLoc:        { File: 'C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/fast_hls/solution1/.autopilot/db\fast_protocol.pp.0.cpp', 
                    Line: 0, Column: 0 }
 Function:        _GLOBAL__sub_I_fast_protocol.pp.0.cpp
 Args:            
@@ -9,7 +9,7 @@ Args:
     DebugLoc:        { File: fast_src/fast_protocol.cpp, Line: 16, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          _GLOBAL__sub_I_fast_protocol.pp.0.cpp
-    DebugLoc:        { File: 'C:/Users/ruuud/spring2025/cse145/AAAAHHHH/ECE1373_2016_hft_on_fpga/src/fast_hls/solution1/.autopilot/db\fast_protocol.pp.0.cpp', 
+    DebugLoc:        { File: 'C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/fast_hls/solution1/.autopilot/db\fast_protocol.pp.0.cpp', 
                        Line: 0, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...

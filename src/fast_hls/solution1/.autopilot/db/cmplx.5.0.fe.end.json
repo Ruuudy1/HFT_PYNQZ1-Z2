@@ -1,13 +1,4 @@
 {
-    "0": {
-        "name": "fast_protocol",
-        "file": "fast_protocol.cpp",
-        "fileloc": "501",
-        "instructions": "36",
-        "total_instructions": "510",
-        "calls": "1 2",
-        "basicblocks": "1"
-    },
     "1": {
         "name": "rxPath",
         "file": "fast_protocol.cpp",
@@ -37,5 +28,14 @@
         "stores": {
             "G": "7"
         }
+    },
+    "0": {
+        "name": "fast_protocol",
+        "file": "fast_protocol.cpp",
+        "fileloc": "501",
+        "instructions": "36",
+        "total_instructions": "510",
+        "calls": "1 2",
+        "basicblocks": "1"
     }
 }

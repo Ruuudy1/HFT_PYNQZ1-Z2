@@ -1,8 +1,8 @@
 set SynModuleInfo {
   {SRCNAME rxPath MODELNAME rxPath RTLNAME fast_protocol_rxPath
     SUBMODULES {
-      {MODELNAME fast_protocol_sparsemux_7_3_7_1_1 RTLNAME fast_protocol_sparsemux_7_3_7_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
       {MODELNAME fast_protocol_sparsemux_7_3_8_1_1 RTLNAME fast_protocol_sparsemux_7_3_8_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
+      {MODELNAME fast_protocol_sparsemux_7_3_7_1_1 RTLNAME fast_protocol_sparsemux_7_3_7_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
       {MODELNAME fast_protocol_sparsemux_9_3_7_1_1 RTLNAME fast_protocol_sparsemux_9_3_7_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
       {MODELNAME fast_protocol_sparsemux_9_3_8_1_1 RTLNAME fast_protocol_sparsemux_9_3_8_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
       {MODELNAME fast_protocol_sparsemux_11_4_25_1_1 RTLNAME fast_protocol_sparsemux_11_4_25_1_1 BINDTYPE op TYPE sparsemux IMPL onehotencoding_realdef}

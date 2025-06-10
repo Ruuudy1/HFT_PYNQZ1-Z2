@@ -1,48 +1,64 @@
 <?xml version="1.0"?>
 <Runs Version="1" Minor="0">
-	<Run Id="design_1_processing_system7_0_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="design_1_axi_interconnect_0_imp_xbar_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_axi_interconnect_0_imp_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="design_1_axi_interconnect_0_imp_auto_pc_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_axi_interconnect_0_imp_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="design_1_order_book_0_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_order_book_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="design_1_proc_sys_reset_0_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_proc_sys_reset_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="design_1_clk_wiz_0_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="design_1_meta_converter_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_meta_converter_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="design_1_top_bid_converter_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_top_bid_converter_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="design_1_time_converter_out_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_time_converter_out_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="design_1_meta_fifo_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_meta_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="design_1_fast_protocol_0_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_fast_protocol_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="design_1_top_ask_converter_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_top_ask_converter_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
-		<Parent Id="design_1_top_bid_converter_0_synth_1"/>
+	<Run Id="design_1_proc_sys_reset_0_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_proc_sys_reset_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axi_hp0_interconnect_imp_xbar_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_axi_hp0_interconnect_imp_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_processing_system7_0_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_clk_wiz_0_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axi_interconnect_0_imp_xbar_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_axi_interconnect_0_imp_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axi_interconnect_0_imp_auto_pc_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_axi_interconnect_0_imp_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_fast_protocol_0_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_fast_protocol_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_simple_threshold_0_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_simple_threshold_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_order_data_converter_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_order_data_converter_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_order_book_0_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_order_book_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axi_hp0_interconnect_imp_auto_pc_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_axi_hp0_interconnect_imp_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_top_bid_converter_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_top_bid_converter_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_order_data_converter_0_synth_1"/>
 	</Run>
-	<Run Id="design_1_simple_threshold_0_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_simple_threshold_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="design_1_MicroblazeToSwitch_0_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_MicroblazeToSwitch_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="design_1_order_data_converter_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_order_data_converter_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="design_1_order_fifo_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_order_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="design_1_time_fifo_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_time_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+	<Run Id="design_1_MicroblazeToSwitch_0_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_MicroblazeToSwitch_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_top_ask_converter_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_top_ask_converter_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_order_data_converter_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_order_fifo_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_order_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_meta_converter_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_meta_converter_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_time_fifo_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_time_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
 		<Parent Id="design_1_order_fifo_0_synth_1"/>
 	</Run>
-	<Run Id="design_1_time_converter_in_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_time_converter_in_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
-		<Parent Id="design_1_time_converter_out_0_synth_1"/>
+	<Run Id="design_1_meta_fifo_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_meta_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_order_fifo_0_synth_1"/>
 	</Run>
-	<Run Id="synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+	<Run Id="design_1_time_converter_out_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_time_converter_out_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axi_dma_order_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_axi_dma_order_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_time_converter_in_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_time_converter_in_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axi_dma_meta_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_axi_dma_meta_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_axi_dma_order_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_axi_dma_time_0_synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_axi_dma_time_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_axi_dma_order_0_synth_1"/>
+	</Run>
+	<Run Id="synth_1" LaunchDir="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="design_1_proc_sys_reset_0_0_synth_1"/>
+		<Parent Id="design_1_axi_hp0_interconnect_imp_xbar_0_synth_1"/>
 		<Parent Id="design_1_processing_system7_0_0_synth_1"/>
+		<Parent Id="design_1_clk_wiz_0_0_synth_1"/>
 		<Parent Id="design_1_axi_interconnect_0_imp_xbar_0_synth_1"/>
 		<Parent Id="design_1_axi_interconnect_0_imp_auto_pc_0_synth_1"/>
-		<Parent Id="design_1_order_book_0_0_synth_1"/>
-		<Parent Id="design_1_proc_sys_reset_0_0_synth_1"/>
-		<Parent Id="design_1_clk_wiz_0_0_synth_1"/>
-		<Parent Id="design_1_meta_converter_0_synth_1"/>
-		<Parent Id="design_1_top_bid_converter_0_synth_1"/>
-		<Parent Id="design_1_time_converter_out_0_synth_1"/>
-		<Parent Id="design_1_meta_fifo_0_synth_1"/>
 		<Parent Id="design_1_fast_protocol_0_0_synth_1"/>
-		<Parent Id="design_1_top_ask_converter_0_synth_1"/>
 		<Parent Id="design_1_simple_threshold_0_0_synth_1"/>
-		<Parent Id="design_1_MicroblazeToSwitch_0_0_synth_1"/>
 		<Parent Id="design_1_order_data_converter_0_synth_1"/>
+		<Parent Id="design_1_order_book_0_0_synth_1"/>
+		<Parent Id="design_1_axi_hp0_interconnect_imp_auto_pc_0_synth_1"/>
+		<Parent Id="design_1_top_bid_converter_0_synth_1"/>
+		<Parent Id="design_1_MicroblazeToSwitch_0_0_synth_1"/>
+		<Parent Id="design_1_top_ask_converter_0_synth_1"/>
 		<Parent Id="design_1_order_fifo_0_synth_1"/>
+		<Parent Id="design_1_meta_converter_0_synth_1"/>
 		<Parent Id="design_1_time_fifo_0_synth_1"/>
+		<Parent Id="design_1_meta_fifo_0_synth_1"/>
+		<Parent Id="design_1_time_converter_out_0_synth_1"/>
+		<Parent Id="design_1_axi_dma_order_0_synth_1"/>
 		<Parent Id="design_1_time_converter_in_0_synth_1"/>
+		<Parent Id="design_1_axi_dma_meta_0_synth_1"/>
+		<Parent Id="design_1_axi_dma_time_0_synth_1"/>
 	</Run>
 	<Parameters>
 		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>

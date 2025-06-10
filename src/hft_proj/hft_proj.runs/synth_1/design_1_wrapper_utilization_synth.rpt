@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Sun Jun  1 15:38:32 2025
+| Date         : Sun Jun  8 13:41:42 2025
 | Host         : RudyAsus running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -157,28 +157,33 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 8. Black Boxes
 --------------
 
-+-------------------------------------------+------+
-|                  Ref Name                 | Used |
-+-------------------------------------------+------+
-| design_1_top_bid_converter_0              |    1 |
-| design_1_top_ask_converter_0              |    1 |
-| design_1_time_fifo_0                      |    1 |
-| design_1_time_converter_out_0             |    1 |
-| design_1_time_converter_in_0              |    1 |
-| design_1_simple_threshold_0_0             |    1 |
-| design_1_processing_system7_0_0           |    1 |
-| design_1_proc_sys_reset_0_0               |    1 |
-| design_1_order_fifo_0                     |    1 |
-| design_1_order_data_converter_0           |    1 |
-| design_1_order_book_0_0                   |    1 |
-| design_1_meta_fifo_0                      |    1 |
-| design_1_meta_converter_0                 |    1 |
-| design_1_fast_protocol_0_0                |    1 |
-| design_1_clk_wiz_0_0                      |    1 |
-| design_1_axi_interconnect_0_imp_xbar_0    |    1 |
-| design_1_axi_interconnect_0_imp_auto_pc_0 |    1 |
-| design_1_MicroblazeToSwitch_0_0           |    1 |
-+-------------------------------------------+------+
++---------------------------------------------+------+
+|                   Ref Name                  | Used |
++---------------------------------------------+------+
+| design_1_top_bid_converter_0                |    1 |
+| design_1_top_ask_converter_0                |    1 |
+| design_1_time_fifo_0                        |    1 |
+| design_1_time_converter_out_0               |    1 |
+| design_1_time_converter_in_0                |    1 |
+| design_1_simple_threshold_0_0               |    1 |
+| design_1_processing_system7_0_0             |    1 |
+| design_1_proc_sys_reset_0_0                 |    1 |
+| design_1_order_fifo_0                       |    1 |
+| design_1_order_data_converter_0             |    1 |
+| design_1_order_book_0_0                     |    1 |
+| design_1_meta_fifo_0                        |    1 |
+| design_1_meta_converter_0                   |    1 |
+| design_1_fast_protocol_0_0                  |    1 |
+| design_1_clk_wiz_0_0                        |    1 |
+| design_1_axi_interconnect_0_imp_xbar_0      |    1 |
+| design_1_axi_interconnect_0_imp_auto_pc_0   |    1 |
+| design_1_axi_hp0_interconnect_imp_xbar_0    |    1 |
+| design_1_axi_hp0_interconnect_imp_auto_pc_0 |    1 |
+| design_1_axi_dma_time_0                     |    1 |
+| design_1_axi_dma_order_0                    |    1 |
+| design_1_axi_dma_meta_0                     |    1 |
+| design_1_MicroblazeToSwitch_0_0             |    1 |
++---------------------------------------------+------+
 
 
 9. Instantiated Netlists

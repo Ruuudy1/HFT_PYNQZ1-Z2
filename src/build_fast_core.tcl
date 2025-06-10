@@ -12,7 +12,7 @@ add_files -tb fast_src/test_bench.cpp
 open_solution "solution1"
 set_part {xc7z020-clg484-1} 
 # set_part {xcku115-flva1517-2-e} -tool vivado
-create_clock -period 25 -name default
+create_clock -period 10 -name default
 csynth_design
 export_design -format ip_catalog
 exit

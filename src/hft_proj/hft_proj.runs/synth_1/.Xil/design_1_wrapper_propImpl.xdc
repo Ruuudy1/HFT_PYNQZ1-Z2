@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/pynq_z1.xdc rfile:../../../../../pynq_z1.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/pynq_z1.xdc rfile:../../../../../pynq_z1.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN R14 IOSTANDARD LVCMOS33} [get_ports {led_l[0]}]
 set_property src_info {type:XDC file:1 line:9 export:INPUT save:INPUT read:READ} [current_design]
@@ -9,3 +9,7 @@ set_property src_info {type:XDC file:1 line:11 export:INPUT save:INPUT read:READ
 set_property -dict {PACKAGE_PIN M14 IOSTANDARD LVCMOS33} [get_ports {led_l[3]}]
 set_property src_info {type:XDC file:1 line:14 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN D19 IOSTANDARD LVCMOS33} [get_ports {user_sw_l}]
+set_property src_info {type:XDC file:1 line:23 export:INPUT save:INPUT read:READ} [current_design]
+set_property IOSTANDARD LVCMOS18 [get_ports {MIO16 MIO17 … MIO27}]
+set_property src_info {type:XDC file:1 line:25 export:INPUT save:INPUT read:READ} [current_design]
+set_property IOSTANDARD LVCMOS33 [get_ports {MIO52 MIO53}]

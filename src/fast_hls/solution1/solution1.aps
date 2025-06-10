@@ -13,7 +13,7 @@
         <library value="xilinx/zynq/zynq" name="DefaultPlatform"/>
     </libraryList>
     <clockList>
-        <clock name="default" period="25" default="false"/>
+        <clock name="default" period="10" default="false"/>
     </clockList>
     <config>
         <config_export format="ip_catalog"/>

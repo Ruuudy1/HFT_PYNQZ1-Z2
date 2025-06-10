@@ -228,7 +228,7 @@
       </RtlPort>
   </CTypeInfo>
   <DesignConstraint>
-    <clk_period>25</clk_period>
+    <clk_period>10</clk_period>
   </DesignConstraint>
   <Machine>64</Machine>
   <modelParameters>

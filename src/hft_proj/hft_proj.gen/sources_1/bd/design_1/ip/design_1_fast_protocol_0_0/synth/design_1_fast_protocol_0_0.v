@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:fast_protocol:1.0
-// IP Revision: 2114104037
+// IP Revision: 2114118671
 
 (* X_CORE_INFO = "fast_protocol,Vivado 2024.2" *)
 (* CHECK_LICENSE_TYPE = "design_1_fast_protocol_0_0,fast_protocol,{}" *)
-(* CORE_GENERATION_INFO = "design_1_fast_protocol_0_0,fast_protocol,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=fast_protocol,x_ipVersion=1.0,x_ipCoreRevision=2114104037,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "design_1_fast_protocol_0_0,fast_protocol,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=fast_protocol,x_ipVersion=1.0,x_ipCoreRevision=2114118671,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_fast_protocol_0_0 (

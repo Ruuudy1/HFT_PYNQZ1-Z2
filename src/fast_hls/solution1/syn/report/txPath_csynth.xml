@@ -9,8 +9,8 @@
 <ProductFamily>zynq</ProductFamily>
 <Part>xc7z020-clg484-1</Part>
 <TopModelName>txPath</TopModelName>
-<TargetClockPeriod>25.00</TargetClockPeriod>
-<ClockUncertainty>6.75</ClockUncertainty>
+<TargetClockPeriod>10.00</TargetClockPeriod>
+<ClockUncertainty>2.70</ClockUncertainty>
 <TargetInitiationInterval>1</TargetInitiationInterval>
 <FlowTarget>vivado</FlowTarget>
 </UserAssignments>
@@ -19,23 +19,23 @@
 <PipelineType>yes(flp)</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>17.495</EstimatedClockPeriod>
+<EstimatedClockPeriod>8.718</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
 <Best-caseLatency>5</Best-caseLatency>
 <Average-caseLatency>5</Average-caseLatency>
 <Worst-caseLatency>5</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.125 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.125 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.125 us</Worst-caseRealTimeLatency>
+<Best-caseRealTimeLatency>50.000 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>50.000 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>50.000 ns</Worst-caseRealTimeLatency>
 <PipelineInitiationInterval>4</PipelineInitiationInterval>
 <PipelineDepth>6</PipelineDepth>
 <Interval-min>4</Interval-min>
 <Interval-max>4</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
-<IssueType>-</IssueType>
+<IssueType>Timing Violation</IssueType>
 <ViolationType>-</ViolationType>
 <SourceLocation>fast_src/fast_protocol.cpp:355</SourceLocation>
 </SummaryOfViolations>
@@ -43,7 +43,7 @@
 
 <AreaEstimates>
 <Resources>
-<FF>228</FF>
+<FF>247</FF>
 <LUT>830</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>

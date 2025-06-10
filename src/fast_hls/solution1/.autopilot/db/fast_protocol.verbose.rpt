@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fast_protocol'
 ================================================================
-* Date:           Thu May 29 06:17:20 2025
+* Date:           Sun Jun  8 10:11:32 2025
 
 * Version:        2024.2 (Build 5238294 on Nov  8 2024)
 * Project:        fast_hls
@@ -17,30 +17,30 @@
 ================================================================
 + Timing: 
     * Summary: 
-    +--------+----------+-----------+------------+
-    |  Clock |  Target  | Estimated | Uncertainty|
-    +--------+----------+-----------+------------+
-    |ap_clk  |  25.00 ns|  17.495 ns|     6.75 ns|
-    +--------+----------+-----------+------------+
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  8.718 ns|     2.70 ns|
+    +--------+----------+----------+------------+
 
 + Latency: 
     * Summary: 
-    +---------+---------+----------+----------+-----+-----+----------+
-    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
-    |   min   |   max   |    min   |    max   | min | max |   Type   |
-    +---------+---------+----------+----------+-----+-----+----------+
-    |        5|        5|  0.125 us|  0.125 us|    4|    4|  dataflow|
-    +---------+---------+----------+----------+-----+-----+----------+
+    +---------+---------+-----------+-----------+-----+-----+----------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline |
+    |   min   |   max   |    min    |    max    | min | max |   Type   |
+    +---------+---------+-----------+-----------+-----+-----+----------+
+    |        5|        5|  50.000 ns|  50.000 ns|    4|    4|  dataflow|
+    +---------+---------+-----------+-----------+-----+-----+----------+
 
     + Detail: 
         * Instance: 
-        +-----------+--------+---------+---------+----------+----------+-----+-----+----------+
-        |           |        |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
-        |  Instance | Module |   min   |   max   |    min   |    max   | min | max |   Type   |
-        +-----------+--------+---------+---------+----------+----------+-----+-----+----------+
-        |txPath_U0  |txPath  |        5|        5|  0.125 us|  0.125 us|    4|    4|  yes(flp)|
-        |rxPath_U0  |rxPath  |        4|        4|  0.100 us|  0.100 us|    3|    3|  yes(flp)|
-        +-----------+--------+---------+---------+----------+----------+-----+-----+----------+
+        +-----------+--------+---------+---------+-----------+-----------+-----+-----+----------+
+        |           |        |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline |
+        |  Instance | Module |   min   |   max   |    min    |    max    | min | max |   Type   |
+        +-----------+--------+---------+---------+-----------+-----------+-----+-----+----------+
+        |rxPath_U0  |rxPath  |        5|        5|  50.000 ns|  50.000 ns|    3|    3|  yes(flp)|
+        |txPath_U0  |txPath  |        5|        5|  50.000 ns|  50.000 ns|    4|    4|  yes(flp)|
+        +-----------+--------+---------+---------+-----------+-----------+-----+-----+----------+
 
         * Loop: 
         N/A
@@ -57,12 +57,12 @@
 |DSP              |        -|    -|       -|      -|    -|
 |Expression       |        -|    -|       -|      -|    -|
 |FIFO             |        -|    -|       -|      -|    -|
-|Instance         |        0|    2|     596|   1995|    -|
+|Instance         |        0|    2|     855|   2011|    -|
 |Memory           |        -|    -|       -|      -|    -|
 |Multiplexer      |        -|    -|       -|      -|    -|
 |Register         |        -|    -|       -|      -|    -|
 +-----------------+---------+-----+--------+-------+-----+
-|Total            |        0|    2|     596|   1995|    0|
+|Total            |        0|    2|     855|   2011|    0|
 +-----------------+---------+-----+--------+-------+-----+
 |Available        |      280|  220|  106400|  53200|    0|
 +-----------------+---------+-----+--------+-------+-----+
@@ -74,10 +74,10 @@
     +-----------+--------+---------+----+-----+------+-----+
     |  Instance | Module | BRAM_18K| DSP|  FF |  LUT | URAM|
     +-----------+--------+---------+----+-----+------+-----+
-    |rxPath_U0  |rxPath  |        0|   2|  368|  1165|    0|
-    |txPath_U0  |txPath  |        0|   0|  228|   830|    0|
+    |rxPath_U0  |rxPath  |        0|   2|  608|  1181|    0|
+    |txPath_U0  |txPath  |        0|   0|  247|   830|    0|
     +-----------+--------+---------+----+-----+------+-----+
-    |Total      |        |        0|   2|  596|  1995|    0|
+    |Total      |        |        0|   2|  855|  2011|    0|
     +-----------+--------+---------+----+-----+------+-----+
 
     * DSP: 
@@ -202,63 +202,64 @@ IsGatedGlobalClock: 0
 State 1 <SV = 0> <Delay = 0.00>
 
 State 2 <SV = 1> <Delay = 0.00>
-ST_2 : Operation 9 [6/6] (0.00ns)   --->   "%call_ln563 = call void @txPath, i128 %metadata_from_book, i128 %lbTxDataOut, i96 %lbTxMetadataOut, i16 %lbTxLengthOut, i64 %time_from_book, i64 %tagsOut, i64 %order_from_book, i2 %next_state, i64 %first_packet_data, i32 %second_packet_data, i16 %lbPacketLength" [fast_src/fast_protocol.cpp:563]   --->   Operation 9 'call' 'call_ln563' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 9 [6/6] (0.00ns)   --->   "%call_ln554 = call void @rxPath, i128 %lbRxDataIn, i96 %lbRxMetadataIn, i16 %lbRequestPortOpenOut, i8 %lbPortOpenReplyIn, i128 %metadata_to_book, i64 %tagsIn, i64 %time_to_book, i64 %order_to_book, i3 %next_state_1, i64 %first_packet, i43 %second_packet, i32 %openPortWaitTime, i9 %POW10, i16 %temp_order_price, i8 %temp_order_size, i32 %temp_order_orderID, i3 %temp_order_type" [fast_src/fast_protocol.cpp:554]   --->   Operation 9 'call' 'call_ln554' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 10 [6/6] (0.00ns)   --->   "%call_ln563 = call void @txPath, i128 %metadata_from_book, i128 %lbTxDataOut, i96 %lbTxMetadataOut, i16 %lbTxLengthOut, i64 %time_from_book, i64 %tagsOut, i64 %order_from_book, i2 %next_state, i64 %first_packet_data, i32 %second_packet_data, i16 %lbPacketLength" [fast_src/fast_protocol.cpp:563]   --->   Operation 10 'call' 'call_ln563' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 3 <SV = 2> <Delay = 17.4>
-ST_3 : Operation 10 [5/5] (0.00ns)   --->   "%call_ln554 = call void @rxPath, i128 %lbRxDataIn, i96 %lbRxMetadataIn, i16 %lbRequestPortOpenOut, i8 %lbPortOpenReplyIn, i128 %metadata_to_book, i64 %tagsIn, i64 %time_to_book, i64 %order_to_book, i3 %next_state_1, i64 %first_packet, i43 %second_packet, i32 %openPortWaitTime, i9 %POW10, i16 %temp_order_price, i8 %temp_order_size, i32 %temp_order_orderID, i3 %temp_order_type" [fast_src/fast_protocol.cpp:554]   --->   Operation 10 'call' 'call_ln554' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_3 : Operation 11 [5/6] (17.4ns)   --->   "%call_ln563 = call void @txPath, i128 %metadata_from_book, i128 %lbTxDataOut, i96 %lbTxMetadataOut, i16 %lbTxLengthOut, i64 %time_from_book, i64 %tagsOut, i64 %order_from_book, i2 %next_state, i64 %first_packet_data, i32 %second_packet_data, i16 %lbPacketLength" [fast_src/fast_protocol.cpp:563]   --->   Operation 11 'call' 'call_ln563' <Predicate = true> <Delay = 17.4> <CoreType = "Generic">   --->   Generic Core
+State 3 <SV = 2> <Delay = 8.71>
+ST_3 : Operation 11 [5/6] (7.27ns)   --->   "%call_ln554 = call void @rxPath, i128 %lbRxDataIn, i96 %lbRxMetadataIn, i16 %lbRequestPortOpenOut, i8 %lbPortOpenReplyIn, i128 %metadata_to_book, i64 %tagsIn, i64 %time_to_book, i64 %order_to_book, i3 %next_state_1, i64 %first_packet, i43 %second_packet, i32 %openPortWaitTime, i9 %POW10, i16 %temp_order_price, i8 %temp_order_size, i32 %temp_order_orderID, i3 %temp_order_type" [fast_src/fast_protocol.cpp:554]   --->   Operation 11 'call' 'call_ln554' <Predicate = true> <Delay = 7.27> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 12 [5/6] (8.71ns)   --->   "%call_ln563 = call void @txPath, i128 %metadata_from_book, i128 %lbTxDataOut, i96 %lbTxMetadataOut, i16 %lbTxLengthOut, i64 %time_from_book, i64 %tagsOut, i64 %order_from_book, i2 %next_state, i64 %first_packet_data, i32 %second_packet_data, i16 %lbPacketLength" [fast_src/fast_protocol.cpp:563]   --->   Operation 12 'call' 'call_ln563' <Predicate = true> <Delay = 8.71> <CoreType = "Generic">   --->   Generic Core
 
-State 4 <SV = 3> <Delay = 17.4>
-ST_4 : Operation 12 [4/5] (15.0ns)   --->   "%call_ln554 = call void @rxPath, i128 %lbRxDataIn, i96 %lbRxMetadataIn, i16 %lbRequestPortOpenOut, i8 %lbPortOpenReplyIn, i128 %metadata_to_book, i64 %tagsIn, i64 %time_to_book, i64 %order_to_book, i3 %next_state_1, i64 %first_packet, i43 %second_packet, i32 %openPortWaitTime, i9 %POW10, i16 %temp_order_price, i8 %temp_order_size, i32 %temp_order_orderID, i3 %temp_order_type" [fast_src/fast_protocol.cpp:554]   --->   Operation 12 'call' 'call_ln554' <Predicate = true> <Delay = 15.0> <CoreType = "Generic">   --->   Generic Core
-ST_4 : Operation 13 [4/6] (17.4ns)   --->   "%call_ln563 = call void @txPath, i128 %metadata_from_book, i128 %lbTxDataOut, i96 %lbTxMetadataOut, i16 %lbTxLengthOut, i64 %time_from_book, i64 %tagsOut, i64 %order_from_book, i2 %next_state, i64 %first_packet_data, i32 %second_packet_data, i16 %lbPacketLength" [fast_src/fast_protocol.cpp:563]   --->   Operation 13 'call' 'call_ln563' <Predicate = true> <Delay = 17.4> <CoreType = "Generic">   --->   Generic Core
+State 4 <SV = 3> <Delay = 8.71>
+ST_4 : Operation 13 [4/6] (7.27ns)   --->   "%call_ln554 = call void @rxPath, i128 %lbRxDataIn, i96 %lbRxMetadataIn, i16 %lbRequestPortOpenOut, i8 %lbPortOpenReplyIn, i128 %metadata_to_book, i64 %tagsIn, i64 %time_to_book, i64 %order_to_book, i3 %next_state_1, i64 %first_packet, i43 %second_packet, i32 %openPortWaitTime, i9 %POW10, i16 %temp_order_price, i8 %temp_order_size, i32 %temp_order_orderID, i3 %temp_order_type" [fast_src/fast_protocol.cpp:554]   --->   Operation 13 'call' 'call_ln554' <Predicate = true> <Delay = 7.27> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 14 [4/6] (8.71ns)   --->   "%call_ln563 = call void @txPath, i128 %metadata_from_book, i128 %lbTxDataOut, i96 %lbTxMetadataOut, i16 %lbTxLengthOut, i64 %time_from_book, i64 %tagsOut, i64 %order_from_book, i2 %next_state, i64 %first_packet_data, i32 %second_packet_data, i16 %lbPacketLength" [fast_src/fast_protocol.cpp:563]   --->   Operation 14 'call' 'call_ln563' <Predicate = true> <Delay = 8.71> <CoreType = "Generic">   --->   Generic Core
 
-State 5 <SV = 4> <Delay = 17.4>
-ST_5 : Operation 14 [3/5] (15.0ns)   --->   "%call_ln554 = call void @rxPath, i128 %lbRxDataIn, i96 %lbRxMetadataIn, i16 %lbRequestPortOpenOut, i8 %lbPortOpenReplyIn, i128 %metadata_to_book, i64 %tagsIn, i64 %time_to_book, i64 %order_to_book, i3 %next_state_1, i64 %first_packet, i43 %second_packet, i32 %openPortWaitTime, i9 %POW10, i16 %temp_order_price, i8 %temp_order_size, i32 %temp_order_orderID, i3 %temp_order_type" [fast_src/fast_protocol.cpp:554]   --->   Operation 14 'call' 'call_ln554' <Predicate = true> <Delay = 15.0> <CoreType = "Generic">   --->   Generic Core
-ST_5 : Operation 15 [3/6] (17.4ns)   --->   "%call_ln563 = call void @txPath, i128 %metadata_from_book, i128 %lbTxDataOut, i96 %lbTxMetadataOut, i16 %lbTxLengthOut, i64 %time_from_book, i64 %tagsOut, i64 %order_from_book, i2 %next_state, i64 %first_packet_data, i32 %second_packet_data, i16 %lbPacketLength" [fast_src/fast_protocol.cpp:563]   --->   Operation 15 'call' 'call_ln563' <Predicate = true> <Delay = 17.4> <CoreType = "Generic">   --->   Generic Core
+State 5 <SV = 4> <Delay = 8.71>
+ST_5 : Operation 15 [3/6] (7.27ns)   --->   "%call_ln554 = call void @rxPath, i128 %lbRxDataIn, i96 %lbRxMetadataIn, i16 %lbRequestPortOpenOut, i8 %lbPortOpenReplyIn, i128 %metadata_to_book, i64 %tagsIn, i64 %time_to_book, i64 %order_to_book, i3 %next_state_1, i64 %first_packet, i43 %second_packet, i32 %openPortWaitTime, i9 %POW10, i16 %temp_order_price, i8 %temp_order_size, i32 %temp_order_orderID, i3 %temp_order_type" [fast_src/fast_protocol.cpp:554]   --->   Operation 15 'call' 'call_ln554' <Predicate = true> <Delay = 7.27> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 16 [3/6] (8.71ns)   --->   "%call_ln563 = call void @txPath, i128 %metadata_from_book, i128 %lbTxDataOut, i96 %lbTxMetadataOut, i16 %lbTxLengthOut, i64 %time_from_book, i64 %tagsOut, i64 %order_from_book, i2 %next_state, i64 %first_packet_data, i32 %second_packet_data, i16 %lbPacketLength" [fast_src/fast_protocol.cpp:563]   --->   Operation 16 'call' 'call_ln563' <Predicate = true> <Delay = 8.71> <CoreType = "Generic">   --->   Generic Core
 
-State 6 <SV = 5> <Delay = 17.4>
-ST_6 : Operation 16 [2/5] (15.0ns)   --->   "%call_ln554 = call void @rxPath, i128 %lbRxDataIn, i96 %lbRxMetadataIn, i16 %lbRequestPortOpenOut, i8 %lbPortOpenReplyIn, i128 %metadata_to_book, i64 %tagsIn, i64 %time_to_book, i64 %order_to_book, i3 %next_state_1, i64 %first_packet, i43 %second_packet, i32 %openPortWaitTime, i9 %POW10, i16 %temp_order_price, i8 %temp_order_size, i32 %temp_order_orderID, i3 %temp_order_type" [fast_src/fast_protocol.cpp:554]   --->   Operation 16 'call' 'call_ln554' <Predicate = true> <Delay = 15.0> <CoreType = "Generic">   --->   Generic Core
-ST_6 : Operation 17 [2/6] (17.4ns)   --->   "%call_ln563 = call void @txPath, i128 %metadata_from_book, i128 %lbTxDataOut, i96 %lbTxMetadataOut, i16 %lbTxLengthOut, i64 %time_from_book, i64 %tagsOut, i64 %order_from_book, i2 %next_state, i64 %first_packet_data, i32 %second_packet_data, i16 %lbPacketLength" [fast_src/fast_protocol.cpp:563]   --->   Operation 17 'call' 'call_ln563' <Predicate = true> <Delay = 17.4> <CoreType = "Generic">   --->   Generic Core
+State 6 <SV = 5> <Delay = 8.71>
+ST_6 : Operation 17 [2/6] (7.27ns)   --->   "%call_ln554 = call void @rxPath, i128 %lbRxDataIn, i96 %lbRxMetadataIn, i16 %lbRequestPortOpenOut, i8 %lbPortOpenReplyIn, i128 %metadata_to_book, i64 %tagsIn, i64 %time_to_book, i64 %order_to_book, i3 %next_state_1, i64 %first_packet, i43 %second_packet, i32 %openPortWaitTime, i9 %POW10, i16 %temp_order_price, i8 %temp_order_size, i32 %temp_order_orderID, i3 %temp_order_type" [fast_src/fast_protocol.cpp:554]   --->   Operation 17 'call' 'call_ln554' <Predicate = true> <Delay = 7.27> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 18 [2/6] (8.71ns)   --->   "%call_ln563 = call void @txPath, i128 %metadata_from_book, i128 %lbTxDataOut, i96 %lbTxMetadataOut, i16 %lbTxLengthOut, i64 %time_from_book, i64 %tagsOut, i64 %order_from_book, i2 %next_state, i64 %first_packet_data, i32 %second_packet_data, i16 %lbPacketLength" [fast_src/fast_protocol.cpp:563]   --->   Operation 18 'call' 'call_ln563' <Predicate = true> <Delay = 8.71> <CoreType = "Generic">   --->   Generic Core
 
 State 7 <SV = 6> <Delay = 0.00>
-ST_7 : Operation 18 [1/5] (0.00ns)   --->   "%call_ln554 = call void @rxPath, i128 %lbRxDataIn, i96 %lbRxMetadataIn, i16 %lbRequestPortOpenOut, i8 %lbPortOpenReplyIn, i128 %metadata_to_book, i64 %tagsIn, i64 %time_to_book, i64 %order_to_book, i3 %next_state_1, i64 %first_packet, i43 %second_packet, i32 %openPortWaitTime, i9 %POW10, i16 %temp_order_price, i8 %temp_order_size, i32 %temp_order_orderID, i3 %temp_order_type" [fast_src/fast_protocol.cpp:554]   --->   Operation 18 'call' 'call_ln554' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_7 : Operation 19 [1/6] (0.00ns)   --->   "%call_ln563 = call void @txPath, i128 %metadata_from_book, i128 %lbTxDataOut, i96 %lbTxMetadataOut, i16 %lbTxLengthOut, i64 %time_from_book, i64 %tagsOut, i64 %order_from_book, i2 %next_state, i64 %first_packet_data, i32 %second_packet_data, i16 %lbPacketLength" [fast_src/fast_protocol.cpp:563]   --->   Operation 19 'call' 'call_ln563' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_7 : Operation 19 [1/6] (0.00ns)   --->   "%call_ln554 = call void @rxPath, i128 %lbRxDataIn, i96 %lbRxMetadataIn, i16 %lbRequestPortOpenOut, i8 %lbPortOpenReplyIn, i128 %metadata_to_book, i64 %tagsIn, i64 %time_to_book, i64 %order_to_book, i3 %next_state_1, i64 %first_packet, i43 %second_packet, i32 %openPortWaitTime, i9 %POW10, i16 %temp_order_price, i8 %temp_order_size, i32 %temp_order_orderID, i3 %temp_order_type" [fast_src/fast_protocol.cpp:554]   --->   Operation 19 'call' 'call_ln554' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_7 : Operation 20 [1/6] (0.00ns)   --->   "%call_ln563 = call void @txPath, i128 %metadata_from_book, i128 %lbTxDataOut, i96 %lbTxMetadataOut, i16 %lbTxLengthOut, i64 %time_from_book, i64 %tagsOut, i64 %order_from_book, i2 %next_state, i64 %first_packet_data, i32 %second_packet_data, i16 %lbPacketLength" [fast_src/fast_protocol.cpp:563]   --->   Operation 20 'call' 'call_ln563' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 8 <SV = 7> <Delay = 0.00>
-ST_8 : Operation 20 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln518 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_1" [fast_src/fast_protocol.cpp:518]   --->   Operation 20 'specdataflowpipeline' 'specdataflowpipeline_ln518' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 21 [1/1] (0.00ns)   --->   "%spectopmodule_ln501 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_2" [fast_src/fast_protocol.cpp:501]   --->   Operation 21 'spectopmodule' 'spectopmodule_ln501' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 22 [1/1] (0.00ns)   --->   "%specinterface_ln501 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_3, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0" [fast_src/fast_protocol.cpp:501]   --->   Operation 22 'specinterface' 'specinterface_ln501' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %lbRxDataIn, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 23 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 24 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i128 %lbRxDataIn"   --->   Operation 24 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 25 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i96 %lbRxMetadataIn, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 25 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 26 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i96 %lbRxMetadataIn"   --->   Operation 26 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 27 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %lbRequestPortOpenOut, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 27 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 28 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %lbRequestPortOpenOut"   --->   Operation 28 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 29 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %lbPortOpenReplyIn, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 29 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 30 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %lbPortOpenReplyIn"   --->   Operation 30 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 31 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %lbTxDataOut, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 31 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 32 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i128 %lbTxDataOut"   --->   Operation 32 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 33 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i96 %lbTxMetadataOut, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 33 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 34 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i96 %lbTxMetadataOut"   --->   Operation 34 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 35 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %lbTxLengthOut, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 35 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 36 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %lbTxLengthOut"   --->   Operation 36 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 37 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %tagsIn, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 37 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 38 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %tagsIn"   --->   Operation 38 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 39 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %tagsOut, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 39 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 40 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %tagsOut"   --->   Operation 40 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 41 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %metadata_to_book, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 41 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 42 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i128 %metadata_to_book"   --->   Operation 42 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 43 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %metadata_from_book, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 43 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 44 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i128 %metadata_from_book"   --->   Operation 44 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 45 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %time_to_book, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 45 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 46 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %time_to_book"   --->   Operation 46 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 47 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %time_from_book, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 47 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 48 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %time_from_book"   --->   Operation 48 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 49 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %order_to_book, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 49 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 50 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %order_to_book"   --->   Operation 50 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 51 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %order_from_book, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 51 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 52 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %order_from_book"   --->   Operation 52 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 53 [1/1] (0.00ns)   --->   "%ret_ln570 = ret" [fast_src/fast_protocol.cpp:570]   --->   Operation 53 'ret' 'ret_ln570' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 21 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln518 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_1" [fast_src/fast_protocol.cpp:518]   --->   Operation 21 'specdataflowpipeline' 'specdataflowpipeline_ln518' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 22 [1/1] (0.00ns)   --->   "%spectopmodule_ln501 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_2" [fast_src/fast_protocol.cpp:501]   --->   Operation 22 'spectopmodule' 'spectopmodule_ln501' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln501 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_3, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0" [fast_src/fast_protocol.cpp:501]   --->   Operation 23 'specinterface' 'specinterface_ln501' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %lbRxDataIn, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 25 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i128 %lbRxDataIn"   --->   Operation 25 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 26 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i96 %lbRxMetadataIn, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 26 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 27 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i96 %lbRxMetadataIn"   --->   Operation 27 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 28 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %lbRequestPortOpenOut, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 28 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 29 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %lbRequestPortOpenOut"   --->   Operation 29 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 30 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %lbPortOpenReplyIn, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 30 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 31 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %lbPortOpenReplyIn"   --->   Operation 31 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 32 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %lbTxDataOut, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 32 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 33 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i128 %lbTxDataOut"   --->   Operation 33 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 34 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i96 %lbTxMetadataOut, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 34 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 35 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i96 %lbTxMetadataOut"   --->   Operation 35 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 36 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %lbTxLengthOut, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 36 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 37 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %lbTxLengthOut"   --->   Operation 37 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 38 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %tagsIn, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 38 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 39 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %tagsIn"   --->   Operation 39 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 40 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %tagsOut, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 40 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 41 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %tagsOut"   --->   Operation 41 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 42 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %metadata_to_book, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 42 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 43 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i128 %metadata_to_book"   --->   Operation 43 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 44 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %metadata_from_book, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 44 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 45 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i128 %metadata_from_book"   --->   Operation 45 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 46 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %time_to_book, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 46 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 47 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %time_to_book"   --->   Operation 47 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 48 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %time_from_book, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 48 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 49 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %time_from_book"   --->   Operation 49 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 50 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %order_to_book, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 50 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 51 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %order_to_book"   --->   Operation 51 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 52 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %order_from_book, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 52 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 53 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %order_from_book"   --->   Operation 53 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 54 [1/1] (0.00ns)   --->   "%ret_ln570 = ret" [fast_src/fast_protocol.cpp:570]   --->   Operation 54 'ret' 'ret_ln570' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -605,7 +606,7 @@ ret_ln570                  (ret                 ) [ 000000000]
 <pin id="57" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="txPath"/></StgValue>
+<StgValue><ssdm name="rxPath"/></StgValue>
 </bind>
 </comp>
 
@@ -614,7 +615,7 @@ ret_ln570                  (ret                 ) [ 000000000]
 <pin id="59" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="rxPath"/></StgValue>
+<StgValue><ssdm name="txPath"/></StgValue>
 </bind>
 </comp>
 
@@ -726,21 +727,49 @@ ret_ln570                  (ret                 ) [ 000000000]
 </bind>
 </comp>
 
-<comp id="84" class="1004" name="grp_txPath_fu_84">
+<comp id="84" class="1004" name="grp_rxPath_fu_84">
 <pin_list>
 <pin id="85" dir="0" index="0" bw="0" slack="0"/>
 <pin id="86" dir="0" index="1" bw="128" slack="0"/>
-<pin id="87" dir="0" index="2" bw="128" slack="0"/>
-<pin id="88" dir="0" index="3" bw="96" slack="0"/>
-<pin id="89" dir="0" index="4" bw="16" slack="0"/>
-<pin id="90" dir="0" index="5" bw="64" slack="0"/>
+<pin id="87" dir="0" index="2" bw="96" slack="0"/>
+<pin id="88" dir="0" index="3" bw="16" slack="0"/>
+<pin id="89" dir="0" index="4" bw="8" slack="0"/>
+<pin id="90" dir="0" index="5" bw="128" slack="0"/>
 <pin id="91" dir="0" index="6" bw="64" slack="0"/>
 <pin id="92" dir="0" index="7" bw="64" slack="0"/>
-<pin id="93" dir="0" index="8" bw="2" slack="0"/>
-<pin id="94" dir="0" index="9" bw="64" slack="0"/>
-<pin id="95" dir="0" index="10" bw="32" slack="0"/>
-<pin id="96" dir="0" index="11" bw="16" slack="0"/>
-<pin id="97" dir="1" index="12" bw="0" slack="2147483647"/>
+<pin id="93" dir="0" index="8" bw="64" slack="0"/>
+<pin id="94" dir="0" index="9" bw="3" slack="0"/>
+<pin id="95" dir="0" index="10" bw="64" slack="0"/>
+<pin id="96" dir="0" index="11" bw="43" slack="0"/>
+<pin id="97" dir="0" index="12" bw="32" slack="0"/>
+<pin id="98" dir="0" index="13" bw="9" slack="0"/>
+<pin id="99" dir="0" index="14" bw="16" slack="0"/>
+<pin id="100" dir="0" index="15" bw="8" slack="0"/>
+<pin id="101" dir="0" index="16" bw="32" slack="0"/>
+<pin id="102" dir="0" index="17" bw="3" slack="0"/>
+<pin id="103" dir="1" index="18" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln554/2 "/>
+</bind>
+</comp>
+
+<comp id="122" class="1004" name="grp_txPath_fu_122">
+<pin_list>
+<pin id="123" dir="0" index="0" bw="0" slack="0"/>
+<pin id="124" dir="0" index="1" bw="128" slack="0"/>
+<pin id="125" dir="0" index="2" bw="128" slack="0"/>
+<pin id="126" dir="0" index="3" bw="96" slack="0"/>
+<pin id="127" dir="0" index="4" bw="16" slack="0"/>
+<pin id="128" dir="0" index="5" bw="64" slack="0"/>
+<pin id="129" dir="0" index="6" bw="64" slack="0"/>
+<pin id="130" dir="0" index="7" bw="64" slack="0"/>
+<pin id="131" dir="0" index="8" bw="2" slack="0"/>
+<pin id="132" dir="0" index="9" bw="64" slack="0"/>
+<pin id="133" dir="0" index="10" bw="32" slack="0"/>
+<pin id="134" dir="0" index="11" bw="16" slack="0"/>
+<pin id="135" dir="1" index="12" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -748,96 +777,68 @@ ret_ln570                  (ret                 ) [ 000000000]
 </bind>
 </comp>
 
-<comp id="110" class="1004" name="grp_rxPath_fu_110">
-<pin_list>
-<pin id="111" dir="0" index="0" bw="0" slack="0"/>
-<pin id="112" dir="0" index="1" bw="128" slack="0"/>
-<pin id="113" dir="0" index="2" bw="96" slack="0"/>
-<pin id="114" dir="0" index="3" bw="16" slack="0"/>
-<pin id="115" dir="0" index="4" bw="8" slack="0"/>
-<pin id="116" dir="0" index="5" bw="128" slack="0"/>
-<pin id="117" dir="0" index="6" bw="64" slack="0"/>
-<pin id="118" dir="0" index="7" bw="64" slack="0"/>
-<pin id="119" dir="0" index="8" bw="64" slack="0"/>
-<pin id="120" dir="0" index="9" bw="3" slack="0"/>
-<pin id="121" dir="0" index="10" bw="64" slack="0"/>
-<pin id="122" dir="0" index="11" bw="43" slack="0"/>
-<pin id="123" dir="0" index="12" bw="32" slack="0"/>
-<pin id="124" dir="0" index="13" bw="9" slack="0"/>
-<pin id="125" dir="0" index="14" bw="16" slack="0"/>
-<pin id="126" dir="0" index="15" bw="8" slack="0"/>
-<pin id="127" dir="0" index="16" bw="32" slack="0"/>
-<pin id="128" dir="0" index="17" bw="3" slack="0"/>
-<pin id="129" dir="1" index="18" bw="0" slack="2147483647"/>
-</pin_list>
-<bind>
-<opcode="call(48) " fcode="call"/>
-<opset="call_ln554/3 "/>
-</bind>
-</comp>
-
 </comp_list>
 
 <net_list>
-<net id="98"><net_src comp="56" pin="0"/><net_sink comp="84" pin=0"/></net>
+<net id="104"><net_src comp="56" pin="0"/><net_sink comp="84" pin=0"/></net>
 
-<net id="99"><net_src comp="20" pin="0"/><net_sink comp="84" pin=1"/></net>
+<net id="105"><net_src comp="0" pin="0"/><net_sink comp="84" pin=1"/></net>
 
-<net id="100"><net_src comp="8" pin="0"/><net_sink comp="84" pin=2"/></net>
+<net id="106"><net_src comp="2" pin="0"/><net_sink comp="84" pin=2"/></net>
 
-<net id="101"><net_src comp="10" pin="0"/><net_sink comp="84" pin=3"/></net>
+<net id="107"><net_src comp="4" pin="0"/><net_sink comp="84" pin=3"/></net>
 
-<net id="102"><net_src comp="12" pin="0"/><net_sink comp="84" pin=4"/></net>
+<net id="108"><net_src comp="6" pin="0"/><net_sink comp="84" pin=4"/></net>
 
-<net id="103"><net_src comp="24" pin="0"/><net_sink comp="84" pin=5"/></net>
+<net id="109"><net_src comp="18" pin="0"/><net_sink comp="84" pin=5"/></net>
 
-<net id="104"><net_src comp="16" pin="0"/><net_sink comp="84" pin=6"/></net>
+<net id="110"><net_src comp="14" pin="0"/><net_sink comp="84" pin=6"/></net>
 
-<net id="105"><net_src comp="28" pin="0"/><net_sink comp="84" pin=7"/></net>
+<net id="111"><net_src comp="22" pin="0"/><net_sink comp="84" pin=7"/></net>
 
-<net id="106"><net_src comp="48" pin="0"/><net_sink comp="84" pin=8"/></net>
+<net id="112"><net_src comp="26" pin="0"/><net_sink comp="84" pin=8"/></net>
 
-<net id="107"><net_src comp="50" pin="0"/><net_sink comp="84" pin=9"/></net>
+<net id="113"><net_src comp="30" pin="0"/><net_sink comp="84" pin=9"/></net>
 
-<net id="108"><net_src comp="52" pin="0"/><net_sink comp="84" pin=10"/></net>
+<net id="114"><net_src comp="32" pin="0"/><net_sink comp="84" pin=10"/></net>
 
-<net id="109"><net_src comp="54" pin="0"/><net_sink comp="84" pin=11"/></net>
+<net id="115"><net_src comp="34" pin="0"/><net_sink comp="84" pin=11"/></net>
 
-<net id="130"><net_src comp="58" pin="0"/><net_sink comp="110" pin=0"/></net>
+<net id="116"><net_src comp="36" pin="0"/><net_sink comp="84" pin=12"/></net>
 
-<net id="131"><net_src comp="0" pin="0"/><net_sink comp="110" pin=1"/></net>
+<net id="117"><net_src comp="38" pin="0"/><net_sink comp="84" pin=13"/></net>
 
-<net id="132"><net_src comp="2" pin="0"/><net_sink comp="110" pin=2"/></net>
+<net id="118"><net_src comp="40" pin="0"/><net_sink comp="84" pin=14"/></net>
 
-<net id="133"><net_src comp="4" pin="0"/><net_sink comp="110" pin=3"/></net>
+<net id="119"><net_src comp="42" pin="0"/><net_sink comp="84" pin=15"/></net>
 
-<net id="134"><net_src comp="6" pin="0"/><net_sink comp="110" pin=4"/></net>
+<net id="120"><net_src comp="44" pin="0"/><net_sink comp="84" pin=16"/></net>
 
-<net id="135"><net_src comp="18" pin="0"/><net_sink comp="110" pin=5"/></net>
+<net id="121"><net_src comp="46" pin="0"/><net_sink comp="84" pin=17"/></net>
 
-<net id="136"><net_src comp="14" pin="0"/><net_sink comp="110" pin=6"/></net>
+<net id="136"><net_src comp="58" pin="0"/><net_sink comp="122" pin=0"/></net>
 
-<net id="137"><net_src comp="22" pin="0"/><net_sink comp="110" pin=7"/></net>
+<net id="137"><net_src comp="20" pin="0"/><net_sink comp="122" pin=1"/></net>
 
-<net id="138"><net_src comp="26" pin="0"/><net_sink comp="110" pin=8"/></net>
+<net id="138"><net_src comp="8" pin="0"/><net_sink comp="122" pin=2"/></net>
 
-<net id="139"><net_src comp="30" pin="0"/><net_sink comp="110" pin=9"/></net>
+<net id="139"><net_src comp="10" pin="0"/><net_sink comp="122" pin=3"/></net>
 
-<net id="140"><net_src comp="32" pin="0"/><net_sink comp="110" pin=10"/></net>
+<net id="140"><net_src comp="12" pin="0"/><net_sink comp="122" pin=4"/></net>
 
-<net id="141"><net_src comp="34" pin="0"/><net_sink comp="110" pin=11"/></net>
+<net id="141"><net_src comp="24" pin="0"/><net_sink comp="122" pin=5"/></net>
 
-<net id="142"><net_src comp="36" pin="0"/><net_sink comp="110" pin=12"/></net>
+<net id="142"><net_src comp="16" pin="0"/><net_sink comp="122" pin=6"/></net>
 
-<net id="143"><net_src comp="38" pin="0"/><net_sink comp="110" pin=13"/></net>
+<net id="143"><net_src comp="28" pin="0"/><net_sink comp="122" pin=7"/></net>
 
-<net id="144"><net_src comp="40" pin="0"/><net_sink comp="110" pin=14"/></net>
+<net id="144"><net_src comp="48" pin="0"/><net_sink comp="122" pin=8"/></net>
 
-<net id="145"><net_src comp="42" pin="0"/><net_sink comp="110" pin=15"/></net>
+<net id="145"><net_src comp="50" pin="0"/><net_sink comp="122" pin=9"/></net>
 
-<net id="146"><net_src comp="44" pin="0"/><net_sink comp="110" pin=16"/></net>
+<net id="146"><net_src comp="52" pin="0"/><net_sink comp="122" pin=10"/></net>
 
-<net id="147"><net_src comp="46" pin="0"/><net_sink comp="110" pin=17"/></net>
+<net id="147"><net_src comp="54" pin="0"/><net_sink comp="122" pin=11"/></net>
 
 </net_list>
 
@@ -846,43 +847,43 @@ ret_ln570                  (ret                 ) [ 000000000]
 
 * FSMD analyzer results:
   - Output states:
-	Port: lbRequestPortOpenOut | {4 5 7 }
+	Port: lbRequestPortOpenOut | {3 4 6 }
 	Port: lbTxDataOut | {3 4 7 }
 	Port: lbTxMetadataOut | {2 3 6 }
 	Port: lbTxLengthOut | {3 4 5 7 }
 	Port: tagsOut | {4 5 7 }
-	Port: metadata_to_book | {3 4 6 }
-	Port: time_to_book | {4 5 7 }
-	Port: order_to_book | {4 5 7 }
-	Port: next_state_1 | {3 5 }
-	Port: first_packet | {5 }
-	Port: second_packet | {5 }
-	Port: openPortWaitTime | {5 }
+	Port: metadata_to_book | {2 3 5 }
+	Port: time_to_book | {3 4 6 }
+	Port: order_to_book | {3 4 6 }
+	Port: next_state_1 | {2 4 }
+	Port: first_packet | {4 }
+	Port: second_packet | {4 }
+	Port: openPortWaitTime | {4 }
 	Port: temp_order_price | {7 }
 	Port: temp_order_size | {3 }
-	Port: temp_order_orderID | {3 }
-	Port: temp_order_type | {3 }
+	Port: temp_order_orderID | {4 }
+	Port: temp_order_type | {4 }
 	Port: next_state | {4 5 }
-	Port: first_packet_data | {6 }
-	Port: second_packet_data | {6 }
+	Port: first_packet_data | {7 }
+	Port: second_packet_data | {7 }
 	Port: lbPacketLength | {4 6 }
  - Input state : 
-	Port: fast_protocol : lbRxDataIn | {3 4 5 }
-	Port: fast_protocol : lbRxMetadataIn | {3 5 }
-	Port: fast_protocol : lbPortOpenReplyIn | {3 5 }
-	Port: fast_protocol : tagsIn | {4 5 }
+	Port: fast_protocol : lbRxDataIn | {2 3 4 }
+	Port: fast_protocol : lbRxMetadataIn | {2 4 }
+	Port: fast_protocol : lbPortOpenReplyIn | {2 4 }
+	Port: fast_protocol : tagsIn | {3 4 }
 	Port: fast_protocol : metadata_from_book | {2 5 }
 	Port: fast_protocol : time_from_book | {2 5 }
 	Port: fast_protocol : order_from_book | {2 5 }
-	Port: fast_protocol : next_state_1 | {3 }
-	Port: fast_protocol : first_packet | {3 }
+	Port: fast_protocol : next_state_1 | {2 }
+	Port: fast_protocol : first_packet | {2 }
 	Port: fast_protocol : second_packet | {3 }
-	Port: fast_protocol : openPortWaitTime | {5 }
-	Port: fast_protocol : POW10 | {6 7 }
-	Port: fast_protocol : temp_order_price | {6 }
-	Port: fast_protocol : temp_order_size | {6 }
-	Port: fast_protocol : temp_order_orderID | {6 }
-	Port: fast_protocol : temp_order_type | {6 }
+	Port: fast_protocol : openPortWaitTime | {4 }
+	Port: fast_protocol : POW10 | {5 6 }
+	Port: fast_protocol : temp_order_price | {5 }
+	Port: fast_protocol : temp_order_size | {5 }
+	Port: fast_protocol : temp_order_orderID | {5 }
+	Port: fast_protocol : temp_order_type | {5 }
 	Port: fast_protocol : next_state | {2 }
 	Port: fast_protocol : first_packet_data | {6 }
 	Port: fast_protocol : second_packet_data | {6 }
@@ -906,10 +907,10 @@ ret_ln570                  (ret                 ) [ 000000000]
 |----------|-------------------|---------|---------|---------|---------|
 | Operation|  Functional Unit  |   DSP   |  Delay  |    FF   |   LUT   |
 |----------|-------------------|---------|---------|---------|---------|
-|   call   |  grp_txPath_fu_84 |    0    |  5.0026 |   491   |   690   |
-|          | grp_rxPath_fu_110 |    2    |  5.0026 |   306   |   960   |
+|   call   |  grp_rxPath_fu_84 |    2    |  5.0026 |   545   |   967   |
+|          | grp_txPath_fu_122 |    0    |  5.0026 |   509   |   690   |
 |----------|-------------------|---------|---------|---------|---------|
-|   Total  |                   |    2    | 10.0052 |   797   |   1650  |
+|   Total  |                   |    2    | 10.0052 |   1054  |   1657  |
 |----------|-------------------|---------|---------|---------|---------|
 
 Memories:
@@ -937,10 +938,10 @@ N/A
 +-----------+--------+--------+--------+--------+--------+
 |           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+--------+
-|  Function |    -   |    2   |   10   |   797  |  1650  |
+|  Function |    -   |    2   |   10   |  1054  |  1657  |
 |   Memory  |    0   |    -   |    -   |    9   |    1   |
 |Multiplexer|    -   |    -   |    -   |    -   |    -   |
 |  Register |    -   |    -   |    -   |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+
-|   Total   |    0   |    2   |   10   |   806  |  1651  |
+|   Total   |    0   |    2   |   10   |  1063  |  1658  |
 +-----------+--------+--------+--------+--------+--------+

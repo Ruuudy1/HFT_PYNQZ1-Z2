@@ -3,12 +3,12 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Sun Jun  1 15:35:31 2025
-# Process ID         : 3488
-# Current directory  : C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_fast_protocol_0_0_synth_1
+# Start of session at: Sun Jun  8 13:36:32 2025
+# Process ID         : 14304
+# Current directory  : C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_fast_protocol_0_0_synth_1
 # Command line       : vivado.exe -log design_1_fast_protocol_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_fast_protocol_0_0.tcl
-# Log file           : C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_fast_protocol_0_0_synth_1/design_1_fast_protocol_0_0.vds
-# Journal file       : C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_fast_protocol_0_0_synth_1\vivado.jou
+# Log file           : C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_fast_protocol_0_0_synth_1/design_1_fast_protocol_0_0.vds
+# Journal file       : C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_fast_protocol_0_0_synth_1\vivado.jou
 # Running On         : RudyAsus
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 26100
@@ -19,19 +19,19 @@
 # Host memory        : 33736 MB
 # Swap memory        : 18253 MB
 # Total Virtual      : 51989 MB
-# Available Virtual  : 9231 MB
+# Available Virtual  : 16624 MB
 #-----------------------------------------------------------
 source design_1_fast_protocol_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 620.094 ; gain = 190.082
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 620.211 ; gain = 192.801
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/fast_hls'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/order_book_hls'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/threshold_hls'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/microblaze_to_switch_hls'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/udp_hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/fast_hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/order_book_hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/threshold_hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/microblaze_to_switch_hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/udp_hls'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
-Current IP cache path is c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.cache/ip 
+Current IP cache path is c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.cache/ip 
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_fast_protocol_0_0
 Command: synth_design -top design_1_fast_protocol_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
 Starting synth_design
@@ -40,103 +40,103 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 17552
+INFO: [Synth 8-7075] Helper process launched with PID 30780
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1331.938 ; gain = 467.277
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1331.805 ; gain = 467.395
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'design_1_fast_protocol_0_0' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ip/design_1_fast_protocol_0_0/synth/design_1_fast_protocol_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'fast_protocol' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol.v:9]
-INFO: [Synth 8-6157] synthesizing module 'fast_protocol_rxPath' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_rxPath.v:9]
-INFO: [Synth 8-6157] synthesizing module 'fast_protocol_rxPath_POW10_ROM_AUTO_1R' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_rxPath_POW10_ROM_AUTO_1R.v:7]
-INFO: [Synth 8-3876] $readmem data file './fast_protocol_rxPath_POW10_ROM_AUTO_1R.dat' is read successfully [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_rxPath_POW10_ROM_AUTO_1R.v:28]
-INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_rxPath_POW10_ROM_AUTO_1R' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_rxPath_POW10_ROM_AUTO_1R.v:7]
-INFO: [Synth 8-6157] synthesizing module 'fast_protocol_sparsemux_7_3_7_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_sparsemux_7_3_7_1_1.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_sparsemux_7_3_7_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_sparsemux_7_3_7_1_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'fast_protocol_sparsemux_7_3_8_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_sparsemux_7_3_8_1_1.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_sparsemux_7_3_8_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_sparsemux_7_3_8_1_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'fast_protocol_sparsemux_9_3_7_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_sparsemux_9_3_7_1_1.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_sparsemux_9_3_7_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_sparsemux_9_3_7_1_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'fast_protocol_sparsemux_9_3_8_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_sparsemux_9_3_8_1_1.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_sparsemux_9_3_8_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_sparsemux_9_3_8_1_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'fast_protocol_sparsemux_11_4_25_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_sparsemux_11_4_25_1_1.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_sparsemux_11_4_25_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_sparsemux_11_4_25_1_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'fast_protocol_sparsemux_11_4_4_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_sparsemux_11_4_4_1_1.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_sparsemux_11_4_4_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_sparsemux_11_4_4_1_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'fast_protocol_sparsemux_17_4_7_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_sparsemux_17_4_7_1_1.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_sparsemux_17_4_7_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_sparsemux_17_4_7_1_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'fast_protocol_sparsemux_17_4_3_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_sparsemux_17_4_3_1_1.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_sparsemux_17_4_3_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_sparsemux_17_4_3_1_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'fast_protocol_mul_16s_9ns_16_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_mul_16s_9ns_16_1_1.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_mul_16s_9ns_16_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_mul_16s_9ns_16_1_1.v:5]
-INFO: [Synth 8-6157] synthesizing module 'fast_protocol_regslice_both' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_regslice_both.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_regslice_both' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_regslice_both.v:8]
-INFO: [Synth 8-6157] synthesizing module 'fast_protocol_regslice_both__parameterized0' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_regslice_both.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_regslice_both__parameterized0' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_regslice_both.v:8]
-INFO: [Synth 8-6157] synthesizing module 'fast_protocol_regslice_both__parameterized1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_regslice_both.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_regslice_both__parameterized1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_regslice_both.v:8]
-INFO: [Synth 8-6157] synthesizing module 'fast_protocol_regslice_both__parameterized2' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_regslice_both.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_regslice_both__parameterized2' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_regslice_both.v:8]
-INFO: [Synth 8-6157] synthesizing module 'fast_protocol_regslice_both__parameterized3' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_regslice_both.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_regslice_both__parameterized3' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_regslice_both.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_rxPath' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_rxPath.v:9]
-INFO: [Synth 8-6157] synthesizing module 'fast_protocol_txPath' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_txPath.v:9]
-INFO: [Synth 8-6157] synthesizing module 'fast_protocol_sparsemux_9_3_4_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_sparsemux_9_3_4_1_1.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_sparsemux_9_3_4_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_sparsemux_9_3_4_1_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'fast_protocol_sparsemux_11_4_4_1_1_x' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_sparsemux_11_4_4_1_1_x.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_sparsemux_11_4_4_1_1_x' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_sparsemux_11_4_4_1_1_x.v:9]
-INFO: [Synth 8-6157] synthesizing module 'fast_protocol_sparsemux_13_5_4_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_sparsemux_13_5_4_1_1.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_sparsemux_13_5_4_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_sparsemux_13_5_4_1_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'fast_protocol_sparsemux_11_32_8_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_sparsemux_11_32_8_1_1.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_sparsemux_11_32_8_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_sparsemux_11_32_8_1_1.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_txPath' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_txPath.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'fast_protocol' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_fast_protocol_0_0' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ip/design_1_fast_protocol_0_0/synth/design_1_fast_protocol_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'design_1_fast_protocol_0_0' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ip/design_1_fast_protocol_0_0/synth/design_1_fast_protocol_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'fast_protocol' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fast_protocol_rxPath' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_rxPath.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fast_protocol_rxPath_POW10_ROM_AUTO_1R' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_rxPath_POW10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './fast_protocol_rxPath_POW10_ROM_AUTO_1R.dat' is read successfully [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_rxPath_POW10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_rxPath_POW10_ROM_AUTO_1R' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_rxPath_POW10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'fast_protocol_sparsemux_7_3_8_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_sparsemux_7_3_8_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_sparsemux_7_3_8_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_sparsemux_7_3_8_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fast_protocol_sparsemux_7_3_7_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_sparsemux_7_3_7_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_sparsemux_7_3_7_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_sparsemux_7_3_7_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fast_protocol_sparsemux_9_3_7_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_sparsemux_9_3_7_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_sparsemux_9_3_7_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_sparsemux_9_3_7_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fast_protocol_sparsemux_9_3_8_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_sparsemux_9_3_8_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_sparsemux_9_3_8_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_sparsemux_9_3_8_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fast_protocol_sparsemux_11_4_25_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_sparsemux_11_4_25_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_sparsemux_11_4_25_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_sparsemux_11_4_25_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fast_protocol_sparsemux_11_4_4_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_sparsemux_11_4_4_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_sparsemux_11_4_4_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_sparsemux_11_4_4_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fast_protocol_sparsemux_17_4_7_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_sparsemux_17_4_7_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_sparsemux_17_4_7_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_sparsemux_17_4_7_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fast_protocol_sparsemux_17_4_3_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_sparsemux_17_4_3_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_sparsemux_17_4_3_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_sparsemux_17_4_3_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fast_protocol_mul_16s_9ns_16_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_mul_16s_9ns_16_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_mul_16s_9ns_16_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_mul_16s_9ns_16_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'fast_protocol_regslice_both' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_regslice_both' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'fast_protocol_regslice_both__parameterized0' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_regslice_both__parameterized0' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'fast_protocol_regslice_both__parameterized1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_regslice_both__parameterized1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'fast_protocol_regslice_both__parameterized2' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_regslice_both__parameterized2' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'fast_protocol_regslice_both__parameterized3' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_regslice_both__parameterized3' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_rxPath' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_rxPath.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fast_protocol_txPath' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_txPath.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fast_protocol_sparsemux_9_3_4_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_sparsemux_9_3_4_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_sparsemux_9_3_4_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_sparsemux_9_3_4_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fast_protocol_sparsemux_11_4_4_1_1_x' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_sparsemux_11_4_4_1_1_x.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_sparsemux_11_4_4_1_1_x' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_sparsemux_11_4_4_1_1_x.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fast_protocol_sparsemux_13_5_4_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_sparsemux_13_5_4_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_sparsemux_13_5_4_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_sparsemux_13_5_4_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fast_protocol_sparsemux_11_32_8_1_1' [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_sparsemux_11_32_8_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_sparsemux_11_32_8_1_1' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_sparsemux_11_32_8_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'fast_protocol_txPath' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_txPath.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'fast_protocol' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_fast_protocol_0_0' (0#1) [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ip/design_1_fast_protocol_0_0/synth/design_1_fast_protocol_0_0.v:53]
 WARNING: [Synth 8-7129] Port reset in module fast_protocol_rxPath_POW10_ROM_AUTO_1R is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1457.996 ; gain = 593.336
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1460.871 ; gain = 596.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1457.996 ; gain = 593.336
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1460.871 ; gain = 596.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1457.996 ; gain = 593.336
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1460.871 ; gain = 596.461
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1457.996 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1460.871 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ip/design_1_fast_protocol_0_0/constraints/fast_protocol_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ip/design_1_fast_protocol_0_0/constraints/fast_protocol_ooc.xdc] for cell 'inst'
-Parsing XDC File [C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_fast_protocol_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_fast_protocol_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ip/design_1_fast_protocol_0_0/constraints/fast_protocol_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ip/design_1_fast_protocol_0_0/constraints/fast_protocol_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_fast_protocol_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_fast_protocol_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1547.078 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1551.637 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1547.102 ; gain = 0.023
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1551.637 ; gain = 0.000
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1547.102 ; gain = 682.441
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1551.637 ; gain = 687.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1547.102 ; gain = 682.441
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1551.637 ; gain = 687.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_fast_protocol_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_fast_protocol_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1547.102 ; gain = 682.441
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1551.637 ; gain = 687.227
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fast_protocol_regslice_both'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fast_protocol_regslice_both__parameterized0'
@@ -201,20 +201,21 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
 *
-  ap_ST_iter1_fsm_state0 |                              001 |                              001
-  ap_ST_iter1_fsm_state4 |                              010 |                              010
-  ap_ST_iter1_fsm_state5 |                              100 |                              100
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'ap_CS_iter1_fsm_reg' in module 'fast_protocol_rxPath'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
   ap_ST_iter0_fsm_state1 |                              001 |                              001
   ap_ST_iter0_fsm_state2 |                              010 |                              010
   ap_ST_iter0_fsm_state3 |                              100 |                              100
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3898] No Re-encoding of one hot register 'ap_CS_iter0_fsm_reg' in module 'fast_protocol_rxPath'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+  ap_ST_iter1_fsm_state0 |                             0001 |                             0001
+  ap_ST_iter1_fsm_state4 |                             0010 |                             0010
+  ap_ST_iter1_fsm_state5 |                             0100 |                             0100
+  ap_ST_iter1_fsm_state6 |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'ap_CS_iter1_fsm_reg' in module 'fast_protocol_rxPath'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -235,7 +236,7 @@ INFO: [Synth 8-3898] No Re-encoding of one hot register 'ap_CS_iter0_fsm_reg' in
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3898] No Re-encoding of one hot register 'ap_CS_iter1_fsm_reg' in module 'fast_protocol_txPath'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1547.102 ; gain = 682.441
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1551.637 ; gain = 687.227
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'inst/rxPath_U0/mul_16s_9ns_16_1_1_U23' (fast_protocol_mul_16s_9ns_16_1_1) to 'inst/rxPath_U0/mul_16s_9ns_16_1_1_U24'
 ---------------------------------------------------------------------------------
@@ -244,24 +245,25 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input   16 Bit       Adders := 1     
-	   3 Input    4 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
 	   2 Input    3 Bit       Adders := 1     
 +---XORs : 
 	   2 Input      1 Bit         XORs := 8     
 +---Registers : 
 	              128 Bit    Registers := 8     
 	               96 Bit    Registers := 4     
-	               64 Bit    Registers := 15    
-	               43 Bit    Registers := 1     
+	               64 Bit    Registers := 16    
+	               43 Bit    Registers := 2     
 	               32 Bit    Registers := 1     
+	               25 Bit    Registers := 1     
 	               16 Bit    Registers := 5     
-	                9 Bit    Registers := 3     
-	                8 Bit    Registers := 3     
-	                7 Bit    Registers := 7     
-	                4 Bit    Registers := 1     
-	                3 Bit    Registers := 5     
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 6     
+	                7 Bit    Registers := 10    
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 8     
 	                2 Bit    Registers := 21    
-	                1 Bit    Registers := 48    
+	                1 Bit    Registers := 67    
 +---Muxes : 
 	   2 Input  128 Bit        Muxes := 4     
 	   2 Input   96 Bit        Muxes := 2     
@@ -269,24 +271,24 @@ Detailed RTL Component Info :
 	   2 Input   64 Bit        Muxes := 6     
 	   2 Input   16 Bit        Muxes := 3     
 	   5 Input    9 Bit        Muxes := 1     
+	   3 Input    9 Bit        Muxes := 1     
 	   2 Input    9 Bit        Muxes := 1     
 	   2 Input    8 Bit        Muxes := 15    
 	   3 Input    8 Bit        Muxes := 1     
 	   4 Input    8 Bit        Muxes := 4     
 	   6 Input    8 Bit        Muxes := 1     
-	   4 Input    7 Bit        Muxes := 1     
-	   3 Input    7 Bit        Muxes := 1     
+	   4 Input    7 Bit        Muxes := 2     
 	   2 Input    7 Bit        Muxes := 5     
-	   5 Input    4 Bit        Muxes := 2     
-	   2 Input    4 Bit        Muxes := 2     
+	   5 Input    4 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 5     
 	   6 Input    4 Bit        Muxes := 1     
 	   7 Input    4 Bit        Muxes := 1     
-	   2 Input    3 Bit        Muxes := 17    
-	   4 Input    3 Bit        Muxes := 5     
+	   2 Input    3 Bit        Muxes := 15    
+	   4 Input    3 Bit        Muxes := 4     
 	   6 Input    3 Bit        Muxes := 1     
-	   2 Input    2 Bit        Muxes := 160   
+	   2 Input    2 Bit        Muxes := 157   
 	   4 Input    2 Bit        Muxes := 60    
-	   2 Input    1 Bit        Muxes := 79    
+	   2 Input    1 Bit        Muxes := 74    
 	   3 Input    1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -304,15 +306,15 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-3936] Found unconnected internal register 'regslice_both_lbRxDataIn_U/data_p1_reg' and it is trimmed from '128' to '73' bits. [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_regslice_both.v:41]
-WARNING: [Synth 8-3936] Found unconnected internal register 'regslice_both_lbRxDataIn_U/data_p2_reg' and it is trimmed from '128' to '73' bits. [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_regslice_both.v:63]
-DSP Report: Generating DSP mul_16s_9ns_16_1_1_U23/tmp_product, operation Mode is: A''*B2.
+WARNING: [Synth 8-3936] Found unconnected internal register 'regslice_both_lbRxDataIn_U/data_p1_reg' and it is trimmed from '128' to '73' bits. [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_regslice_both.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'regslice_both_lbRxDataIn_U/data_p2_reg' and it is trimmed from '128' to '73' bits. [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_regslice_both.v:63]
+DSP Report: Generating DSP mul_16s_9ns_16_1_1_U23/tmp_product, operation Mode is: A2*B''.
 DSP Report: register mul_16s_9ns_16_1_1_U23/tmp_product is absorbed into DSP mul_16s_9ns_16_1_1_U23/tmp_product.
 DSP Report: register mul_16s_9ns_16_1_1_U23/tmp_product is absorbed into DSP mul_16s_9ns_16_1_1_U23/tmp_product.
 DSP Report: register mul_16s_9ns_16_1_1_U23/tmp_product is absorbed into DSP mul_16s_9ns_16_1_1_U23/tmp_product.
 DSP Report: operator mul_16s_9ns_16_1_1_U23/tmp_product is absorbed into DSP mul_16s_9ns_16_1_1_U23/tmp_product.
-WARNING: [Synth 8-3936] Found unconnected internal register 'regslice_both_order_from_book_U/data_p1_reg' and it is trimmed from '64' to '59' bits. [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_regslice_both.v:41]
-WARNING: [Synth 8-3936] Found unconnected internal register 'regslice_both_order_from_book_U/data_p2_reg' and it is trimmed from '64' to '59' bits. [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/ebc7/hdl/verilog/fast_protocol_regslice_both.v:63]
+WARNING: [Synth 8-3936] Found unconnected internal register 'regslice_both_order_from_book_U/data_p1_reg' and it is trimmed from '64' to '59' bits. [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_regslice_both.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'regslice_both_order_from_book_U/data_p2_reg' and it is trimmed from '64' to '59' bits. [c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ipshared/40cd/hdl/verilog/fast_protocol_regslice_both.v:63]
 WARNING: [Synth 8-7129] Port order_from_book_TDATA[63] in module fast_protocol_txPath is either unconnected or has no load
 WARNING: [Synth 8-7129] Port order_from_book_TDATA[62] in module fast_protocol_txPath is either unconnected or has no load
 WARNING: [Synth 8-7129] Port order_from_book_TDATA[61] in module fast_protocol_txPath is either unconnected or has no load
@@ -382,9 +384,9 @@ WARNING: [Synth 8-7129] Port lbPortOpenReplyIn_TDATA[2] in module fast_protocol_
 WARNING: [Synth 8-7129] Port lbPortOpenReplyIn_TDATA[1] in module fast_protocol_rxPath is either unconnected or has no load
 WARNING: [Synth 8-7129] Port lbPortOpenReplyIn_TDATA[0] in module fast_protocol_rxPath is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1547.102 ; gain = 682.441
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1551.637 ; gain = 687.227
 ---------------------------------------------------------------------------------
- Sort Area is  mul_16s_9ns_16_1_1_U23/tmp_product_0 : 0 0 : 1096 1096 : Used 1 time 0
+ Sort Area is  mul_16s_9ns_16_1_1_U23/tmp_product_0 : 0 0 : 1090 1090 : Used 1 time 0
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
@@ -393,7 +395,7 @@ DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding R
 +---------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name          | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +---------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|fast_protocol_rxPath | A''*B2      | 16     | 10     | -      | -      | 26     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|fast_protocol_rxPath | A2*B''      | 16     | 10     | -      | -      | 26     | 1    | 2    | -    | -    | -     | 0    | 0    | 
 +---------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
@@ -404,19 +406,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1688.355 ; gain = 823.695
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1689.270 ; gain = 824.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1743.430 ; gain = 878.770
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1763.387 ; gain = 898.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1758.566 ; gain = 893.906
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1781.473 ; gain = 917.062
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -434,37 +436,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1936.844 ; gain = 1072.184
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1940.008 ; gain = 1075.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1936.844 ; gain = 1072.184
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1940.008 ; gain = 1075.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1936.844 ; gain = 1072.184
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1940.008 ; gain = 1075.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1936.844 ; gain = 1072.184
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1940.008 ; gain = 1075.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1936.844 ; gain = 1072.184
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1940.008 ; gain = 1075.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1936.844 ; gain = 1072.184
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1940.008 ; gain = 1075.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -474,7 +476,7 @@ DSP Final Report (the ' indicates corresponding REG is set)
 +---------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name          | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +---------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|fast_protocol_rxPath | (A''*B')'   | 30     | 9      | -      | -      | 26     | 2    | 1    | -    | -    | -     | 0    | 1    | 
+|fast_protocol_rxPath | (A'*B'')'   | 30     | 9      | -      | -      | 26     | 1    | 2    | -    | -    | -     | 0    | 1    | 
 +---------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 
@@ -490,41 +492,42 @@ Report Cell Usage:
 +------+--------+------+
 |1     |CARRY4  |    16|
 |2     |DSP48E1 |     1|
-|3     |LUT1    |    38|
-|4     |LUT2    |    31|
-|5     |LUT3    |    23|
-|6     |LUT4    |   970|
-|7     |LUT5    |   176|
-|8     |LUT6    |   216|
-|9     |FDRE    |  2274|
-|10    |FDSE    |    35|
+|3     |LUT1    |    39|
+|4     |LUT2    |    29|
+|5     |LUT3    |    27|
+|6     |LUT4    |   974|
+|7     |LUT5    |   190|
+|8     |LUT6    |   199|
+|9     |MUXF7   |    17|
+|10    |FDRE    |  2467|
+|11    |FDSE    |    35|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1936.844 ; gain = 1072.184
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1940.008 ; gain = 1075.598
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 73 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 1936.844 ; gain = 983.078
-Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1936.844 ; gain = 1072.184
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1940.008 ; gain = 984.832
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1940.008 ; gain = 1075.598
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1942.891 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1949.168 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 34 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1944.395 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1952.840 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 56bc47aa
+Synth Design complete | Checksum: d01794ed
 INFO: [Common 17-83] Releasing license: Synthesis
 89 Infos, 75 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1944.395 ; gain = 1303.969
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1944.395 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_fast_protocol_0_0_synth_1/design_1_fast_protocol_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_fast_protocol_0_0, cache-ID = 409f9a3655c0d3ed
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1952.840 ; gain = 1312.664
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1952.840 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_fast_protocol_0_0_synth_1/design_1_fast_protocol_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_fast_protocol_0_0, cache-ID = aa94ec498ea5885e
 INFO: [Coretcl 2-1174] Renamed 19 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1944.395 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/hft_proj/hft_proj.runs/design_1_fast_protocol_0_0_synth_1/design_1_fast_protocol_0_0.dcp' has been generated.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1952.840 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/design_1_fast_protocol_0_0_synth_1/design_1_fast_protocol_0_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_fast_protocol_0_0_utilization_synth.rpt -pb design_1_fast_protocol_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Jun  1 15:36:18 2025...
+INFO: [Common 17-206] Exiting Vivado at Sun Jun  8 13:37:17 2025...
