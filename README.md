@@ -12,7 +12,7 @@ In our project, we use the PYNQ-Z1/Z2 development board to implement a high freq
 
 Brandon Reponte is a 4th year at UCSD studying computer science. He has a background in systems programming and computer architecture, as well as higher level skills in machine learning and AI.
 
-Leeze Gutierrez-Ramirez is a senior Computer Engineering major. She is interested in embedded systems and OS programming.
+Leeze Gutierrez is a senior Computer Engineering major. She is interested in embedded systems and OS programming.
 
 Rudy Osuna is a 3rd year UCSD Computer Science major, Minor in Business Analytics. Background: President of Triton Quantitative Trading @UC San Diego  
 ## Challenges
