@@ -3,7 +3,7 @@
 	"modules": {
 		"order_book": {
 			"proto_instances": {
-				"grp_order_book_Pipeline_ASK_PUSH_LOOP2_fu_15720/grp_order_book_Pipeline_ASK_PUSH_LOOP2_fu_15720_activity": {
+				"grp_order_book_Pipeline_ASK_PUSH_LOOP2_fu_7756/grp_order_book_Pipeline_ASK_PUSH_LOOP2_fu_7756_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -13,7 +13,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_order_book_Pipeline_ASK_PUSH_LOOP_fu_15930/grp_order_book_Pipeline_ASK_PUSH_LOOP_fu_15930_activity": {
+				"grp_order_book_Pipeline_ASK_PUSH_LOOP_fu_7870/grp_order_book_Pipeline_ASK_PUSH_LOOP_fu_7870_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -23,7 +23,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_order_book_Pipeline_BID_PUSH_LOOP1_fu_16137/grp_order_book_Pipeline_BID_PUSH_LOOP1_fu_16137_activity": {
+				"grp_order_book_Pipeline_BID_PUSH_LOOP1_fu_7981/grp_order_book_Pipeline_BID_PUSH_LOOP1_fu_7981_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -33,7 +33,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_order_book_Pipeline_BID_PUSH_LOOP_fu_16347/grp_order_book_Pipeline_BID_PUSH_LOOP_fu_16347_activity": {
+				"grp_order_book_Pipeline_BID_PUSH_LOOP_fu_8095/grp_order_book_Pipeline_BID_PUSH_LOOP_fu_8095_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'order_book_Pipeline_ASK_PUSH_LOOP2'" level="0">
-<item name = "Date">Sun Jun  1 14:49:50 2025
+<item name = "Date">Sat Jun 14 04:24:09 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">order_book_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.146 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 6.669 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">4, 16, 40.000 ns, 0.160 us, 2, 14, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="">4, 10, 40.000 ns, 0.100 us, 2, 8, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- ASK_PUSH_LOOP">2, 14, 5, 2, 1, 0 ~ 6, yes</column>
+<column name="- ASK_PUSH_LOOP">2, 8, 5, 2, 1, 0 ~ 3, yes</column>
 </table>
 </item>
 </section>

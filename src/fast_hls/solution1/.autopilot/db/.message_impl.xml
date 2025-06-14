@@ -2,5 +2,5 @@
 <Messages>
 	<Message severity="INFO" prefix="[IMPL 213-8]" key="IMPL_8_1776" tag="" content="Exporting RTL as a Vivado IP." resolution=""/>
 	<Message severity="INFO" prefix="[HLS 200-802]" key="HLS 200-802" tag="" content="Generated output file fast_hls/solution1/impl/export.zip" resolution=""/>
-	<Message severity="INFO" prefix="[HLS 200-2161]" key="HLS 200-2161" tag="" content="Finished Command export_design Elapsed time: 00:00:10; Allocated memory: 3.867 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-2161]" key="HLS 200-2161" tag="" content="Finished Command export_design Elapsed time: 00:00:12; Allocated memory: 4.273 MB." resolution=""/>
 </Messages>

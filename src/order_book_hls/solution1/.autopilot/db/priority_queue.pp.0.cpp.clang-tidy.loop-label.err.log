@@ -1,5 +1,5 @@
-4 warnings and 4 errors generated.
-Error while processing C:\Users\ruuud\spring2025\cse145\WORKINGPROJECTIDEA\ECE1373_2016_hft_on_fpga\src\order_book_hls\solution1\.autopilot\db\priority_queue.pp.0.cpp.
+12 warnings and 12 errors generated.
+Error while processing C:\HFT_PYNQZ1-Z2\src\order_book_hls\solution1\.autopilot\db\priority_queue.pp.0.cpp.
 clang-tidy applied 6 of 6 suggested fixes.
-Suppressed 111 warnings (107 in non-user code, 4 with check filters).
+Suppressed 119 warnings (107 in non-user code, 12 with check filters).
 Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.

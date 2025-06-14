@@ -20,7 +20,7 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_protocol.cpp:392:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="txPath" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=encoded_message complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/build_fast_core.tcl:16:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/build_fast_core_fixed.tcl:16:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="fast_protocol" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=fast_protocol" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fast_src/fast_protocol.cpp:517:9" msg_body="HLS pragma dump">

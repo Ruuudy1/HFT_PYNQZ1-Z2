@@ -8,20 +8,19 @@
 #include <hls_stream.h>
 #include "ap_int.h"
 
-// REDUCED CAPACITY: from 4096 to 128
-#define CAPACITY 128
-// REDUCED LEVELS to match new capacity: log2(128) = 7
-#define LEVELS   7
+// FURTHER REDUCED CAPACITY: from 32 to 16 for PYNQ-Z1 BRAM constraints
+#define CAPACITY 16
+// REDUCED LEVELS to match new capacity: log2(16) = 4
+#define LEVELS   4
 
-// log2 LUT - REDUCED SIZE to match new CAPACITY
-static ap_uint<4> log_rom[CAPACITY] = {0, 0, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 
-                                      4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 
-                                      5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
-                                      5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
-                                      6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6,
-                                      6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6,
-                                      6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6,
-                                      6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6};
+// log2 LUT - REDUCED SIZE to match new CAPACITY (16 elements)
+static ap_uint<4> log_rom[CAPACITY] = {
+    0,                                                              // index 0
+    0,                                                              // index 1
+    1, 1,                                                           // indices 2-3
+    2, 2, 2, 2,                                                     // indices 4-7
+    3, 3, 3, 3, 3, 3, 3, 3                                         // indices 8-15
+};
 
 using namespace hls;
 

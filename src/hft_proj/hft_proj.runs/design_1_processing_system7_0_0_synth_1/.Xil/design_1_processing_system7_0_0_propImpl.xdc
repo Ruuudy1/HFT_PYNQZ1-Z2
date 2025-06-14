@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:c:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc rfile:../../../hft_proj.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:inst} [current_design]
+set_property SRC_FILE_INFO {cfile:c:/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc rfile:../../../hft_proj.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:inst} [current_design]
 current_instance inst
 set_property src_info {type:SCOPED_XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
 set_input_jitter clk_fpga_0 0.3
@@ -256,9 +256,3 @@ set_property src_info {type:SCOPED_XDC file:1 line:707 export:INPUT save:INPUT r
 set_property PACKAGE_PIN "F5" [get_ports "DDR_Addr[10]"]
 set_property src_info {type:SCOPED_XDC file:1 line:711 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN "N2" [get_ports "DDR_Addr[0]"]
-set_property src_info {type:SCOPED_XDC file:1 line:715 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN "C7" [get_ports "PS_PORB"]
-set_property src_info {type:SCOPED_XDC file:1 line:718 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN "B10" [get_ports "PS_SRSTB"]
-set_property src_info {type:SCOPED_XDC file:1 line:721 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN "E7" [get_ports "PS_CLK"]

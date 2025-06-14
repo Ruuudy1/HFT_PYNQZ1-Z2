@@ -1,10 +1,10 @@
 {
   "0": {
     "basicblocks": 75,
-    "calls": "8 1 1 1 1 1 1 8 2 4 4 4 4 4 4 2",
+    "calls": "7 8 8 8 8 8 8 7 1 6 6 6 6 6 6 1",
     "file": "priority_queue.cpp",
     "fileloc": 274,
-    "instructions": 387,
+    "instructions": 395,
     "loads": {
       "G": 32,
       "L": 12
@@ -15,40 +15,46 @@
       "L": 36,
       "T": 2
     },
-    "total_instructions": 6143
+    "total_instructions": 6151
   },
   "1": {
-    "basicblocks": 13,
-    "calls": "12 7 12 7",
+    "basicblocks": 23,
+    "calls": "10 2 9",
     "file": "priority_queue.cpp",
-    "fileloc": 109,
-    "instructions": 128,
+    "fileloc": 158,
+    "instructions": 159,
     "loads": {
-      "L": 10
+      "L": 13
     },
-    "name": "remove_bid",
+    "name": "add_ask",
     "stores": {
-      "L": 10
+      "L": 9
     },
-    "total_instructions": 247
+    "total_instructions": 404
   },
   "10": {
     "basicblocks": 1,
-    "calls": "11",
-    "file": "priority_queue.pp.0.cpp",
-    "fileloc": 0,
-    "instructions": 2,
-    "name": "",
-    "total_instructions": 2307
+    "calls": "",
+    "file": "priority_queue.cpp",
+    "fileloc": 4,
+    "instructions": 6,
+    "name": "log_base_2",
+    "total_instructions": 11
   },
   "11": {
     "basicblocks": 1,
     "calls": "",
-    "file": "priority_queue.hpp",
-    "fileloc": 17,
-    "instructions": 129,
-    "name": "__cxx_global_var_init.1",
-    "total_instructions": 2305
+    "file": "priority_queue.cpp",
+    "fileloc": 37,
+    "instructions": 10,
+    "loads": {
+      "L": 1
+    },
+    "name": "right_child",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 10
   },
   "12": {
     "basicblocks": 1,
@@ -66,47 +72,8 @@
     "total_instructions": 9
   },
   "2": {
-    "basicblocks": 23,
-    "calls": "6 5 9",
-    "file": "priority_queue.cpp",
-    "fileloc": 158,
-    "instructions": 159,
-    "loads": {
-      "L": 13
-    },
-    "name": "add_ask",
-    "stores": {
-      "L": 9
-    },
-    "total_instructions": 404
-  },
-  "3": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "priority_queue.cpp",
-    "fileloc": 9,
-    "instructions": 2,
-    "name": "pow2",
-    "total_instructions": 2
-  },
-  "4": {
-    "basicblocks": 16,
-    "calls": "12 7 12 7",
-    "file": "priority_queue.cpp",
-    "fileloc": 223,
-    "instructions": 140,
-    "loads": {
-      "L": 10
-    },
-    "name": "remove_ask",
-    "stores": {
-      "L": 10
-    },
-    "total_instructions": 339
-  },
-  "5": {
     "basicblocks": 4,
-    "calls": "3",
+    "calls": "4",
     "file": "priority_queue.cpp",
     "fileloc": 14,
     "instructions": 16,
@@ -119,33 +86,51 @@
     },
     "total_instructions": 18
   },
-  "6": {
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "priority_queue.hpp",
+    "fileloc": 17,
+    "instructions": 17,
+    "name": "__cxx_global_var_init.1",
+    "total_instructions": 289
+  },
+  "4": {
     "basicblocks": 1,
     "calls": "",
     "file": "priority_queue.cpp",
-    "fileloc": 4,
-    "instructions": 6,
-    "name": "log_base_2",
-    "total_instructions": 11
+    "fileloc": 9,
+    "instructions": 2,
+    "name": "pow2",
+    "total_instructions": 2
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "3",
+    "file": "priority_queue.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 2,
+    "name": "",
+    "total_instructions": 291
+  },
+  "6": {
+    "basicblocks": 16,
+    "calls": "12 11 12 11",
+    "file": "priority_queue.cpp",
+    "fileloc": 223,
+    "instructions": 140,
+    "loads": {
+      "L": 10
+    },
+    "name": "remove_ask",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 339
   },
   "7": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "priority_queue.cpp",
-    "fileloc": 37,
-    "instructions": 10,
-    "loads": {
-      "L": 1
-    },
-    "name": "right_child",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 10
-  },
-  "8": {
     "basicblocks": 21,
-    "calls": "6 5 9",
+    "calls": "10 2 9",
     "file": "priority_queue.cpp",
     "fileloc": 44,
     "instructions": 145,
@@ -157,6 +142,21 @@
       "L": 9
     },
     "total_instructions": 338
+  },
+  "8": {
+    "basicblocks": 13,
+    "calls": "12 11 12 11",
+    "file": "priority_queue.cpp",
+    "fileloc": 109,
+    "instructions": 128,
+    "loads": {
+      "L": 10
+    },
+    "name": "remove_bid",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 247
   },
   "9": {
     "basicblocks": 4,

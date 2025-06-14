@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'txPath'
 ================================================================
-* Date:           Sun Jun  8 10:11:30 2025
+* Date:           Mon Jun  9 20:33:58 2025
 
 * Version:        2024.2 (Build 5238294 on Nov  8 2024)
 * Project:        fast_hls
@@ -324,7 +324,7 @@ The critical path consists of the following:
 	'icmp' operation 1 bit ('icmp_ln417_5', fast_src/fast_protocol.cpp:417) [144]  (1.735 ns)
 	'and' operation 1 bit ('and_ln417_5', fast_src/fast_protocol.cpp:417) [145]  (0.978 ns)
 	'sparsemux' operation 4 bit ('message_offset', fast_src/fast_protocol.cpp:399) [163]  (1.946 ns)
-	'icmp' operation 1 bit ('icmp_ln425_1', fast_src/fast_protocol.cpp:425) [181]  (1.735 ns)
+	'icmp' operation 1 bit ('icmp_ln425_2', fast_src/fast_protocol.cpp:425) [182]  (1.735 ns)
 	'or' operation 1 bit ('or_ln425', fast_src/fast_protocol.cpp:425) [185]  (0.000 ns)
 	'or' operation 1 bit ('or_ln425_3', fast_src/fast_protocol.cpp:425) [188]  (0.978 ns)
 	'select' operation 8 bit ('empty_30', fast_src/fast_protocol.cpp:425) [189]  (1.248 ns)

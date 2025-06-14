@@ -6,8 +6,8 @@
 # 
 # ==============================================================
 source -notrace "C:/Xilinx/Vitis/2024.2/common/scripts/ipxhls.tcl"
-set ip_dir "C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/order_book_hls/solution1/impl/ip"
-set data_file "C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/order_book_hls/solution1/solution1_data.json"
+set ip_dir "C:/HFT_PYNQZ1-Z2/src/order_book_hls/solution1/impl/ip"
+set data_file "C:/HFT_PYNQZ1-Z2/src/order_book_hls/solution1/solution1_data.json"
 set ip_types "vitis sysgen"
 if { [catch {::ipx::utils::package_hls_ip $ip_dir $data_file $ip_types } res] } {
   puts "Caught error:\n$::errorInfo"

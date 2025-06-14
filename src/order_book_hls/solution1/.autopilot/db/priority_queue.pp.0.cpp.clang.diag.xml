@@ -1,6 +1,6 @@
 <dict>
   <key>main-file</key>
-  <string>C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/order_book_hls/solution1/.autopilot/db/priority_queue.pp.0.cpp</string>
+  <string>C:/HFT_PYNQZ1-Z2/src/order_book_hls/solution1/.autopilot/db/priority_queue.pp.0.cpp</string>
   <key>diagnostics</key>
   <array>
     <dict>
@@ -359,9 +359,9 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/build_order_book_core.tcl</string>
+      <string>C:/HFT_PYNQZ1-Z2/src/build_order_book_core.tcl</string>
       <key>line</key>
-      <integer>9</integer>
+      <integer>10</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -873,7 +873,263 @@
       <key>filename</key>
       <string>order_book_src/priority_queue.cpp</string>
       <key>line</key>
-      <integer>384</integer>
+      <integer>336</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>&apos;Resource pragma&apos; is deprecated, use &apos;bind_op/bind_storage pragma&apos; instead</string>
+      <key>ID</key>
+      <integer>5538</integer>
+      <key>WarningOption</key>
+      <string>ignored-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>order_book_src/priority_queue.cpp</string>
+      <key>line</key>
+      <integer>336</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=variable=hole_idx_bid core=RAM_2P_LUTRAM_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>order_book_src/priority_queue.cpp</string>
+      <key>line</key>
+      <integer>338</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>&apos;Resource pragma&apos; is deprecated, use &apos;bind_op/bind_storage pragma&apos; instead</string>
+      <key>ID</key>
+      <integer>5538</integer>
+      <key>WarningOption</key>
+      <string>ignored-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>order_book_src/priority_queue.cpp</string>
+      <key>line</key>
+      <integer>338</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=variable=hole_lvl_bid core=RAM_2P_LUTRAM_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>order_book_src/priority_queue.cpp</string>
+      <key>line</key>
+      <integer>343</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>&apos;Resource pragma&apos; is deprecated, use &apos;bind_op/bind_storage pragma&apos; instead</string>
+      <key>ID</key>
+      <integer>5538</integer>
+      <key>WarningOption</key>
+      <string>ignored-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>order_book_src/priority_queue.cpp</string>
+      <key>line</key>
+      <integer>343</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=variable=hole_idx_ask core=RAM_2P_LUTRAM_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>order_book_src/priority_queue.cpp</string>
+      <key>line</key>
+      <integer>345</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>&apos;Resource pragma&apos; is deprecated, use &apos;bind_op/bind_storage pragma&apos; instead</string>
+      <key>ID</key>
+      <integer>5538</integer>
+      <key>WarningOption</key>
+      <string>ignored-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>order_book_src/priority_queue.cpp</string>
+      <key>line</key>
+      <integer>345</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=variable=hole_lvl_ask core=RAM_2P_LUTRAM_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>order_book_src/priority_queue.cpp</string>
+      <key>line</key>
+      <integer>350</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>&apos;Resource pragma&apos; is deprecated, use &apos;bind_op/bind_storage pragma&apos; instead</string>
+      <key>ID</key>
+      <integer>5538</integer>
+      <key>WarningOption</key>
+      <string>ignored-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>order_book_src/priority_queue.cpp</string>
+      <key>line</key>
+      <integer>350</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=variable=hole_idx_bid_remove core=RAM_2P_LUTRAM_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>order_book_src/priority_queue.cpp</string>
+      <key>line</key>
+      <integer>352</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>&apos;Resource pragma&apos; is deprecated, use &apos;bind_op/bind_storage pragma&apos; instead</string>
+      <key>ID</key>
+      <integer>5538</integer>
+      <key>WarningOption</key>
+      <string>ignored-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>order_book_src/priority_queue.cpp</string>
+      <key>line</key>
+      <integer>352</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=variable=hole_lvl_bid_remove core=RAM_2P_LUTRAM_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>order_book_src/priority_queue.cpp</string>
+      <key>line</key>
+      <integer>357</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>&apos;Resource pragma&apos; is deprecated, use &apos;bind_op/bind_storage pragma&apos; instead</string>
+      <key>ID</key>
+      <integer>5538</integer>
+      <key>WarningOption</key>
+      <string>ignored-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>order_book_src/priority_queue.cpp</string>
+      <key>line</key>
+      <integer>357</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=variable=hole_idx_ask_remove core=RAM_2P_LUTRAM_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>order_book_src/priority_queue.cpp</string>
+      <key>line</key>
+      <integer>359</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>&apos;Resource pragma&apos; is deprecated, use &apos;bind_op/bind_storage pragma&apos; instead</string>
+      <key>ID</key>
+      <integer>5538</integer>
+      <key>WarningOption</key>
+      <string>ignored-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>order_book_src/priority_queue.cpp</string>
+      <key>line</key>
+      <integer>359</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=variable=hole_lvl_ask_remove core=RAM_2P_LUTRAM_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>order_book_src/priority_queue.cpp</string>
+      <key>line</key>
+      <integer>392</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -889,7 +1145,7 @@
       <key>filename</key>
       <string>order_book_src/priority_queue.cpp</string>
       <key>line</key>
-      <integer>388</integer>
+      <integer>396</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -905,7 +1161,7 @@
       <key>filename</key>
       <string>order_book_src/priority_queue.cpp</string>
       <key>line</key>
-      <integer>400</integer>
+      <integer>408</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -921,7 +1177,7 @@
       <key>filename</key>
       <string>order_book_src/priority_queue.cpp</string>
       <key>line</key>
-      <integer>431</integer>
+      <integer>439</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -937,7 +1193,7 @@
       <key>filename</key>
       <string>order_book_src/priority_queue.cpp</string>
       <key>line</key>
-      <integer>435</integer>
+      <integer>443</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -953,7 +1209,7 @@
       <key>filename</key>
       <string>order_book_src/priority_queue.cpp</string>
       <key>line</key>
-      <integer>447</integer>
+      <integer>455</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>

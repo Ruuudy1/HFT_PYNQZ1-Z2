@@ -114,6 +114,6 @@
   <modelParameters>
     <combinational>0</combinational>
     <latency>1</latency>
-    <II>2 ~ 65</II>
+    <II>2 ~ 39</II>
   </modelParameters>
 </AdditionalInfo>

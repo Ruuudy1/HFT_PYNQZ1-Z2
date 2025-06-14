@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'rxPath'
 ================================================================
-* Date:           Sun Jun  8 10:11:29 2025
+* Date:           Mon Jun  9 20:33:57 2025
 
 * Version:        2024.2 (Build 5238294 on Nov  8 2024)
 * Project:        fast_hls
@@ -422,13 +422,13 @@ The critical path consists of the following:
 
  <State 2>: 7.271ns
 The critical path consists of the following:
-	'select' operation 3 bit ('select_ln295', fast_src/fast_protocol.cpp:295) [87]  (0.000 ns)
-	'add' operation 3 bit ('message_offset', fast_src/fast_protocol.cpp:295) [88]  (1.650 ns)
-	'sparsemux' operation 8 bit ('orderID_buff', fast_src/fast_protocol.cpp:312) [93]  (1.827 ns)
-	'or' operation 8 bit ('or_ln312', fast_src/fast_protocol.cpp:312) [123]  (0.000 ns)
-	'xor' operation 1 bit ('xor_ln312_2', fast_src/fast_protocol.cpp:312) [125]  (0.990 ns)
-	'and' operation 1 bit ('and_ln312_1', fast_src/fast_protocol.cpp:312) [126]  (0.978 ns)
-	'sparsemux' operation 25 bit ('orderID_buff179_s', fast_src/fast_protocol.cpp:250) [131]  (1.827 ns)
+	'select' operation 3 bit ('select_ln177', fast_src/fast_protocol.cpp:177) [214]  (0.000 ns)
+	'add' operation 3 bit ('message_offset', fast_src/fast_protocol.cpp:177) [215]  (1.650 ns)
+	'sparsemux' operation 8 bit ('orderID_buff', fast_src/fast_protocol.cpp:194) [220]  (1.827 ns)
+	'or' operation 8 bit ('or_ln194', fast_src/fast_protocol.cpp:194) [250]  (0.000 ns)
+	'xor' operation 1 bit ('xor_ln194_2', fast_src/fast_protocol.cpp:194) [252]  (0.990 ns)
+	'and' operation 1 bit ('and_ln194_3', fast_src/fast_protocol.cpp:194) [256]  (0.978 ns)
+	'sparsemux' operation 25 bit ('orderID_buff_s', fast_src/fast_protocol.cpp:127) [258]  (1.827 ns)
 
  <State 3>: 5.476ns
 The critical path consists of the following:
@@ -446,12 +446,12 @@ The critical path consists of the following:
 
  <State 5>: 2.322ns
 The critical path consists of the following:
-	'load' operation 9 bit ('POW10_load', fast_src/fast_protocol.cpp:166) on array 'POW10' [206]  (2.322 ns)
+	'load' operation 9 bit ('POW10_load_1', fast_src/fast_protocol.cpp:285) on array 'POW10' [79]  (2.322 ns)
 
  <State 6>: 7.168ns
 The critical path consists of the following:
-	'mul' operation 16 bit ('price_buff', fast_src/fast_protocol.cpp:166) [208]  (5.580 ns)
-	'store' operation 0 bit ('store_ln212', fast_src/fast_protocol.cpp:212) of variable 'price_buff', fast_src/fast_protocol.cpp:166 on static variable 'temp_order_price' [263]  (1.588 ns)
+	'mul' operation 16 bit ('price_buff', fast_src/fast_protocol.cpp:285) [81]  (5.580 ns)
+	'store' operation 0 bit ('store_ln330', fast_src/fast_protocol.cpp:330) of variable 'price_buff', fast_src/fast_protocol.cpp:285 on static variable 'temp_order_price' [136]  (1.588 ns)
 
 
 ============================================================

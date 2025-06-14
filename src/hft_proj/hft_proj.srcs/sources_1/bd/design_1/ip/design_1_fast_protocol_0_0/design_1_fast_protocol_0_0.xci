@@ -4,7 +4,7 @@
     "xci_name": "design_1_fast_protocol_0_0",
     "cell_name": "fast_protocol_0",
     "component_reference": "xilinx.com:hls:fast_protocol:1.0",
-    "ip_revision": "2114118671",
+    "ip_revision": "2114120734",
     "gen_directory": "../../../../../../hft_proj.gen/sources_1/bd/design_1/ip/design_1_fast_protocol_0_0",
     "parameters": {
       "component_parameters": {
@@ -21,7 +21,7 @@
         "BOARD_CONNECTIONS": [ { "value": "" } ],
         "DEVICE": [ { "value": "xc7z020" } ],
         "PACKAGE": [ { "value": "clg400" } ],
-        "PREFHDL": [ { "value": "VERILOG" } ],
+        "PREFHDL": [ { "value": "VHDL" } ],
         "SILICON_REVISION": [ { "value": "" } ],
         "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
         "SPEEDGRADE": [ { "value": "-1" } ],
@@ -30,7 +30,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "2114118671" } ],
+        "IPREVISION": [ { "value": "2114120734" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../hft_proj.gen/sources_1/bd/design_1/ip/design_1_fast_protocol_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

@@ -194,9 +194,9 @@
                 "HA": "0x1FFFFFFF",
                 "BP": "C_BASEADDR",
                 "HP": "C_HIGHADDR",
-                "MA": "Data_S2MM",
-                "MX": "/axi_dma_meta",
-                "MI": "M_AXI_S2MM",
+                "MA": "Data_MM2S",
+                "MX": "/axi_dma_order",
+                "MI": "M_AXI_MM2S",
                 "MS": "SEG_processing_system7_0_HP0_DDR_LOWOCM",
                 "MV": "xilinx.com:ip:axi_dma:7.1",
                 "SX": "/processing_system7_0",
@@ -226,44 +226,8 @@
             },
             "V5": {
                 "VT": "AC",
-                "BA": "0x00000000",
-                "HA": "0x1FFFFFFF",
-                "BP": "C_BASEADDR",
-                "HP": "C_HIGHADDR",
-                "MA": "Data_S2MM",
-                "MX": "/axi_dma_time",
-                "MI": "M_AXI_S2MM",
-                "MS": "SEG_processing_system7_0_HP0_DDR_LOWOCM",
-                "MV": "xilinx.com:ip:axi_dma:7.1",
-                "SX": "/processing_system7_0",
-                "SI": "S_AXI_HP0",
-                "SS": "HP0_DDR_LOWOCM",
-                "SV": "xilinx.com:ip:processing_system7:5.5",
-                "TM": "both",
-                "TU": "memory"
-            },
-            "V6": {
-                "VT": "AC",
                 "BA": "0x40000000",
                 "HA": "0x4000FFFF",
-                "BP": "C_S_AXI_CONTROL_BASEADDR",
-                "HP": "C_S_AXI_CONTROL_HIGHADDR",
-                "MA": "Data",
-                "MX": "/processing_system7_0",
-                "MI": "M_AXI_GP0",
-                "MS": "SEG_MicroblazeToSwitch_0_Reg",
-                "MV": "xilinx.com:ip:processing_system7:5.5",
-                "SX": "/MicroblazeToSwitch_0",
-                "SI": "s_axi_control",
-                "SS": "Reg",
-                "SV": "xilinx.com:hls:MicroblazeToSwitch:1.0",
-                "TM": "both",
-                "TU": "register"
-            },
-            "V7": {
-                "VT": "AC",
-                "BA": "0x40010000",
-                "HA": "0x4001FFFF",
                 "BP": "C_S_AXI_CONTROL_BASEADDR",
                 "HP": "C_S_AXI_CONTROL_HIGHADDR",
                 "MA": "Data",
@@ -278,7 +242,7 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V8": {
+            "V6": {
                 "VT": "AC",
                 "BA": "0x41E00000",
                 "HA": "0x41E0FFFF",
@@ -287,45 +251,9 @@
                 "MA": "Data",
                 "MX": "/processing_system7_0",
                 "MI": "M_AXI_GP0",
-                "MS": "SEG_axi_dma_meta_Reg",
-                "MV": "xilinx.com:ip:processing_system7:5.5",
-                "SX": "/axi_dma_meta",
-                "SI": "S_AXI_LITE",
-                "SS": "Reg",
-                "SV": "xilinx.com:ip:axi_dma:7.1",
-                "TM": "both",
-                "TU": "register"
-            },
-            "V9": {
-                "VT": "AC",
-                "BA": "0x41E10000",
-                "HA": "0x41E1FFFF",
-                "BP": "C_BASEADDR",
-                "HP": "C_HIGHADDR",
-                "MA": "Data",
-                "MX": "/processing_system7_0",
-                "MI": "M_AXI_GP0",
                 "MS": "SEG_axi_dma_order_Reg",
                 "MV": "xilinx.com:ip:processing_system7:5.5",
                 "SX": "/axi_dma_order",
-                "SI": "S_AXI_LITE",
-                "SS": "Reg",
-                "SV": "xilinx.com:ip:axi_dma:7.1",
-                "TM": "both",
-                "TU": "register"
-            },
-            "V10": {
-                "VT": "AC",
-                "BA": "0x41E20000",
-                "HA": "0x41E2FFFF",
-                "BP": "C_BASEADDR",
-                "HP": "C_HIGHADDR",
-                "MA": "Data",
-                "MX": "/processing_system7_0",
-                "MI": "M_AXI_GP0",
-                "MS": "SEG_axi_dma_time_Reg",
-                "MV": "xilinx.com:ip:processing_system7:5.5",
-                "SX": "/axi_dma_time",
                 "SI": "S_AXI_LITE",
                 "SS": "Reg",
                 "SV": "xilinx.com:ip:axi_dma:7.1",
@@ -359,26 +287,6 @@
             },
             {
                 "src": "V6",
-                "trg": "V2",
-                "EH": "2"
-            },
-            {
-                "src": "V7",
-                "trg": "V2",
-                "EH": "2"
-            },
-            {
-                "src": "V8",
-                "trg": "V2",
-                "EH": "2"
-            },
-            {
-                "src": "V9",
-                "trg": "V2",
-                "EH": "2"
-            },
-            {
-                "src": "V10",
                 "trg": "V2",
                 "EH": "2"
             }

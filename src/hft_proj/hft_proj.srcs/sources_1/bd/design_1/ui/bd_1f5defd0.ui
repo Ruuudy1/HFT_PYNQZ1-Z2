@@ -1,0 +1,78 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.44194",
+   "Default View_TopLeft":"-118,-265",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 11 -x 3230 -y 590 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 11 -x 3230 -y 620 -defaultsOSRD
+preplace port port-id_user_sw_l -pg 1 -lvl 0 -x -10 -y 740 -defaultsOSRD
+preplace port port-id_ps7_clk_out -pg 1 -lvl 11 -x 3230 -y 680 -defaultsOSRD
+preplace port port-id_ps7_rst_out -pg 1 -lvl 11 -x 3230 -y 710 -defaultsOSRD
+preplace port port-id_platform_clk -pg 1 -lvl 11 -x 3230 -y 650 -defaultsOSRD
+preplace port port-id_platform_rst -pg 1 -lvl 11 -x 3230 -y 740 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 9 -x 2700 -y 660 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 8 -x 2290 -y 860 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x 200 -y 630 -defaultsOSRD
+preplace inst axi_hp0_interconnect -pg 1 -lvl 8 -x 2290 -y 20 -defaultsOSRD
+preplace inst mm2s_converter -pg 1 -lvl 8 -x 2290 -y 470 -defaultsOSRD
+preplace inst loopback_fifo -pg 1 -lvl 5 -x 1520 -y 740 -defaultsOSRD
+preplace inst axi_dma_order -pg 1 -lvl 7 -x 1920 -y 420 -defaultsOSRD
+preplace inst fast_protocol_0 -pg 1 -lvl 3 -x 850 -y 900 -defaultsOSRD
+preplace inst rx_width_converter -pg 1 -lvl 2 -x 490 -y 760 -defaultsOSRD
+preplace inst tx_width_converter -pg 1 -lvl 9 -x 2700 -y 1110 -defaultsOSRD
+preplace inst order_width_converter -pg 1 -lvl 4 -x 1220 -y 760 -defaultsOSRD
+preplace inst time_converter -pg 1 -lvl 4 -x 1220 -y 1070 -defaultsOSRD
+preplace inst time_fifo -pg 1 -lvl 5 -x 1520 -y 1090 -defaultsOSRD
+preplace inst metadata_converter -pg 1 -lvl 4 -x 1220 -y 930 -defaultsOSRD
+preplace inst metadata_fifo -pg 1 -lvl 5 -x 1520 -y 910 -defaultsOSRD
+preplace inst valid_const -pg 1 -lvl 2 -x 490 -y 880 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 5 -x 1520 -y 400 -defaultsOSRD
+preplace inst order_book_0 -pg 1 -lvl 9 -x 2700 -y 250 -defaultsOSRD
+preplace inst simple_threshold_0 -pg 1 -lvl 9 -x 2700 -y -20 -defaultsOSRD
+preplace inst tlast_const_3bit -pg 1 -lvl 5 -x 1520 -y 620 -defaultsOSRD
+preplace inst tlast_const_1bit -pg 1 -lvl 1 -x 200 -y 40 -defaultsOSRD
+preplace inst tvalid_const -pg 1 -lvl 8 -x 2290 -y 210 -defaultsOSRD
+preplace inst stream_combiner -pg 1 -lvl 9 -x 2700 -y 930 -defaultsOSRD
+preplace inst combiner_to_dma_converter -pg 1 -lvl 10 -x 3080 -y 690 -defaultsOSRD
+preplace netloc clk_wiz_0_clk_out1 1 0 10 20 730 390 680 590 690 1100 840 1360 260 N 260 1720 260 2140 -140 2470 770 2940J
+preplace netloc clk_wiz_0_locked 1 0 9 30 530 NJ 530 NJ 530 NJ 530 1320J 560 NJ 560 NJ 560 2100J 580 2430
+preplace netloc proc_sys_reset_0_interconnect_aresetn 1 1 7 370J 30 NJ 30 NJ 30 NJ 30 NJ 30 NJ 30 2120
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 9 380 670 600 680 1110 850 1350 250 N 250 1730 250 2150 -130 2450 780 2970
+preplace netloc proc_sys_reset_0_peripheral_reset 1 1 1 NJ 630
+preplace netloc processing_system7_0_FCLK_CLK0 1 7 4 2150 790 NJ 790 2920 600 3210
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 11 10 520 NJ 520 NJ 520 NJ 520 1370J 540 NJ 540 NJ 540 2140J 560 2490J 540 2950 770 3210
+preplace netloc tlast_const_1bit_dout 1 1 6 NJ 40 NJ 40 NJ 40 NJ 40 NJ 40 1710
+preplace netloc tlast_const_3bit_dout 1 5 1 N 620
+preplace netloc tvalid_const_dout 1 8 1 2490 -90n
+preplace netloc user_sw_l_1 1 0 1 NJ 740
+preplace netloc valid_const_dout 1 2 1 610 770n
+preplace netloc axi_dma_order_M_AXIS_MM2S 1 7 1 2100 400n
+preplace netloc axi_dma_order_M_AXI_MM2S 1 7 1 2110 -50n
+preplace netloc axi_dma_order_M_AXI_S2MM 1 7 1 2100 -70n
+preplace netloc axi_hp0_interconnect_M00_AXI 1 8 1 2460 20n
+preplace netloc axi_interconnect_0_M00_AXI 1 5 2 1670J 360 NJ
+preplace netloc fast_protocol_0_metadata_to_book 1 3 1 1090 910n
+preplace netloc fast_protocol_0_order_to_book 1 3 1 1120 740n
+preplace netloc fast_protocol_0_time_to_book 1 3 1 1090 950n
+preplace netloc loopback_fifo_M_AXIS1 1 5 4 NJ 740 NJ 740 NJ 740 2440
+preplace netloc metadata_converter_M_AXIS 1 4 1 1320 890n
+preplace netloc metadata_fifo_M_AXIS 1 5 4 NJ 910 NJ 910 2100J 930 N
+preplace netloc order_width_converter_M_AXIS 1 4 1 1320 720n
+preplace netloc processing_system7_0_DDR 1 9 2 2930J 590 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 9 2 2940J 610 3200J
+preplace netloc processing_system7_0_M_AXI_GP0 1 4 6 1380 550 NJ 550 NJ 550 NJ 550 NJ 550 2910
+preplace netloc rx_width_converter_M_AXIS 1 2 1 610 750n
+preplace netloc stream_combiner_M_AXIS 1 9 1 2960 670n
+preplace netloc stream_switch_M00_AXIS 1 6 5 1740 570 NJ 570 2480J 530 NJ 530 3190
+preplace netloc time_converter_M_AXIS 1 4 1 N 1070
+preplace netloc time_fifo_M_AXIS 1 5 4 1670 940 NJ 940 NJ 940 2490J
+preplace netloc axi_interconnect_0_M01_AXI 1 5 4 1660 -150 NJ -150 NJ -150 2480J
+levelinfo -pg 1 -10 200 490 850 1220 1520 1690 1920 2290 2700 3080 3230
+pagesize -pg 1 -db -bbox -sgen -120 -170 3360 1210
+"
+}
+{
+   "da_axi4_cnt":"1"
+}

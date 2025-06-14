@@ -1,0 +1,24 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2024.2/data/xilinx_vip/include" --include "../../../../hft_proj.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../hft_proj.gen/sources_1/bd/design_1/ipshared/86fe/hdl" --include "../../../../hft_proj.gen/sources_1/bd/design_1/ipshared/3cbc" --include "../../../../hft_proj.gen/sources_1/bd/design_1/ipshared/434f/hdl" --include "../../../../hft_proj.gen/sources_1/bd/design_1/ip/design_1_order_book_0_0/drivers/order_book_v1_0/src" \
+"../../../bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v" \
+"../../../bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" \
+"../../../bd/design_1/ip/design_1_axi_hp0_interconnect_imp_xbar_0/sim/design_1_axi_hp0_interconnect_imp_xbar_0.v" \
+"../../../bd/design_1/ip/design_1_mm2s_converter_0/sim/design_1_mm2s_converter_0.v" \
+"../../../bd/design_1/ip/design_1_loopback_fifo_0/sim/design_1_loopback_fifo_0.v" \
+"../../../bd/design_1/ip/design_1_rx_width_converter_0/sim/design_1_rx_width_converter_0.v" \
+"../../../bd/design_1/ip/design_1_tx_width_converter_0/sim/design_1_tx_width_converter_0.v" \
+"../../../bd/design_1/ip/design_1_order_width_converter_0/sim/design_1_order_width_converter_0.v" \
+"../../../bd/design_1/ip/design_1_time_converter_0/sim/design_1_time_converter_0.v" \
+"../../../bd/design_1/ip/design_1_time_fifo_0/sim/design_1_time_fifo_0.v" \
+"../../../bd/design_1/ip/design_1_metadata_converter_0/sim/design_1_metadata_converter_0.v" \
+"../../../bd/design_1/ip/design_1_metadata_fifo_0/sim/design_1_metadata_fifo_0.v" \
+"../../../bd/design_1/ip/design_1_axi_interconnect_0_imp_xbar_14/sim/design_1_axi_interconnect_0_imp_xbar_14.v" \
+"../../../bd/design_1/ip/design_1_stream_combiner_0/sim/design_1_stream_combiner_0.v" \
+"../../../bd/design_1/ip/design_1_combiner_to_dma_converter_0/sim/design_1_combiner_to_dma_converter_0.v" \
+"../../../bd/design_1/ip/design_1_axi_hp0_interconnect_imp_auto_pc_0/sim/design_1_axi_hp0_interconnect_imp_auto_pc_0.v" \
+"../../../bd/design_1/ip/design_1_axi_interconnect_0_imp_auto_pc_0/sim/design_1_axi_interconnect_0_imp_auto_pc_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

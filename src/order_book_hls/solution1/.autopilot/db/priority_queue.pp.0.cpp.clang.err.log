@@ -64,7 +64,7 @@ order_book_src/priority_queue.cpp:250:9: warning: HLS pragma dump _XLX_SEP_ Prag
 order_book_src/priority_queue.cpp:251:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=remove_ask_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS PIPELINE II=1
         ^
-C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/build_order_book_core.tcl:9:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=name=order_book_XLX_SEP_ [-Wdump-hls-pragmas]
+C:/HFT_PYNQZ1-Z2/src/build_order_book_core.tcl:10:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=name=order_book_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLSDIRECTIVE TOP name=order_book
         ^
 order_book_src/priority_queue.cpp:287:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=s_axilite port=top_ask_id_XLX_SEP_ [-Wdump-hls-pragmas]
@@ -152,22 +152,54 @@ order_book_src/priority_queue.cpp:330:9: warning: 'Resource pragma' is deprecate
 #pragma HLS RESOURCE variable=ask_remove core=RAM_1P_BRAM
         ^
 order_book_src/priority_queue.cpp:330:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=variable=ask_remove core=RAM_1P_BRAM_XLX_SEP_ [-Wdump-hls-pragmas]
-order_book_src/priority_queue.cpp:384:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=min=1 max=1_XLX_SEP_ [-Wdump-hls-pragmas]
+order_book_src/priority_queue.cpp:336:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=hole_idx_bid core=RAM_2P_LUTRAM
+        ^
+order_book_src/priority_queue.cpp:336:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=variable=hole_idx_bid core=RAM_2P_LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+order_book_src/priority_queue.cpp:338:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=hole_lvl_bid core=RAM_2P_LUTRAM
+        ^
+order_book_src/priority_queue.cpp:338:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=variable=hole_lvl_bid core=RAM_2P_LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+order_book_src/priority_queue.cpp:343:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=hole_idx_ask core=RAM_2P_LUTRAM
+        ^
+order_book_src/priority_queue.cpp:343:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=variable=hole_idx_ask core=RAM_2P_LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+order_book_src/priority_queue.cpp:345:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=hole_lvl_ask core=RAM_2P_LUTRAM
+        ^
+order_book_src/priority_queue.cpp:345:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=variable=hole_lvl_ask core=RAM_2P_LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+order_book_src/priority_queue.cpp:350:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=hole_idx_bid_remove core=RAM_2P_LUTRAM
+        ^
+order_book_src/priority_queue.cpp:350:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=variable=hole_idx_bid_remove core=RAM_2P_LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+order_book_src/priority_queue.cpp:352:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=hole_lvl_bid_remove core=RAM_2P_LUTRAM
+        ^
+order_book_src/priority_queue.cpp:352:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=variable=hole_lvl_bid_remove core=RAM_2P_LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+order_book_src/priority_queue.cpp:357:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=hole_idx_ask_remove core=RAM_2P_LUTRAM
+        ^
+order_book_src/priority_queue.cpp:357:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=variable=hole_idx_ask_remove core=RAM_2P_LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+order_book_src/priority_queue.cpp:359:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=hole_lvl_ask_remove core=RAM_2P_LUTRAM
+        ^
+order_book_src/priority_queue.cpp:359:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=resource_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=variable=hole_lvl_ask_remove core=RAM_2P_LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+order_book_src/priority_queue.cpp:392:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=min=1 max=1_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS LOOP_TRIPCOUNT min=1 max=1
         ^
-order_book_src/priority_queue.cpp:388:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=min=0 max=1_XLX_SEP_ [-Wdump-hls-pragmas]
+order_book_src/priority_queue.cpp:396:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=min=0 max=1_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS LOOP_TRIPCOUNT min=0 max=1
         ^
-order_book_src/priority_queue.cpp:400:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=min=0 max=1_XLX_SEP_ [-Wdump-hls-pragmas]
+order_book_src/priority_queue.cpp:408:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=min=0 max=1_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS LOOP_TRIPCOUNT min=0 max=1
         ^
-order_book_src/priority_queue.cpp:431:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=min=1 max=1_XLX_SEP_ [-Wdump-hls-pragmas]
+order_book_src/priority_queue.cpp:439:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=min=1 max=1_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS LOOP_TRIPCOUNT min=1 max=1
         ^
-order_book_src/priority_queue.cpp:435:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=min=0 max=1_XLX_SEP_ [-Wdump-hls-pragmas]
+order_book_src/priority_queue.cpp:443:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=min=0 max=1_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS LOOP_TRIPCOUNT min=0 max=1
         ^
-order_book_src/priority_queue.cpp:447:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=min=0 max=1_XLX_SEP_ [-Wdump-hls-pragmas]
+order_book_src/priority_queue.cpp:455:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=order_book_XLX_SEP_ PragmaOptions=min=0 max=1_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS LOOP_TRIPCOUNT min=0 max=1
         ^
-60 warnings generated.
+76 warnings generated.

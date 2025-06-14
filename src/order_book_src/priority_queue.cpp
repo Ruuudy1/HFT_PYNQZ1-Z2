@@ -333,22 +333,30 @@ void order_book(hls::stream<order>    &order_stream,
     static unsigned counter_bid = 0;
     static int hole_counter_bid = 0;
     static int hole_idx_bid[CAPACITY];
+    #pragma HLS RESOURCE variable=hole_idx_bid core=RAM_2P_LUTRAM
     static int hole_lvl_bid[CAPACITY];
+    #pragma HLS RESOURCE variable=hole_lvl_bid core=RAM_2P_LUTRAM
 
     static unsigned counter_ask = 0;
     static int hole_counter_ask = 0;
     static int hole_idx_ask[CAPACITY];
+    #pragma HLS RESOURCE variable=hole_idx_ask core=RAM_2P_LUTRAM
     static int hole_lvl_ask[CAPACITY];
+    #pragma HLS RESOURCE variable=hole_lvl_ask core=RAM_2P_LUTRAM
 
     static unsigned counter_bid_remove = 0;
     static int hole_counter_bid_remove = 0;
     static int hole_idx_bid_remove[CAPACITY];
+    #pragma HLS RESOURCE variable=hole_idx_bid_remove core=RAM_2P_LUTRAM
     static int hole_lvl_bid_remove[CAPACITY];
+    #pragma HLS RESOURCE variable=hole_lvl_bid_remove core=RAM_2P_LUTRAM
 
     static unsigned counter_ask_remove = 0;
     static int hole_counter_ask_remove = 0;
     static int hole_idx_ask_remove[CAPACITY];
+    #pragma HLS RESOURCE variable=hole_idx_ask_remove core=RAM_2P_LUTRAM
     static int hole_lvl_ask_remove[CAPACITY];
+    #pragma HLS RESOURCE variable=hole_lvl_ask_remove core=RAM_2P_LUTRAM
 
     //— main FSM: read one order, update heaps, push out top levels
     if (!order_stream.empty() &&

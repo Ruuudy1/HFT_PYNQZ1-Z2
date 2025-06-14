@@ -2,58 +2,58 @@
     <item name="Total Instructions per Compilation Phase">
         <table>
             <keys size="4">Phase, Step, Instructions, Description</keys>
-            <column name="Compile/Link">,  6143, After all functions are compiled and linked into a single design</column>
+            <column name="Compile/Link">,  6151, After all functions are compiled and linked into a single design</column>
             <column name="">, , </column>
             <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
-            <column name="">(1) unroll,  5259, user unroll pragmas are applied</column>
-            <column name="">(2) simplification,  4307, simplification of applied user unroll pragmas</column>
-            <column name="">(3) inline,  4315, user inline pragmas are applied</column>
-            <column name="">(4) simplification,  4295, simplification of applied user inline pragmas</column>
+            <column name="">(1) unroll,  3215, user unroll pragmas are applied</column>
+            <column name="">(2) simplification,  2497, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline,  2523, user inline pragmas are applied</column>
+            <column name="">(4) simplification,  2503, simplification of applied user inline pragmas</column>
             <column name="">, , </column>
             <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
-            <column name="">(1) array partition, 50633, user array partition pragmas are applied</column>
-            <column name="">(2) simplification, 14913, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
-            <column name="">(3) aggregate/disaggregate , 14913, user struct aggregate/disaggregate pragmas are applied</column>
-            <column name="">(4) array reshape, 14889, apply array reshape pragmas</column>
-            <column name="">(5) access patterns, 14963, array access pattern optmizations</column>
+            <column name="">(1) array partition, 18331, user array partition pragmas are applied</column>
+            <column name="">(2) simplification,  7199, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate ,  7199, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape,  7175, apply array reshape pragmas</column>
+            <column name="">(5) access patterns,  7249, array access pattern optmizations</column>
             <column name="">, , </column>
             <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
-            <column name="">(1) loop simplification, 14963, loop and instruction simplification</column>
-            <column name="">(2) parallelization, 14895, loops are unrolled or pipelined to meet performance targets</column>
-            <column name="">(3) array partition, 14889, arrays are partitioned to meet performance targets</column>
-            <column name="">(4) simplification, 14889, simplification of design after performance transformations</column>
+            <column name="">(1) loop simplification,  7249, loop and instruction simplification</column>
+            <column name="">(2) parallelization,  7181, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition,  7175, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification,  7175, simplification of design after performance transformations</column>
             <column name="">, , </column>
             <column name="HW Transforms">, , After hardware transfomations</column>
-            <column name="">(1) lowering, 14901, initial conversion to HW specific instructions</column>
-            <column name="">(2) optimizations, 14981, high level synthesis optimizations</column>
+            <column name="">(1) lowering,  7187, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations,  7267, high level synthesis optimizations</column>
         </table>
     </item>
     <item name="Instructions per Function for each Compilation Phase">
         <hiertable>
             <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
             <rows>
-                <row id="0" col0="order_book" col1="priority_queue.cpp:274" col2="6143" col3="4295" col4="14963" col5="14889" col6="14981">
-                    <row id="10" col0="add_bid" col1="priority_queue.cpp:44" col2="676" col2_disp=" 676 (2 calls)" col3="" col4="" col5="" col6="">
-                        <row id="8" col0="log_base_2" col1="priority_queue.cpp:4" col2="22" col2_disp="  22 (2 calls)" col3="" col4="" col5="" col6=""/>
-                        <row id="7" col0="find_path" col1="priority_queue.cpp:14" col2="36" col2_disp="  36 (2 calls)" col3="" col4="" col5="" col6="">
-                            <row id="5" col0="pow2" col1="priority_queue.cpp:9" col2="4" col2_disp="   4 (2 calls)" col3="" col4="" col5="" col6=""/>
+                <row id="0" col0="order_book" col1="priority_queue.cpp:274" col2="6151" col3="2503" col4="7249" col5="7175" col6="7267">
+                    <row id="9" col0="add_bid" col1="priority_queue.cpp:44" col2="676" col2_disp=" 676 (2 calls)" col3="" col4="" col5="" col6="">
+                        <row id="2" col0="log_base_2" col1="priority_queue.cpp:4" col2="22" col2_disp="  22 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="5" col0="find_path" col1="priority_queue.cpp:14" col2="36" col2_disp="  36 (2 calls)" col3="" col4="" col5="" col6="">
+                            <row id="7" col0="pow2" col1="priority_queue.cpp:9" col2="4" col2_disp="   4 (2 calls)" col3="" col4="" col5="" col6=""/>
                         </row>
                         <row id="11" col0="calculate_index" col1="priority_queue.cpp:26" col2="22" col2_disp="  22 (2 calls)" col3="" col4="" col5="" col6=""/>
                     </row>
-                    <row id="1" col0="remove_bid" col1="priority_queue.cpp:109" col2="1482" col2_disp="1,482 (6 calls)" col3="" col4="" col5="" col6="">
-                        <row id="3" col0="left_child" col1="priority_queue.cpp:32" col2="108" col2_disp=" 108 (12 calls)" col3="" col4="" col5="" col6=""/>
-                        <row id="9" col0="right_child" col1="priority_queue.cpp:37" col2="120" col2_disp=" 120 (12 calls)" col3="" col4="" col5="" col6=""/>
+                    <row id="10" col0="remove_bid" col1="priority_queue.cpp:109" col2="1482" col2_disp="1,482 (6 calls)" col3="" col4="" col5="" col6="">
+                        <row id="4" col0="left_child" col1="priority_queue.cpp:32" col2="108" col2_disp=" 108 (12 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="3" col0="right_child" col1="priority_queue.cpp:37" col2="120" col2_disp=" 120 (12 calls)" col3="" col4="" col5="" col6=""/>
                     </row>
-                    <row id="4" col0="add_ask" col1="priority_queue.cpp:158" col2="808" col2_disp=" 808 (2 calls)" col3="" col4="" col5="" col6="">
-                        <row id="8" col0="log_base_2" col1="priority_queue.cpp:4" col2="22" col2_disp="  22 (2 calls)" col3="" col4="" col5="" col6=""/>
-                        <row id="7" col0="find_path" col1="priority_queue.cpp:14" col2="36" col2_disp="  36 (2 calls)" col3="" col4="" col5="" col6="">
-                            <row id="5" col0="pow2" col1="priority_queue.cpp:9" col2="4" col2_disp="   4 (2 calls)" col3="" col4="" col5="" col6=""/>
+                    <row id="1" col0="add_ask" col1="priority_queue.cpp:158" col2="808" col2_disp=" 808 (2 calls)" col3="" col4="" col5="" col6="">
+                        <row id="2" col0="log_base_2" col1="priority_queue.cpp:4" col2="22" col2_disp="  22 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="5" col0="find_path" col1="priority_queue.cpp:14" col2="36" col2_disp="  36 (2 calls)" col3="" col4="" col5="" col6="">
+                            <row id="7" col0="pow2" col1="priority_queue.cpp:9" col2="4" col2_disp="   4 (2 calls)" col3="" col4="" col5="" col6=""/>
                         </row>
                         <row id="11" col0="calculate_index" col1="priority_queue.cpp:26" col2="22" col2_disp="  22 (2 calls)" col3="" col4="" col5="" col6=""/>
                     </row>
-                    <row id="6" col0="remove_ask" col1="priority_queue.cpp:223" col2="2034" col2_disp="2,034 (6 calls)" col3="" col4="" col5="" col6="">
-                        <row id="3" col0="left_child" col1="priority_queue.cpp:32" col2="108" col2_disp=" 108 (12 calls)" col3="" col4="" col5="" col6=""/>
-                        <row id="9" col0="right_child" col1="priority_queue.cpp:37" col2="120" col2_disp=" 120 (12 calls)" col3="" col4="" col5="" col6=""/>
+                    <row id="8" col0="remove_ask" col1="priority_queue.cpp:223" col2="2034" col2_disp="2,034 (6 calls)" col3="" col4="" col5="" col6="">
+                        <row id="4" col0="left_child" col1="priority_queue.cpp:32" col2="108" col2_disp=" 108 (12 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="3" col0="right_child" col1="priority_queue.cpp:37" col2="120" col2_disp=" 120 (12 calls)" col3="" col4="" col5="" col6=""/>
                     </row>
                 </row>
             </rows>

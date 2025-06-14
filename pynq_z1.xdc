@@ -1,26 +1,42 @@
-# PYNQ-Z1 constraints file
+## PYNQ-Z1 Top-Level Constraints (fixed)
 
-# Clock signal
-# set_property -dict {PACKAGE_PIN H16 IOSTANDARD LVCMOS33} [get_ports {refclk200}]
-# create_clock -period 8.000 -name sys_clk_pin -waveform {0.000 4.000} -add [get_ports {refclk200}]
+# -------------------------------------------------------------------
+# Clock input (uncomment & adjust if you have an external clk pin)
+# -------------------------------------------------------------------
+# set_property -dict {PACKAGE_PIN H16 IOSTANDARD LVCMOS33} [get_ports refclk200]
+# create_clock -period 8.000 -name sys_clk_pin -waveform {0.000 4.000} -add [get_ports refclk200]
 
+# -------------------------------------------------------------------
 # LEDs
-set_property -dict {PACKAGE_PIN R14 IOSTANDARD LVCMOS33} [get_ports {led_l[0]}]
-set_property -dict {PACKAGE_PIN P14 IOSTANDARD LVCMOS33} [get_ports {led_l[1]}]
-set_property -dict {PACKAGE_PIN N16 IOSTANDARD LVCMOS33} [get_ports {led_l[2]}]
-set_property -dict {PACKAGE_PIN M14 IOSTANDARD LVCMOS33} [get_ports {led_l[3]}]
+# -------------------------------------------------------------------
+# Add to your project's XDC file:
+set_property PACKAGE_PIN M14 [get_ports {led_l[0]}]
+set_property PACKAGE_PIN M15 [get_ports {led_l[1]}]
+set_property PACKAGE_PIN G14 [get_ports {led_l[2]}]
+set_property PACKAGE_PIN D18 [get_ports {led_l[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_l[*]}]
 
-# Push buttons
-set_property -dict {PACKAGE_PIN D19 IOSTANDARD LVCMOS33} [get_ports {user_sw_l}]
-# set_property -dict {PACKAGE_PIN D20 IOSTANDARD LVCMOS33} [get_ports {reset}]
+set_property PACKAGE_PIN G15 [get_ports user_sw_l]
+set_property IOSTANDARD LVCMOS33 [get_ports user_sw_l]
 
-# False path constraints for non-timing critical signals
-set_false_path -to [get_ports "led_l[*]"]
+# -------------------------------------------------------------------
+# User push-button / switch
+# -------------------------------------------------------------------
+set_property -dict {PACKAGE_PIN D19 IOSTANDARD LVCMOS33} [get_ports user_sw_l]
+# if you ever expose a reset pin, e.g.:
+# set_property -dict {PACKAGE_PIN D20 IOSTANDARD LVCMOS33} [get_ports reset_n]
+
+# -------------------------------------------------------------------
+# False-path constraints (these signals are not timing-critical)
+# -------------------------------------------------------------------
+set_false_path -to   [get_ports "led_l[*]"]
 set_false_path -from [get_ports "user_sw_l"]
-# set_false_path -from [get_ports "reset"]
+# set_false_path -from [get_ports reset_n]
 
-# PYNQ-Z1 PS7 RGMII requires 1.8 V on MIO16-27:
-set_property IOSTANDARD LVCMOS18 [get_ports {MIO16 MIO17 … MIO27}]
-# MDIO can remain at 3.3 V:
-set_property IOSTANDARD LVCMOS33 [get_ports {MIO52 MIO53}]
+# -------------------------------------------------------------------
+# PS7 MIO pins - COMMENTED OUT AS THESE ARE NOT FPGA PINS
+# -------------------------------------------------------------------
+# These are PS pins, not FPGA IO pins - they should not be constrained here
+# set_property IOSTANDARD LVCMOS18 [get_ports {MIO16 MIO17 MIO18 MIO19 MIO20 MIO21 MIO22 MIO23 MIO24 MIO25 MIO26 MIO27}]
+# set_property IOSTANDARD LVCMOS33 [get_ports {MIO52 MIO53}]
 

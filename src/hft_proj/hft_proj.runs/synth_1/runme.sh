@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/synth_1'
+HD_PWD='C:/HFT_PYNQZ1-Z2/src/hft_proj/hft_proj.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

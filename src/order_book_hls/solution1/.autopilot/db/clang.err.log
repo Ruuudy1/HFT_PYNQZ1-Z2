@@ -10,4 +10,28 @@ order_book_src/priority_queue.cpp:324:9: warning: 'Resource pragma' is deprecate
 order_book_src/priority_queue.cpp:330:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
 #pragma HLS RESOURCE variable=ask_remove core=RAM_1P_BRAM
         ^
-4 warnings generated.
+order_book_src/priority_queue.cpp:336:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=hole_idx_bid core=RAM_2P_LUTRAM
+        ^
+order_book_src/priority_queue.cpp:338:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=hole_lvl_bid core=RAM_2P_LUTRAM
+        ^
+order_book_src/priority_queue.cpp:343:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=hole_idx_ask core=RAM_2P_LUTRAM
+        ^
+order_book_src/priority_queue.cpp:345:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=hole_lvl_ask core=RAM_2P_LUTRAM
+        ^
+order_book_src/priority_queue.cpp:350:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=hole_idx_bid_remove core=RAM_2P_LUTRAM
+        ^
+order_book_src/priority_queue.cpp:352:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=hole_lvl_bid_remove core=RAM_2P_LUTRAM
+        ^
+order_book_src/priority_queue.cpp:357:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=hole_idx_ask_remove core=RAM_2P_LUTRAM
+        ^
+order_book_src/priority_queue.cpp:359:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=hole_lvl_ask_remove core=RAM_2P_LUTRAM
+        ^
+12 warnings generated.

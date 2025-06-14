@@ -32726,14 +32726,13 @@ inline __attribute__((nodebug)) bool operator!=(
 
 
 
-static ap_uint<4> log_rom[128] = {0, 0, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3,
-                                      4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
-                                      5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
-                                      5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
-                                      6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6,
-                                      6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6,
-                                      6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6,
-                                      6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6};
+static ap_uint<4> log_rom[16] = {
+    0,
+    0,
+    1, 1,
+    2, 2, 2, 2,
+    3, 3, 3, 3, 3, 3, 3, 3
+};
 
 using namespace hls;
 
@@ -32774,21 +32773,21 @@ int log_base_2(unsigned index);
 
 int pow2(int level);
 
-int find_path(unsigned& counter, int& hole_counter, int hole_idx[128], int level);
+int find_path(unsigned& counter, int& hole_counter, int hole_idx[16], int level);
 
 unsigned calculate_index(int insert_path, int level, int idx);
 
-order left_child(unsigned level, unsigned index, order queue[7][128/2]);
+order left_child(unsigned level, unsigned index, order queue[4][16/2]);
 
-order right_child(unsigned level, unsigned index, order queue[7][128/2]);
+order right_child(unsigned level, unsigned index, order queue[4][16/2]);
 
 
-void add_bid(order heap[7][128/2],
+void add_bid(order heap[4][16/2],
               order &new_order,
               unsigned& heap_counter,
               int& hole_counter,
-              int hole_idx[128],
-              int hole_lvl[128],
+              int hole_idx[16],
+              int hole_lvl[16],
               hls::stream<order> &top_bid,
               hls::stream<order> &top_ask,
               hls::stream<Time> &outgoing_time,
@@ -32800,20 +32799,20 @@ void add_bid(order heap[7][128/2],
               order ask,
               bool write_flag
              );
-void remove_bid( order heap[7][128/2],
+void remove_bid( order heap[4][16/2],
                  ap_uint<8>& req_size,
                  unsigned& heap_counter,
                  int& hole_counter,
-                 int hole_idx[128],
-                 int hole_lvl[128],
+                 int hole_idx[16],
+                 int hole_lvl[16],
                  order dummy_order
                );
-void add_ask( order heap[7][128/2],
+void add_ask( order heap[4][16/2],
               order &new_order,
               unsigned& heap_counter,
               int& hole_counter,
-              int hole_idx[128],
-              int hole_lvl[128],
+              int hole_idx[16],
+              int hole_lvl[16],
               hls::stream<order> &top_bid,
               hls::stream<order> &top_ask,
               hls::stream<Time> &outgoing_time,
@@ -32825,12 +32824,12 @@ void add_ask( order heap[7][128/2],
               order bid,
               bool write_flag
             );
-void remove_ask( order heap[7][128/2],
+void remove_ask( order heap[4][16/2],
                  ap_uint<8>& req_size,
                  unsigned& heap_counter,
                  int& hole_counter,
-                 int hole_idx[128],
-                 int hole_lvl[128],
+                 int hole_idx[16],
+                 int hole_lvl[16],
                  order dummy_order
                );
 # 2 "order_book_src/priority_queue.cpp" 2
@@ -32846,7 +32845,7 @@ int pow2(int level){
  return 1 << level;
 }
 
-int find_path(unsigned& counter, int& hole_counter, int hole_idx[128], int level){
+int find_path(unsigned& counter, int& hole_counter, int hole_idx[16], int level){
 #pragma HLS INLINE
  if (hole_counter > 0) {
         int temp = hole_idx[--hole_counter];
@@ -32864,24 +32863,24 @@ unsigned calculate_index(int insert_path, int level, int idx){
     return bit ? (2*idx + 1) : (2*idx);
 }
 
-order left_child(unsigned level, unsigned index, order queue[7][128/2]){
+order left_child(unsigned level, unsigned index, order queue[4][16/2]){
 #pragma HLS INLINE
  return queue[level+1][index*2];
 }
 
-order right_child(unsigned level, unsigned index, order queue[7][128/2]){
+order right_child(unsigned level, unsigned index, order queue[4][16/2]){
 #pragma HLS INLINE
  return queue[level+1][index*2 + 1];
 }
 
 
 
-void add_bid(order heap[7][128/2],
+void add_bid(order heap[4][16/2],
              order &new_order,
              unsigned& heap_counter,
              int& hole_counter,
-             int hole_idx[128],
-             int hole_lvl[128],
+             int hole_idx[16],
+             int hole_lvl[16],
              hls::stream<order> &top_bid,
              hls::stream<order> &top_ask,
              hls::stream<Time> &outgoing_time,
@@ -32941,12 +32940,12 @@ void add_bid(order heap[7][128/2],
 }
 
 
-void remove_bid(order heap[7][128/2],
+void remove_bid(order heap[4][16/2],
                 ap_uint<8>& req_size,
                 unsigned& heap_counter,
                 int& hole_counter,
-                int hole_idx[128],
-                int hole_lvl[128],
+                int hole_idx[16],
+                int hole_lvl[16],
                 order dummy_order)
 {
 #pragma HLS INLINE
@@ -32966,7 +32965,7 @@ void remove_bid(order heap[7][128/2],
         order right = right_child(level, new_idx, heap);
 
         BID_POP_LOOP:
-        while(level < 7 -1){
+        while(level < 4 -1){
 #pragma HLS DEPENDENCE variable=heap inter false
 #pragma HLS LOOP_TRIPCOUNT max=11
 #pragma HLS PIPELINE II=1
@@ -32990,12 +32989,12 @@ void remove_bid(order heap[7][128/2],
 }
 
 
-void add_ask(order heap[7][128/2],
+void add_ask(order heap[4][16/2],
              order &new_order,
              unsigned& heap_counter,
              int& hole_counter,
-             int hole_idx[128],
-             int hole_lvl[128],
+             int hole_idx[16],
+             int hole_lvl[16],
              hls::stream<order> &top_bid,
              hls::stream<order> &top_ask,
              hls::stream<Time> &outgoing_time,
@@ -33055,12 +33054,12 @@ void add_ask(order heap[7][128/2],
 }
 
 
-void remove_ask(order heap[7][128/2],
+void remove_ask(order heap[4][16/2],
                 ap_uint<8>& req_size,
                 unsigned& heap_counter,
                 int& hole_counter,
-                int hole_idx[128],
-                int hole_lvl[128],
+                int hole_idx[16],
+                int hole_lvl[16],
                 order dummy_order)
 {
 #pragma HLS INLINE
@@ -33080,7 +33079,7 @@ void remove_ask(order heap[7][128/2],
         order right = right_child(level, new_idx, heap);
 
         ASK_POP_LOOP:
-        while(level < 7 -1){
+        while(level < 4 -1){
 #pragma HLS DEPENDENCE variable=heap inter false
 #pragma HLS LOOP_TRIPCOUNT max=11
 #pragma HLS PIPELINE II=1
@@ -33116,7 +33115,7 @@ __attribute__((sdx_kernel("order_book", 0))) void order_book(hls::stream<order> 
                 ap_uint<32> &top_bid_id,
                 ap_uint<32> &top_ask_id)
 {
-#line 9 "C:/Users/ruuud/spring2025/cse145/WORKINGPROJECTIDEA/ECE1373_2016_hft_on_fpga/src/build_order_book_core.tcl"
+#line 10 "C:/HFT_PYNQZ1-Z2/src/build_order_book_core.tcl"
 #pragma HLSDIRECTIVE TOP name=order_book
 # 283 "order_book_src/priority_queue.cpp"
 
@@ -33144,25 +33143,25 @@ __attribute__((sdx_kernel("order_book", 0))) void order_book(hls::stream<order> 
     static order dummy_ask = {(ap_fixed<16,8>)255,0,0,0};
 
 
-    static order bid[7][128/2];
+    static order bid[4][16/2];
 #pragma HLS ARRAY_PARTITION variable=bid complete dim=1
 #pragma HLS ARRAY_PARTITION variable=bid cyclic factor=4 dim=2
 #pragma HLS DEPENDENCE variable=bid inter false
 #pragma HLS RESOURCE variable=bid core=RAM_1P_BRAM
 
- static order ask[7][128/2];
+ static order ask[4][16/2];
 #pragma HLS ARRAY_PARTITION variable=ask complete dim=1
 #pragma HLS ARRAY_PARTITION variable=ask cyclic factor=4 dim=2
 #pragma HLS DEPENDENCE variable=ask inter false
 #pragma HLS RESOURCE variable=ask core=RAM_1P_BRAM
 
- static order bid_remove[7][128/2];
+ static order bid_remove[4][16/2];
 #pragma HLS ARRAY_PARTITION variable=bid_remove complete dim=1
 #pragma HLS ARRAY_PARTITION variable=bid_remove cyclic factor=4 dim=2
 #pragma HLS DEPENDENCE variable=bid_remove inter false
 #pragma HLS RESOURCE variable=bid_remove core=RAM_1P_BRAM
 
- static order ask_remove[7][128/2];
+ static order ask_remove[4][16/2];
 #pragma HLS ARRAY_PARTITION variable=ask_remove complete dim=1
 #pragma HLS ARRAY_PARTITION variable=ask_remove cyclic factor=4 dim=2
 #pragma HLS DEPENDENCE variable=ask_remove inter false
@@ -33171,26 +33170,34 @@ __attribute__((sdx_kernel("order_book", 0))) void order_book(hls::stream<order> 
 
  static unsigned counter_bid = 0;
     static int hole_counter_bid = 0;
-    static int hole_idx_bid[128];
-    static int hole_lvl_bid[128];
+    static int hole_idx_bid[16];
+#pragma HLS RESOURCE variable=hole_idx_bid core=RAM_2P_LUTRAM
+ static int hole_lvl_bid[16];
+#pragma HLS RESOURCE variable=hole_lvl_bid core=RAM_2P_LUTRAM
 
-    static unsigned counter_ask = 0;
+ static unsigned counter_ask = 0;
     static int hole_counter_ask = 0;
-    static int hole_idx_ask[128];
-    static int hole_lvl_ask[128];
+    static int hole_idx_ask[16];
+#pragma HLS RESOURCE variable=hole_idx_ask core=RAM_2P_LUTRAM
+ static int hole_lvl_ask[16];
+#pragma HLS RESOURCE variable=hole_lvl_ask core=RAM_2P_LUTRAM
 
-    static unsigned counter_bid_remove = 0;
+ static unsigned counter_bid_remove = 0;
     static int hole_counter_bid_remove = 0;
-    static int hole_idx_bid_remove[128];
-    static int hole_lvl_bid_remove[128];
+    static int hole_idx_bid_remove[16];
+#pragma HLS RESOURCE variable=hole_idx_bid_remove core=RAM_2P_LUTRAM
+ static int hole_lvl_bid_remove[16];
+#pragma HLS RESOURCE variable=hole_lvl_bid_remove core=RAM_2P_LUTRAM
 
-    static unsigned counter_ask_remove = 0;
+ static unsigned counter_ask_remove = 0;
     static int hole_counter_ask_remove = 0;
-    static int hole_idx_ask_remove[128];
-    static int hole_lvl_ask_remove[128];
+    static int hole_idx_ask_remove[16];
+#pragma HLS RESOURCE variable=hole_idx_ask_remove core=RAM_2P_LUTRAM
+ static int hole_lvl_ask_remove[16];
+#pragma HLS RESOURCE variable=hole_lvl_ask_remove core=RAM_2P_LUTRAM
 
 
-    if (!order_stream.empty() &&
+ if (!order_stream.empty() &&
         !incoming_time.empty() &&
         !incoming_meta.empty() &&
         !top_bid.full() &&
@@ -33210,7 +33217,7 @@ __attribute__((sdx_kernel("order_book", 0))) void order_book(hls::stream<order> 
                     top_bid_id, top_ask_id,
                     time_buffer, meta_buffer, ask[0][0], true);
 
-            if (counter_bid == 128 -1)
+            if (counter_bid == 16 -1)
                 counter_bid--;
         }
 
@@ -33235,7 +33242,7 @@ __attribute__((sdx_kernel("order_book", 0))) void order_book(hls::stream<order> 
             else if(input.orderID == bid[0][0].orderID){
                 req_size = bid[0][0].size;
                 remove_bid(bid, req_size, counter_bid, hole_counter_bid, hole_idx_bid, hole_lvl_bid, dummy_bid);
-                VITIS_LOOP_399_1: while(bid[0][0].orderID == bid_remove[0][0].orderID && bid[0][0].orderID != 0){
+                VITIS_LOOP_407_1: while(bid[0][0].orderID == bid_remove[0][0].orderID && bid[0][0].orderID != 0){
 #pragma HLS LOOP_TRIPCOUNT min=0 max=1
  ap_uint<8> temp = bid[0][0].size;
                     ap_uint<8> temp_remove = bid_remove[0][0].size;
@@ -33257,7 +33264,7 @@ __attribute__((sdx_kernel("order_book", 0))) void order_book(hls::stream<order> 
                     top_bid, top_ask, outgoing_time, outgoing_meta,
                     top_bid_id, top_ask_id,
                     time_buffer, meta_buffer, bid[0][0], true);
-            if (counter_ask == 128 -1)
+            if (counter_ask == 16 -1)
                 counter_ask--;
         }
 
@@ -33282,7 +33289,7 @@ __attribute__((sdx_kernel("order_book", 0))) void order_book(hls::stream<order> 
             else if(input.orderID == ask[0][0].orderID){
                 req_size = ask[0][0].size;
                 remove_ask(ask, req_size, counter_ask, hole_counter_ask, hole_idx_ask, hole_lvl_ask, dummy_ask);
-                VITIS_LOOP_446_2: while(ask[0][0].orderID == ask_remove[0][0].orderID && ask[0][0].orderID != 0){
+                VITIS_LOOP_454_2: while(ask[0][0].orderID == ask_remove[0][0].orderID && ask[0][0].orderID != 0){
 #pragma HLS LOOP_TRIPCOUNT min=0 max=1
  ap_uint<8> temp = ask[0][0].size;
                     ap_uint<8> temp_remove = ask_remove[0][0].size;
