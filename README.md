@@ -33,15 +33,6 @@ This system:
 Install:
 - PYNQ OS (see [Beginner PYNQ-Z2 Setup Guide](https://blog.umer-farooq.com/a-pynq-z2-guide-for-absolute-dummies-part-i-fun-with-leds-and-switches-47dd76abf9a9))
 
-### Step 0: Prebuilt Project Files (Optional)
-
-The repository includes `.bit`, `.xsa`, and `.xpr` files for convenience. If you are targeting the same FPGA part and using **Vivado 2024.2**, you can skip rebuilding from scratch and directly open the following project files:
-
-- `hft_proj_accelerator.xpr` – Simple loopback FIFO design to validate DMA and data integrity
-- `hft_proj.xpr` – Full high-frequency trading (HFT) pipeline implementation
-
-These files allow you to explore the block designs and run synthesis/implementation without regenerating IP cores. 
-
 ### Step 1: Build HLS Cores
 
 ```bash
