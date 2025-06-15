@@ -39,6 +39,7 @@ Install:
 cd src
 vitis_hls -f build_fast_core.tcl
 vitis_hls -f build_order_book_core.tcl
+vitis_hls -f build_project.tcl
 vitis_hls -f build_threshold_core.tcl
 vitis_hls -f build_microblaze_to_switch_core.tcl
 ```
@@ -180,3 +181,7 @@ ethernet/              # Standalone Ethernet loopback test
 
 - Mustafa Abbas, Brett Grady, and Andrew Boutros (original authors)
 - Dan Ly-Ma (network stack contributor)
+
+---
+
+<sub><sup>This repository used generative AI tools to assist in polishing documentation and debugging implementation details.</sup></sub>
