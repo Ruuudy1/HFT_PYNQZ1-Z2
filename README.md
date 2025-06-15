@@ -4,7 +4,7 @@
 
 ## Project Overview
 
-High frequency trading is the method of buying and selling stocks/assets at a rapid rate according to the fluctuations in a market exchange. In order to remain competitive in trading, lower latency is needed in order to respond to fluctuations in the exchange quicker, and this demand for computational power is typically not reachable by non-enterprise traders. This repository explores the performance gain of implementing a high frequency trading pipeline within an FPGA + SoC and communicating exchange information via Ethernet. In doing so, we achieve an average latency of X ns with the pipeline and an average latency of Y ns.
+High frequency trading is the method of buying and selling stocks/assets at a rapid rate according to the fluctuations in a market exchange. In order to remain competitive in trading, lower latency is needed in order to respond to fluctuations in the exchange quicker, and this demand for computational power is typically not reachable by non-enterprise traders. This repository explores the performance gain of implementing a high frequency trading pipeline within an FPGA + SoC and communicating exchange information via Ethernet.
 
 In our project, we use the PYNQ-Z1/Z2 development board to implement a high frequency trading pipeline in order to achieve low latency. We connect the board via Ethernet to a PC, and use the PYNQ-Z2's Jupyter Notebook feature to set up a server on the board. We use a Python script to set up a client on our PC and send/receive data via Python socket between the PC and the board. The board will receive the data and use a DMA module to move the packet data from the PS to the PL, process the data through the pipeline, and move the data from the PL back to the PS in order to send it back to the PC.
 
@@ -48,16 +48,16 @@ Navigate to the `src` directory and build each HLS IP core individually:
 cd src
 
 # Build Fast Protocol Core
-vivado_hls -f build_fast_core.tcl
+vitis_hls -f build_fast_core.tcl
 
 # Build Order Book Core  
-vivado_hls -f build_order_book_core.tcl
+vitis_hls -f build_order_book_core.tcl
 
 # Build Threshold Core
-vivado_hls -f build_threshold_core.tcl
+vitis_hls -f build_threshold_core.tcl
 
 # Build Microblaze to Switch Core
-vivado_hls -f build_microblaze_to_switch_core.tcl
+vitis_hls -f build_microblaze_to_switch_core.tcl
 ```
 
 **Note:** Each build may take several minutes. Ensure all builds complete successfully before proceeding.
@@ -182,10 +182,6 @@ We then realized that interfacing with the Ethernet PHY was *not possible* when 
 Unlike the FAST decoder (which used QuickFAST and came with documentation and examples), the UDP parser had to be built from scratch with no prior codebase.
 There was no clear guide or interface explaining how to connect incoming UDP packets to the FAST decoding pipeline, so the entire bridge logic had to be designed independently.
 In order to integrate the UDP parser to the FAST encoder we had to get familiar with the quickfast codebase.
-
-## Starter Repository
-
-Credits to original repo, we are simply maintaining it and descaling it down to a smaller board. Original project was likely made using Vivado 2014/2015 based on syntax, we have made a working version for Vivado 2024.2 + Vitis 2024.2 (latest version availvable). It was missing src/hft_proj, the main substance of the project (which ties all the custom IPs together).
 
 ## Our Contributions
 
