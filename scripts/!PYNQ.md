@@ -10,10 +10,11 @@ This folder contains all the Python scripts for the High-Frequency Trading (HFT)
 
 ## Typical Workflow
 
-1. Copy the required bitstream and hardware files (`.bit`, `.hwh`, `.xsa`) to the PYNQ board.
-2. Open a terminal or Jupyter notebook on the PYNQ board.
-3. Navigate to this `scripts` directory.
-4. Run the desired Python script, for example:
+1. Copy the required bitstream and hardware files (`.bit` & `.hwh`) to the PYNQ board.
+2. Rename both files to contain the same name (`design_1_wrapper.bit` & `design_1_wrapper.hwh`) 
+3. Open a terminal or Jupyter notebook on the PYNQ board.
+4. Navigate to this `scripts` directory.
+5. Run the desired Python script, for example:
    ```bash
    python3 test_hft_send_only_final.py
    ```
