@@ -325,4 +325,4 @@ Additionally, there is an /ethernet folder in which there is a Jupyter Notebook 
 
 Thanks to Brett Grady, Mustafa Abbas, and Andrew Boutros for the initial project code.
 
-Thanks to Dan Ly-Ma for providing the initial base project (simple demonstration of Xilinx Network Stack on 8K5) which this project used as a base. He served as the original contributor to the project proposed by Brett Grady, Mustafa Abbas, and Andrew Boutros.
+Thanks to Dan Ly-Ma for providing the initial base project (simple demonstration of Xilinx Network Stack on 8K5) which this project used as a base. He served as the original contributor to the project proposed by Brett Grady, Mustafa Abbas, and Andrew Boutros. 
