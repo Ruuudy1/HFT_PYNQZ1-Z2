@@ -88,7 +88,6 @@ python3 scripts/hft_trading_engine.py
 - Integrated DMA-based pipeline for PS-PL-PS data flow
 - Created standalone Ethernet module for loopback testing
 - Rewrote all Python 2 code to Python 3
-- Reduced order book from 4096 to 128 depth
 - Added data width converters and time metadata converters
 
 ---
