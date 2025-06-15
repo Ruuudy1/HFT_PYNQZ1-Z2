@@ -21,5 +21,5 @@ This folder contains all the Python scripts for the High-Frequency Trading (HFT)
 
 ## Notes
 
-- These scripts are **not** intended to be run on a regular PC—they require the PYNQ hardware and environment.
+- These scripts are **not** intended to be run on a regular PC, they require the PYNQ hardware and environment.
 - For more information, see the main project documentation. 
