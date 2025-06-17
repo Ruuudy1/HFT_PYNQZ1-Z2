@@ -159,7 +159,7 @@ ethernet/              # Standalone Ethernet loopback test
 ## Acknowledgements
 
 - Mustafa Abbas, Brett Grady, and Andrew Boutros (original authors)
-- Dan Ly-Ma (network stack contributor)
+- Dan Ly-Ma (network stack inspiration)
 
 ---
 
