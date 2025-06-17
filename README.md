@@ -141,20 +141,6 @@ The onboard PHY on PYNQ boards is wired to the PS, making direct PL interfacing 
 
 > Subsystem for ultra-low-latency (<450 ns) financial data pipelines over Ethernet. Modular AXI Stream interfaces for timestamping, sorting, decoding, and forwarding.
 
-### Original Usage Instructions
-
-```bash
-cd src
-vitis_hls -f build_fast_core.tcl
-vitis_hls -f build_microblaze_to_switch_core.tcl
-vitis_hls -f build_order_book_core.tcl
-vitis_hls -f build_threshold_core.tcl
-```
-
-```bash
-vivado -mode tcl
-source build_project.tcl
-```
 
 Use Vivado GUI to generate bitstream and program board.
 
