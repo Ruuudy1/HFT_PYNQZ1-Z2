@@ -118,12 +118,6 @@ The DMA passes data through FIFO into the PL and back out to PS.
 
 The onboard PHY on PYNQ boards is wired to the PS, making direct PL interfacing impossible. We adapted by offloading Ethernet to the PS and using DMA for ultra-fast PS-to-PL data transfer.
 
-### UDP Parser Development
-
-Unlike the FAST decoder (which used QuickFAST), the UDP parser was built from scratch. We reverse-engineered integration by manually bridging it to the FAST pipeline.
-
----
-
 ## Understanding Output Files
 
 ### `design_1_wrapper.bit`
