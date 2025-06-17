@@ -139,7 +139,7 @@ The onboard PHY on PYNQ boards is wired to the PS, making direct PL interfacing 
 
 ## Legacy Summary (Original Repository)
 
-> Subsystem for ultra-low-latency (<450 ns) financial data pipelines over Ethernet. Modular AXI Stream interfaces for timestamping, sorting, decoding, and forwarding.
+> Subsystem for ultra-low-latency (<450 ns) financial data pipelines over Ethernet. Modular AXI Stream interfaces for timestamping, sorting, decoding, and forwarding: https://github.com/mustafabbas/ECE1373_2016_hft_on_fpga
 
 
 Use Vivado GUI to generate bitstream and program board.
