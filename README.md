@@ -8,7 +8,6 @@ This system:
 - Implements a custom HFT pipeline on the PL (Programmable Logic)
 - Uses DMA to move data between the PS (Processing System) and PL
 - Interfaces via Ethernet for market data communication
-- Achieves average pipeline latency of **X ns** and Ethernet roundtrip latency of **Y ns**
 
 ## Hardware Platform
 
