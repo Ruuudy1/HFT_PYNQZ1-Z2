@@ -19,7 +19,7 @@ This system:
 
 ## Team
 
-- **Rudy Osuna** — 3rd Year CS, UCSD. Minor: Business Analytics. President of Triton Quantitative Trading
+- **Rudy Osuna** — 3rd Year CS, UCSD. President of Triton Quantitative Trading
 - **Brandon Reponte** — 4th Year CS, UCSD. Focus: Systems, ML, and AI
 - **Leeza Gutierrez** — Senior CE, UCSD. Focus: Embedded and OS Programming
 
